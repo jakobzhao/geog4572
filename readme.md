@@ -6,14 +6,13 @@
 >
 > Lecture: TR 9-9:50am @368 LINC | Lab:  T 6-7:50pm @210 Wilkinson
 
-
 Catalog Course Description. GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3). Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
-## Syllabus
+## SYLLABUS
 
 |  **WK**   | **LECTURE  (T)**                         | **LAB (T)**                              | **LECTURE(R)**                           | **PROJECT**                              | READING                                  |
 | :-------: | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| **Wk 1**  | [Intro to GeoViz](wk01/readme.md)        | Brainstorm                               | Geovisualization Presentation            | Introduction                             | [W3School tutorial](wk01/reading.md)     |
+| **Wk 1**  | [Intro to GeoViz](wk01/readme.md)        | [Brainstorm](project/brainstorm.md)      | Geovisualization Presentation            | Introduction                             | [W3School tutorial](wk01/reading.md)     |
 | **Wk 2**  | Web Mapping Architecture  (Internet Structure, Map Services) | Web Programming Basics  (JS, HTML, CSS, and GitHub, etc.) | Web Mapping Basics (leaflet.js)          | Team-up                                  | [Leaflet.js tutorial](wk02/reading.md)   |
 | **Wk 3**  | Virtual Globe (Cesium.js)                | Interactive GeoViz   (geospatial data operation, storymap.js) | Layout (figure/ground, visual components) | Proposal                                 | [Cesium.js tutorial, Web design principles](wk03/reading.md) |
 | **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface  Design)             | Color                                    | Sketch & Project Summary                 | [Principles of Color](wk04/reading.md)   |
