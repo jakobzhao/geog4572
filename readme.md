@@ -6,24 +6,24 @@
 >
 > Lecture: TR 9-9:50am @368 LINC | Lab:  T 6-7:50pm @210 Wilkinson
 >
-> Catalog Course Description. GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3). Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
+> Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3). Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
-Welcome to Geog 4/572: Geovisual Analytics :gift_heart:! In this course, you will learn the theories on geovisualization, advanced geovisual analytical methodologies, and then work collaboratively on a real-world problem using geovisual analytical tools. There is no required text. Required papers and online materials will be available on the course website. Students must complete required reading assignments before attending the corresponding lecture. In-class quizzes will cover the content of the reading assignments. PDF articles are provided.
+Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, you will learn the theories on geovisualization, advanced geovisual analytical methodologies, and then work collaboratively on a real-world problem using geovisual analytical tools. There is no required text. Required papers and online materials will be available on the course website. Students must complete required reading assignments before attending the corresponding lecture. In-class quizzes will cover the content of the reading assignments. PDF articles are provided.
 
 ## SYLLABUS
 
 |  **WK**   | **LECTURE  (T)**                         | **LAB (T)**                              | **LECTURE(R)**                           | **PROJECT**                              | READING                                  |
 | :-------: | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| **Wk 1**  | [Intro to GeoViz](wk01/readme.md)        | [Brainstorm](project/brainstorm.md)      | Geovisualization Presentation            | Introduction                             | [W3School tutorial](wk01/reading.md)     |
-| **Wk 2**  | Web Mapping Architecture  (Internet Structure, Map Services) | Web Programming Basics  (JS, HTML, CSS, and GitHub, etc.) | Web Mapping Basics (leaflet.js)          | Team-up                                  | [Leaflet.js tutorial](wk02/reading.md)   |
-| **Wk 3**  | Virtual Globe (Cesium.js)                | Interactive GeoViz   (geospatial data operation, storymap.js) | Layout (figure/ground, visual components) | Proposal                                 | [Cesium.js tutorial, Web design principles](wk03/reading.md) |
-| **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface  Design)             | Color                                    | Sketch & Project Summary                 | [Principles of Color](wk04/reading.md)   |
-| **Wk 5**  | Topography and Labelling  (Google font, Mapbox font) | Base Map Design:   (Mapbox)              | Data Interaction I (D3.js)               | Design Scheme (Color, label, icon, and multimedia,  etc.) | [Map Design Principles, D3.js tutorial](wk05/reading.md) |
-| **Wk 6**  | Data Interaction II                      | Cont’d                                   | Map Critique                             | Revision                                 |                                          |
-| **Wk 7**  | Real-time mapping (e.g., Twitter API, Weather API) | Data Driven Maps                         | Heatmap   (visualizing real-time geospatial data) | Coding                                   |                                          |
-| **Wk 8**  | Cartogram                                | Cont’d                                   | Network Visualization                    | Coding                                   |                                          |
-| **Wk 9**  | UAV Mapping                              | Fieldwork with UAV                       | Virtual Reality   (in GAZE Lab)          | Fine-tuning                              |                                          |
-| **Wk 10** | Emerging Topics in GeoViz                | Project Q&A                              | Project Presentation                     | Presentation                             |                                          |
+| **Wk 1**  | [Intro to GeoViz](wk01/readme.md)        | [Brainstorm](project/brainstorm.md)      | Geovisualization Presentation            | `Introduction`                           | [W3School tutorial](wk01/reading.md)     |
+| **Wk 2**  | Web Mapping Architecture  (Internet Structure, Map Services) | Web Programming Basics  (JS, HTML, CSS, and GitHub, etc.) | Web Mapping Basics (leaflet.js)          | `Team-up`                                | [Leaflet.js tutorial](wk02/reading.md)   |
+| **Wk 3**  | Virtual Globe (Cesium.js)                | Interactive GeoViz   (geospatial data operation, storymap.js) | Layout (figure/ground, visual components) | `Proposal`                               | [Cesium.js tutorial, Web design principles](wk03/reading.md) |
+| **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface  Design)             | Color                                    | `Sketch` & `Project Summary`             | [Principles of Color](wk04/reading.md)   |
+| **Wk 5**  | Topography and Labelling  (Google font, Mapbox font) | Base Map Design:   (Mapbox)              | Data Interaction I (D3.js)               | `Design Scheme (Color, label, icon, and multimedia,  etc.)` | [Map Design Principles, D3.js tutorial](wk05/reading.md) |
+| **Wk 6**  | Data Interaction II                      | Cont’d                                   | Map Critique                             | `Revision`                               |                                          |
+| **Wk 7**  | Real-time mapping (e.g., Twitter API, Weather API) | Data Driven Maps                         | Heatmap   (visualizing real-time geospatial data) | `Coding`                                 |                                          |
+| **Wk 8**  | Cartogram                                | Cont’d                                   | Network Visualization                    | `Coding`                                 |                                          |
+| **Wk 9**  | UAV Mapping                              | Fieldwork with UAV                       | Virtual Reality   (in GAZE Lab)          | `Fine-tuning`                            |                                          |
+| **Wk 10** | Emerging Topics in GeoViz                | Project Q&A                              | Project Presentation                     | `Presentation`                           |                                          |
 
 ## LECTURES
 
@@ -44,6 +44,11 @@ During the term, there will be two lab assignments. The main purpose of the lab 
 Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted.Lab assignments are expected to be completed by the due date. A late penalty of at least 10 percentage units will be taken off each day after the due date.
 
 If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
+
+- [ ] Interactive GeoViz
+
+
+- [ ] Base Map Design
 
 ## COURSE PROJECT
 
