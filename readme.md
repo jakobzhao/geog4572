@@ -14,11 +14,11 @@ Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, y
 
 |  **WK**   | **LECTURE  (T)**                         | **LAB (T)**                              | **LECTURE(R)**                           | **PROJECT**                              | READING                                  |
 | :-------: | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| **Wk 1**  | [Intro to GeoViz](wk01/readme.md)        | [Brainstorm](project/brainstorm.md)      | Geovisualization Presentation            | `Introduction`                           | [W3School tutorial](wk01/reading.md)     |
-| **Wk 2**  | Web Mapping Architecture  (Internet Structure, Map Services) | Web Programming Basics  (JS, HTML, CSS, and GitHub, etc.) | Web Mapping Basics (leaflet.js)          | `Team-up`                                | [Leaflet.js tutorial](wk02/reading.md)   |
-| **Wk 3**  | Virtual Globe (Cesium.js)                | Interactive GeoViz   (geospatial data operation, storymap.js) | Layout (figure/ground, visual components) | `Proposal`                               | [Cesium.js tutorial, Web design principles](wk03/reading.md) |
-| **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface  Design)             | Color                                    | `Sketch` & `Project Summary`             | [Principles of Color](wk04/reading.md)   |
-| **Wk 5**  | Topography and Labelling  (Google font, Mapbox font) | Base Map Design:   (Mapbox)              | Data Interaction I (D3.js)               | `Design Scheme (Color, label, icon, and multimedia,  etc.)` | [Map Design Principles, D3.js tutorial](wk05/reading.md) |
+| **Wk 1**  | [Intro to GeoViz](wk01/readme.md)        | [Brainstorm](project/brainstorm.md)      | Geovisualization Presentation            | `Introduction`                           | [W3School tutorial](wk01/readme.md)      |
+| **Wk 2**  | Web Mapping Architecture  (Internet Structure, Map Services) | Web Programming Basics  (JS, HTML, CSS, and GitHub, etc.) | Web Mapping Basics (leaflet.js)          | `Team-up`                                | [Leaflet.js tutorial](wk02/readme.md)    |
+| **Wk 3**  | Virtual Globe (Cesium.js)                | Interactive GeoViz   (geospatial data operation, storymap.js) | Layout (figure/ground, visual components) | `Proposal`                               | [Cesium.js tutorial, Web design principles](wk03/readme.md) |
+| **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface  Design)             | Color                                    | `Sketch` & `Project Summary`             | [Principles of Color](wk04/readme.md)    |
+| **Wk 5**  | Topography and Labelling  (Google font, Mapbox font) | Base Map Design:   (Mapbox)              | Data Interaction I (D3.js)               | `Design Scheme (Color, label, icon, and multimedia,  etc.)` | [Map Design Principles, D3.js tutorial](wk05/readme.md) |
 | **Wk 6**  | Data Interaction II                      | Cont’d                                   | Map Critique                             | `Revision`                               |                                          |
 | **Wk 7**  | Real-time mapping (e.g., Twitter API, Weather API) | Data Driven Maps                         | Heatmap   (visualizing real-time geospatial data) | `Coding`                                 |                                          |
 | **Wk 8**  | Cartogram                                | Cont’d                                   | Network Visualization                    | `Coding`                                 |                                          |
@@ -66,4 +66,4 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 - [ ] Revision
 - [ ] Presentation
 
-## Resources
+## RESOURCES
