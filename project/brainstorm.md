@@ -1,14 +1,16 @@
-# Brainstorm for Course Project
+# Course Project: Brainstorm
 
 > Spring 2017 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
-> Instructor: Bo Zhao | TA: Kyle Hogrefe | Location: 210 Wilkinson | Time: Thursday 18-19:50pm
+> Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @347 Strand
 >
+> TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu| Office Hours: TBD @257 Wilkinson
 
-Welcome to Geog 4/572! The first lab session helps you get familiar with the lab (Digital lab @OSU), the software setup, and also illustrates some examples of geovisualizations, and help you brainstorm the geovisualization for the course project. 
+Welcome to Geog 4/572: Geovisual Analytics! In this course, you will learn the theories on geovisualization, some advanced geovisual analytical methodologies, and then work collaboratively on a real-world problem using geovisual analytical tools. This handout starts with an brief introduction to the lab (Digital lab @OSU) and the software setup. To find the geovisualization of your interests and the topic for the course project, this handout also lists some typical geovisualizations and some potential topics. Students are expected to submit their homework by the noon April 5th.
 
 - Get to know the Digital Lab @ OSU.
-- Get familiar with some typical geovisualization via trendy examples.
+- Get familiar with the major types of geovisualization via trendy examples.
+- Reflect on which specific geovisual analytical method(s) are of your interests. 
 
 ## 1. Introduction
 
@@ -138,7 +140,7 @@ The use of isoline maps
 
 Please pay attention to how social network is implemented to visualize connectivity.
 
-## 3\. Project Topics (TBD)
+## 3\. Project Topics (TBD...)
 
 This section lists some general topics for the course project. 
 
@@ -165,9 +167,9 @@ The purpose of this handout is to help you brainstorm and identify the geovisual
 
 (1) **a url link of the geovisualization** to canvas;
 
-(2) a short description of the specific geovisual analytical skills you are interested;
+(2) a short description of the specific geovisual analytical skills you are interested; and 
 
-(3) In addition, you can also talk about the potential topics you would like to work on. **Think bold!** However, in the meantime, this course is more about honing the geovisual analytical skills other than concentrating on a specific topic. 
+(3) you can also list the potential topics you would like to work on. **Think bold!** In the meantime, please keep in mind that this course is more about honing the geovisual analytical skills other than concentrating on a specific topic. 
 
 **In the lecture this Thursday (4/6)**, you are required to present one geovisualization of your interest to the class.  You should submit the homework **by noon April 5th**.
 
