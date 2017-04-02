@@ -67,3 +67,7 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 - [ ] Presentation
 
 ## RESOURCES
+
+1\. [Student Project Gallery of GEOG 371 (2017 Winter)](http://cdn.rawgit.com/jakobzhao/project_gallery/master/index.html)
+
+2\. [Storymap.js - a map storytelling library](https://github.com/jakobzhao/storymap)
