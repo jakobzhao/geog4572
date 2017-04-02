@@ -1,6 +1,6 @@
 | **WK**    | **LECTURE  (T)**                         | **LAB (T)**                              | **LECTURE(R)**                           | **PROJECT**                              |
 | --------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| **Wk 1**  | [Intro to GeoViz](wk01/readm.md)         | Brainstorm                               | Geovisualization Presentation            | Introduction                             |
+| **Wk 1**  | [Intro to GeoViz](wk01/readme.md)         | Brainstorm                               | Geovisualization Presentation            | Introduction                             |
 | **Wk 2**  | Web Mapping Architecture  (Internet Structure, Map Services) | Web Programming Basics  (JS, HTML, CSS, and GitHub, etc.) | Web Mapping Basics (leaflet.js)          | Team-up                                  |
 | **Wk 3**  | Virtual Globe (Cesium.js)                | Interactive GeoViz   (geospatial data operation, storymap.js) | Layout (figure/ground, visual components) | Proposal                                 |
 | **Wk 4**  | [Symbolization](https://oregonstate.instructure.com/courses/1635650/pages/map-client-ii-map-events-and-mashup) (Illustrator, Icons) | Cont’d   (Interface  Design)             | Color                                    | Sketch & Project Summary                 |
