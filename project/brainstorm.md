@@ -46,7 +46,7 @@ Esri Story Maps let you combine authoritative maps with narrative text, images, 
 
 ![](img/river-reborn.png)
 
-Please pay attention to how the author uses the 2D and 3D maps, and the multi-media.
+Please pay attention to how the author uses the 2D map, 3D virtual environment and multi-media (e.g., video, images, etc.).
 
 **[California's Getting Fracked](http://www.facesoffracking.org/data-visualization/)**
 
@@ -64,21 +64,21 @@ Please pay attention to the use of map elements, and how the window scrolling be
 
 ![](img/noise_compaint.png)
 
-How virtual globe is used to show thematic features.
+Please pay attention to how virtual globe is used to demonstrate thematic features.
 
 **[Cesium-VR](https://github.com/NICTA/cesium-vr)**
 
 ![](img/vr-cesium.png)
 
-The use of Virtual Reality in your geovisualization. In addition, please think about how can we use the map and 3d model collected by UAV to make geovisualizations.
+Enable the geovisualization with the capability of virtual reality. Also, please reflect on how to overlay map and 3d model collected by UAV on to a geovisual application.
 
-### 2.3 Spatial data platform
+### 2.3 Spatial Data Platform
 
 **[National Map of Australia](http://nationalmap.gov.au/)**
 
 ![](img/terria.png)
 
-please pay attention to the use of virtual globe, and how different types of geospatial data (especially **maps made by drone**) are overlain in the same visualization environment. 
+please pay attention to the use of virtual globe, and how different types of geospatial data (especially **maps made by UAV**) are overlain in the same visualization environment. 
 
 ### 2.4 Data-driven Geovisualization
 
@@ -86,13 +86,13 @@ please pay attention to the use of virtual globe, and how different types of geo
 
 ![](img/stweet.png)
 
-Please pay attention to how different types of data are mashed up. 
+Please pay attention to how heterogeneous types of data are mashed up. 
 
 **[Trendsmap](img/trendsmap.png)**
 
 ![](img/trendsmap.png)
 
-Geo-tagged tweets are real-timely collected and stored in a remote database, a `word cloud` of geo-tagged hashtag are visualized. Please reflect on the variety dimension of real-world issues. Can we clearly describe a phenomena merely based on one type of geovisualization?
+Geo-tagged tweets are real-timely collected and stored in a remote database, a **word cloud** of geo-tagged hashtags are visualized. Please reflect on the multiple dimensions of a real-world issue. Can we clearly describe a phenomena merely based on one type of geovisual analytical method?
 
 **[Climate Proxies Finder](http://climateproxiesfinder.ipsl.fr/)**
 
@@ -100,7 +100,7 @@ Geo-tagged tweets are real-timely collected and stored in a remote database, a `
 
 > This application allows you to select different paleo-oceanographic proxies collected at LSCE according to various dimensions (spatial position, depth, age, archive, material type and chronological information).
 
-Please pay attention to how different types of data are interacted.
+One data source, and multiple visual analytical ways.
 
 **[Global temporal change](http://blogs.reading.ac.uk/climate-lab-book/files/2016/05/spiral_optimized.gif)**
 
@@ -110,7 +110,7 @@ Please pay attention to how different types of data are interacted.
 
 ![](img/electric-generation.png)
 
-Pay attention to the use of infographics.
+Connect the idea of infographics with the data-driven visualization.
 
 ### 2.5 Advanced Geovisual Analytics
 
@@ -120,19 +120,19 @@ Pay attention to the use of infographics.
 
 > In this map, geography is distorted so that each country is **sized according to its economic output** in 2012. The countries are colored by their rate of growth; more established economies tend to grow more slowly.
 
-Pay attention to the use of cartogram.
+The use of cartogram.
 
 **[TrumpLand vs. Clinton Archipelago](http://www.vividmaps.com/2016/12/trumpland-and-clinton-archipelago.html)**
 
 ![](img/trumpland.png)
 
-The use of isoline maps
+The use of isoline maps.
 
 **[Migrations Map](http://migrationsmap.net/#/COD/arrivals)**
 
 ![](img/migrationmap.png)
 
-**[Small Arms and Ammunition - Import & exports]**
+**[Small Arms and Ammunition - Import & exports](https://armsglobe.chromeexperiments.com/)**
 
 ![](img/firearms-import.png)
 
@@ -140,11 +140,11 @@ The use of isoline maps
 
 ![](img/graph-history-phil.png)
 
-Please pay attention to how social network is implemented to visualize connectivity.
+Please pay attention to how (social) network is implemented to visualize connectivity.
 
 ## 3\. Project Topics (TBD...)
 
-This section lists some general topics for the course project. 
+This section lists some potential topics for the course projects. 
 
 ### 3.1 Global Water
 
@@ -165,7 +165,7 @@ The MIT Media Lab Disobedience Award seeks to highlight effective, responsible, 
 
 ## 4\. Homework
 
-The purpose of this handout is to help you brainstorm and identify the geovisualization you would like to work on in this term. Regarding the homework, please submit a word document, it should contain 
+The purpose of this handout is to help you brainstorm and identify the geovisualization you would like to work on. Regarding the homework, please submit a word or pdf document to canvas, it should contain 
 
 (1) **a url link of the geovisualization**;
 
