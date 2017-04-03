@@ -10,7 +10,7 @@
 
 Welcome to Geog 4/572: Geovisual Analytics! In this course, you will learn the theories on geovisualization, some advanced geovisual analytical methodologies, and then work collaboratively on a real-world problem using geovisual analytical tools. This handout starts with an brief introduction to the lab (Digital lab @OSU) and the software setup. To find the geovisualization of your interests and the topic for the course project, this handout also lists some typical geovisualizations and some potential topics. Students are expected to submit their homework by the noon April 5th.
 
-- Get to know the Digital Lab @ OSU.
+- Get to know the Digital Earth Lab @ OSU.
 - Get familiar with the major types of geovisualization via trendy examples.
 - Reflect on which specific geovisual analytical method(s) are of your interests. 
 
