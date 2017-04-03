@@ -8,13 +8,13 @@
 >
 > Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3). Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
-Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, you will learn the theories on geovisualization, advanced geovisual analytical methodologies, and then work collaboratively on a real-world problem using geovisual analytical tools. There is no required text. Required papers and online materials will be available on the course website. Students must complete required reading assignments before attending the corresponding lecture. In-class quizzes will cover the content of the reading assignments. PDF articles are provided.
+Welcome to Geog 4/572: Geovisual Analytics :gift_heart:! In this course, you will learn the theories on geovisualization, advanced geovisual analytical methodologies, and then work collaboratively on a real-world problem using geovisual analytical tools. There is no required text. Required papers and online materials will be available on the course website. Students must complete required reading assignments before attending the corresponding lecture. In-class quizzes will cover the content of the reading assignments. PDF articles are provided.
 
 ## SYLLABUS
 
 |  **WK**   | **LECTURE  (T)**                         | **LAB (T)**                              | **LECTURE(R)**                           | **PROJECT**                              | READING                                  |
 | :-------: | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| **Wk 1**  | [Intro to GeoViz](wk01/readme.md)        | [Brainstorm](project/brainstorm.md)      | Geovisualization Presentation            | `Introduction`                           | [W3School tutorial](wk01/readme.md)      |
+| **Wk 1**  | [Intro to GeoViz](wk01/wk01_1_lec01/wk01_1_lec01.pdf) | [Brainstorm](project/brainstorm.md)      | Geovisualization Presentation            | `Introduction`                           | [W3School tutorial](wk01/readme.md)      |
 | **Wk 2**  | Web Mapping Architecture  (Internet Structure, Map Services) | Web Programming Basics  (JS, HTML, CSS, and GitHub, etc.) | Web Mapping Basics (leaflet.js)          | `Team-up`                                | [Leaflet.js tutorial](wk02/readme.md)    |
 | **Wk 3**  | Virtual Globe (Cesium.js)                | Interactive GeoViz   (geospatial data operation, storymap.js) | Layout (figure/ground, visual components) | `Proposal`                               | [Cesium.js tutorial, Web design principles](wk03/readme.md) |
 | **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface  Design)             | Color                                    | `Sketch` & `Project Summary`             | [Principles of Color](wk04/readme.md)    |
