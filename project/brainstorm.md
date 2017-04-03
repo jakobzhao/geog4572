@@ -148,7 +148,9 @@ This section lists some potential topics for the course projects.
 
 ### 3.1 Global Water
 
-### 3.2 Narco-Trafficking
+### 3.2 PPGIS for King County residents
+
+I have a fairly large PPGIS dataset showing favorite outdoor recreation places for King County residents (Seattle, Wa area).  I have one shapefile containing 1700 points and attribute data:  location name, types of activities engaged in at the location, duration of the visit, frequency of visits, distance from participants' cross-streets to the outdoor location.  I also have another shapefile (approx. 475 points) of participants' cross-streets, demographic data and survey information (mostly regarding residential location preferences). I would love to be able to show this information in a better way than just loads of points on a map.  For example, illustrating high diversity activity areas, high diversity of respondents in particular location areas, etc.
 
 ### 3.3 Sea Level Rise and Real Estate Market
 
