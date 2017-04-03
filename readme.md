@@ -31,7 +31,7 @@ You are expected to attend lectures twice a week. Most lectures have time allott
 
 Attending lectures and labs is important since these times provide you with access to the instructor and to other students. Keep in mind that not all lab assignment will be possible to finish in the allotted class time. Students will be expected to work on assignments outside of class during posted Lab hours. You are welcome to discuss the exercises amongst yourselves, in fact this is encouraged, but the final product you hand in must be your own work (see Academic Integrity Policy below).
 
-1\. [Intro to GeoViz](wk01/readme.md)
+1\. [Intro to GeoViz](wk01/wk01_1_lec01/wk01_1_lec01.pdf)
 
 2\. [Web Mapping Architecture]()
 
