@@ -150,11 +150,9 @@ This section lists some potential topics for the course projects.
 
 The project would help the Benton County Thriving Communities Council (TCC) interpret,visualize, and present to the public results from their 2040 TCI survey ([https://www.co.benton.or.us/2040](https://www.co.benton.or.us/2040)) by building on the work done by another OSU course (Geog451/551: Planning principles and practices for resilient communities).  From September 2016 through March 2017 the TCC conducted the 2040 TCI survey through a web survey and community events,which asked three questions (paraphrased):
 
-1.      What do you like about Benton County?
-
-2.      What is your vision for Benton County in 2040?
-
-3.      What needs to happen to accomplish your vision?
+- What do you like about Benton County?
+- What is your vision for Benton County in 2040?
+- What needs to happen to accomplish your vision?
 
 The survey garnered over 5000 responses which have been “coded” into over 25 community value categories, such as “Economy/Business”, “Localism”,“Transportation/Mobility”, and “Biking/Walking”.  During winter term 2017, Dr. Tilt led the Geog451/551 students in creating development goals from the 2016 survey responses in these 4 “coded categories” and create a data model (using ArcGIS Model Builder) to show how these development priorities might play out across Benton County.  The model we came up with(full disclosure) is a really cool Multiple Utility Analysis (MUA) that conducts weighted analyses of raster grids representing different development priorities as the data flows upward from sub objectives to the SOI goal (Figures1 and 2).  The model will be used as template by the TCC as they move forward to create development goals for the county using all coded categories from the (now) complete TCI survey results.  
 
