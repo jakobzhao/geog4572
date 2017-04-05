@@ -1,10 +1,10 @@
 > Spring 2017 | Geography 472/572 |Geovisualization: Geovisual Analytics
 >
-> Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @347 Strand
+> Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @ strand 347
 >
-> TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu | Office Hours: TBD @257 Wilkinson
+> TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu| Office Hours: 1-2pm MF @ WLKN 257 and 2-4pm W @ WLKN 210
 >
-> Lecture: TR 9-9:50am @368 LINC | Lab:  T 6-7:50pm @210 Wilkinson
+> Lecture: TR 9-9:50am @368 LINC | Lab:  T 6-7:50pm @WLKN 210
 >
 > Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3). Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
