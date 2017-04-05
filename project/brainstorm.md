@@ -2,9 +2,9 @@
 
 > Spring 2017 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
-> Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @347 Strand
+> Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @ strand 347
 >
-> TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu| Office Hours: TBD @257 Wilkinson
+> TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu| Office Hours: 1-2pm MF @ WLKN 257 and 2-4pm W @ WLKN 210
 >
 > Assigned: 04/04/2017 | Due: `04/05/2017 by Noon ` | Points Available = 10
 
@@ -146,7 +146,7 @@ Please pay attention to how (social) network is implemented to visualize connect
 
 This section lists some potential topics for the course projects. 
 
-### 3.1 **Benton County Thriving Communities Initiative (TCI) 2040: Visualizing Community Values and Development Goals**
+### 3.1 Benton County Thriving Communities Initiative (TCI) 2040: Visualizing Community Values and Development Goals (Jenna Tilt)
 
 The project would help the Benton County Thriving Communities Council (TCC) interpret,visualize, and present to the public results from their 2040 TCI survey ([https://www.co.benton.or.us/2040](https://www.co.benton.or.us/2040)) by building on the work done by another OSU course (Geog451/551: Planning principles and practices for resilient communities).  From September 2016 through March 2017 the TCC conducted the 2040 TCI survey through a web survey and community events,which asked three questions (paraphrased):
 
@@ -158,11 +158,11 @@ The survey garnered over 5000 responses which have been “coded” into over 25
 
 Your mission, should you choose this project, will be to develop an interface through which the public can interact with the model (for example: choosing different development priorities to compare, changing weighted MUA values), to further investigate/display the 2040TCI Survey Data to analyze spatial patterns of responses, and to get as innovative as possible with other ways to visualize the survey data.  Last term the TCC was great to work with and I got the sense that both our expertise and effort were truly needed and appreciated.   This project would be a great way for us (individuals, class, OSU) to give back to our community and positively influence its future. (For more info, please download the [whole document](assets/tcc.pdf))
 
-### 3.2 PPGIS for King County residents
+### 3.2 PPGIS for King County residents (Jenna Tilt)
 
 I have a fairly large PPGIS dataset showing favorite outdoor recreation places for King County residents (Seattle, Wa area).  I have one shapefile containing 1700 points and attribute data:  location name, types of activities engaged in at the location, duration of the visit, frequency of visits, distance from participants' cross-streets to the outdoor location.  I also have another shapefile (approx. 475 points) of participants' cross-streets, demographic data and survey information (mostly regarding residential location preferences). I would love to be able to show this information in a better way than just loads of points on a map.  For example, illustrating high diversity activity areas, high diversity of respondents in particular location areas, etc.
 
-### 3.3 Sea Level Rise and Real Estate Market
+### 3.3 Sea Level Rise and Real Estate Market (David Wrathall)
 
 
 Norfolk, Virginia is ground-zero for climate-induced sea level rise. It will be inundated sooner and greater magnitudes than any other region of the United States, beginning before the end of the 21st century.  Sea level rise risk, more than any other climate hazard, has the greatest potential to disrupt global society. We will visualize the consequences of sea level rise to Norfolk, VA using 1) current and historical home price data on more than 60,000 homes in Norfolk, VA; 2) multiple flood risk mapping products from various US agencies; 3) sea level rise scenarios for the 21st century; and 4) county-to-county migration data. As rising seas and increased frequency of sea level extremes render coastal areas uninhabitable and unavailable for agricultural and industrial uses, affected populations will migrate elsewhere. Forty percent of the global population – nearly 3 billion people – are concentrated in settlements within 100km of the coast, much of that on islands and on fertile low-lying flood plains and river deltas. The United States reflects this tendency of concentration on the coastlines with roughly 50% of the population in coastal counties. This means that as Norfolk, VA becomes uninhabitable, cities like Atlanta, where those populations are most likely to seek housing, jobs and public services, will encounter substantial planning and policy problems. Extreme sea levels associated with Hurricane Katrina and the resulting migration from New Orleans clearly demonstrated that the institutions that we would rely on for disaster preparedness, response and long-term adaptation planning around sea level rise are woefully inadequate. Moreover, the consequences of this event were relatively minor in comparison to the scope of those anticipated from future sea level rise. We will make this case with visualizations from Norfolk, Virginia.
@@ -177,6 +177,12 @@ What does this mean? Societies and institutions lean toward order and away from 
 With this award, we honor work that impacts society in positive ways, and is consistent with a set of key principles. These principles include non-violence, creativity, courage, and taking responsibility for one’s actions. This disobedience is not limited to specific disciplines; examples include scientific research, civil rights, freedom of speech, human rights, and the freedom to innovate.
 
 The MIT Media Lab Disobedience Award seeks to highlight effective, responsible, ethical disobedience across disciplines, and around the world. Disobedience Award objectives are to build awareness and support of disobedience-robust work being done, and to promote role models for younger people.
+
+### 3.5 The Network of Geographic thoughts (Larry Becker)
+
+The group of geography graduate students who took the History & Philosophy of Geography course last fall seemed especially interested.  You could show them this graphic of the history of philosophy and ask them if they have an interest in pursuing a graphic related to geographic thought. If they are interested, I'd be happy to meet with them.
+
+> please refer to [A Graph of the History of Philosophy](http://www.designandanalytics.com/philosophers-gephi/)
 
 ## 4\. Homework
 
