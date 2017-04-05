@@ -4,7 +4,7 @@
 >
 > TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu| Office Hours: 1-2pm MF @ WLKN 257 and 2-4pm W @ WLKN 210
 >
-> Lecture: TR 9-9:50am @368 LINC | Lab:  T 6-7:50pm @WLKN 210
+> Lecture: TR 9-9:50am @LINC 368 | Lab:  T 6-7:50pm @WLKN 210
 >
 > Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3). Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
