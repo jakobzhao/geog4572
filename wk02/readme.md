@@ -1,8 +1,11 @@
 # Reading List for Week 2
 
-This week, we will focus on a popular web map library - leafletjs.  In the meantime, I would encourage you still work on the web programming basics mentioned in the readlist of week one, especially javascript and jquery.  Again, the first two weeks is quite important in terms of making interactive geovisualizations.
 
-In terms of Learning Javascript through W3Schools, the following concepts are more important:
+[1] leafletjs (201X) Leaflet Quick Start Guide, retrieved from December 28, 2016 from http://leafletjs.com/examples/quick-start/
+
+This week, we will focus on a popular web map library - leafletjs.  In the meantime, I would encourage you still work on the web programming basics mentioned in the readlist of week one, especially javascript and jquery. Again, the first two weeks is quite important with regards to making interactive geovisualizations in the rest of the term.
+
+Regarding learning Javascript through W3Schools, the following concepts are more important:
 
 - JS Home
 - JS Introduction
@@ -29,7 +32,3 @@ In terms of Learning Javascript through W3Schools, the following concepts are mo
 - JS Hoisting
 - JS Strict Mode
 - JS Style Guide
-- JS Best Practices
-
-
-[1] leafletjs (201X) Leaflet Quick Start Guide, retrieved from December 28, 2016 from http://leafletjs.com/examples/quick-start/
