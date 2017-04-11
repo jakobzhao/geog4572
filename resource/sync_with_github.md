@@ -1,86 +1,69 @@
-# Synchronize Project Repository with GitHub
+# Synchronize Course Repository with GitHub
 
 > Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
 >
 > Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: WLKN 210 | Time: Tuesday 18-19:50am
 
-This practical exercise will help you make a storymap using an open-source library `storymap.js` and share it to GitHub.
+GEOG 472/572 uses GitHub to distribute course materials. GitHub is designed as a project repository for teamwork, it can be also used to manage projects. This tutorial will allow you quickly walk through the way how to download and sync the latest version of course material.
 
-## 1. Storymap
-
-With this storymap exercise, you are asked to introduce something about Corvallis or Oregon which you feel interested in. For example, the topic can vary from your favorite restaurants in Corvallis, your favorite bookstores in Town, to the snow mountains in Oregon, and etc.
-
-In Practical Exercise 4, you have made a Corvallis basemap and web map & feature services as the side products. You may use them to enrich the storymap.
-
-To make the storymap, you need to use a web map library `storymap.js` at [https://github.com/jakobzhao/storymap](https://github.com/jakobzhao/storymap). There is a detailed tutorial on the [front page](https://github.com/jakobzhao/storymap) of that library.  The handouts for lecture 15, 16, 17 also help.
-
-Your storymap will at least have the following features:
-
-- At least five scenes. The content of the scenes can be obtained from Yelp or Wikipedia, or even writing up by yourself. If you would like to use an external source, please do credit it in the `about page`; (**15 POINTS**)
-- At least two types of thematic layers (to name a few, tileLayer, geojson/WFS Layer, OSM Layer, WMS Layer and etc.). These thematic layers can be made by yourself or included from other map providers; (**15 POINTS**)
-- An about page; and (**5 POINTS**)
-- A favicon;
-- A social media button to share the storymap to Facebook. (**5 POINTS**)
-
->  **Note**: If you can add some extra features other than the ones I listed above, you will earn some bonus credits (**10 POINTS maximum**).  
-
-## 2. GITHUB
-
-Once you create the storymap application, I encourage you proofread and debug it several times in your local environment, and solicit your classmate(s) for comments. If you believe your storymap application is in good shape, this section will guide you to share your storymap as well as its code on GitHub.
-
-2.1\. You will need a GitHub account. Sign up at [https://github.com/](https://github.com/).
+1\. Above all, You will need a GitHub account. Sign up at [https://github.com/](https://github.com/).
 
 ![](../img/github-signup.png)
 
-2.2\. Once you have signed up, please log into [github.com](github.com), create a new repository by typing [https://github.com/new](https://github.com/new) in the url input box of your browser.
+2\. Then, you will synchronize course material from the github. Please make sure the computer to store the course material has installed a shell program `git`. 
 
-![](../img/new-repository.png)
+Type `git` in command prompt or terminal to see whether `git` is installed or not. If not, you need follow an instruction at https://git-scm.com/book/en/v2/Getting-Started-Installing-Git to install `git`. Usually, a Linux Server, such as your Google Cloud Server, has installed `git` by default. 
 
-2.3\. Name your repository, and check the `Initialize tis repository with a README` box. Then click the `Create repository` button to create an empty repository. You can always fill in the repository `Description` later. ![](../img/create-new-repository.png)
+> **Git** is a version control system (VCS) for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for software development, but it can be used to keep track of changes in any files. Git was created by **Linus Torvalds** in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.
+>
+> **GitHub** is a web-based Git or version control repository and Internet hosting service. GitHub offers both plans for private and free repositories on the same account which are commonly used to host open-source software projects. As of April 2016, GitHub reports having more than 14 million users and more than 35 million repositories, making it the largest host of source code in the world.
 
-2.4\. Then, you will enter the front page of the new github repository.  Click the `Upload files` button, which will lead you to the data uploading page.
+If `git` is properly installed, type `git` in command prompt or terminal will show the following information on the window. 
 
-![](../img/front_page.png)
+![](../img/git-command.png)
 
-2.5\. In the uploading page, you can either drag&drop or choose your files to upload to github. Once the uploading is completed, please press the `Commit Changes` button.
+3\. The course material locates at [https://github.com/jakobzhao/GeovisualAnalytics](https://github.com/jakobzhao/GeovisualAnalytics). Please click the `Clone or download` button.
 
-![](../img/drag_drop_to_upload_files.png)
+![](../img/github-interface.png)
 
-2.6\. Then, the post-processing may take a few minutes to complete. **If you happen to find a bug in the codes, you can always correct it by uploading a new version via `Upload file` button.**
 
-2.7\. As you may be aware of, you have initiated a `README.md` file in the root directory. This `README.md` file is in a markdown format, you can edit a markdown file locally, and upload it to GitHub later. Make sure this file is named after `README.md`. Only then, it can be shown as the front page of the repository. Feel free to edit this file, leave some introduction to the project and/or a short tutorial. You might also want to credit the geospatial data, tools and map libraries which you have used for this storymap. It would be even better if you can credit this course `GEOG 371: Web Mapping`.
 
-![](../img/readme.png)
+Then, you will find the clone location for today's material. 
 
-2.8\. One magic feature of GitHub is, it can preview your html files. If your web map is a pure client based web application, you might view the application smoothly in your browser. For example, in my storymap repository at [https://github.com/jakobzhao/storymap/](https://github.com/jakobzhao/storymap/), there is a `index.html` file in the root directory, and a `template.html` under the `dist` subdirectory.
-
-you can follow the url syntax below to visualize html files in github repository. 
-
-```http
-http://cdn.rawgit.com/<git username>/<git repostory name>/master/<html path>
+```url
+https://github.com/jakobzhao/GeovisualAnalytics.git
 ```
 
- Accordingly, the above two html pages can be previewed by the following urls respectively:
+4\. Access your Server via `SSH` if it is remotely deployed, or via Terminal or Command Prompt if it is deployed locally. If you are on a Linux Server, you can create and enter a workspace using the following codes:
 
-```http
-http://cdn.rawgit.com/jakobzhao/storymap/master/index.html
+```powershell
+cd ~
+mkdir workspace
+cd workspace
 ```
 
-```http
-http://cdn.rawgit.com/jakobzhao/storymap/master/dist/template.html
+5\. Navigate to your workspace by the command `cd`. If you do not have a working space, you can create one by `mkdir` command on Linux or Mac OSX, or create a directory manutally on Windows. In your working directory, please type the following command to synchronize the lecture material from GitHub.
+
+```powershell
+cd ~/workspace
+sudo git clone https://github.com/jakobzhao/GeovisualAnalytics.git
 ```
 
-2.9\. **You are required to add a link of the web application preview in the `README.md` file**. A link in markdown format is:`[a link title](the url link)`. In this way, you can generate a link like "[a link title](the url link)".
+![](../img/git-clone.png)
 
-Please take a quick look at the link of storymap demo at the [front page](https://github.com/jakobzhao/storymap) of the storymap repository. The code for the link (in the red box) is `[Major Cities of Oregon](http://cdn.rawgit.com/jakobzhao/storymap/master/index.html)`.
+After successfully synced the material, you will see them in a sub-directory named **GeovisualAnalytics**, which contains the course material. 
 
-![](../img/demo-links.png)
+```powershell
+├── img
+├── project
+├── resource
+├── wk01
+├── wk02
+├── LICENSE
+└── README.md
+```
 
-To sum up, for the GitHub session of this practical exercise, you will need to:
+6\. In order to view the course materials, you can download a markdown viewer. Here, we recommend **[Typora](https://typora.io/)**.  Typora is dedicated to process markdown files. It can browse, edit, and even convert markdown files to pdf or word documents.
 
-- Upload your storymap to GitHub. (**7 POINTS**)
-- In the `README.md` file, you need to at least *(a)* credit the web materials you have used, and *(b)* put a link of the storymap application for Instructor and TA to review. (**3 POINTS**)
+![](../img/typora.png)
 
-## 3. Deliverable
-
-Submit the url link of your storymap repository to **Canvas Dropbox**. On the assignment tab,  check the item of this PE, press the `Submit Assignment` button to submit your PE report. Please contact the instructor or TA if you have any difficulty.
