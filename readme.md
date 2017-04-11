@@ -49,7 +49,7 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
 - [ ] Web Programming Basics
     - [ ] [Install Webstorm on Personal PC/Mac](resource/install_webstorm.md)
     - [ ] [A Interactive Tutorial on Markdown](http://www.markdowntutorial.com/) and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-    - [ ] []
+    - [ ] [Synchronize Project Repository with GitHub](resource/sycn_with_github.md)
 - [ ] Interactive GeoViz
 
 
