@@ -1,11 +1,9 @@
 # Course Project: Brainstorm
 
-> Spring 2017 | Geography 4/572 | Geovisualization: Geovisual Analytics
+> Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
 >
-> Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @ strand 347
->
-> TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu| Office Hours: 1-2pm MF @ WLKN 257 and 2-4pm W @ WLKN 210
->
+> Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: LINC 368 | Time: Tuesday 18-19:50am
+
 > Assigned: 04/04/2017 | Due: `04/05/2017 by Noon ` | Points Available = 10
 
 Welcome to Geog 4/572: Geovisual Analytics! In this course, you will learn the theories on geovisualization, some advanced geovisual analytical methodologies, and then work collaboratively on a real-world problem using geovisual analytical tools. This handout starts with an brief introduction to the lab (Digital lab @OSU) and the software setup. To find the geovisualization of your interests and the topic for the course project, this handout also lists some typical geovisualizations and some potential topics. Students are expected to submit their homework by the noon April 5th.
