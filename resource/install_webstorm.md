@@ -19,6 +19,7 @@ To install WebStorm:
 ![](../img/conform_email_from_jetbrains.png)
 
 3\. ​ Download WebStorm (**note:** you might not want to download the the product pack.) and activate it with your registration info and Licnese ID.
+
 ![](../img/jetbrain_license.png)
 
 Above is a very brief tutorial on installing WebStorm. Let the Instructor or TA know if there are any question.
