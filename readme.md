@@ -61,8 +61,8 @@ The course project is a major component of this course. Students will be divided
 
 Graduate students in GEOG 572 are required to provide extra contributions to the course. A graduate student can choose either making a presentation related to the lecture topic or being responsible for coordinating the project. The projects are expected to have advanced interactive features, introductory pages and other additional materials. All the final projects are expected to publish online, and the codes are expected to be shared on GitHub to contribute to both the open source community and academia.
 
-- [ ] Introduction
-- [ ] [Brainstorm](project/brainstorm.md)
+- [X] Introduction
+- [X] [Brainstorm](project/brainstorm.md)
 - [ ] Team-up
 - [ ] Sketch
 - [ ] Project Summary
