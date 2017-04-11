@@ -101,7 +101,7 @@ Cesium is an open-source JavaScript library for world-class 3D globes and maps. 
 
 Storymap.js is a javascript map library to tell a story using web maps. Using this library, you can create a map that follows a storyline. For each paragraph, you can place a map alongside it, and manipulate the map by zooming, panning, and even adding more thematic layers. This map library follows the concept responsive design, meaning the stories can be shown on any Desktop or mobile devices. 
 
-### 3.2 Commercial
+### 3.2 Proprietary
 
 **Google Maps and Bing Maps APIs**
 
@@ -113,7 +113,7 @@ Microsoft's Bing Maps (link is external), another large commercial maps provider
 
 **ArcGIS APIs**
 
-Esri has created web mapping APIs that fit into its ArcGIS platform, some of which are relatively rich in function compared to the Google Maps API and many of the FOSS APIs. The APIs support multiple languages and platforms, such as JavaScript, Flex, Silverlight, iOS, and Android. In theory, they are roughly equal in functionality, although, in practice, they have matured and thrived at different levels. The ArcGIS API for JavaScript (link is external) is one of the most fully featured and actively developed of these APIs.
+Esri has created web mapping APIs that fit into its ArcGIS platform, some of which are relatively rich in function compared to the Google Maps API and many of the open source APIs. The APIs support multiple languages and platforms, such as JavaScript, Flex, Silverlight, iOS, and Android. In theory, they are roughly equal in functionality, although, in practice, they have matured and thrived at different levels. The ArcGIS API for JavaScript (link is external) is one of the most fully featured and actively developed of these APIs.
 
 The ArcGIS APIs are primarily designed to work with web services that you have published using ArcGIS Online, Portal for ArcGIS (link is external), or ArcGIS for Server. 
 
