@@ -15,7 +15,7 @@ Welcome to Geog 4/572: Geovisual Analytics :gift_heart:! In this course, you wil
 |  **WK**   | **LECTURE  (T)**                         | **LAB (T)**                              | **LECTURE(R)**                           | **PROJECT**                              | READING                                  |
 | :-------: | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
 | **Wk 1**  | [Intro to GeoViz](wk01/wk01_1_lec01/wk01_1_lec01.pdf) | [Brainstorm](project/brainstorm.md)      | Geovisualization Presentation            | `Introduction`                           | [W3School tutorial](wk01/readme.md)      |
-| **Wk 2**  | [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md) | Web Programming Basics  (JS, HTML, CSS, and GitHub, etc.) | Web Mapping Basics (leaflet.js)          | `Team-up`                                | [Leaflet.js tutorial](wk02/readme.md)    |
+| **Wk 2**  | [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md) | [Web Programming Basics  (JS, HTML, CSS, and GitHub, etc.)](wk02/wk02_2_lab02/readme.md) | Web Mapping Basics (leaflet.js)          | `Team-up`                                | [Leaflet.js tutorial](wk02/readme.md)    |
 | **Wk 3**  | Virtual Globe (Cesium.js)                | Interactive GeoViz   (geospatial data operation, storymap.js) | Layout (figure/ground, visual components) | `Proposal`                               | [Cesium.js tutorial, Web design principles](wk03/readme.md) |
 | **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface  Design)             | Color                                    | `Sketch` & `Project Summary`             | [Principles of Color](wk04/readme.md)    |
 | **Wk 5**  | Topography and Labelling  (Google font, Mapbox font) | Base Map Design:   (Mapbox)              | Data Interaction I (D3.js)               | `Design Scheme (Color, label, icon, and multimedia,  etc.)` | [Map Design Principles, D3.js tutorial](wk05/readme.md) |
@@ -46,12 +46,11 @@ Lab assignments are required to be submitted electronically to Canvas unless sta
 If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
 
 - [X] [Brainstorm](project/brainstorm.md)
-- [ ] Web Programming Basics
+- [ ] [Web Programming Basics](wk02/wk02_2_lab02/readme.md)
     - [ ] [Install Webstorm on Personal PC/Mac](resource/install_webstorm.md)
     - [ ] [A Interactive Tutorial on Markdown](http://www.markdowntutorial.com/) and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
     - [ ] [Synchronize Project Repository with GitHub](resource/sync_with_github.md)
 - [ ] Interactive GeoViz
-
 
 - [ ] Base Map Design
 
