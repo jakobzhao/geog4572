@@ -45,9 +45,11 @@ Lab assignments are required to be submitted electronically to Canvas unless sta
 
 If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
 
+- [X] [Brainstorm](project/brainstorm.md)
 - [ ] Web Programming Basics
-    - [Install Webstorm on Personal PC/Mac](resource/install_webstorm.md)
-    -
+    - [ ] [Install Webstorm on Personal PC/Mac](resource/install_webstorm.md)
+    - [ ] [A Interactive Tutorial on Markdown](http://www.markdowntutorial.com/) and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+    - [ ] []
 - [ ] Interactive GeoViz
 
 
