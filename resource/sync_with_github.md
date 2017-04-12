@@ -2,7 +2,9 @@
 
 > Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
 >
-> Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: WLKN 210 | Time: Tuesday 18-19:50am
+> Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @ strand 347
+>
+> TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu| Office Hours: 1-2pm MF @ WLKN 257 and 2-4pm W @ WLKN 210
 
 GEOG 472/572 uses GitHub to distribute course materials. GitHub is designed as a project repository for teamwork, it can be also used to manage projects. This tutorial will allow you quickly walk through the way how to download and sync the latest version of course material.
 
@@ -26,8 +28,6 @@ If `git` is properly installed, type `git` in command prompt or terminal will sh
 
 ![](../img/github-interface.png)
 
-
-
 Then, you will find the clone location for today's material. 
 
 ```url
@@ -49,6 +49,8 @@ cd ~/workspace
 sudo git clone https://github.com/jakobzhao/GeovisualAnalytics.git
 ```
 
+> Since Unix, Linux and Mac OSX are built on a higher user authority system, you need to give the user a superuser priviliage when you run `git` command, so the `sudo` command is needed if you are working on Unix, Linux or Mac OSX systen. If you are working on a windows system, usually you do not need to add `sudo` in the front. You can simply type `git clone https://github.com/jakobzhao/GeovisualAnalytics.git`.
+
 ![](../img/git-clone.png)
 
 After successfully synced the material, you will see them in a sub-directory named **GeovisualAnalytics**, which contains the course material. 
@@ -67,3 +69,19 @@ After successfully synced the material, you will see them in a sub-directory nam
 
 ![](../img/typora.png)
 
+7\. The instructor and TA will consistenly update the course material repository. In order to ensure you are reading the latest version of the lecture or lab handouts, you need to synchronize the course material, especially before class. To do that, you will enter the course directory, checkout the current version of the course repository and then pull the entire repository. Once you execute the pull command, the command prompt or the terminal will notify you the recent updates about the course material. Here is the shell command to update the course material:
+
+```powershell
+cd ~/workspace
+cd GeovisualAnalytics
+sudo git checkout
+sudo git pull
+```
+
+> Again, you do not need to add `sudo` if you are on a windows operating system.
+
+![](../img/git-pull.png)
+
+If you open the downloaded course material with webstorm, you can update to the latest course material by clicking the `Update Project` Button.
+
+![](../img/update_project.png)
