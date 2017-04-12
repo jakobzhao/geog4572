@@ -48,7 +48,7 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
 - [X] [Brainstorm](project/brainstorm.md)
 - [ ] [Web Programming Basics](wk02/wk02_2_lab02/readme.md)
     - [ ] [Install Webstorm on Personal PC/Mac](resource/install_webstorm.md)
-    - [ ] [A Interactive Tutorial on Markdown](http://www.markdowntutorial.com/) and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+    - [ ] [An Interactive Tutorial on Markdown](http://www.markdowntutorial.com/) and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
     - [ ] [Synchronize Project Repository with GitHub](resource/sync_with_github.md)
 - [ ] Interactive GeoViz
 
