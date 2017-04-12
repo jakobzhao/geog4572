@@ -1,4 +1,4 @@
-**Spring** 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
+> Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
 >
 > Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @ strand 347
 >
