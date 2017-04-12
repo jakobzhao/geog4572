@@ -182,6 +182,14 @@ The group of geography graduate students who took the History & Philosophy of Ge
 
 > please refer to [A Graph of the History of Philosophy](http://www.designandanalytics.com/philosophers-gephi/)
 
+### 3.6 Forest Project
+
+Paulo and Tyler have been discussing how to incorporate more visualization into our project (as opposed to data serving). We are interested in the potential for using UAV imagery and 3D photography.
+
+Another geovisual concept we are interested in is 4-D Statistical Surfaces. Please take a quick look at[ these figures](http://ieeexplore.ieee.org/document/6837425/all-figures) from a publication authored by Helen Jenny of the former Cartography Lab here at OSU. We could use this method to map many forest-related variables,[ such as these](https://lemma.forestry.oregonstate.edu/data/plot-database), which were created by the LEMMA Lab here at OSU.  
+
+Some of the functionality of the existing ["LTVis" website](http://ltweb.ceoas.oregonstate.edu/ltvis/) and discuss the 4-D Statistical Surfaces.
+
 ## 4\. Homework
 
 The purpose of this handout is to help you brainstorm and identify the geovisualization you would like to work on. Regarding the homework, please submit a word or pdf document to canvas, it should contain 
