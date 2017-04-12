@@ -58,7 +58,7 @@ Please pay attention to the use of map elements, and how the window scrolling be
 
 ![](img/world-pop.png)
 
-**[Noise Complaints in New York City](rawgit.com/jakobzhao/noise_complaints/master/index.html)**
+**[Noise Complaints in New York City](http://rawgit.com/jakobzhao/noise_complaints/master/index.html)**
 
 ![](img/noise_compaint.png)
 
