@@ -34,14 +34,15 @@ Standard protocol is that a file named **index** is what will be provided by def
     │  index.html
     ├─css
     ├─img
-    └─js
+    ├─js
+    └─assets
 ```
 
 You can have supplemental files, such as images, style files, scripts, and other items in your root directory alongside the `index.html` standing alone or in subdirectories. You can see in my structure I have `img` for holding images, `css` for holding style files, `js` for scripts, and usually a folder named `assets` or `data` is used for holding miscellaneous items. When a browser gets to my files, they will be provided the `index.html` file.
 
 To host a web application, you need to move the codes and the supplemental files to the server. For most of the lecture and lab demos, your local computer/laptop acts as a server, then the files (codes and supplemental files) should be dragged and saved in a specific folder (e.g., a folder named "www") which will be the hosting place of the server. If the server is a remote computer or in the cloud (e.g., the google cloud platform), you can use an `FTP` connected to your hosting space, or drag and drop into your www folder. 
 
-*How is everything related?*
+> ***How is everything related?***
 
 ![](img/environment.png)
 
@@ -372,7 +373,7 @@ CSS follows the DOM model, with styles applied to elements higher in the DOM app
 There are two general rules.
 
 - CSS defined last in your document will supersede CSS set on a selector earlier in your document.
-- The more specific selector will override the less specific selector. For example, a style set on the body selector will be overridden by a style set on an element within the body, such as one by ID.
+- The more specific selector will override the less specific selector. For example, a style set on the body selector will be overridden by a style set on an element within the body, such as one by `ID`.
 
 
 ### Properties and Values
