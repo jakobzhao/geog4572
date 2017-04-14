@@ -15,8 +15,8 @@ Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, y
 |  **WK**   | **LECTURE  (T)**                         | **LAB (T)**                              | **LECTURE(R)**                           | **PROJECT**                              | READING                                  |
 | :-------: | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
 | **Wk 1**  | [Intro to GeoViz](wk01/wk01_1_lec01/wk01_1_lec01.pdf) | [Brainstorm](project/brainstorm.md)      | Geovisualization Presentation            | [`Introduction`](project/intro.md)       | [W3School Tutorial](wk01/readme.md)      |
-| **Wk 2**  | [Web Mapping Types, Architecture, and Data](#webprogrambasics) | [Web Programming Basics  (JS, HTML, CSS, Markdown and GitHub, etc.)](wk02/wk02_2_lab02/readme.md) | [Web Mapping Basics (leaflet.js)](wk02/wk02_3_lec04/readme.md) | [`topics`](project/project_topics.md), `Team-up` | [Leaflet.js Tutorial](wk02/readme.md):new: |
-| **Wk 3**  | Virtual Globe (Cesium.js)                | Interactive GeoViz   (geospatial data operation, storymap.js) | Layout (figure/ground, visual components, bootstrap) | `Proposal`                               | [Cesium.js Tutorial, Web Design Principles](wk03/readme.md) |
+| **Wk 2**  | [Web Mapping Types, Architecture, and Data](#webprogrambasics) | [Web Programming Basics  (JS, HTML, CSS, Markdown and GitHub, etc.)](wk02/wk02_2_lab02/readme.md) | Web Mapping Basics (leaflet.js)          | [`Topics`](project/project_topics.md), `Team-up` | [Leaflet.js Tutorial](wk02/readme.md)    |
+| **Wk 3**  | Virtual Globe (Cesium.js)                | Interactive GeoViz   (geospatial data operation, storymap.js) | Layout (figure/ground, visual components, bootstrap) | `Proposal`                               | [Cesium.js Tutorial, Web Design Principles](wk03/readme.md) :new: |
 | **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface  Design)             | Color                                    | `Sketch` & `Project Summary`             | [Principles of Color](wk04/readme.md)    |
 | **Wk 5**  | Topography and Labelling  (Google font, Mapbox font) | Base Map Design:   (Mapbox)              | Data Interaction I (D3.js)               | `Design Scheme (Color, label, icon, and multimedia,  etc.)` | [Map Design Principles, D3.js tutorial](wk05/readme.md) |
 | **Wk 6**  | Data Interaction II                      | Cont’d                                   | Map Critique                             | `Revision`                               |                                          |
@@ -35,7 +35,7 @@ Attending lectures and labs is important since these times provide you with acce
 
 2\. [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md)
 
-3\. [Web Mapping Basics](wk02/wk02_3_lec04/readme.md)
+3\. [Web Mapping Basics]()
 
 ## LABS
 
