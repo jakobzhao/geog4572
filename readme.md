@@ -36,7 +36,7 @@ Attending lectures and labs is important since these times provide you with acce
 - [X] [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md)
 
 - [X] [Web Mapping Basics](wk02/wk02_3_lec04/readme.md)
-    - [ ] Extended Reading: [Interent Port](https://en.wikipedia.org/wiki/Port_(computer_networking)):arrows_counterclockwise:
+    - [ ] Extended Reading: [Computer Port](https://en.wikipedia.org/wiki/Port_(computer_networking)) :arrows_counterclockwise:
 
 ## LABS
 
