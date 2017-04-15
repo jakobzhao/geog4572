@@ -31,11 +31,12 @@ You are expected to attend lectures twice a week. Most lectures have time allott
 
 Attending lectures and labs is important since these times provide you with access to the instructor and to other students. Keep in mind that not all lab assignment will be possible to finish in the allotted class time. Students will be expected to work on assignments outside of class during posted Lab hours. You are welcome to discuss the exercises amongst yourselves, in fact this is encouraged, but the final product you hand in must be your own work (see Academic Integrity Policy below).
 
-1\. [Intro to GeoViz](wk01/wk01_1_lec01/wk01_1_lec01.pdf)
+- [X] [Intro to GeoViz](wk01/wk01_1_lec01/wk01_1_lec01.pdf)
 
-2\. [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md)
+- [X] [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md)
 
-3\. [Web Mapping Basics](wk02/wk02_3_lec04/readme.md)
+- [X] [Web Mapping Basics](wk02/wk02_3_lec04/readme.md)
+    - [ ] Extended Reading: [Interent Port](https://en.wikipedia.org/wiki/Port_(computer_networking)):arrows_counterclockwise:
 
 ## LABS
 
@@ -49,9 +50,9 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
 - [x] [Web Programming Basics](wk02/wk02_2_lab02/readme.md)
     - [x] [Install Webstorm on Personal PC/Mac](resource/install_webstorm.md)
     - [x] [An Interactive Tutorial on Markdown](http://www.markdowntutorial.com/) and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-    - [x] [Synchronize Course Material Repository with GitHub](resource/sync_with_github.md) :arrows_counterclockwise:
-    - [x] Optional: [Absolute path vs. relative path](http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/)
-    - [x] Optional: [windows command line cheatsheet](resource/dos_cheatsheet.jpg) and [Mac Terminal cheatsheet](resource/terminal_cheatsheet.jpg)
+    - [x] [Synchronize Course Material Repository with GitHub](resource/sync_with_github.md)
+    - [x] Extended Reading: [Absolute path vs. relative path](http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/)
+    - [x] Extended Reading: [windows command line cheatsheet](resource/dos_cheatsheet.jpg) and [Mac Terminal cheatsheet](resource/terminal_cheatsheet.jpg)
 - [ ] Interactive GeoViz
 
 - [ ] Base Map Design
