@@ -27,7 +27,7 @@ For each presentation, you are expected to:
 
 - Write a report on the lecture topic. This report needs to cover the main concepts and possible details about the topic.  **(25 POINTS)**
 - Present the report during the lecture time. Each presentation will no more than 20 minutes, 18 minutes to present and 2 minutes for Q&A. **(15 POINTS)**
-- As a practice, you are expected to share the report as a GitHub repository under an Open Source License. Here is a template of the repository. Your skills in using GitHub and writing in markdown will also be graded.  **(10 POINTS)**
+- As a practice, you are expected to share the report as a GitHub repository under an Open Source License. Here is [a template of the repository](https://github.com/jakobzhao/lecture_presentation). Your skills in using GitHub and writing in markdown will also be graded.  **(10 POINTS)**
 - Before each lecture, **you are expected to send the link of the repository to Canvas and notify the Instructor and the TA.** In this way, the TA could share your repository to other students in class through emails. So, please share everything ahead of time!
 
 In the grading section of the syllabus, this lecture presentation belongs to the item "project development". If you are presenting a topic in a group of two, each of you will have the same score. In the meantime, we have higher expectation on the graduate students. Meaning, the ratio of this lecture presentation in the final grade is different between graduate and undergraduate students. This ratio is higher for graduate students. 
