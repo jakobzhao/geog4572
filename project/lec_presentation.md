@@ -2,9 +2,9 @@
 
 > Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
 >
-> Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @ strand 347
+> Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: LINC 368 | Time: Tuesday 18-19:50am
 >
-> TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu| Office Hours: 1-2pm MF @ WLKN 257 and 2-4pm W @ WLKN 210
+> Assigned: 04/18/2017 | Due: `5pm of the day before the lecture` | Points Available = 50
 
 From the week four, we will launch the lecture presentation session during the lectures. For each lecture, there will be one to two student(s) presenting a topic about the lecture topic, and the content will be shared in reading list of that week, if no reading material is  listed, please contact the Instructor for materials.
 
