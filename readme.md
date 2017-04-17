@@ -69,7 +69,7 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 - [x] [Brainstorm](project/brainstorm.md)
 - [x] [Project Topics](project/project_topics.md)
 - [x] ~~Team-up~~
-      - [x] [Lecture Presentation schedule](project/lec_presentation.md)
+- [x] [Lecture Presentation schedule](project/lec_presentation.md)
 - [ ] Proposal
 - [ ] Sketch
 - [ ] Project Summary
