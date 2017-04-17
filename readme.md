@@ -36,11 +36,13 @@ Attending lectures and labs is important since these times provide you with acce
 - [x] [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md)
 
 - [x] [Web Mapping Basics](wk02/wk02_3_lec04/readme.md)
-    - [ ] Extended Reading: [Computer Port](https://en.wikipedia.org/wiki/Port_(computer_networking)) :arrows_counterclockwise:
+    - [ ] Extended Reading: [Computer Port](https://en.wikipedia.org/wiki/Port_(computer_networking))
+    - [ ] Extended Reading: [Projection for Web Maps](resource/cs.md)
+- [ ] [Virtual Globe](wk03/wk03_1_lec05/readme.md):new:
 
 ## LABS
 
-During the term, there will be two lab assignments. The main purpose of the lab assignments is to learn how to apply and reflect upon the things we cover during the lectures, and to grasp proficient hands-on skills to solve real world problems. If you are having difficulty with these assignments you should ask for assistance, whether from fellow students, or from me. Whatever you do, ask someone but please note the academic integrity policy! 
+During the term, there will be two lab assignments. The main purpose of the lab assignments is to learn how to apply and reflect upon the things we cover during the lectures, and to grasp proficient hands-on skills to solve real world problems. If you are having difficulty with these assignments you should ask for assistance, whether from fellow students, or from me. Whatever you do, ask someone but please note the academic integrity policy!
 
 Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted.Lab assignments are expected to be completed by the due date. *A late penalty of at least 10 percentage units will be taken off each day after the due date.*
 
