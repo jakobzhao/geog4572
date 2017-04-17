@@ -10,7 +10,6 @@ html, body, #cesiumContainer {
     left: 10px;
     bottom: 10px;
     color: #a0a0a0;
-    font-family: 'Open Sans', sans-serif;
     padding: 6px 8px;
     background: #000000;
     background: rgba(38, 38, 38, 0.5);
@@ -18,10 +17,6 @@ html, body, #cesiumContainer {
     border-radius: 5px;
 }
 
-h4 {
-    font-family:  Lobster, cursive;
-    font-size: larger;
-}
 
 .legend i {
     width: 16px;

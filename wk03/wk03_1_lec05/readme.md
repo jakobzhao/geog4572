@@ -9,6 +9,7 @@
 - Get to know the basics of 3D visualization on the Web; 
 - Make the virtual globe library Cesium.js; 
 - Overlay different map service providers and geojson data.
+- Make a 3D thematic map.
 
 ## 1. WebGL
 
@@ -98,7 +99,7 @@ A number of open 3D geospatial formats have grown out of Cesium. Open formats cr
 
 cesium.js is dedicated to make virtual globes. [TerriaJS](http://terria.io/) is an robust open-source geospatial platform built on cesium.js. It provides us with handy tools for navigating, editing and managing geospatial data. If you are interested in using cesium.js for an integrated web mapping application, I would highly recommend writing the codes of [TerriaJS](http://terria.io/) at GitHub. In this lecture, we will make a 3D thematic map using cesium.js. 
 
-In New York City, the local government maintains an open data portal to share a lot of datasets about the city management and administration. Among all the datasets, the 3-1-1 Calls on noise complaints are openly accessible. Since each complaint record comes with locational information, it is possible to visualize them collectively on a web map. In this practical exercise, we will make a 3D bar map to visualize the concentrations of noise complaints in the city. The final web map, as shown below, can be viewed at [http://rawgit.com/jakobzhao/noise_complaints/master/index.html](http://rawgit.com/jakobzhao/noise_complaints/master/index.html).
+In New York City, the local government maintains an open data portal to share a lot of datasets about the city management and administration. Among all the datasets, the 3-1-1 Calls on noise complaints are openly accessible. Since each complaint record comes with locational information, it is possible to visualize them collectively on a web map. In this practical exercise, we will make a 3D bar map to visualize the concentrations of noise complaints in the city. The final web map, as shown below, can be viewed at [`http://rawgit.com/jakobzhao/GeovisualAnalytics/tree/master/wk03/wk03_1_lec05/master/index.html`](http://rawgit.com/jakobzhao/GeovisualAnalytics/tree/master/wk03/wk03_1_lec05/master/index.html).
 
 ![](img/finalmap.png)
 
@@ -107,8 +108,6 @@ In the map, each bar indicates a number of noise complaint cases from the region
 - Select cesium.js as the map client library;
 - Use the dark theme map from MapBox as the basemap; and 
 - Import the georeferenced bars in geojson data format and visualize them.
-
-### 3.1 Preparation
 
 Throughout the term, you have frequently used GitHub as a vehicle to sync geospatial data, work in teams, update a web site, and publish web mappings. In this lecture, we will synchronize the GitHub repository of course material to your local working space. To do that, you would use the following commands:
 
@@ -120,10 +119,10 @@ $git pullPowerShell
 
 ![](img/repository.png)
 
-The repository is located at [https://github.com/jakobzhao/noise_complaints](https://github.com/jakobzhao/noise_complaints), just click "Clone or download" button to download the package, and then extract all the files to the working directory on your local computer. The file structure of this repository looks like the file tree below:
+The directory is located at [`https://github.com/jakobzhao/GeovisualAnalytics/tree/master/wk03/wk03_1_lec05`](https://github.com/jakobzhao/GeovisualAnalytics/tree/master/wk03/wk03_1_lec05), The file structure of this directory looks like the file tree below:
 
-```powershell
-noise_complaints
+```PowerShell
+wk03_1_lec05
 ├─assets
 ├  ├─── nyc_noise.geojson
 ├─css
@@ -135,15 +134,15 @@ noise_complaints
 ├─LICENSE
 ```
 
-After downloading the files to an appropriate place, you will need to setup a web server. To do that, you can use the **Webstorm** or a python server by executing the following codes under the working directory:
+After downloading the files to an appropriate working place, you will need to setup a web server. To do that, you can use the **Webstorm** or a python server by executing the following codes under the working directory:
 
 ```powershell
 $python -m SimpleHTTPServer
 ```
 
-## 2\. HTML template
+###  3.2 HTML template
 
-Above all, we will create an html page and include the necessary libraries. As shown, within the `body` div, we place two div elements - one for anchoring the virtual globe container and one for anchoring the legend. In addition, the style sheet locates at `css/style.css`. In order to make the application more light-weight, we use external links to include cesium libraries from [http://cesiumjs.org/releases/1.31/Build/Cesium/Cesium.js](http://cesiumjs.org/releases/1.31/Build/Cesium/Cesium.js) and [http://cesiumjs.org/releases/1.31/Build/Cesium/Widgets/widgets.css](http://cesiumjs.org/releases/1.31/Build/Cesium/Widgets/widgets.css).
+Above all, we will create an html page and include the necessary libraries. As shown, within the `body` div, we place two div elements - one for anchoring the virtual globe container and one for anchoring the legend. In addition, the style sheet locates at `css/style.css`. In order to make the local directory of the application more light-weight, we use external links to include cesium libraries from [http://cesiumjs.org/releases/1.31/Build/Cesium/Cesium.js](http://cesiumjs.org/releases/1.31/Build/Cesium/Cesium.js) and [http://cesiumjs.org/releases/1.31/Build/Cesium/Widgets/widgets.css](http://cesiumjs.org/releases/1.31/Build/Cesium/Widgets/widgets.css).
 
 ```html
 <!DOCTYPE html>
@@ -154,8 +153,8 @@ Above all, we will create an html page and include the necessary libraries. As s
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="http://cesiumjs.org/releases/1.31/Build/Cesium/Widgets/widgets.css">
     <link rel="stylesheet" href="css/style.css">
-  	<script src="http://cesiumjs.org/releases/1.31/Build/Cesium/Cesium.js"></script>
-  	<title> Cell Towers in Oregon by County </title>
+    <script src="http://cesiumjs.org/releases/1.31/Build/Cesium/Cesium.js"></script>
+    <title> Noise Complaints in New York City (Jan. to Mar. 2017)</title>
 </head>
 <div id="cesiumContainer"></div>
 <div class="legend"></div>
@@ -194,7 +193,9 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
 });
 ```
 
-## 3\. Loading GeoJson data
+> **Note:** Here are several MapBox imagery provider we can use, such as `mapbox.light`, `maobox.sattelite`, `mapbox.outdoor`, `mapbox.streets`.  Try them out!
+
+### 3.3 Loading GeoJson data
 
 Then we will load the geojson data and add it to the viewer object. After the data is added, we need to move the viewer by the `zoomTo` function.
 
@@ -212,7 +213,7 @@ var dataSource = Cesium.GeoJsonDataSource.load('assets/nyc_noise.geojson').then(
 Here, the file **nyc_noise.geojson** contains a set of polygons (circles). Each polygon contains two properties - `id` and `cnt`.
 
 - `id` is a unique identification number; and
-- `cnt` indicates the number of noise complaints that came from that region. Please try to validate the geojson data from [geojson.io](file:///C:/Users/Andy/Downloads/geojson.io)
+- `cnt` indicates the number of noise complaints that came from that region. **Please try to validate the geojson data from [geojson.io](file:///C:/Users/Andy/Downloads/geojson.io).**
 
 ![](img/geojsonio.png)
 
@@ -294,12 +295,12 @@ Then, we can easily update the material parameter of each entity using the `setC
 p[i].polygon.material = Cesium.Color.fromCssColorString(setColor(p[i].properties.cnt));
 ```
 
-## 4\. Panel of Description and Legend
+### 3.4 Description and Legend Panel
 
-Now, a 3D thematic map is made! In order to help users to read this map, we will add a legend and some descriptions. The approach to adding a legend has been already introduced in the map client series and
-practiced in PE 3. In general, we will put the content in a `div` and then capture the div using the class name, and style it by css stylesheet. Here, the class of the legend div is `legend`, as shown below.
+Now, a 3D thematic map is made! In order to help users to read this map, we will add a legend and some descriptions. In general, we will put the content in a `div` and then capture the div using the class name, and style it by css stylesheet. Here, the class of the legend div is `legend`, as shown below.
 
 ```html
+<h4> Noise Complaints in New York City </h4>
 <p><b> # Noise Complaints (Jan. to Mar. 2017) </b></p><br/>
 <i style="background: #bd0026"></i> <p> 1200+ </p>
 <i style="background: #f03b20"></i> <p> 651 to 1200 </p>
@@ -319,7 +320,6 @@ And the stylesheet is.
     left: 10px;
     bottom: 10px;
     color: #a0a0a0;
-    font-family: 'Open Sans', sans-serif;
     padding: 6px 8px;
     background: #000000;
     background: rgba(38, 38, 38, 0.5);
@@ -327,10 +327,6 @@ And the stylesheet is.
     border-radius: 5px;
 }
 
-h4 {
-    font-family:  Lobster, cursive;
-    font-size: larger;
-}
 
 .legend i {
     width: 16px;
@@ -368,7 +364,7 @@ In addition to the legend, you can add on more descriptive information about thi
     <i style="background: #ffffb2"></i> <p> 150 to 260 </p><br/>
     <p> This 3D thematic map shows the number of noise complaints in New York City according to all the 3-1-1 Service requests from January to March, 2017. The data was directly downloaded from <a href="https://data.cityofnewyork.us/Social-Services/Noise-complaints-since-20151101-w-Unspecified-CB/vjav-8yz5">NYC OpenData</a>. In the United States, 3-1-1 is a special telephone number that provides access to non-emergency municipal services.</p><br/>
     <p> Virtual globe Lib: cesium.js | BaseMap: Mapbox | Noise Reports: NYC OpenData </p>
-    <p> Author: <a href="http://ceoas.oregonstate.edu/profile/zhao/">Bo Zhao </a>| GEOG 371: Web Mapping | Oregon State University</p>
+    <p> Author: <a href="http://ceoas.oregonstate.edu/profile/zhao/" target="_blank">Bo Zhao </a> | CEOAS | Oregon State University</p>
 </div>
 ```
 
@@ -378,16 +374,9 @@ If everything works smoothly, you will see a 3D web map like this. Well done!
 
 ![](img/finalmap.png)
 
-## 5\. Deliverable
+## 4\. Summary
 
-Regarding the deliverables of this PE, you will need to:
-
-- Switch to another basemap instead of the current mapbox dark basemap. (**10 POINTS**)
-- Change the color ramp of the entities. (**15 POINTS**)
-- An updated version of the credits. ***Remember, only credit your portion of the work.*** (**10 POINTS**)
-- From an application perspective, what scenario do you think is more appropriate to use a 2D web map (e.g., leaflet), and what scenario is more appropriate to use a 3D virtual globe (e.g., cesium)? Please answer this question with some specific cases. For example, you can find some web mapping applications, and compare why they selected a 2D or 3D layout.  (**15 POINTS**)
-
-Please package up the working directory of codes and the answer in a word document. The package should be in a zip file. On the assignment tab of **Canvas Dropbox**, check the item of this PE, press the `Submit Assignment` button to submit your PE report. Please contact the instructor or TA if you have any difficulty.
+This lecture introduces the current developments in web based visualization. A hand-out practice to make a 3D geovisualization is described step by step using cesium.js. The practice allows you to make a 3D thematic map to illustrate the noise complaints in New York City. If you are interested in making 3D thematic maps on the web, I would encourage you explore cesium.js and other javascript libraries which support WebGL.
 
 ## References
 
@@ -395,16 +384,8 @@ Please package up the working directory of codes and the answer in a word docume
 
 [2]. http://cesiumjs.org/releases/b30/Build/Documentation/Color.html
 
-[3]. http://rawgit.com/jakobzhao/noise_complaints/master/index.html
+[3]. [http://cesiumjs.org/tutorials/Imagery-Layers-Tutorial/](http://cesiumjs.org/tutorials/Imagery-Layers-Tutorial/)
 
-[1]. [http://cesiumjs.org/tutorials/Imagery-Layers-Tutorial/](http://cesiumjs.org/tutorials/Imagery-Layers-Tutorial/)
+[4]. [http://cesiumjs.org/tutorials/cesium-up-and-running/](http://cesiumjs.org/tutorials/cesium-up-and-running/)
 
-[2]. [http://cesiumjs.org/tutorials/cesium-up-and-running/](http://cesiumjs.org/tutorials/cesium-up-and-running/)
-
-## references:
-
-[1] [http://blog.mastermaps.com/2013/09/creating-webgl-earth-with-threejs.html](http://blog.mastermaps.com/2013/09/creating-webgl-earth-with-threejs.html)
-
-[2] [http://wiki.splashdamage.com/index.php/Specular_Maps](http://wiki.splashdamage.com/index.php/Specular_Maps)
-
-[3] [https://en.wikipedia.org/wiki/WebGL](https://en.wikipedia.org/wiki/WebGL)
+[5]. [https://en.wikipedia.org/wiki/WebGL](https://en.wikipedia.org/wiki/WebGL)
