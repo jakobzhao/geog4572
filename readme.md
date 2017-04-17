@@ -15,7 +15,7 @@ Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, y
 |  **WK**   | **LECTURE  (T)**                         | **LAB (T)**                              | **LECTURE(R)**                           | **PROJECT**                              | READING                                  |
 | :-------: | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
 | **Wk 1**  | [Intro to GeoViz](wk01/wk01_1_lec01/wk01_1_lec01.pdf) | [Brainstorm](project/brainstorm.md)      | ~~Geovisualization Presentation~~        | [`Introduction`](project/intro.md)       | [W3School Tutorial](wk01/readme.md)      |
-| **Wk 2**  | [Web Mapping Types, Architecture, and Data](#webprogrambasics) | [Web Programming Basics  (JS, HTML, CSS, Markdown and GitHub, etc.)](wk02/wk02_2_lab02/readme.md) | [Web Mapping Basics (leaflet.js)](wk02/wk02_3_lec04/readme.md) | [`Topics`](project/project_topics.md), ~~`Team-up`~~, [`Lecture Presentation Schedule`](resource/lec_presentation.md) :new: | [Leaflet.js Tutorial](wk02/readme.md)    |
+| **Wk 2**  | [Web Mapping Types, Architecture, and Data](#webprogrambasics) | [Web Programming Basics  (JS, HTML, CSS, Markdown and GitHub, etc.)](wk02/wk02_2_lab02/readme.md) | [Web Mapping Basics (leaflet.js)](wk02/wk02_3_lec04/readme.md) | [`Topics`](project/project_topics.md), ~~`Team-up`~~, [`Lecture Presentation Schedule`](project/lec_presentation.md) :new: | [Leaflet.js Tutorial](wk02/readme.md)    |
 | **Wk 3**  | [Virtual Globe (Cesium.js)](wk03/wk03_1_lec05/readme.md) | Interactive GeoViz   (geospatial data operation, storymap.js) | Layout (Visual hierarchy, bootstrap)     | `Proposal`                               | [Cesium.js Tutorial, Web Design Principles](wk03/readme.md) :new: |
 | **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface Design)              | Color                                    | `Sketch` & `Project Summary`             | [Map Symbolization, Color](wk04/readme.md) |
 | **Wk 5**  | Topography and Labelling  (Google font, Mapbox font) | Base Map Design:   (Mapbox)              | Data Interaction I (D3.js)               | `Design Scheme (Color, label, icon, and multimedia,  etc.)` | [Labelling, Typography, D3.js tutorial](wk05/readme.md) |
@@ -69,7 +69,7 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 - [x] [Brainstorm](project/brainstorm.md)
 - [x] [Project Topics](project/project_topics.md)
 - [x] ~~Team-up~~
-      - [x] [Lecture Presentation schedule](resource/lec_presentation.md)
+      - [x] [Lecture Presentation schedule](project/lec_presentation.md)
 - [ ] Proposal
 - [ ] Sketch
 - [ ] Project Summary
