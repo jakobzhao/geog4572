@@ -112,7 +112,7 @@ In the map, each bar indicates a number of noise complaint cases from the region
 Throughout the term, you have frequently used GitHub as a vehicle to sync geospatial data, work in teams, update a web site, and publish web mappings. In this lecture, we will synchronize the GitHub repository of course material to your local working space. To do that, you would use the following commands:
 
 ```PowerShell
-$cd GeovisualAnalytics
+$cd ~GeovisualAnalytics
 $git checkout
 $git pullPowerShell
 ```
