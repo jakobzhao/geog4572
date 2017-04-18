@@ -64,6 +64,7 @@ GEOG4572-PE1
 ```
 
 Regarding the grading criteria, each storymap should have:
+
 - At least three scenes which showing maps. **(POINT 8)**
 - Full-size video or image based front page or end page; **(POINT 4)**
 - Appropriate base map for each scene;  **(POINT 6)**
@@ -73,4 +74,4 @@ Regarding the grading criteria, each storymap should have:
 - A favicon; and  **(POINT 2)**
 - Write at least a short introduction to your storymap on the readme.md.  **(POINT 4)**
 
- Do not worry if you are not familiar with some of the terms, we will cover them in the following several lecture. Once you finish this PE, please make sure the program is executable in a web environment (testing it by python SimpleHTTPServer or Webstorm). If everything works fine, please upload the directory of the story map to github, and **only submit the url of the repository to canvas**. Please contact the instructor or TA if you have any difficulty in submitting the url.
+ Do not worry if you are not familiar with some of the terms, we will cover them in the coming lectures. Once you finish this PE, please make sure the program is executable in a web environment (testing it by python SimpleHTTPServer or Webstorm). If everything works fine, please upload the directory of the story map to github, and **only submit the url of the repository to canvas**. Please contact the instructor or TA if you have any difficulty in submitting the url.
