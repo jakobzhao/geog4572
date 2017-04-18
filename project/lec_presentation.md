@@ -4,7 +4,7 @@
 >
 > Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: LINC 368 | Time: Tuesday 18-19:50am
 >
-> Assigned: 04/18/2017 | Due: `5pm of the day before the lecture` | Points Available = 50
+> Assigned: 04/18/2017 | Due: `12 hours previous to the lecture time` | Points Available = 50
 
 From the week four, we will launch the lecture presentation session during the lectures. For each lecture, there will be one to two student(s) presenting a topic about the lecture topic, and the content will be shared in reading list of that week, if no reading material is  listed, please contact the Instructor for materials.
 
