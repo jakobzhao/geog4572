@@ -58,6 +58,7 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
     - [x] Extended Reading: [Absolute path vs. relative path](http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/)
     - [x] Extended Reading: [windows command line cheatsheet](resource/dos_cheatsheet.jpg) and [Mac Terminal cheatsheet](resource/terminal_cheatsheet.jpg)
 - [ ] [Interactive Geovisualization](wk03/wk03_2_lab03)
+   - [ ] [Making Storymap Workflow](resource/storymap-workflows.png)
 
 - [ ] Base Map Design
 
