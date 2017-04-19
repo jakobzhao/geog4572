@@ -2,11 +2,11 @@
 
 > Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
 >
-> Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: Wilkinson 235 | Time: Tuesday 18-19:50pm
+> Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: Wilkinson 235 | Time: Tuesday 18-19:50am
 >
 > Assigned: 04/18/2017 | Due: 05/02/2017 @11:59pm | Points Available = 50
 
-## 1. Library Introduction
+## 1. Storymap Library
 
 A story map is a strategy that uses a graphic organizer to learn the elements of a story. By identifying story characters, plot, setting, problem and solution, students read carefully to learn the details. There are many different types of story map graphic organizers. The most basic focus on the beginning, middle, and end of the story. More advanced organizers focus more on plot or character traits. Story maps is a framework for identifying the elements of a story and help you organize information and ideas efficiently.
 
