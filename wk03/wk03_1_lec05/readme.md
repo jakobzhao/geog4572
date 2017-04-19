@@ -112,9 +112,9 @@ In the map, each bar indicates a number of noise complaint cases from the region
 Throughout the term, you have frequently used GitHub as a vehicle to sync geospatial data, work in teams, update a web site, and publish web mappings. In this lecture, we will synchronize the GitHub repository of course material to your local working space. To do that, you would use the following commands:
 
 ```PowerShell
-$cd ~GeovisualAnalytics
+$cd ~/GeovisualAnalytics
 $git checkout
-$git pullPowerShell
+$git pull
 ```
 
 ![](img/repository.png)
@@ -156,6 +156,7 @@ Above all, we will create an html page and include the necessary libraries. As s
     <script src="http://cesiumjs.org/releases/1.31/Build/Cesium/Cesium.js"></script>
     <title> Noise Complaints in New York City (Jan. to Mar. 2017)</title>
 </head>
+<body>
 <div id="cesiumContainer"></div>
 <div class="legend"></div>
 </body>
@@ -370,7 +371,7 @@ In addition to the legend, you can add on more descriptive information about thi
 
 ![](img/panel.png)
 
-If everything works smoothly, you will see a 3D web map like this. Well done!
+If everything works smoothly, you will see a 3D thematic web map like this. Well done!
 
 ![](img/finalmap.png)
 
