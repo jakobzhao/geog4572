@@ -2,7 +2,7 @@
 
 > Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
 >
-> Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: Wilkinson 235 | Time: Tuesday 18-19:50am
+> Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: Wilkinson 235 | Time: Tuesday 18-19:50pm
 >
 > Assigned: 04/18/2017 | Due: 05/02/2017 @11:59pm | Points Available = 50
 
