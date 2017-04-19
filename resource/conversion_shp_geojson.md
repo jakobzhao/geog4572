@@ -20,18 +20,18 @@ The breakdown is as follows:
 
 Mandatory files
 
-.shp — shape format; the feature geometry itself
-.shx — shape index format; a positional index of the feature geometry to allow seeking forwards and backwards quickly
-.dbf — attribute format; columnar attributes for each shape, in dBase IV format
+**.shp** — shape format; the feature geometry itself
+**.shx** — shape index format; a positional index of the feature geometry to allow seeking forwards and backwards quickly
+**.dbf** — attribute format; columnar attributes for each shape, in dBase IV format
 
 Other common files
 
-.prj — projection format; the coordinate system and projection information, a plain text file describing the projection using well-known text format
-.sbn and .sbx — a spatial index of the features
+**.prj** — projection format; the coordinate system and projection information, a plain text file describing the projection using well-known text format
+**.sbn and .sbx** — a spatial index of the features
 
 source: (https://en.wikipedia.org/wiki/Shapefile)
 
-We are going to transform this current 7 file folder into a single, compact format called GeoJSON (http://geojson.org/). Geojson differs from a shapefile in a few ways. The first is that GeoJSON is an open standard format. This is great because the data can be read by a greater number of software packages. Additionally, GeoJSON is similar to JSON. Meaning it is more easily machine read, and can easily be consumed by web maps! Imagine loading multiple files into javascript vs one file.
+We are going to transform this current 7 file folder into a single, compact format called GeoJSON (http://geojson.org/). Geojson differs from a shapefile in a few ways. The first is that GeoJSON is an open standard format. 
 
 3\. Open QGIS.
 
@@ -41,7 +41,7 @@ We are going to transform this current 7 file folder into a single, compact form
 
 ![](../img/qgis-open-data.png)
 
-5.\ In a new QGIS project, a great first question is what map projection is our shapefile in? Double click on the shapefile in the Table of Contents to pull up the Properties Dialogue Box. In the General tab, under 'Coordinate reference system' you will see a value `EPSG:4269, NAD83` representing our map projection. 
+5\. In a new QGIS project, a great first question is what map projection is our shapefile in? Double click on the shapefile in the Table of Contents to pull up the Properties Dialogue Box. In the General tab, under 'Coordinate reference system' you will see a value `EPSG:4269, NAD83` representing our map projection. 
 
 ![](../img/qgis-general-tab.png)
 
