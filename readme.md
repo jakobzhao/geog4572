@@ -38,11 +38,11 @@ Attending lectures and labs is important since these times provide you with acce
 - [x] [Web Mapping Basics](wk02/wk02_3_lec04/readme.md)
     - [x] Extended Reading: [Computer Port](https://en.wikipedia.org/wiki/Port_(computer_networking))
     - [x] Extended Reading: [Projection for Web Maps](resource/cs.md)
-    - [ ] Extended Reading: [Shapefile and Geojson Conversion](resource/conversion_shp_geojson.md)
+    - [x] Extended Reading: [Shapefile and Geojson Conversion](resource/conversion_shp_geojson.md)
 
 - [X] [Virtual Globe](wk03/wk03_1_lec05/readme.md)
 
-- [ ] [Layout (Visual hierarchy, bootstrap)](wk03/wk03_3_lec06):new:
+- [X] [Layout (Visual hierarchy, bootstrap)](wk03/wk03_3_lec06):new:
 
 ## LABS
 
@@ -59,8 +59,9 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
     - [x] [Synchronize Course Material Repository with GitHub](resource/sync_with_github.md)
     - [x] Extended Reading: [Absolute path vs. relative path](http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/)
     - [x] Extended Reading: [windows command line cheatsheet](resource/dos_cheatsheet.jpg) and [Mac Terminal cheatsheet](resource/terminal_cheatsheet.jpg)
-- [ ] [Interactive Geovisualization](wk03/wk03_2_lab03)
-
+- [x] [Interactive Geovisualization](wk03/wk03_2_lab03)
+   -  [ ] [Workflow of Making Storymap](resource/storymap-workflows.png)
+    
 - [ ] Base Map Design
 
 ## COURSE PROJECT
@@ -72,7 +73,8 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 - [x] [Introduction](project/intro.md)
 - [x] [Brainstorm](project/brainstorm.md)
 - [x] [Project Topics](project/project_topics.md)
-- [x] ~~Team-up~~
+- [x] [Team-up](project/team.md)
+- [x] [Lecture Presentation Schedule](project/lec_presentation.md)
 - [ ] Proposal
 - [ ] Sketch
 - [ ] Project Summary
