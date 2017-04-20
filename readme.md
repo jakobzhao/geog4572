@@ -15,8 +15,8 @@ Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, y
 |  **WK**   | **LECTURE (T)**                          | **LAB (T)**                              | **LECTURE(R)**                           | **PROJECT**                              | READING                                  |
 | :-------: | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
 | **Wk 1**  | [Intro to Geovisualization](wk01/wk01_1_lec01/wk01_1_lec01.pdf) | [Brainstorm](project/brainstorm.md)      | *Geovisualization Presentation*        | [`Introduction`](project/intro.md)       | [W3School Tutorial](wk01/readme.md)      |
-| **Wk 2**  | [Web Mapping Types, Architecture, and Data](wk01/wk02_1_lec03/readme.md) | [Web Programming Basics  (JS, HTML, CSS, Markdown and GitHub, etc.)](wk02/wk02_2_lab02/readme.md) | [Web Mapping Basics (leaflet.js)](wk02/wk02_3_lec04/readme.md) | [`Topics`](project/project_topics.md), ~~`Team-up`~~ | [Leaflet.js Tutorial](wk02/readme.md)    |
-| **Wk 3**  | [Virtual Globe (Cesium.js)](wk03/wk03_1_lec05/readme.md) | [Interactive Geovisualization   (storymap.js)](wk03/wk03_2_lab03) | Layout (Visual hierarchy, bootstrap)     | `Proposal`                               | [Cesium.js Tutorial, Web Design Principles](wk03/readme.md) |
+| **Wk 2**  | [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md) | [Web Programming Basics  (JS, HTML, CSS, Markdown and GitHub, etc.)](wk02/wk02_2_lab02/readme.md) | [Web Mapping Basics (leaflet.js)](wk02/wk02_3_lec04/readme.md) | [`Topics`](project/project_topics.md), ~~`Team-up`~~ | [Leaflet.js Tutorial](wk02/readme.md)    |
+| **Wk 3**  | [Virtual Globe (Cesium.js)](wk03/wk03_1_lec05/readme.md) | [Interactive Geovisualization   (storymap.js)](wk03/wk03_2_lab03) | [Layout (Visual hierarchy, bootstrap)](wk03/wk03_3_lec06)     | `Proposal`                               | [Cesium.js Tutorial, Web Design Principles](wk03/readme.md) :new: |
 | **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface Design)              | Color                                    | `Sketch` & `Project Summary`             | [Map Symbolization, Color](wk04/readme.md) |
 | **Wk 5**  | Topography and Labelling  (Google font, Mapbox font) | Base Map Design:   (Mapbox)              | Data Interaction I (D3.js)               | `Design Scheme (Color, label, icon, and multimedia,  etc.)` | [Labelling, Typography, D3.js tutorial](wk05/readme.md) |
 | **Wk 6**  | Data Interaction II                      | Cont’d                                   | Map Critique                             | `Revision`                               |                                          |
@@ -37,10 +37,12 @@ Attending lectures and labs is important since these times provide you with acce
 
 - [x] [Web Mapping Basics](wk02/wk02_3_lec04/readme.md)
     - [x] Extended Reading: [Computer Port](https://en.wikipedia.org/wiki/Port_(computer_networking))
-    - [x] Extended Reading: [Projection for Web Maps](resource/cs.md) 
-    - [ ] Extended Reading: [Shapefile and Geojson Conversion](resource/conversion_shp_geojson.md) :new:
+    - [x] Extended Reading: [Projection for Web Maps](resource/cs.md)
+    - [ ] Extended Reading: [Shapefile and Geojson Conversion](resource/conversion_shp_geojson.md)
 
-- [ ] [Virtual Globe](wk03/wk03_1_lec05/readme.md):new:
+- [X] [Virtual Globe](wk03/wk03_1_lec05/readme.md)
+
+- [ ] [Layout (Visual hierarchy, bootstrap)](wk03/wk03_3_lec06):new:
 
 ## LABS
 
@@ -58,7 +60,6 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
     - [x] Extended Reading: [Absolute path vs. relative path](http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/)
     - [x] Extended Reading: [windows command line cheatsheet](resource/dos_cheatsheet.jpg) and [Mac Terminal cheatsheet](resource/terminal_cheatsheet.jpg)
 - [ ] [Interactive Geovisualization](wk03/wk03_2_lab03)
-   - [ ] [Making Storymap Workflow](resource/storymap-workflows.png)
 
 - [ ] Base Map Design
 
@@ -71,8 +72,7 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 - [x] [Introduction](project/intro.md)
 - [x] [Brainstorm](project/brainstorm.md)
 - [x] [Project Topics](project/project_topics.md)
-- [x] Team-up
-- [x] [Lecture Presentation Schedule](project/lec_presentation.md)
+- [x] ~~Team-up~~
 - [ ] Proposal
 - [ ] Sketch
 - [ ] Project Summary
