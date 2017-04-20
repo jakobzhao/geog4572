@@ -20,7 +20,7 @@ Designing an effective web based geovisualization requires more than just gather
 
 [1] David Porter (1999) **[Basic Map Design Principles](assets/porter-1999.pdf)**. retrieved April 20th, 2017 from [http://umich.edu/~ece/resources/design.html](http://umich.edu/~ece/resources/design.html)
 
-[2] Buckley A (2012) **[Making Maps People Want to Look At](../resource/buckley-2012.pdf)**.  [http://www.esri.com/news/arcuser/0112/make-maps-people-want-to-look-at.html](http://www.esri.com/news/arcuser/0112/make-maps-people-want-to-look-at.html)
+[2] Buckley A (2012) **[Making Maps People Want to Look At](../../resource/buckley-2012.pdf)**.  [http://www.esri.com/news/arcuser/0112/make-maps-people-want-to-look-at.html](http://www.esri.com/news/arcuser/0112/make-maps-people-want-to-look-at.html)
 
 ## 2. Bootstrap Framework
 
@@ -338,12 +338,8 @@ The `.modal-footer` class is used to define the style for the footer of the mo
 ## References:
 
 [1] http://duspviz.mit.edu/web-map-workshop/bootstrap-templates/
-
 [2] http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/
-
 [3] http://www.w3schools.com/bootstrap/
-
 [4] https://www.toptal.com/front-end/what-is-bootstrap-a-short-tutorial-on-the-what-why-and-how
-
 [5]  https://www.smashingmagazine.com/2008/01/10-principles-of-effective-web-design/
 
