@@ -10,7 +10,7 @@ GEOG 472/572 uses GitHub to distribute course materials. GitHub is designed as a
 
 1\. Above all, You will need a GitHub account. Sign up at [https://github.com/](https://github.com/).
 
-![](../img/github-signup.png)
+![](img/github-signup.png)
 
 2\. Then, you will synchronize course material from the github. Please make sure the computer to store the course material has installed a shell program `git`. 
 
@@ -22,11 +22,11 @@ Type `git` in command prompt or terminal to see whether `git` is installed or no
 
 If `git` is properly installed, type `git` in command prompt or terminal will show the following information on the window. 
 
-![](../img/git-command.png)
+![](img/git-command.png)
 
 3\. The course material locates at [https://github.com/jakobzhao/GeovisualAnalytics](https://github.com/jakobzhao/GeovisualAnalytics). Please click the `Clone or download` button.
 
-![](../img/github-interface.png)
+![](img/github-interface.png)
 
 Then, you will find the clone location for today's material. 
 
@@ -51,7 +51,7 @@ sudo git clone https://github.com/jakobzhao/GeovisualAnalytics.git
 
 > Since Unix, Linux and Mac OSX are built on a higher user authority system, you need to give the user a superuser priviliage when you run `git` command, so the `sudo` command is needed if you are working on Unix, Linux or Mac OSX systen. If you are working on a windows system, usually you do not need to add `sudo` in the front. You can simply type `git clone https://github.com/jakobzhao/GeovisualAnalytics.git`.
 
-![](../img/git-clone.png)
+![](img/git-clone.png)
 
 After successfully synced the material, you will see them in a sub-directory named **GeovisualAnalytics**, which contains the course material. 
 
@@ -67,7 +67,7 @@ After successfully synced the material, you will see them in a sub-directory nam
 
 6\. In order to view the course materials, you can download a markdown viewer. Here, we recommend **[Typora](https://typora.io/)**.  Typora is dedicated to process markdown files. It can browse, edit, and even convert markdown files to pdf or word documents.
 
-![](../img/typora.png)
+![](img/typora.png)
 
 7\. The instructor and TA will consistenly update the course material repository. In order to ensure you are reading the latest version of the lecture or lab handouts, you need to synchronize the course material, especially before class. To do that, you will enter the course directory, checkout the current version of the course repository and then pull the entire repository. Once you execute the pull command, the command prompt or the terminal will notify you the recent updates about the course material. Here is the shell command to update the course material:
 
@@ -80,8 +80,8 @@ sudo git pull
 
 > Again, you do not need to add `sudo` if you are on a windows operating system.
 
-![](../img/git-pull.png)
+![](img/git-pull.png)
 
 If you open the downloaded course material with webstorm, you can update to the latest course material by clicking the `Update Project` Button.
 
-![](../img/update_project.png)
+![](img/update_project.png)
