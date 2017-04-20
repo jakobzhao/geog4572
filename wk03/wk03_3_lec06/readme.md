@@ -338,8 +338,12 @@ The `.modal-footer` class is used to define the style for the footer of the mo
 ## References:
 
 [1] http://duspviz.mit.edu/web-map-workshop/bootstrap-templates/
+
 [2] http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/
+
 [3] http://www.w3schools.com/bootstrap/
+
 [4] https://www.toptal.com/front-end/what-is-bootstrap-a-short-tutorial-on-the-what-why-and-how
+
 [5]  https://www.smashingmagazine.com/2008/01/10-principles-of-effective-web-design/
 
