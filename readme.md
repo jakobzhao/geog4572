@@ -38,7 +38,7 @@ Attending lectures and labs is important since these times provide you with acce
 - [x] [Web Mapping Basics](wk02/wk02_3_lec04/readme.md)
     - [x] Extended Reading: [Computer Port](https://en.wikipedia.org/wiki/Port_(computer_networking))
     - [x] Extended Reading: [Projection for Web Maps](resource/cs.md)
-    - [x] Extended Reading: [Shapefile and Geojson Conversion](resource/conversion_shp_geojson.md)
+    - [x] Extended Reading: [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
 
 - [X] [Virtual Globe](wk03/wk03_1_lec05/readme.md)
 
