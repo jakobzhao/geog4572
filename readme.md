@@ -42,7 +42,7 @@ Attending lectures and labs is important since these times provide you with acce
 
 - [X] [Virtual Globe](wk03/wk03_1_lec05/readme.md)
 
-- [X] [Layout (Visual hierarchy, bootstrap)](wk03/wk03_3_lec06):new:
+- [X] [Layout (Visual hierarchy, etc. Bootstrap)](wk03/wk03_3_lec06):new:
 
 ## LABS
 
@@ -61,8 +61,8 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
     - [x] Extended Reading: [windows command line cheatsheet](resource/dos_cheatsheet.jpg) and [Mac Terminal cheatsheet](resource/terminal_cheatsheet.jpg)
 - [x] [Interactive Geovisualization](wk03/wk03_2_lab03)
    -  [ ] [Workflow of Making Storymap](resource/storymap-workflows.png) :new:
-   -  [ ] [Shapefile and Geojson Conversion](resource/conversion_shp_geojson.md)
-    
+   -  [ ] [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
+   -  [ ] [Execute and Deploy the Webpage on Github Repository Using Rawgit](http://rawgit.com/)
 - [ ] Base Map Design
 
 ## COURSE PROJECT
