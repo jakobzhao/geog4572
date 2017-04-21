@@ -1,4 +1,4 @@
-# Shapefile to Geojson Conversion
+# Convert Shapefile to Geojson
 
 > Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
 >
