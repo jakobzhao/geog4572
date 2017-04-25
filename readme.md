@@ -66,7 +66,7 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
    -  [ ] [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
    -  [ ] [Execute and Deploy the Webpage on Github Repository Using Rawgit](http://rawgit.com/)
    -  [ ] [Simplify Geometries](resource/simplify_geometries.md)
-   -  [ ] [Add a Favicon](resource/add_favico.md)
+   -  [ ] [Add a Favicon](resource/add_favicon.md)
 - [ ] Base Map Design
 
 ## COURSE PROJECT
