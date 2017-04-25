@@ -1,4 +1,4 @@
-# Favicon Generation
+# Add a Favicon
 
 > Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
 >
