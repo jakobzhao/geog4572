@@ -81,6 +81,7 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 - [x] [Team-up](project/team.md)
 - [x] [Lecture Presentation Schedule](project/lec_presentation.md)
 - [ ] Proposal
+- [ ] [Technical Framework](project/tech_framework.md)
 - [ ] Sketch
 - [ ] Project Summary
 - [ ] Coding
