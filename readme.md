@@ -44,6 +44,8 @@ Attending lectures and labs is important since these times provide you with acce
 
 - [X] [Layout (Visual hierarchy, etc. Bootstrap)](wk03/wk03_3_lec06):new:
 
+- [ ]  Symbolization
+
 ## LABS
 
 During the term, there will be two lab assignments. The main purpose of the lab assignments is to learn how to apply and reflect upon the things we cover during the lectures, and to grasp proficient hands-on skills to solve real world problems. If you are having difficulty with these assignments you should ask for assistance, whether from fellow students, or from me. Whatever you do, ask someone but please note the academic integrity policy!
@@ -63,6 +65,8 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
    -  [ ] [Workflow of Making Storymap](resource/storymap-workflows.png) :new:
    -  [ ] [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
    -  [ ] [Execute and Deploy the Webpage on Github Repository Using Rawgit](http://rawgit.com/)
+   -  [ ] [Simplify Geometries](resource/simplify_geometries.md)
+   -  [ ] [Add a Favicon](resource/add_favico.md)
 - [ ] Base Map Design
 
 ## COURSE PROJECT
