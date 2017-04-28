@@ -17,7 +17,7 @@ Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, y
 | **Wk 1**  | [Intro to Geovisualization](wk01/wk01_1_lec01/wk01_1_lec01.pdf) | [Brainstorm](project/brainstorm.md)      | *Geovisualization Presentation*        | [`Introduction`](project/intro.md)       | [W3School Tutorial](wk01/readme.md)      |
 | **Wk 2**  | [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md) | [Web Programming Basics  (JS, HTML, CSS, Markdown and GitHub, etc.)](wk02/wk02_2_lab02/readme.md) | [Web Mapping Basics (leaflet.js)](wk02/wk02_3_lec04/readme.md) | [`Topics`](project/project_topics.md), [`Team-up`](project/team.md) | [Leaflet.js Tutorial](wk02/readme.md)    |
 | **Wk 3**  | [Virtual Globe (Cesium.js)](wk03/wk03_1_lec05/readme.md) | [Interactive Geovisualization   (storymap.js)](wk03/wk03_2_lab03) | [Layout (Visual hierarchy, bootstrap)](wk03/wk03_3_lec06)     | `Proposal`                               | [Cesium.js Tutorial, Web Design Principles](wk03/readme.md) :new: |
-| **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface Design)              | [Color](resource/color.md)                                    | `Sketch` & `Project Summary`             | [Map Symbolization, Color](wk04/readme.md) |
+| **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface Design)              | [Color](resource/color.md)                                     | `Sketch` & `Project Summary`             | [Map Symbolization, Color](wk04/readme.md) |
 | **Wk 5**  | Topography and Labelling  (Google font, Mapbox font) | Base Map Design:   (Mapbox)              | Data Interaction I (D3.js)               | `Design Scheme (Color, label, icon, and multimedia,  etc.)` | [Labelling, Typography, D3.js tutorial](wk05/readme.md) |
 | **Wk 6**  | Data Interaction II                      | Cont’d                                   | Map Critique                             | `Revision`                               |                                          |
 | **Wk 7**  | Real-time mapping (e.g., Twitter API, Weather API) | Data Driven Maps                         | Heatmap   (visualizing real-time geospatial data) | `Coding`                                 |                                          |
@@ -44,7 +44,8 @@ Attending lectures and labs is important since these times provide you with acce
 
 - [X] [Layout (Visual hierarchy, etc. Bootstrap)](wk03/wk03_3_lec06):new:
 
-- [ ]  Symbolization
+- [X]  Symbolization
+- [X] [Color](resource/color.md)
 
 ## LABS
 
@@ -62,11 +63,12 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
     - [x] Extended Reading: [Absolute path vs. relative path](http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/)
     - [x] Extended Reading: [windows command line cheatsheet](resource/dos_cheatsheet.jpg) and [Mac Terminal cheatsheet](resource/terminal_cheatsheet.jpg)
 - [x] [Interactive Geovisualization](wk03/wk03_2_lab03)
-   -  [ ] [Workflow of Making Storymap](resource/storymap-workflows.png) :new:
-   -  [ ] [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
-   -  [ ] [Execute and Deploy the Webpage on Github Repository Using Rawgit](http://rawgit.com/)
-   -  [ ] [Simplify Geometries](resource/simplify_geometries.md)
-   -  [ ] [Add a Favicon](resource/add_favicon.md)
+   -  [X] [Workflow of Making Storymap](resource/storymap-workflows.png) :new:
+   -  [X] [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
+   -  [X] [Execute and Deploy the Webpage on Github Repository Using Rawgit](http://rawgit.com/)
+   -  [X] [Simplify Geometries](resource/simplify_geometries.md)
+   -  [X] [Add a Favicon](resource/add_favicon.md)
+   -  [ ] [Video as the Front Page](resource/video_front_page.md)
 - [ ] Base Map Design
 
 ## COURSE PROJECT
@@ -80,8 +82,8 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 - [x] [Project Topics](project/project_topics.md)
 - [x] [Team-up](project/team.md)
 - [x] [Lecture Presentation Schedule](project/lec_presentation.md)
-- [ ] Proposal
-- [ ] [Technical Framework](project/tech_framework.md)
+- [x] Proposal
+- [x] [Technical Framework](project/tech_framework.md)
 - [ ] Sketch
 - [ ] Project Summary
 - [ ] Coding
