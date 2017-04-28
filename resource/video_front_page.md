@@ -19,3 +19,7 @@ To make sure the video can be properly viewd in a html 5 page, you will need to 
 ![](img/winff_converter.png)
 
 > **Note:** Though qwinff supports a variety of video formats (windows, linux, etc.), it does not currently support Mac OX.
+
+## Credit
+
+If you have downloaded a youtube video made by other youtube users, please do credit their contribution/property in your web map application.
