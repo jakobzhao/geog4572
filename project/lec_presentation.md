@@ -15,9 +15,9 @@ Based on (1) your submission to homework one,  (2) the group project preference 
 |  **WK**   | **LECTURE  (T)**                         | **LECTURE(R)**                           |
 | :-------: | :--------------------------------------- | :--------------------------------------- |
 | **Wk 4**  | Symbolization - ***Tyler***              | Color - ***Madeleine***                  |
-| **Wk 5**  | Topography and Labelling  - ***Paulo***  | Data Interaction I (D3.js, data binding) - ***Sione*** |
+| **Wk 5**  | Topography and Labelling  - ***Paulo***  Mapbox Hands-on -***Scott***-  | Data Interaction I (D3.js, data binding) - ***Sione*** |
 | **Wk 6**  | Data Interaction II (making charts)- ***Yingqi*** | Map Critique                             |
-| **Wk 7**  | Real-time mapping (e.g., Twitter API, Weather API) - ***Conner*** | Heatmap -  ***Efrain, Scott***           |
+| **Wk 7**  | Real-time mapping (e.g., Twitter API, Weather API) - ***Conner*** | Heatmap -  ***Efrain***           |
 | **Wk 8**  | Cartogram - ***Nicolas, Riley***         | Network Visualization - ***Chris, Gabriel*** |
 | **Wk 9**  | UAV Mapping - ***Jared***                | Virtual Reality  - ***Yuanyuan***        |
 | **Wk 10** | Emerging Topics in GeoViz                | Project Presentation                     |
