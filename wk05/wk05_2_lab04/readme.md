@@ -1,5 +1,4 @@
-# Practical Exercise Two: Make Base Map Using Mapbox
-
+# Practical Exercise Two: Base Map Design
 > Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
 >
 > Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: Wilkinson 235 | Time: Tuesday 18-19:50pm
