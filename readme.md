@@ -48,6 +48,7 @@ Attending lectures and labs is important since these times provide you with acce
 - [X] [Color](resource/color.md)
 - [X] [Topography and Labelling ](https://github.com/paulomur/label_topo_ppt)
     - [X] [Fonts](wk05/wk05_1_lec09/readme.md)
+- [X] [Data Interaction I (D3.js)](wk05/wk05_3_lec10/readme.md)
 
 ## LABS
 
