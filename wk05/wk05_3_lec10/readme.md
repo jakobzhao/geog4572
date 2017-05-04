@@ -47,7 +47,7 @@ dc.js is an easy yet powerful javascript library for data visualization and anal
 
 Play with the [dc.js examples](http://dc-js.github.io/dc.js/examples/).
 
-## 4. Map amd Char Interaction
+## 4. Map amd Chart Interaction
 
 This section is greatly inspired by [chriswhong's crossfilter-geo-input](https://github.com/chriswhong/crossfilter-geo-input). This application uses crossfilter to filter a leaflet map, and you can see the interaction between charts and maps. Either the map or the chart is updated, the other chart or map components will be updated as well.
 
