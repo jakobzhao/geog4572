@@ -58,5 +58,7 @@ Read and download the source codes of this earthquake application from this lect
 ## References:
 
 [1] http://square.github.io/crossfilter/
+
 [2] https://dc-js.github.io/dc.js/
+
 [3] https://github.com/chriswhong/crossfilter-geo-input
