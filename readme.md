@@ -36,17 +36,18 @@ Attending lectures and labs is important since these times provide you with acce
 - [x] [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md)
 
 - [x] [Web Mapping Basics](wk02/wk02_3_lec04/readme.md)
-    - [x] Extended Reading: [Computer Port](https://en.wikipedia.org/wiki/Port_(computer_networking))
+    - [x] Extended Reading
+    [Computer Port](https://en.wikipedia.org/wiki/Port_(computer_networking))
     - [x] Extended Reading: [Projection for Web Maps](resource/cs.md)
     - [x] Extended Reading: [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
 
 - [x] [Virtual Globe](wk03/wk03_1_lec05/readme.md)
 
-- [x] [Layout (Visual hierarchy, etc. Bootstrap)](wk03/wk03_3_lec06):new:
+- [x] [Layout (Visual hierarchy, etc. Bootstrap)](wk03/wk03_3_lec06)
 
 - [x] Symbolization
 - [x] [Color](resource/color.md)
-    - [] [Color Palette](resource/color_palette.md):new:
+    - [ ] [Color Palette](resource/color_palette.md):new:
 - [x] [Topography and Labelling ](https://github.com/paulomur/label_topo_ppt)
     - [x] [Fonts](wk05/wk05_1_lec09/readme.md)
 - [x] [Data Interaction I (D3.js)](wk05/wk05_3_lec10/readme.md)
