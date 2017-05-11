@@ -17,9 +17,9 @@ Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, y
 | **Wk 1**  | [Intro to Geovisualization](wk01/wk01_1_lec01/wk01_1_lec01.pdf) | [Brainstorm](project/brainstorm.md)      | *Geovisualization Presentation*          | [`Introduction`](project/intro.md)       | [W3School Tutorial](wk01/readme.md)      |
 | **Wk 2**  | [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md) | [Web Programming Basics  (JS, HTML, CSS, Markdown and GitHub, etc.)](wk02/wk02_2_lab02/readme.md) | [Web Mapping Basics (leaflet.js)](wk02/wk02_3_lec04/readme.md) | [`Topics`](project/project_topics.md), [`Team-up`](project/team.md) | [Leaflet.js Tutorial](wk02/readme.md)    |
 | **Wk 3**  | [Virtual Globe (Cesium.js)](wk03/wk03_1_lec05/readme.md) | [Interactive Geovisualization   (storymap.js)](wk03/wk03_2_lab03) | [Layout (Web Design Principles , Bootstrap)](wk03/wk03_3_lec06) | `Proposal`                               | [Cesium.js Tutorial, Web Design Principles](wk03/readme.md) |
-| **Wk 4**  | Symbolization (Illustrator, Icons)       | Cont’d   (Interface Design)              | [Color](resource/color.md), [Color Palette](resource/color_palette.md)               | `Project Summary`                        | [Map Symbolization, Color](wk04/readme.md) |
+| **Wk 4**  | Symbolization       | Cont’d   (Interface Design)              | [Color](resource/color.md)               | `Project Summary`                        | [Map Symbolization, Color](wk04/readme.md) |
 | **Wk 5**  | [Typography and Labelling](https://github.com/paulomur/label_topo_ppt), [Fonts](wk05/wk05_1_lec09/readme.md) | [Base Map Design (Mapbox)](wk05/wk05_2_lab04/readme.md) | [Data Interaction I (D3.js)](wk05/wk05_3_lec10/readme.md) | `Sketch`                                 | [Labelling, Typography, D3.js tutorial](wk05/readme.md) |
-| **Wk 6**  | [Data Interaction II (Word Cloud)](https://github.com/winkyt/Data-Interaction-II-Making-charts) | [Cont’d](wk05/wk05_2_lab04/readme.md)                                   | Icons and Illustrators                   | `Design Scheme (Color Palette, label, icon, and multimedia,  etc.)` |                                          |
+| **Wk 6**  | [Data Interaction II (Word Cloud)](https://github.com/winkyt/Data-Interaction-II-Making-charts) | [Cont’d](wk05/wk05_2_lab04/readme.md)                                   | [Icons and Illustrators](wk06/wk06_3_lec12/readme.md)                   | [Design Scheme (color palette, fonts, icon, multimedia)](project/design_scheme.md) |                                          |
 | **Wk 7**  | Real-time mapping (e.g., Twitter API, Weather API) | Data Driven Maps                         | Heatmap   (visualizing real-time geospatial data) | `Coding`                                 |                                          |
 | **Wk 8**  | Cartogram                                | Cont’d                                   | Network Visualization                    | `Coding`                                 |                                          |
 | **Wk 9**  | UAV Mapping                              | Fieldwork with UAV                       | Virtual Reality   (in GAZE Lab)          | `Fine-tuning`                            |                                          |
@@ -32,22 +32,15 @@ You are expected to attend lectures twice a week. Most lectures have time allott
 Attending lectures and labs is important since these times provide you with access to the instructor and to other students. Keep in mind that not all lab assignment will be possible to finish in the allotted class time. Students will be expected to work on assignments outside of class during posted Lab hours. You are welcome to discuss the exercises amongst yourselves, in fact this is encouraged, but the final product you hand in must be your own work (see Academic Integrity Policy below).
 
 - [x] [Intro to GeoViz](wk01/wk01_1_lec01/wk01_1_lec01.pdf)
-
 - [x] [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md)
-
 - [x] [Web Mapping Basics](wk02/wk02_3_lec04/readme.md)
-    - [x] Extended Reading
-    [Computer Port](https://en.wikipedia.org/wiki/Port_(computer_networking))
+    - [x] Extended Reading: [Computer Port](https://en.wikipedia.org/wiki/Port_(computer_networking))
     - [x] Extended Reading: [Projection for Web Maps](resource/cs.md)
     - [x] Extended Reading: [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
-
 - [x] [Virtual Globe](wk03/wk03_1_lec05/readme.md)
-
 - [x] [Layout (Visual hierarchy, etc. Bootstrap)](wk03/wk03_3_lec06)
-
 - [x] Symbolization
 - [x] [Color](resource/color.md)
-    - [ ] [Color Palette](resource/color_palette.md):new:
 - [x] [Topography and Labelling ](https://github.com/paulomur/label_topo_ppt)
     - [x] [Fonts](wk05/wk05_1_lec09/readme.md)
 - [x] [Data Interaction I (D3.js)](wk05/wk05_3_lec10/readme.md)
@@ -69,7 +62,7 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
     - [x] Extended Reading: [Absolute path vs. relative path](http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/)
     - [x] Extended Reading: [windows command line cheatsheet](resource/dos_cheatsheet.jpg) and [Mac Terminal cheatsheet](resource/terminal_cheatsheet.jpg)
 - [x] [Interactive Geovisualization](wk03/wk03_2_lab03)
-   -  [x] [Workflow of Making Storymap](resource/storymap-workflows.png) :new:
+   -  [x] [Workflow of Making Storymap](resource/storymap-workflows.png) 
    -  [x] [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
    -  [x] [Execute and Deploy the Webpage on Github Repository Using Rawgit](http://rawgit.com/)
    -  [x] [Simplify Geometries](resource/simplify_geometries.md)
@@ -91,10 +84,13 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 - [x] Proposal
 - [x] [Technical Framework](project/tech_framework.md)
 - [X] Sketch
-- [ ] Design Scheme: [Color Palette](resource/color_palette.md), Icon, Fonts, Multimedia
+- [ ] [Design Scheme](project/design_scheme.md)
+    - [ ] Color Palette
+    - [ ] Icon
+    - [ ] Fonts
+    - [ ] Multimedia
 - [ ] Project Summary
 - [ ] Coding
-- [ ] Design Scheme
 - [ ] Revision
 - [ ] Presentation
 
