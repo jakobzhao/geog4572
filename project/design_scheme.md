@@ -36,7 +36,7 @@ Export both the url and png version of your color palette by pressing the **Expo
 
 ![](img/coolors-co-export.png)
 
-![](coolors-co-export-popup.png)
+![](img/coolors-co-export-popup.png)
 
 Then, whil designing the geovisualization, you can easily open or calibrate your color palette through the url, or quickly refer to the palette through the png image. For example, the generated url is [https://coolors.co/fa4531-fd3343-fb5371-fcccdd-fdae12](https://coolors.co/fa4531-fd3343-fb5371-fcccdd-fdae12), and the png picture is:
 
