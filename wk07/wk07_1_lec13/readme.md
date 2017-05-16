@@ -2,7 +2,7 @@
 
 > Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
 >
-> Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: LINC 368 | Time: Thursday 9-9:50am
+> Instructor: Bo Zhao | TA: Kyle R. Hogrefe | Location: LINC 368 | Time: Tuesday 9-9:50am
 
 **Learning Objectives**
 
