@@ -103,7 +103,6 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 
 2\. [Storymap.js - a map storytelling library](https://github.com/jakobzhao/storymap)
 
+<img src="img/logo.png" width="30%" height="30%"></img>
 
 This course material is maintained by the [Cartography and Geovisualization Group at Oregon State University](http://geoviz.ceoas.oregonstate.edu).
-
-<img src="img/logo.png" width="30%" height="30%"></img>
