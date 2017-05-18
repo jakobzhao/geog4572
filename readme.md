@@ -1,4 +1,6 @@
-> Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
+# GEOG 4/572: Geovisual Analytics @ Oregon State University
+
+> Spring 2017 | Geography 472/572
 >
 > Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @ strand 347
 >
@@ -8,7 +10,7 @@
 >
 > Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3). Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
-Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, you will learn the theories about geovisualization, advanced geovisual analytical methodologies, and work collaboratively on a real-world problem using geovisual analytical tools. There is no required text, but required papers and online materials will be available on the course website. Students must complete the required reading assignments before attending the corresponding lecture. In-class quizzes will cover the content of the reading assignments.
+Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, you will learn the theories about geovisualization, advanced geovisual analytical methodologies, and work collaboratively on a real-world problem using geovisual analytical tools. There is no required text, but papers and online materials will be available on the course website. Students must complete the required reading assignments before attending the corresponding lecture. In-class quizzes will cover the content of the reading assignments.
 
 ## SYLLABUS
 
@@ -100,3 +102,8 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 1\. [Student Project Gallery of GEOG 371 (2017 Winter)](http://cdn.rawgit.com/jakobzhao/project_gallery/master/index.html)
 
 2\. [Storymap.js - a map storytelling library](https://github.com/jakobzhao/storymap)
+
+
+This course material is maintained by the [Cartography and Geovisualization Group at Oregon State University](http://geoviz.ceoas.oregonstate.edu).
+
+<img src="img/logo.png" width="30%" height="30%"></img>
