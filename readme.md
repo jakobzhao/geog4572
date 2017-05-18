@@ -17,10 +17,10 @@ Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, y
 | **Wk 1**  | [Intro to Geovisualization](wk01/wk01_1_lec01/wk01_1_lec01.pdf) | [Brainstorm](project/brainstorm.md)      | *Geovisualization Presentation*          | [`Introduction`](project/intro.md)       | [W3School Tutorial](wk01/readme.md)      |
 | **Wk 2**  | [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md) | [Web Programming Basics  (JS, HTML, CSS, Markdown and GitHub, etc.)](wk02/wk02_2_lab02/readme.md) | [Web Mapping Basics (leaflet.js)](wk02/wk02_3_lec04/readme.md) | [`Topics`](project/project_topics.md), [`Team-up`](project/team.md) | [Leaflet.js Tutorial](wk02/readme.md)    |
 | **Wk 3**  | [Virtual Globe (Cesium.js)](wk03/wk03_1_lec05/readme.md) | [Interactive Geovisualization   (storymap.js)](wk03/wk03_2_lab03) | [Layout (Web Design Principles , Bootstrap)](wk03/wk03_3_lec06) | `Proposal`                               | [Cesium.js Tutorial, Web Design Principles](wk03/readme.md) |
-| **Wk 4**  | Symbolization       | Cont’d   (Interface Design)              | [Color](resource/color.md)               | `Project Summary`                        | [Map Symbolization, Color](wk04/readme.md) |
+| **Wk 4**  | Symbolization       | Cont’d | [Color](resource/color.md)               | `Project Summary`                        | [Map Symbolization, Color](wk04/readme.md) |
 | **Wk 5**  | [Typography and Labelling](https://github.com/paulomur/label_topo_ppt), [Fonts](wk05/wk05_1_lec09/readme.md) | [Base Map Design (Mapbox)](wk05/wk05_2_lab04/readme.md) | [Data Interaction I (D3.js)](wk05/wk05_3_lec10/readme.md) | `Sketch`                                 | [Labelling, Typography, D3.js tutorial](wk05/readme.md) |
 | **Wk 6**  | [Data Interaction II (Word Cloud)](https://github.com/winkyt/Data-Interaction-II-Making-charts) | [Cont’d](wk05/wk05_2_lab04/readme.md)                                   | [Icons and Illustrators](wk06/wk06_3_lec12/readme.md)                   | [`Design Scheme (color palette, fonts, icon, multimedia)`](project/design_scheme.md) |                                          |
-| **Wk 7**  | [Real-time mapping (e.g., Twitter API, Weather API)](wk07/wk07_1_lec13/readme.md) | Data Driven Maps                         | Heatmap   (visualizing real-time geospatial data) | `Coding`                                 |                                          |
+| **Wk 7**  | [Real-time mapping (e.g., Twitter API, Weather API)](wk07/wok07_1_lec13/readme.md) | Group Project                        | Heatmap, [Project Management](project/proj_management.md) | `Coding`                                 |                                          |
 | **Wk 8**  | Cartogram                                | Cont’d                                   | Network Visualization                    | `Coding`                                 |                                          |
 | **Wk 9**  | UAV Mapping                              | Fieldwork with UAV                       | Virtual Reality   (in GAZE Lab)          | `Fine-tuning`                            |                                          |
 | **Wk 10** | Emerging Topics in GeoViz                | Project Q&A                              | Project Presentation                     | `Presentation`                           |                                          |
@@ -46,7 +46,6 @@ Attending lectures and labs is important since these times provide you with acce
 - [x] [Data Interaction I (D3.js)](wk05/wk05_3_lec10/readme.md)
 - [x] [Data Interaction II (word cloud)](https://github.com/winkyt/Data-Interaction-II-Making-charts)
 - [x] [Icon] (wk06/wk06_3_lec12/readme.md)
-- [ ] [Real-time mapping (e.g., Twitter API, Weather API)](wk07/wk07_1_lec13/readme.md)
 
 ## LABS
 
@@ -78,19 +77,19 @@ The course project is a major component of this course. Students will be divided
 
 Graduate students in GEOG 572 are required to provide extra contributions to the course. A graduate student can choose either making a presentation related to the lecture topic or being responsible for coordinating the project. The projects are expected to have advanced interactive features, introductory pages and other additional materials. All the final projects are expected to publish online, and the codes are expected to be shared on GitHub to contribute to both the open source community and academia.
 
-- [x] [Introduction](project/intro.md)
-- [x] [Brainstorm](project/brainstorm.md)
-- [x] [Project Topics](project/project_topics.md)
-- [x] [Team-up](project/team.md)
-- [x] [Lecture Presentation Schedule](project/lec_presentation.md)
-- [x] Proposal
-- [x] [Technical Framework](project/tech_framework.md)
+- [X] [Introduction](project/intro.md)
+- [X] [Brainstorm](project/brainstorm.md)
+- [X] [Project Topics](project/project_topics.md)
+- [X] [Team-up](project/team.md)
+- [X] [Lecture Presentation Schedule](project/lec_presentation.md)
+- [X] Proposal
+- [X] [Technical Framework](project/tech_framework.md)
 - [X] Sketch
-- [ ] [Design Scheme](project/design_scheme.md)
-    - [ ] Color Palette
-    - [ ] Icon
-    - [ ] Fonts
-    - [ ] Multimedia
+- [X] [Design Scheme](project/design_scheme.md)
+    - [X] Color Palette
+    - [X] Icon
+    - [X] Fonts
+    - [X] Multimedia
 - [ ] Project Summary
 - [ ] Coding
 - [ ] Revision
