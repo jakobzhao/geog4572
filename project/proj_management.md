@@ -409,11 +409,11 @@ Once you finish your project, please credit any contributions which were made by
 As a course project, you are expected to credit the [Cartography and Geovisualiztion Group](http://geoviz.ceoas.oregonstate.edu), you can download the logos at [here](../wk08/wk08_1_lec15).
 
 
- <img src="../wk08/wk08_1_lec15/assets/logo.png" height="20px"> </img>
+ <img src="../wk08/wk08_1_lec15/assets/logo.png" height="50px"> </img>
 
-  <img src="../wk08/wk08_1_lec15/assets/logo-new-2.png" height="20px"> </img>
+  <img src="../wk08/wk08_1_lec15/assets/logo-new-2.png" height="50px"> </img>
 
- <img src="../wk08/wk08_1_lec15/assets/logo-2.png" height="20px"> </img>
+ <img src="../wk08/wk08_1_lec15/assets/logo-2.png" height="50px"> </img>
 
 
 ## References
