@@ -9,24 +9,24 @@
 
 ## MarkerCluster and Data Interaction
 
-github: [http://www.github.com/jakobzhao/benton]
+github: http://www.github.com/jakobzhao/benton
 
-website [http://jakobzhao.github.io/benton]
+website http://jakobzhao.github.io/benton
 
 ![](img/benton-template.png)
 
 ## SLR Project
 
-github: [http://www.github.com/jakobzhao/slr]
+github: http://www.github.com/jakobzhao/slr
 
-website [http://jakobzhao.github.io/slr]
+website http://jakobzhao.github.io/slr
 
 ![](img/immigrants-template.png)
 
 ## Hexgonal maps + Word Cloud
 
-github: [http://www.github.com/jakobzhao/hex]
+github: http://www.github.com/jakobzhao/hex
 
-website [http://jakobzhao.github.io/hex/index2.html]
+website http://jakobzhao.github.io/hex/index2.html
 
 ![](img/hex-template.png)
