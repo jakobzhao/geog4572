@@ -25,7 +25,7 @@ Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, y
 | **Wk 7**  | [Real-time mapping (e.g., Twitter API, Weather API)](wk07/wok07_1_lec13/readme.md) | [Group Project](project/)                        | [Heatmap](http://cdn.rawgit.com/noayarae/heatmap_presentation/053750f1/index.html), [Project Management](project/proj_management.md) | `Coding`                                 |                                          |
 | **Wk 8**  | [Cartogram](https://github.com/johnsoRiB/Cartogram-Presentation), [Project Management  II](project/proj_management.md) | Cont’d                                   | [Network Visualization](https://github.com/cosgrovc/networkviz), [Project Template](project/proj_template.md)                    | `Coding`                                 |                                          |
 | **Wk 9**  | [UAV Mapping](https://github.com/jug650/drone_presentation)                              | Fieldwork with UAV [`gathering spot`](resource/UAV-pnt.geojson)                      | Virtual Reality   (in GAZE Lab)          | `Fine-tuning`                            |                                          |
-| **Wk 10** | Emerging Topics in GeoViz                | Project Q&A                              | Project Presentation                     | `Presentation`                           |                                          |
+| **Wk 10** | Emerging Topics in GeoViz                | Project Q&A                               | Project Presentation                     | `Presentation`, [`project summary`](project/proj_summary.md)                          |                                          |
 
 ## LECTURES
 
@@ -94,8 +94,8 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
     - [X] Multimedia
 - [X] [Project Management](project/proj_management.md)
 - [X] [Project Template](project/proj_template.md)
-- [ ] Project Summary
 - [ ] Coding
+- [ ] Project Summary
 - [ ] Revision
 - [ ] Presentation
 
