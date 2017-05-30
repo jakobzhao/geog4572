@@ -47,7 +47,7 @@ Attending lectures and labs is important since these times provide you with acce
     - [x] [Fonts](wk05/wk05_1_lec09/readme.md)
 - [x] [Data Interaction I (D3.js)](wk05/wk05_3_lec10/readme.md)
 - [x] [Data Interaction II (word cloud)](https://github.com/winkyt/Data-Interaction-II-Making-charts)
-- [x] [Create An Icon] (wk06/wk06_3_lec12/readme.md)
+- [x] [Create An Icon](wk06/wk06_3_lec12/readme.md)
 
 ## LABS
 
