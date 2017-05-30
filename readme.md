@@ -24,7 +24,7 @@ Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, y
 | **Wk 6**  | [Data Interaction II (Word Cloud)](https://github.com/winkyt/Data-Interaction-II-Making-charts) | Cont’d                                   | [Icons and Illustrators](wk06/wk06_3_lec12/readme.md)                   | [`Design Scheme (color palette, font, icon, multimedia)`](project/design_scheme.md) |                                          |
 | **Wk 7**  | [Real-time mapping (e.g., Twitter API, Weather API)](wk07/wok07_1_lec13/readme.md) | [Group Project](project/)                        | [Heatmap](http://cdn.rawgit.com/noayarae/heatmap_presentation/053750f1/index.html), [Project Management](project/proj_management.md) | `Coding`                                 |                                          |
 | **Wk 8**  | [Cartogram](https://github.com/johnsoRiB/Cartogram-Presentation), [Project Management  II](project/proj_management.md) | Cont’d                                   | [Network Visualization](https://github.com/cosgrovc/networkviz), [Project Template](project/proj_template.md)                    | `Coding`                                 |                                          |
-| **Wk 9**  | [UAV Mapping](https://github.com/jug650/drone_presentation)                              | Fieldwork with UAV                       | Virtual Reality   (in GAZE Lab)          | `Fine-tuning`                            |                                          |
+| **Wk 9**  | [UAV Mapping](https://github.com/jug650/drone_presentation)                              | Fieldwork with UAV [`gathering spot`](resource/UAV-pnt.kml)                      | Virtual Reality   (in GAZE Lab)          | `Fine-tuning`                            |                                          |
 | **Wk 10** | Emerging Topics in GeoViz                | Project Q&A                              | Project Presentation                     | `Presentation`                           |                                          |
 
 ## LECTURES
@@ -65,7 +65,7 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
     - [x] Extended Reading: [Absolute path vs. relative path](http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/)
     - [x] Extended Reading: [windows command line cheatsheet](resource/dos_cheatsheet.jpg) and [Mac Terminal cheatsheet](resource/terminal_cheatsheet.jpg)
 - [x] [Interactive Geovisualization](wk03/wk03_2_lab03)
-   -  [x] [Workflow of Making Storymap](resource/storymap-workflows.png) 
+   -  [x] [Workflow of Making Storymap](resource/storymap-workflows.png)
    -  [x] [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
    -  [x] [Execute and Deploy the Webpage on Github Repository Using Rawgit](http://rawgit.com/)
    -  [x] [Simplify Geometries](resource/simplify_geometries.md)
