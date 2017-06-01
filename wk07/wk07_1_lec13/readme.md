@@ -149,5 +149,3 @@ Read and download the source codes of this real-time twitter map from this lectu
 ## 3. Sum-up
 
 How do we take this further? It would be great to dig deeper into the incoming data and rather than just visualizing the data explore trends and gain intelligence. I also wonder what happens if we want to mashup different data sources and read data from other web services or lower-level protocols, such as TCP/IP or WebSockets.
-
-Things get very complicated very quickly when writing code. Here at Safe Software, we don’t think you should have to worry about server-side code to solve your problems—that’s our worry. Here is exactly the same example as above without writing one line of server-side code. All of the workflows and logic are built in a graphical user interface and can then be turned into services and hosted on our cloud platform.
