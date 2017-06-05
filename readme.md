@@ -26,7 +26,7 @@ Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, y
 | **Wk 8**  | [Cartogram](https://github.com/johnsoRiB/Cartogram-Presentation), [Project Management  II](project/proj_management.md) | Cont’d                                   | [Network Visualization](https://github.com/cosgrovc/networkviz), [Project Template](project/proj_template.md) | `Coding`                                 |                                          |
 | **Wk 9**  | [UAV Mapping](https://github.com/jug650/drone_presentation) | Fieldwork with UAV [`gathering spot`](resource/UAV-pnt.geojson) | Virtual Reality (in GAZE Lab), [Panoramic View](wk09/wk09_3_lec18/readme.md) | `Fine-tuning`                            |                                          |
 | **Wk 10** | Emerging Topics in GeoViz, Map Critique  | Project Q&A                              | Project                                  | `revision`,[`project summary`](project/proj_summary.md) |                                          |
-| **Wk 11** |                                          | <p style="color:red; font-weight:bold">Final Presentation</p> `@Strand 361 (GAZE), Tuesday 14 to 16 pm (June 13th)` |                                          |                                          |                                          |
+| **Wk 11** |                                          | <span style="color:red; font-weight:bold">Final Presentation</span> `@Strand 361 (GAZE), Tuesday 14 to 16 pm (June 13th)` |                                          |                                          |                                          |
 
 ## LECTURES
 
