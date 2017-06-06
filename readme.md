@@ -25,8 +25,8 @@ Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, y
 | **Wk 7**  | [Real-time mapping (e.g., Twitter API, Weather API)](wk07/wk07_1_lec13/readme.md) | [Group Project](project/)                | [Heatmap](http://cdn.rawgit.com/noayarae/heatmap_presentation/053750f1/index.html), [Project Management](project/proj_management.md) | `Coding`                                 |                                          |
 | **Wk 8**  | [Cartogram](https://github.com/johnsoRiB/Cartogram-Presentation), [Project Management  II](project/proj_management.md) | Cont’d                                   | [Network Visualization](https://github.com/cosgrovc/networkviz), [Project Template](project/proj_template.md) | `Coding`                                 |                                          |
 | **Wk 9**  | [UAV Mapping](https://github.com/jug650/drone_presentation) | Fieldwork with UAV [`gathering spot`](resource/UAV-pnt.geojson) | [Virtual Reality](https://github.com/CindyTYY/VR), [Panoramic View](wk09/wk09_3_lec18/readme.md) | `Fine-tuning`                            |                                          |
-| **Wk 10** | Emerging Topics in GeoViz, GeoViz Critique  | Project Q&A                              | Project                                  | `revision`,[`project summary`](project/proj_summary.md) |                                          |
-| **Wk 11** |                                          | **Final Presentation** `@Strand 361 (GAZE), Tuesday (June 13th) 14 to 16 pm` |                                          |                                          |                                          |
+| **Wk 10** | Emerging Topics in GeoViz, Map Critique  | Project Q&A                              | Project                                  | `revision`,[`project summary`](project/proj_summary.md) |                                          |
+| **Wk 11** |                                          | **Final Presentation** `@Strand 361 (GAZE), Tuesday (June 13th) 14 to 16 pm` |                                          |                                          |  [Self Review](project/self_review.md)                              |
 
 ## LECTURES
 
@@ -104,7 +104,8 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 - [x] [Project Template](project/proj_template.md)
 - [x] Coding
 - [x] [Project Summary](project/proj_summary.md)
-- [ ] Map Critique
+- [ ] GeoViz Critique
+- [ ] [Self Review](project/self_review.md)
 - [ ] Revision
 - [ ] Presentation
 
