@@ -6,7 +6,7 @@
 >
 > TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu| Office Hours: 1-2pm MF @ WLKN 257 and 2-4pm W @ WLKN 210
 >
-> Assigned: 04/04/2017 | Due: `06/013/2017 by Noon ` | Points Available = 10
+> Assigned: 04/04/2017 | Due: `06/13/2017 by Noon ` | Points Available = 10
 
 By this self-review assignment, you are expected to summarize your contribution to the group project. You will need to write up a self-review report (no more than one page and double-spaced), and in the report, please specify your contribution rather than briefly mentioning the general work you have done such as color pallete, sketch, coding, etc. **You will need to submit a review by the end of Jun 13th, 2017.**
 
