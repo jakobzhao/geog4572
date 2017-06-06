@@ -16,29 +16,20 @@
 
 - Are there opportunities for interaction?
 
-  ​
 - Are there a lot of text-only pages?
 
-  ​
 - Is the title descriptive and appealing?
-
 
 - Is there a brief introduction?
 
-
 - Does the application consider the load balance?
 
-
 - Is there any typo or programming error?
-
 
 - Map design
 
 - Appropriate color palette, font
 
-
 - Informative logo
 
-
 - Layout balance
-
