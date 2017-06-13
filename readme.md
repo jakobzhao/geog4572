@@ -55,7 +55,7 @@ Attending lectures and labs is important since these times provide you with acce
 - [x] [Network](https://github.com/cosgrovc/networkviz)
 - [x] [UAV Mapping](https://github.com/jug650/drone_presentation)
 - [x] [Panoramic View](wk09/wk09_3_lec18/readme.md)
-- [ ] [Emerging Topics in GeoViz](wk10/wk10_1_19/frontiers.pdf)
+- [X] [Emerging Topics in GeoViz](wk10/wk10_1_19/frontiers.pdf)
 
 
 ## LABS
@@ -105,10 +105,10 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 - [x] [Project Template](project/proj_template.md)
 - [x] Coding
 - [x] [Project Summary](project/proj_summary.md)
-- [ ] [GeoViz Critique](project/geoviz_critique.md)
-- [ ] [Self Review](project/self_review.md)
-- [ ] Revision
-- [ ] Presentation
+- [X] [GeoViz Critique](project/geoviz_critique.md)
+- [X] [Self Review](project/self_review.md)
+- [X] Revision
+- [X] Presentation
 
 
 ## RESOURCES
