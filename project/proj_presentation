@@ -1,0 +1,43 @@
+# Course Project: Final Presentations
+
+> Spring 2017 | Geography 472/572 | Geovisualization: Geovisual Analytics
+>
+> Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @ strand 347
+>
+> TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu| Office Hours: 1-2pm MF @ WLKN 257 and 2-4pm W @ WLKN 210
+>
+> Assigned: 04/04/2017 | Due: `06/13/2017 by Noon ` | Points Available = 10
+
+Hope you have been doing well in the final week! Please find the schedule and presentation sequence at http://jakobzhao.github.io/GeovisualAnalytics/project/flyer.html.
+
+Based on the conversations with some of you, I would like to adjust the presenting time to 15~20 minutes (each team will have 15 to 20 minutes to present), and another 5 minutes for Q&A session.
+
+I hope that each team can present the project in a way which the team members feel most comfortable. So, I do not want to make too many restrictive requirements. But to help you prepare the presentation, I expect the following items would provide you a presentation guideline, but your presentation is unnecessary to include all the listed items:
+
+1.Team members
+
+2.Adviser(s)
+
+3.Background
+
+4.Introduction
+
+5.Related works
+
+6.Data (describe how to get, clean, simplify and validate the data, esp. the geospatial data. What are the tools you have been used)
+
+7.Method
+
+   7.1 The specific web mapping architecture of the project and what are the open or proprietary components in each tier (e.g., github, rawgit, github page, bootstrap, leaflet, etc.)
+
+   7.2 The unique mapping feature(s) of the project. For example, 3d, real-time, map storytelling, data interaction, spatialsankey, etc.
+
+8.Tutorial + Demo
+
+9.Design Scheme (sketch, layout, color palette, typography, Logo, icon etc. What are the designing tools you have been used.)
+
+10.Results (describe some of the interesting results through exploring the geovisualization)
+
+11.Future improvements (e.g. VR, animation)
+
+12.Credits and acknowledgement
