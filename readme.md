@@ -4,7 +4,7 @@
 >
 > **TA:** Jared Ritchey, ritcheja@oregonstate.edu | **Office Hours:** TBD
 >
-> **Lecture:** TR 11-12:50am @WITH 205 | **Lab:**  T 6-7:50pm @WLKN 210
+> **Lecture:** TR 11-12:50am @[WITH 205](http://r25wv.ucsadm.oregonstate.edu/r25_wv/wv_servlet/wrd/run/wv_space.Detail?RoomID=118) | **Lab:**  T 6-7:50pm @WLKN 210
 >
 > **Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3).** Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
