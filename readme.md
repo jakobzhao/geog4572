@@ -1,4 +1,4 @@
-# GEOG 4/572: Geovisual Analytics @ Oregon State University
+# GEOG 472/572: Geovisual Analytics @ Oregon State University
 
 > Spring 2018 | Geography 472/572
 >
