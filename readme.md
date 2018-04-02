@@ -1,8 +1,8 @@
 # GEOG 472/572: Geovisual Analytics
 >
-> **Instructor:** Bo Zhao, zhao2@oregonstate.edu | **Office Hours:** 3-4pm T or by appointment @ [Strand Ag Hall 347A](https://www.google.com/maps/place/Strand+Agriculture+Hall,+170+SW+Waldo+Pl,+Corvallis,+OR+97331/@44.5656488,-123.2794268,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040beaf30bd99:0x263a8015b6c0b3b5!8m2!3d44.5656481!4d-123.2772384)
+> **Instructor:** [Bo Zhao](http://ceoas.oregonstate.edu/profile/zhao/), zhao2@oregonstate.edu | **Office Hours:** 3-4pm T or by appointment @ [Strand Ag Hall 347A](https://www.google.com/maps/place/Strand+Agriculture+Hall,+170+SW+Waldo+Pl,+Corvallis,+OR+97331/@44.5656488,-123.2794268,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040beaf30bd99:0x263a8015b6c0b3b5!8m2!3d44.5656481!4d-123.2772384)
 >
-> **TA:** Jared Ritchey, ritcheja@oregonstate.edu | **Office Hours:** TBD
+> **TA:** [Jared Ritchey](http://ceoas.oregonstate.edu/profile/ritchey/), ritcheja@oregonstate.edu | **Office Hours:** TBD
 >
 > **Lecture:** [TR 11-12:50am](http://r25wv.ucsadm.oregonstate.edu/r25_wv/wv_servlet/wrd/run/wv_space.ByNameFindGroup?spid=118,spdt=today) @[WITH 205](http://r25wv.ucsadm.oregonstate.edu/r25_wv/wv_servlet/wrd/run/wv_space.Detail?RoomID=118) | **Lab:**  [T 6-7:50pm](http://dusk.geo.orst.edu/de/de_teach.html) @[WLKN 210](https://www.google.com/maps/place/Wilkinson+Hall/@44.5682215,-123.2824915,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040bb62b60cb5:0x27ea6238495f5669!8m2!3d44.5682215!4d-123.2803028)
 >
