@@ -4,7 +4,7 @@
 >
 > **TA:** [Jared Ritchey](http://ceoas.oregonstate.edu/profile/ritchey/), ritcheja@oregonstate.edu | **Office Hours:** TBD
 >
-> **Lecture:** [TR 11-12:50am](http://r25wv.ucsadm.oregonstate.edu/r25_wv/wv_servlet/wrd/run/wv_space.ByNameFindGroup?spid=118,spdt=today) @[WITH 205](http://r25wv.ucsadm.oregonstate.edu/r25_wv/wv_servlet/wrd/run/wv_space.Detail?RoomID=118) | **Lab:**  [T 6-7:50pm](http://dusk.geo.orst.edu/de/de_teach.html) @[WLKN 210](https://www.google.com/maps/place/Wilkinson+Hall/@44.5682215,-123.2824915,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040bb62b60cb5:0x27ea6238495f5669!8m2!3d44.5682215!4d-123.2803028)
+> **Lecture:** [TR 11-11:50am](http://r25wv.ucsadm.oregonstate.edu/r25_wv/wv_servlet/wrd/run/wv_space.ByNameFindGroup?spid=118,spdt=today) @[WITH 205](http://r25wv.ucsadm.oregonstate.edu/r25_wv/wv_servlet/wrd/run/wv_space.Detail?RoomID=118) | **Lab:**  [T 6-7:50pm](http://dusk.geo.orst.edu/de/de_teach.html) @[WLKN 210](https://www.google.com/maps/place/Wilkinson+Hall/@44.5682215,-123.2824915,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040bb62b60cb5:0x27ea6238495f5669!8m2!3d44.5682215!4d-123.2803028)
 >
 > **Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3).** Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
