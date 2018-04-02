@@ -1,62 +1,44 @@
 # GEOG 4/572: Geovisual Analytics @ Oregon State University
 
-> Spring 2017 | Geography 472/572
+> Spring 2018 | Geography 472/572
 >
 > Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @ strand 347
 >
-> TA: Kyle R. Hogrefe, hogrefek@oregonstate.edu| Office Hours: 1-2pm MF @ WLKN 257 and 2-4pm W @ WLKN 210
+> TA: Jared Ritchey, ritcheja@oregonstate.edu | Office Hours: TBD
 >
-> Lecture: TR 9-9:50am @LINC 368 | Lab:  T 6-7:50pm @WLKN 210
+> Lecture: TR 11-12:50am @WITH 205 | Lab:  T 6-7:50pm @WLKN 210
 >
 > Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3). Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
-Welcome to Geog 4/572: Geovisual Analytics ​:gift_heart:​! In this course, you will learn the theories about geovisualization, advanced geovisual analytical methodologies, and work collaboratively on a real-world problem using geovisual analytical tools. There is no required text, but papers and online materials will be available on the course website. Students must complete the required reading assignments before attending the corresponding lecture. In-class quizzes will cover the content of the reading assignments.
+Welcome to GEOG 472/572: Geovisual Analytics! In this course, you will learn the theories about geovisualization, advanced geovisual analytical methodologies, and work collaboratively on a real-world problem using geovisual analytical tools. 
+
+No required text. Required papers and online materials will be available on the course website.Recommend books will be reserved in Valley Library. Students must complete required reading assignments before attending the corresponding lecture.In-class quizzes will cover the content of the reading assignments. PDF articles are provided.
+
+Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.(2008). [Thematic cartography and geographic visualization](https://www.amazon.com/Thematic-Cartography-Geovisualization-Terry-Slocum/dp/0132298341/ref=sr_1_fkmr0_1?ie=UTF8&qid=1522646663&sr=8-1-fkmr0&keywords=thematic+cartography+and+geovisualization+3rd+edition+pdf). Pearson; 3rd edition (April 14, 2008). ISBN-13: 978-0132298346
 
 ## SYLLABUS
 
-|  **WK**   | **LECTURE (T)**                          | **LAB (T)**                              | **LECTURE(R)**                           | **PROJECT**                              | READING                                  |
-| :-------: | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| **Wk 1**  | [Intro to Geovisualization](wk01/wk01_1_lec01/wk01_1_lec01.pdf) | [Brainstorm](project/brainstorm.md)      | *Geovisualization Presentation*          | [`Introduction`](project/intro.md)       | [W3School Tutorial](wk01/readme.md)      |
-| **Wk 2**  | [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md) | [Web Programming Basics  (JS, HTML, CSS, Markdown and GitHub, etc.)](wk02/wk02_2_lab02/readme.md) | [Web Mapping Basics (leaflet.js)](wk02/wk02_3_lec04/readme.md) | [`Topics`](project/project_topics.md), [`Team-up`](project/team.md) | [Leaflet.js Tutorial](wk02/readme.md)    |
-| **Wk 3**  | [Virtual Globe (Cesium.js)](wk03/wk03_1_lec05/readme.md) | [Interactive Geovisualization   (storymap.js)](wk03/wk03_2_lab03) | [Layout (Web Design Principles , Bootstrap)](wk03/wk03_3_lec06) | `Proposal`                               | [Cesium.js Tutorial, Web Design Principles](wk03/readme.md) |
-| **Wk 4**  | Symbolization                            | Cont’d                                   | [Color](https://github.com/mtsavage/ColorReport) | `Project Summary`                        | [Map Symbolization, Color](wk04/readme.md) |
-| **Wk 5**  | [Typography and Labelling](https://github.com/paulomur/label_topo_ppt), [Fonts](wk05/wk05_1_lec09/readme.md) | [Base Map Design (Mapbox)](wk05/wk05_2_lab04/readme.md) | [Data Interaction I (D3.js)](wk05/wk05_3_lec10/readme.md) | `Sketch`                                 | [Labelling, Typography, D3.js tutorial](wk05/readme.md) |
-| **Wk 6**  | [Data Interaction II (Word Cloud)](https://github.com/winkyt/Data-Interaction-II-Making-charts) | Cont’d                                   | [Icons and Illustrators](wk06/wk06_3_lec12/readme.md) | [`Design Scheme (color palette, font, icon, multimedia)`](project/design_scheme.md) |                                          |
-| **Wk 7**  | [Real-time mapping (e.g., Twitter API, Weather API)](wk07/wk07_1_lec13/readme.md) | [Group Project](project/)                | [Heatmap](http://cdn.rawgit.com/noayarae/heatmap_presentation/053750f1/index.html), [Project Management](project/proj_management.md) | `Coding`                                 |                                          |
-| **Wk 8**  | [Cartogram](https://github.com/johnsoRiB/Cartogram-Presentation), [Project Management  II](project/proj_management.md) | Cont’d                                   | [Network Visualization](https://github.com/cosgrovc/networkviz), [Project Template](project/proj_template.md) | `Coding`                                 |                                          |
-| **Wk 9**  | [UAV Mapping](https://github.com/jug650/drone_presentation) | Fieldwork with UAV [`gathering spot`](resource/UAV-pnt.geojson) | [Virtual Reality](https://github.com/CindyTYY/VR), [Panoramic View](wk09/wk09_3_lec18/readme.md) | `Fine-tuning`                            |                                          |
-| **Wk 10** | [Emerging Topics in GeoViz](wk10/wk10_1_19/frontiers.pdf), [GeoViz Critique](project/geoviz_critique.md)  | Project Q&A                              | Project Q&A                               | `revision`,[`project summary`](project/proj_summary.md) |                                          |
-| **Wk 11** |                                          | **`Final Presentation`** `@Strand 361 (GAZE), Tuesday (June 13th) 14 to 16 pm` |                                          |       [`Self Review`](project/self_review.md), `Presentation`                                   |                                |
+
+
+| **WK**    | **LECTURE  (T)**                                  | **LAB (T)**                                            | **LECTURE(R)**                 | **PROJECT**                                               |
+| --------- | ------------------------------------------------- | ------------------------------------------------------ | ------------------------------ | --------------------------------------------------------- |
+| **Wk 1**  | Intro to this course                              | Lab1: Project Management for GeoViz                    | GeoViz Fundamentals            | Introduction                                              |
+| **Wk 2**  | Brainstorms                                       | GeoViz Programming Fundamentals  Lab2: Web programming | Interactive Maps using Leaflet | Team-up                                                   |
+| **Wk 3**  | Recap + D3 I                                      | Lab3: Map Design                                       | Spatial data Processing        | Proposal                                                  |
+| **Wk 4**  | D3 II                                             | Lab3 cont’d  Google Cloud Platform                     | D3 III                         | Proposal revision                                         |
+| **Wk 5**  | Layout Design using Bootstrap,  GeoViz evaluation | Lab4: Geoviz Module                                    | Color, Topography              | Sketch, Interface Design                                  |
+| **Wk 6**  | SVG, Icons                                        | Lab5: Geoviz Interaction, or Storymap                  | Word cloud                     | Design Scheme (Color, label, icon, and multimedia,  etc.) |
+| **Wk 7**  | Real-time mapping, Heatmap                        | Fieldwork for Drone Mapping                            | GeoViz Critique                | Coding                                                    |
+| **Wk 8**  | Geoviz of Structure-from-motion                   | Lab6: Point-cloud GeoViz                               | Hexagonal Geoviz               | Coding                                                    |
+| **Wk 9**  | Network                                           | Lab6: cont’d                                           | Flow maps, Sankeys             | Fine-tuning                                               |
+| **Wk 10** | Course Summary                                    | Project Q&A                                            | Final Presentation             | Presentation                                              |
+
 
 ## LECTURES
 
 You are expected to attend lectures twice a week. Most lectures have time allotted for discussions,in-class work and other activities. Your contribution in these generally, will be noted, and used to determine part of your final grade; just showing up won't count a whole lot toward this component.
 
-Attending lectures and labs is important since these times provide you with access to the instructor and to other students. Keep in mind that not all lab assignment will be possible to finish in the allotted class time. Students will be expected to work on assignments outside of class during posted Lab hours. You are welcome to discuss the exercises amongst yourselves, in fact this is encouraged, but the final product you hand in must be your own work (see Academic Integrity Policy below).
-
-- [x] [Intro to GeoViz](wk01/wk01_1_lec01/wk01_1_lec01.pdf)
-- [x] [Web Mapping Types, Architecture, and Data](wk02/wk02_1_lec03/readme.md)
-- [x] [Web Mapping Basics](wk02/wk02_3_lec04/readme.md)
-    - [x] Extended Reading: [Computer Port](https://en.wikipedia.org/wiki/Port_(computer_networking))
-    - [x] Extended Reading: [Projection for Web Maps](resource/cs.md)
-    - [x] Extended Reading: [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
-- [x] [Virtual Globe](wk03/wk03_1_lec05/readme.md)
-- [x] [Layout (Design Principles, Bootstrap)](wk03/wk03_3_lec06)
-- [x] Symbolization
-- [x] [Color](resource/color.md)
-- [x] [Topygraphy and Labelling ](https://github.com/paulomur/label_topo_ppt)
-    - [x] [Fonts](wk05/wk05_1_lec09/readme.md)
-- [x] [Data Interaction I (D3.js)](wk05/wk05_3_lec10/readme.md)
-- [x] [Data Interaction II (word cloud)](https://github.com/winkyt/Data-Interaction-II-Making-charts)
-- [x] [Create An Icon](wk06/wk06_3_lec12/readme.md)
-- [x] [Real-time Mapping](wk07/wk07_1_lec13/readme.md)
-- [x] [Heatmap](http://cdn.rawgit.com/noayarae/heatmap_presentation/053750f1/index.html)
-- [x] [Cartogram](https://github.com/johnsoRiB/Cartogram-Presentation)
-- [x] [Network](https://github.com/cosgrovc/networkviz)
-- [x] [UAV Mapping](https://github.com/jug650/drone_presentation)
-- [x] [Panoramic View](wk09/wk09_3_lec18/readme.md)
-- [X] [Emerging Topics in GeoViz](wk10/wk10_1_19/frontiers.pdf)
-
+Attending lectures and labs is important since these times provide you with access to the instructor and to other students. Keep in mind that not all lab assignment will be possible to finish in the allotted class time. Students will be expected to work on assignments outside of class during posted Lab hours. You are welcome to discuss the exercises amongst yourselves, in fact this is encouraged, but the final product you hand in must be your own work.
 
 ## LABS
 
@@ -66,54 +48,15 @@ Lab assignments are required to be submitted electronically to Canvas unless sta
 
 If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
 
-- [x] [Brainstorm](project/brainstorm.md)
-- [x] [Web Programming Basics](wk02/wk02_2_lab02/readme.md)
-    - [x] [Install Webstorm on Personal PC/Mac](resource/install_webstorm.md)
-    - [x] [An Interactive Tutorial on Markdown](http://www.markdowntutorial.com/) and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-    - [x] [Synchronize Course Material Repository with GitHub](resource/sync_with_github.md)
-    - [x] Extended Reading: [Absolute path vs. relative path](http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/)
-    - [x] Extended Reading: [windows command line cheatsheet](resource/dos_cheatsheet.jpg) and [Mac Terminal cheatsheet](resource/terminal_cheatsheet.jpg)
-- [x] [Interactive Geovisualization](wk03/wk03_2_lab03)
-   -  [x] [Workflow of Making Storymap](resource/storymap-workflows.png)
-   -  [x] [Convert Shapefile to Geojson](resource/conversion_shp_geojson.md)
-   -  [x] [Execute and Deploy the Webpage on Github Repository Using Rawgit](http://rawgit.com/)
-   -  [x] [Simplify Geometries](resource/simplify_geometries.md)
-   -  [x] [Add a Favicon](resource/add_favicon.md)
-   -  [x] [Video as the Front Page](resource/video_front_page.md)
-- [x] [Base Map Design](wk05/wk05_2_lab04/readme.md)
-
 ## COURSE PROJECT
 
-The course project is a major component of this course. Students will be divided into 3 to 4 groups. Each group will collaboratively work on a final project using geovisual analytics. The instructor will provide several topics for students to choose from. Students in a group can work on a project of their common interests. Although the project topic is important, this project is more about how to apply the geovisual skills. So,students who want to team up as a group need to have a consensus that they are interested in using the similar geovisual tools and methods. Regarding the project topics, the instructor will provide a pool of topics to choose from during the first two weeks. In the rest of the term, students will concentrate on developing the project. The instructor and TA will provide necessary guidance in applying the geovisual skills for the projects. Since some of the topics are proposed by other faculty members in the university, a co-advisor/group member will join you to provide extra help.
+The final project is a major component of this course. For each group, there should be no more than three students. I recommend a group should be formed by graduate and undergraduate students. Each group will collaboratively work on a final project using geovisual analytics. The instructor will provide several topics for students to choose from. Students can also bring their own topics. Students in a group can work on a project of their common interests. Although the project topic is important, this project is more about how to apply the geovisual skills. So,students who want to team up as a group need to have a consensus that they are interested in using the similar geovisual tools and methods. Regarding the project topics, the instructor will provide a pool of topics to choose from during the first two weeks. In the rest of the term, students will concentrate on developing the project. The instructor and TA will provide necessary guidance in applying the geovisual skills for the projects. Since some of the topics are proposed by other faculty members in the university, a co-advisor/group member will join you to provide extra help.
 
-Graduate students in GEOG 572 are required to provide extra contributions to the course. A graduate student can choose either making a presentation related to the lecture topic or being responsible for coordinating the project. The projects are expected to have advanced interactive features, introductory pages and other additional materials. All the final projects are expected to publish online, and the codes are expected to be shared on GitHub to contribute to both the open source community and academia.
-
-- [x] [Introduction](project/intro.md)
-- [x] [Brainstorm](project/brainstorm.md)
-- [x] [Project Topics](project/project_topics.md)
-- [x] [Team-up](project/team.md)
-- [x] [Lecture Presentation Schedule](project/lec_presentation.md)
-- [x] Proposal
-- [x] [Technical Framework](project/tech_framework.md)
-- [x] Sketch
-- [x] [Design Scheme](project/design_scheme.md)
-    - [x] Color Palette
-    - [x] Icon
-    - [x] Fonts
-    - [x] Multimedia
-- [x] [Project Management](project/proj_management.md)
-- [x] [Project Template](project/proj_template.md)
-- [x] Coding
-- [x] [Project Summary](project/proj_summary.md)
-- [X] [GeoViz Critique](project/geoviz_critique.md)
-- [X] [Self Review](project/self_review.md)
-- [X] Revision
-- [X] Presentation
-
+Graduate students in GEOG 572 are required to provide extra contributions to the course.A graduate student can choose either making a presentation related to the lecture topic or being responsible for coordinating the project. The projects are expected to have advanced interactive features, introductory pages and other additional materials. All the final projects are expected to publish online, and the codes are expected to be shared on GitHub to contribute to both the open source community and academia.
 
 ## RESOURCES
 
-1\. [Student Project Gallery of GEOG 371 (2017 Winter)](http://cdn.rawgit.com/jakobzhao/project_gallery/master/index.html)
+1\. [Students work from previous years](http://geoviz.ceoas.oregonstate.edu/geog4572-17sp.html)
 
 2\. [Storymap.js - a map storytelling library](https://github.com/jakobzhao/storymap)
 
