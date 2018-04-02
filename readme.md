@@ -18,7 +18,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 
 | **WK**    | **LECTURE  (T)**                                  | **LAB (T)**                                            | **LECTURE(R)**                 | **PROJECT**                                               |
 | --------- | ------------------------------------------------- | ------------------------------------------------------ | ------------------------------ | --------------------------------------------------------- |
-| **Wk 01**  | Intro to this course                              | Lab1: Project Management for GeoViz                    | GeoViz Fundamentals            | Introduction                                              |
+| **Wk 01**  | [Intro to this course](lectures/lec01/1-Intro.pdf)                              | Lab1: Project Management for GeoViz                    | GeoViz Fundamentals            | Introduction                                              |
 | **Wk 02**  | Brainstorm                                       | GeoViz Programming Fundamentals,  Lab2: Web programming | Interactive Maps using Leaflet | Team-up                                                   |
 | **Wk 03**  | Recap + D3 I                                      | Lab3: Map Design                                       | Spatial data Processing        | Proposal                                                  |
 | **Wk 04**  | D3 II                                             | Lab3 cont’d  Google Cloud Platform                     | D3 III                         | Proposal revision                                         |
