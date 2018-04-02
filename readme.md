@@ -1,18 +1,16 @@
-# GEOG 472/572: Geovisual Analytics @ Oregon State University
-
-> Spring 2018 | Geography 472/572
+# GEOG 472/572: Geovisual Analytics
 >
-> Instructor: Bo Zhao, zhao2@oregonstate.edu | Office Hours: 3-4pm T or by appointment @ strand 347
+> **Instructor:** Bo Zhao, zhao2@oregonstate.edu | **Office Hours:** 3-4pm T or by appointment @ strand 347
 >
-> TA: Jared Ritchey, ritcheja@oregonstate.edu | Office Hours: TBD
+> **TA:** Jared Ritchey, ritcheja@oregonstate.edu | **Office Hours:** TBD
 >
-> Lecture: TR 11-12:50am @WITH 205 | Lab:  T 6-7:50pm @WLKN 210
+> **Lecture:** TR 11-12:50am @WITH 205 | **Lab:**  T 6-7:50pm @WLKN 210
 >
-> Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3). Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
+> **Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3).** Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
 Welcome to GEOG 472/572: Geovisual Analytics! In this course, you will learn the theories about geovisualization, advanced geovisual analytical methodologies, and work collaboratively on a real-world problem using geovisual analytical tools. 
 
-No required text. Required papers and online materials will be available on the course website.Recommend books will be reserved in Valley Library. Students must complete required reading assignments before attending the corresponding lecture.In-class quizzes will cover the content of the reading assignments. PDF articles are provided.
+No required text. Required papers and online materials will be available on the course website. Recommend books will be reserved in Valley Library. Students must complete required reading assignments before attending the corresponding lecture.In-class quizzes will cover the content of the reading assignments. PDF articles are provided.
 
 Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.(2008). [Thematic cartography and geographic visualization](https://www.amazon.com/Thematic-Cartography-Geovisualization-Terry-Slocum/dp/0132298341/ref=sr_1_fkmr0_1?ie=UTF8&qid=1522646663&sr=8-1-fkmr0&keywords=thematic+cartography+and+geovisualization+3rd+edition+pdf). Pearson; 3rd edition (April 14, 2008). ISBN-13: 978-0132298346
 
