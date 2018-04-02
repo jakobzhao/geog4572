@@ -19,7 +19,6 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 ## SYLLABUS
 
 
-
 | **WK**    | **LECTURE  (T)**                                  | **LAB (T)**                                            | **LECTURE(R)**                 | **PROJECT**                                               |
 | --------- | ------------------------------------------------- | ------------------------------------------------------ | ------------------------------ | --------------------------------------------------------- |
 | **Wk 1**  | Intro to this course                              | Lab1: Project Management for GeoViz                    | GeoViz Fundamentals            | Introduction                                              |
@@ -59,6 +58,8 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 1\. [Students work from previous years](http://geoviz.ceoas.oregonstate.edu/geog4572-17sp.html)
 
 2\. [Storymap.js - a map storytelling library](https://github.com/jakobzhao/storymap)
+
+3\. [NeoCarto - a geovisual analytical framework](http://geoviz.ceoas.oregonstate.edu/neocarto/)
 
 <img src="img/logo.png" width="30%" height="30%"></img>
 
