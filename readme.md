@@ -8,7 +8,7 @@
 >
 > **Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3).** Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
-Welcome to GEOG 472/572: Geovisual Analytics! In this course, you will learn the theories about geovisualization, advanced geovisual analytical methodologies, and work collaboratively on a real-world problem using geovisual analytical tools. 
+Welcome to GEOG 472/572: Geovisual Analytics! In this course, you will learn the theories about geovisualization, advanced geovisual analytical methodologies, and work collaboratively on a real-world problem using geovisual analytical tools. Also, This course is supported by Google Cloud Platform ::Earth::.
 
 No required text. Required papers and online materials will be available on the course website. Recommend books will be reserved in Valley Library. Students must complete required reading assignments before attending the corresponding lecture.In-class quizzes will cover the content of the reading assignments. PDF articles are provided.
 
