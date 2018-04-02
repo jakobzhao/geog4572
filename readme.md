@@ -61,7 +61,7 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 
 3\. [NeoCarto - a geovisual analytical framework](http://geoviz.ceoas.oregonstate.edu/neocarto/)
 
-<img src="img/logo.png" width="30%" height="30%"></img>
+<img src="img/logo.png" aligh="right" width="30%" height="30%"></img>
 
 
 **Credits**
