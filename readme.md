@@ -55,13 +55,13 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 
 ## RESOURCES
 
+<img src="img/logo.png" align="right" width="30%" height="30%"></img>
+
 1\. [Students work from previous years](http://geoviz.ceoas.oregonstate.edu/geog4572-17sp.html)
 
 2\. [Storymap.js - a map storytelling library](https://github.com/jakobzhao/storymap)
 
 3\. [NeoCarto - a geovisual analytical framework](http://geoviz.ceoas.oregonstate.edu/neocarto/)
-
-<img src="img/logo.png" align="right" width="30%" height="30%"></img>
 
 
 **Credits**
