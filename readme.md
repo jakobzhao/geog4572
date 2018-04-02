@@ -1,6 +1,6 @@
 # GEOG 472/572: Geovisual Analytics
 >
-> **Instructor:** Bo Zhao, zhao2@oregonstate.edu | **Office Hours:** 3-4pm T or by appointment @ strand 347
+> **Instructor:** Bo Zhao, zhao2@oregonstate.edu | **Office Hours:** 3-4pm T or by appointment @ [Strand Ag Hall 347A](https://www.google.com/maps/place/Strand+Agriculture+Hall,+170+SW+Waldo+Pl,+Corvallis,+OR+97331/@44.5656488,-123.2794268,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040beaf30bd99:0x263a8015b6c0b3b5!8m2!3d44.5656481!4d-123.2772384)
 >
 > **TA:** Jared Ritchey, ritcheja@oregonstate.edu | **Office Hours:** TBD
 >
@@ -16,11 +16,10 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 
 ## SYLLABUS
 
-
 | **WK**    | **LECTURE  (T)**                                  | **LAB (T)**                                            | **LECTURE(R)**                 | **PROJECT**                                               |
 | --------- | ------------------------------------------------- | ------------------------------------------------------ | ------------------------------ | --------------------------------------------------------- |
 | **Wk 01**  | Intro to this course                              | Lab1: Project Management for GeoViz                    | GeoViz Fundamentals            | Introduction                                              |
-| **Wk 02**  | Brainstorms                                       | GeoViz Programming Fundamentals,  Lab2: Web programming | Interactive Maps using Leaflet | Team-up                                                   |
+| **Wk 02**  | Brainstorm                                       | GeoViz Programming Fundamentals,  Lab2: Web programming | Interactive Maps using Leaflet | Team-up                                                   |
 | **Wk 03**  | Recap + D3 I                                      | Lab3: Map Design                                       | Spatial data Processing        | Proposal                                                  |
 | **Wk 04**  | D3 II                                             | Lab3 cont’d  Google Cloud Platform                     | D3 III                         | Proposal revision                                         |
 | **Wk 05**  | Layout Design using Bootstrap,  GeoViz evaluation | Lab4: Geoviz Module                                    | Color, Topography              | Sketch, Interface Design                                  |
