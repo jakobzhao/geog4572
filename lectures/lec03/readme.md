@@ -1,4 +1,4 @@
-# Course Project: Brainstorm
+# Brainstorm
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >

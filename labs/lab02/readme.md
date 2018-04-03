@@ -1,4 +1,4 @@
-# Lab 2: Web Programming
+# Lab 2: Geoviz Programming Basics II - Javascript
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
