@@ -24,7 +24,7 @@ For this lab, you will use Webstorm, typora and git. Also these software product
 
 - **Typora:** An editor for composing Markdown files ([Click here to download Typora](https://typora.io/)). Typora is dedicated to process markdown files. It can browse, edit, and even convert markdown files to pdf or word documents; and
 
-- **Git:** A version control system (VCS) for tracking changes in computer files and coordinating work on those files among multiple people ([Click here to download, choose the right platform, and then install](https://git-scm.com/downloads)). 
+- **Git:** A version control system (VCS) for tracking changes in computer files and coordinating work on those files among multiple people ([Click here to download, choose the right platform, and then install](https://git-scm.com/downloads)).
 
 If **Git** is successfully installed, type `git` in command prompt (if you are a Windows user) or terminal (if you are a Mac or Linux user), the following screen will be shown up.
 
@@ -261,6 +261,7 @@ You can also upload the `resume.md` through `git push` command on either command
 2\. In the root directory of the downloaded repository, please copy the edited `resume.md` to the root.
 
 3\. Next, you can push this change to the remote repository by implementing two command lines `git commit` and  `git push`. Since you have add new `untracked` files to this repository, you need to also implement another command line `git add` prior to the `git push`. As listed below.
+
 ```powershell
 c:\Workspace\jakobzhao.github.io>git add -A
 c:\Workspace\jakobzhao.github.io>git commit -a -m "update the resume.md"
