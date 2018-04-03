@@ -20,7 +20,7 @@ The lab generally opens 8am-5pm , a detailed schedule can be found at [http://du
 
 For this lab, you will use Webstorm, typora and git. Also these software products have already been installed in the computers in the Digital Earth Lab, except Typora (but you can always use text editor alternatives, such as Webstorm, Notepad, Brackets, and etc.). But I highly recommend you to install all these three.
 
-- **Webstorm:** A professional web mapping programming development environment ([Click here for the installation instruction](https://www.jetbrains.com/webstorm/buy/#edition=discounts)). and make sure you install the edition **for students and teachers**). Check a tutorial on installing Webstorm at [here](install_webstorm.md);
+- **Webstorm:** A professional web programming development environment ([Click here for the installation instruction](https://www.jetbrains.com/webstorm/buy/#edition=discounts)). and make sure you install the edition **for students and teachers**). Check a tutorial on installing Webstorm at [here](install_webstorm.md);
 
 - **Typora:** An editor for composing Markdown files ([Click here to download Typora](https://typora.io/)). Typora is dedicated to process markdown files. It can browse, edit, and even convert markdown files to pdf or word documents; and
 
@@ -34,7 +34,7 @@ Using `git`, you can synchronize the course materials and also publish your own 
 
 ### 1.3 Register a GitHub account
 
-1\. You will apply for a GitHub account for managing and synchronizing your web mapping project. If you do not have a GitHub account yet, please sign up at [https://www.github.com](https://www.github.com)
+1\. You will apply for a GitHub account for managing and synchronizing your geoviz project. If you do not have a GitHub account yet, please sign up at [https://www.github.com](https://www.github.com)
 
 > **Do you know the differences between Git and GitHub?**
 >
