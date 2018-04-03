@@ -1,6 +1,6 @@
 # Lab 1: Project Management for Geovisual Analytics
 
-> Spring 2018 | Geography 4572 | Geovisualization: Geovisual Analytics
+> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
 > **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
 >

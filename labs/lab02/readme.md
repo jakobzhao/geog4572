@@ -1,10 +1,10 @@
-# Lab 2: Web Programming Basics II: Javascript
+# Lab 2: Web Programming
 
-> Winter 2017 | Geography 371 | Geovisualization: Web Mapping
+> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** Th 1000 - 1150
+> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
 >
-> **Assigned:** 09/28/2017 | **Due:** `10/05/2017 @11:59pm` | **Points Available** = 50
+> **Assigned:** 04/03/2018 | **Due:** `04/10/2018 @11:59pm` | **Points Available** = 50
 
 ## 1. Preparation
 
