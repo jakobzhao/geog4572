@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gitignore
 .idea
+.idea/*
 .idea/inspectionProfiles/
 .idea/workspace.xml
 labs/lab02/
