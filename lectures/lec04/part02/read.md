@@ -1,4 +1,4 @@
-# Reading List for Lecture 4: Part II
+# Reading List for Lecture 4: Part III
 
 **W3Schools (201X) Javascript Tutorial, retrieved December 28, 2016 from [https://www.w3schools.com/jquery/](https://www.w3schools.com/jquery/)**
 
