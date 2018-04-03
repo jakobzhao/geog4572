@@ -4,17 +4,17 @@
 >
 > **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
 >
-> **Assigned:** 04/03/2018 | **Due:** `04/10/2018 @11:59pm` | **Points Available** = 50
+> **Assigned:** 04/10/2018 | **Due:** `04/17/2018 @11:59pm` | **Points Available** = 50
 
 ## 1. Preparation
 
-Html, css, and JavaScript are the fundamental programming knowledge set for developing web mapping applications. After introducing HTML and CSS, This exercise helps you get to know the basics of JavaScript, including data types, objects, functions, and events. In addition, along this course, we will get in touch with several well-known JavaScript libraries, including `JQuery`, `Leaflet`, `Cesium`, and `Bootstrap`.
+Html, css, and JavaScript are the fundamental programming knowledge set for developing web mapping applications. After introducing HTML and CSS, This exercise helps you get to know the basics of JavaScript, including data types, objects, functions, and events. In addition, along this course, we will get in touch with several well-known JavaScript libraries, including `JQuery`, `Leaflet`, `D3`, and `Bootstrap`.
 
-JavaScript is a web programming language that manipulates and controls the behavior of web pages by interacting with the various elements on the page and loading data. Many web site templates, such as `Bootstrap`, are in JavaScript, and it is the programming language that most of the major mapping and data visualization libraries, including `Leaflet` and `Cesium` that we are using in this course, are implemented in.
+JavaScript is a web programming language that manipulates and controls the behavior of web pages by interacting with the various elements on the page and loading data. Many web site templates, such as `Bootstrap`, are in JavaScript, and it is the programming language that most of the major mapping and data visualization libraries, including `Leaflet` and `D3` that we are using in this course, are implemented in.
 
 One major concept in web development is **server-side versus client-side**. The server is the location on the web that serves your website to the rest of the world, the client is the computer that is accessing that website, requesting information from the server. JavaScript can be both, but is primarily a client-side language, working on your client computer. In the manner we are using it, JavaScript is a scripting language that will operate in two fundamental ways. The first is executing scripts and tasks when the web page is loaded (i.e. load a dataset on page open), and the second is executing scripts and tasks after the web page visitor tells it to (i.e. clicking a button) or another task is completed (i.e. a menu is closed). When the script executes, it can manipulate the content of the page, change how it is being viewed through the browser, give information to a server, or tell the browser to go back to the server and get new information. Often, however, the instructions given by the script can be followed without additional communication with the server.
 
-> Probably the most popular **server-side** JavaScript implementation is [NodeJS](https://nodejs.org/en/). NodeJS is a runtime that runs on the server to provide fast and dynamic applications, and pushes select output to the client. It can be used for both production and development, and allows you to install Leaflet, Cesium and other libraries on your server. We have plenty else to focus on today, however, so this can come later.
+> Probably the most popular **server-side** JavaScript implementation is [NodeJS](https://nodejs.org/en/). NodeJS is a runtime that runs on the server to provide fast and dynamic applications, and pushes select output to the client. It can be used for both production and development, and allows you to install Leaflet, D3 and other libraries on your server. We have plenty else to focus on today, however, so this can come later.
 
 JavaScript, in a manner similar to CSS, interacts with HTML elements using the **DOM**.
 
@@ -32,7 +32,7 @@ When you are working with javascript, some of your main goals will be to:
 
 JavaScript can be added to your website by either typing in script between two script tags, or by linking a JavaScript file to your site. Please synchronize all the course material, the file structure for this lab is structured as below:
 ```powershell
-geog371
+geog4572
     labs
         lab02
         │  index.html
@@ -650,20 +650,20 @@ function displayDate() {
 
 ### 2.12 Working with Libraries
 
-Unless you want to become a JavaScript master, most often, you will be working with a library that is already written. A library is a collection of pre-written JavaScript with allows for easier development of JavaScript based applications. Libraries are packages of code that when loaded into your document allow access to the objects of that code. In this class, we are primarily going to be using three JavaScript libraries: `jQuery`, `Leaflet`, and `Cesium`.
+Unless you want to become a JavaScript master, most often, you will be working with a library that is already written. A library is a collection of pre-written JavaScript with allows for easier development of JavaScript based applications. Libraries are packages of code that when loaded into your document allow access to the objects of that code. In this class, we are primarily going to be using three JavaScript libraries: `jQuery`, `Leaflet`, and `D3`.
 
 What are these used for?
 
 - jQuery is great for adding user interaction and making calls to other websites, for example, you can easily use it to load data. [Visit the jQuery homepage](http://jquery.com/). In this course, we will use JQuery quite often in manipulating document elements and requesting data from remote servers.
 
-Adding jQuery to your webpage is done by including the following line of code at the bottom of your body section. Please put this in your page.
+Adding jQuery to your webpage is done by including the following line of code at the bottom of your head section. Please put this in your page.
 
 ```js
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 ```
 
 - Leaflet is an easy to use mapping library that makes web maps for displaying geospatial data.
-- Cesium is a javascript library to make virtual global.
+- D3 is a javascript library to make web based graphics.
 
 
 ## 3. Deliverable
