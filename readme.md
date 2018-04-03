@@ -52,7 +52,7 @@ Graduate students in GEOG 572 are required to provide extra contributions to the
 
 ## RESOURCES
 
-<img src="img/logo.png" align="right" width="30%" height="30%"></img>
+<img src="https://raw.githubusercontent.com/jakobzhao/jakobzhao.github.io/master/img/brand.png?token=AAIOgHS9MWSWxFrsm6dKfpxv-9Z_Ci9hks5azHgrwA%3D%3D" align="right" width="30%" height="30%"></img>
 
 1\. [Students work from previous years](http://geoviz.ceoas.oregonstate.edu/geog4572-17sp.html)
 
