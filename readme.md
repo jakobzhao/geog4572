@@ -10,7 +10,7 @@
 
 Welcome to GEOG 472/572: Geovisual Analytics! This course introduces geovisual analytical theories, advanced geovisual analytical methodologies, and some popular toolkits. In this course, students work collaboratively to solve a real-world problem using geovisual analytics. Also, This course is fincially supported by [Google Cloud Platform](https://cloud.google.com/) :cloud:, each student of this course will have $100 budget for using the google cloud services.
 
-No required text. Recommended Papers and online materials will be available on the course website, and some rocommended books will be reserved in valley library. Students must complete required reading assignments before attending the corresponding lecture. In-class quizzes will cover the content of the reading assignments.
+No required textbook. Recommended Papers and online materials will be available on the course website, and some rocommended books will be reserved in valley library. Students must complete required reading assignments before attending the corresponding lecture. In-class quizzes will cover the content of the reading assignments.
 
 Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.(2008). [Thematic cartography and geographic visualization](https://www.amazon.com/Thematic-Cartography-Geovisualization-Terry-Slocum/dp/0132298341/ref=sr_1_fkmr0_1?ie=UTF8&qid=1522646663&sr=8-1-fkmr0&keywords=thematic+cartography+and+geovisualization+3rd+edition+pdf). Pearson; 3rd edition (April 14, 2008). ISBN-13: 978-0132298346
 
