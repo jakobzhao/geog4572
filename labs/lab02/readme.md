@@ -650,7 +650,8 @@ function displayDate() {
 
 ### 2.12 Working with Libraries
 
-Unless you want to become a JavaScript master, most often, you will be working with a library that is already written. A library is a collection of pre-written JavaScript with allows for easier development of JavaScript based applications. Libraries are packages of code that when loaded into your document allow access to the objects of that code. In this class, we are primarily going to be using three JavaScript libraries: `jQuery`, `Leaflet`, and `D3`.
+Unless you want to become a JavaScript master, most often, you will be working with a library that is already written. A library is a collection of pre-written JavaScript with allows for easier development of JavaScript based applications. Libraries are packages of code that when loaded into your document allow access to the objects of that code. In this class, we are primarily going to be using three JavaScript libraries: `
+`, `Leaflet`, and `D3`.
 
 What are these used for?
 
@@ -659,7 +660,7 @@ What are these used for?
 Adding jQuery to your webpage is done by including the following line of code at the bottom of your head section. Please put this in your page.
 
 ```js
-<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 ```
 
 - Leaflet is an easy to use mapping library that makes web maps for displaying geospatial data.
