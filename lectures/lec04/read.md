@@ -62,7 +62,6 @@ CSS Backgrounds
 
 CSS Height/Width
 
-
 CSS Box Model
 
 CSS Text
