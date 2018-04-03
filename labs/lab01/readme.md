@@ -324,7 +324,7 @@ Once the `resume.md` is uploaded to the root of the GitHub Repository, you can s
 
 Before submitting this lab, please make sure both the **GitHub repository** and the **GitHub page** work properly. In this lab, you are excepted to submit the url of the GitHub repository to the **Canvas Dropbox** of this course. There are two types of submissions for this lab depending on whether you have taken GEOG 371 or 571 before.
 
-#### **For those who have not taken GEOG 371 or 571**
+### **For those who have not taken GEOG 371 or 571**
 
 The url for submissio should be in the format of `https://www.github.com/[account_username]/[account_username].github.io`. To do that, check the item of this lab on the assignment tab, and then press the `Submit Assignment` button. Please contact the instructor if you have any difficulty in submitting the url link. Here are the grading criteria:
 
@@ -343,7 +343,7 @@ The url for submissio should be in the format of `https://www.github.com/[accoun
 * A list (5 POINTS); and
 * A table (4 POINTS).
 
-#### **For those who have already taken GEOG 371 or 571, or want to challenge yourselves**
+### **For those who have already taken GEOG 371 or 571, or want to challenge yourselves**
 
 Please create a a github repository for managing one of your projects. This project can be a final project of one of the courses you have been taken, the data and documents for one paper you have been working on. By using github, you can share your project with a larger community over the internet.
 
