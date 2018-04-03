@@ -6,7 +6,7 @@ Reading List for lecture 01
 
 [2] [Absolute path vs. relative path](http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/)
 
-[3] [Windows command line cheatsheet](img/dos_cheatsheet.jpg) or [Mac Terminal cheatsheet](img/terminal_cheatsheet.jpg) Read one of them or both, depending on what operation system(s) you are using.
+[3] [Windows command line cheatsheet](assets/cmd.pdf) or [Mac Terminal cheatsheet](img/terminal_cheatsheet.jpg) Read one of them or both, depending on what operation system(s) you are using.
 
 **Optional:**
 
