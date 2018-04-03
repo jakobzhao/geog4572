@@ -20,7 +20,7 @@ The lab generally opens 8am-5pm , a detailed schedule can be found at [http://du
 
 For this lab, you will use Webstorm, typora and git. Also these software products have already been installed in the computers in the Digital Earth Lab, except Typora (but you can always use text editor alternatives, such as Webstorm, Notepad, Brackets, and etc.). But I highly recommend you to install all these three.
 
-- **Webstorm:** A professional web mapping programming development environment ([Click here for the installation instruction](https://www.jetbrains.com/webstorm/buy/#edition=discounts)). and make sure you install the edition **for students and teachers**). Check a tutorial on installing Webstorm at [here](install_webstorm.md);
+- **Webstorm:** A professional web programming development environment ([Click here for the installation instruction](https://www.jetbrains.com/webstorm/buy/#edition=discounts)). and make sure you install the edition **for students and teachers**). Check a tutorial on installing Webstorm at [here](install_webstorm.md);
 
 - **Typora:** An editor for composing Markdown files ([Click here to download Typora](https://typora.io/)). Typora is dedicated to process markdown files. It can browse, edit, and even convert markdown files to pdf or word documents; and
 
@@ -34,7 +34,7 @@ Using `git`, you can synchronize the course materials and also publish your own 
 
 ### 1.3 Register a GitHub account
 
-1\. You will apply for a GitHub account for managing and synchronizing your web mapping project. If you do not have a GitHub account yet, please sign up at [https://www.github.com](https://www.github.com)
+1\. You will apply for a GitHub account for managing and synchronizing your geoviz project. If you do not have a GitHub account yet, please sign up at [https://www.github.com](https://www.github.com)
 
 > **Do you know the differences between Git and GitHub?**
 >
@@ -289,18 +289,22 @@ We can also use Webstorm to upload files to GitHub repository or more generally,
 
 4\. Once you open this repository, you can edit the `resume.md` in Webstorm.
 
-5\. To update any edit changes, on the top menu, Click `VCS` on the top menu, and then `commit...` on the dropdown menu.
+5\. Before you synchrnize the files, please right-click on the project name on the side bar, and on the popped-up menu, hover on `git`, and then click `Add`. This operation will make sure the newly-created file will be managed by git.
+
+![](img/git-add.jpg)
+
+6\. To update any edit changes, on the top menu, Click `VCS` on the top menu, and then `commit...` on the dropdown menu.
 
 ![](img/commit.jpg)
 
-6\. On the popped-up `Commit Changes` window, make sure you check the `Unversioned Files` box if there is, also, you need to leave some message in the `Commit Message` textbox and input the name of the author who made this change.
+7\. On the popped-up `Commit Changes` window, make sure you check the `Unversioned Files` box if there is, also, you need to leave some message in the `Commit Message` textbox and input the name of the author who made this change.
 
 ![](img/commit_change.jpg)
 
-7\. Before you commit, hover your mouse on the `Commit` button, then a dropdown menu will show up, **Choose `Commit and Push...`**. Then on the newly popped up window, click `push` to finish.
+8\. Before you commit, hover your mouse on the `Commit` button, then a dropdown menu will show up, **Choose `Commit and Push...`**. Then on the newly popped up window, click `push` to finish.
 
 
-> **Note**: As you might already aware of, the first two steps are as same as those in the solution 2. The difference is, solution 2 works on a terminal/command prompt environment (a command-lline user interface), while solution 3 works in Webstorm (a graphic user interface).
+> **Note**: As you might be already aware of, the first two steps are as same as those in the solution 2. The difference is, solution 2 works on a terminal/command prompt environment (a command-lline user interface), while solution 3 works in Webstorm (a graphic user interface).
 >
 > Using either of the three solutions, you can upload your resume or any other files to GitHub. Then, log on to this repository on GitHub to see whether the uploaded content is applied.
 >
@@ -318,9 +322,13 @@ Once the `resume.md` is uploaded to the root of the GitHub Repository, you can s
 
 ## 4. Deliverable
 
-Before submitting this lab, please make sure both the **GitHub repository** and the **GitHub page** work properly. In this lab, you are excepted to submit the url of the GitHub repository to the **Canvas Dropbox** of this course. This url should be in the format of `https://www.github.com/[account_username]/[account_username].github.io`. To do that, check the item of this lab on the assignment tab, and then press the `Submit Assignment` button. Please contact the instructor if you have any difficulty in submitting the url link. Here are the grading criteria:
+Before submitting this lab, please make sure both the **GitHub repository** and the **GitHub page** work properly. In this lab, you are excepted to submit the url of the GitHub repository to the **Canvas Dropbox** of this course. There are two types of submissions for this lab depending on whether you have taken GEOG 371 or 571 before.
 
-1\. A GitHub account is registered, You have followed the instructor's GitHub account and `star-ed` the course GitHub repository. (6 POINTS)
+#### **For those who have not taken GEOG 371 or 571**
+
+The url for submissio should be in the format of `https://www.github.com/[account_username]/[account_username].github.io`. To do that, check the item of this lab on the assignment tab, and then press the `Submit Assignment` button. Please contact the instructor if you have any difficulty in submitting the url link. Here are the grading criteria:
+
+1\. A GitHub account is registered, You have followed the instructor's GitHub account (@jakobzhao) and `star-ed` the course GitHub repository (https://github.com/jakobzhao/geog4572). (6 POINTS)
 
 2\. The repository should be named after `[account_username].github.io`. (5 POINTS)
 
@@ -328,14 +336,37 @@ Before submitting this lab, please make sure both the **GitHub repository** and 
 
 4\. To hone your skills in generating Markdown files, the resume could be built upon the template that was shown in `Section 3.2`, but we still encourage you customize your resume. In terms of the format, your online resume should contain:
 
-* different levels of headers (4 POINTS);
-* block quotes (4 POINTS);
-* url links (4 POINTS);
+* different levels of headers (5 POINTS);
+* block quotes (5 POINTS);
+* url links (5 POINTS);
 * one or several images (10 POINTS);
-* A list (4 POINTS);
-* A table (4 POINTS); and
-* One or several emoji icons (4 POINTS).
+* A list (5 POINTS); and
+* A table (4 POINTS).
 
-> **Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted.Lab assignments are expected to be completed by the due date. ***A late penalty of at least 10 percentage units will be taken off each day after the due date.***
+#### **For those who have already taken GEOG 371 or 571, or want to challenge yourselves**
+
+Please create a a github repository for managing one of your projects. This project can be a final project of one of the courses you have been taken, the data and documents for one paper you have been working on. By using github, you can share your project with a larger community over the internet.
+
+ In this repository, you need to upload the project materials (e.g., codes, files, notes, multimedia, etc.) in order to share them to the public, and also edit the `readme.md` file to introduce this project. Here are the grading criteria:
+
+1\. A GitHub account is registered, You have followed the instructor's GitHub account (`@jakobzhao`) and `star-ed` the course GitHub repository (`https://github.com/jakobzhao/geog4572`). (6 POINTS)
+
+2\. The repository is not necessary to be named after `[account_username].github.io`.
+
+3\. The repository contains multiple documents for this project. (5 POINTS)
+
+4\. The `GitHub page` function of the repository should work properly. That said, your project readme file can be visited from `https://[account_username].github.io/[your_project_name]` (5 POINTS);
+
+5\. The readme.md is compiled to introduce your project. In terms of the format, this readme.md file should contain the following elements:
+
+* different levels of headers (5 POINTS);
+* block quotes (5 POINTS);
+* url links (5 POINTS);
+* one or several images (10 POINTS);
+* A list (5 POINTS); and
+* A table (4 POINTS).
+
+
+> **Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted. Lab assignments are expected to be completed by the due date. ***A late penalty of at least 10 percentage units will be taken off each day after the due date.***
 
 > If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
