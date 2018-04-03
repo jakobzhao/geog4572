@@ -760,6 +760,13 @@ Please create a PE report as a word document, and answer all the following quest
 
 Once you finish this lab, you need to submit the lab report to **Canvas Dropbox**. On the assignment tab,  check the item of this lab, press the `Submit Assignment` button to submit your lab report. Please contact the instructor or TA if you have any difficulty. Note: only submit your lab report in Word or PDF format.
 
+**Question 10.** which value does the statement `1 == 2` return?
+
+> A. true;
+>
+> B. 1;
+>
+> C. false;
 
 ## Reference
 
