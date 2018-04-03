@@ -322,11 +322,12 @@ Once the `resume.md` is uploaded to the root of the GitHub Repository, you can s
 
 ## 4. Deliverable
 
-Before submitting this lab, please make sure both the **GitHub repository** and the **GitHub page** work properly. In this lab, you are excepted to submit the url of the GitHub repository to the **Canvas Dropbox** of this course. There are two types of submissions for this lab depending on whether you have taken GEOG 371 or 571 before.
+Before submitting this lab, please make sure both the **GitHub repository** and the **GitHub page** work properly. In this lab, you are excepted to **ONLY** submit the url of the GitHub repository to the **Canvas Dropbox** of this course. (for example, the url for submission should be in the format of `https://www.github.com/[account_username]/[account_username].github.io`, rathern than `https://[account_username].github.io`. ) To do that, check the item of this lab on the assignment tab, and then press the `Submit Assignment` button. Please contact the instructor if you have any difficulty in submitting the url link.There are two types of submissions depending on whether you have taken GEOG 371 or 571 before.
+
 
 ### **For those who have not taken GEOG 371 or 571**
 
-The url for submissio should be in the format of `https://www.github.com/[account_username]/[account_username].github.io`. To do that, check the item of this lab on the assignment tab, and then press the `Submit Assignment` button. Please contact the instructor if you have any difficulty in submitting the url link. Here are the grading criteria:
+Here are the grading criteria:
 
 1\. A GitHub account is registered, You have followed the instructor's GitHub account (@jakobzhao) and `star-ed` the course GitHub repository (https://github.com/jakobzhao/geog4572). (6 POINTS)
 
