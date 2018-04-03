@@ -15,11 +15,13 @@ No required textbook. Recommended Papers and online materials will be available 
 Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.(2008). [Thematic cartography and geographic visualization](https://www.amazon.com/Thematic-Cartography-Geovisualization-Terry-Slocum/dp/0132298341/ref=sr_1_fkmr0_1?ie=UTF8&qid=1522646663&sr=8-1-fkmr0&keywords=thematic+cartography+and+geovisualization+3rd+edition+pdf). Pearson; 3rd edition (April 14, 2008). ISBN-13: 978-0132298346
 
 ## SYLLABUS
+- 32
+- 321
 
 | **WK**    | **LECTURE  (T)**                                  | **LAB (T)**                                            | **LECTURE(R)**                 | **PROJECT**                                               |
 | --------- | ------------------------------------------------- | ------------------------------------------------------ | ------------------------------ | --------------------------------------------------------- |
 | **Wk 01**  | [Intro to this course](lectures/lec01/1-Intro.pdf)                            | [Lab1: Project Management for GeoViz](labs/lab01/) ([*`reading`*](lab01/read.md))                    | GeoViz Fundamentals            | [Introduction](project/intro.md)                                              |
-| **Wk 02**  | Brainstorm                                       | GeoViz Programming Fundamentals ([*`reading`*](lec04/read.md)), Lab2: Web programming (([*`reading`*](lab02/read.md))) | Interactive Maps using Leaflet | Team-up                                                   |
+| **Wk 02**  | Brainstorm                                       | - GeoViz Programming Fundamentals ([*`reading`*](lec04/read.md)), - Lab2: Web programming (([*`reading`*](lab02/read.md))) | Interactive Maps using Leaflet | Team-up                                                   |
 | **Wk 03**  | Recap, D3 I                                      | Lab3: Map Design                                       | Spatial data Processing        | Proposal                                                  |
 | **Wk 04**  | D3 II                                             | Lab3 cont’d,  Google Cloud Platform                     | D3 III                         | Proposal revision                                         |
 | **Wk 05**  | Layout Design using Bootstrap, GeoViz evaluation | Lab4: Geoviz Module                                    | Color, Topography              | Sketch, Interface Design                                  |
