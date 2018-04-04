@@ -6,7 +6,7 @@
 >
 > **Assigned:** 04/03/2018 | **Due:** `04/10/2018 @11:59pm` | **Points Available** = 50
 
-Welcome to the lab session of **GEOG 4572: Geovisual Analytics**! In this lab, we will briefly introduce the Digital Earth Lab at Wilkinson 210, download the course material and more importantly, help you get familiar with the major operations on project management for Geovisual Analytics. In practice, you will start with installing the required software (on your own computer or laptop), registering a GitHub account, and learn how to use several software products, such as Webstorm, Typora, and Git. To test your learning outcomes, you will be asked to generate a  GitHub repository to publish your resume on the web. Okay, let us get started!
+Welcome to the lab session of **GEOG 4/572: Geovisual Analytics**! In this lab, we will briefly introduce the Digital Earth Lab at Wilkinson 210, download the course material and more importantly, help you get familiar with the major operations on project management for Geovisual Analytics. In practice, you will start with installing the required software (on your own computer or laptop), registering a GitHub account, and learn how to use several software products, such as Webstorm, Typora, and Git. To test your learning outcomes, you will be asked to generate a  GitHub repository to publish your resume on the web. Okay, let us get started!
 
 # 1. Preparations
 
