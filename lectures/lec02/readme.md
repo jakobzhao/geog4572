@@ -6,8 +6,9 @@
 
 **Learning Objectives**
 
+- Understand the basic concepts related to Geovisual Analytics
 - Understand the system architecture for web mapping; and
-- Get to know the elements of a web map through examples.
+- Get familiar with the web basics, especially the structure of urls.
 
 
 Geovisual analytics refers to the science of analytical reasoning with spatial information as facilitated by interactive visual interfaces. It is distinguished by its focus on novel approaches to analysis rather than novel approaches to visualization or computational methods alone. As a result, geovisual analytics is usually grounded in real-world problem solving contexts. Research in geovisual analytics may focus on the development of new computational approaches to identify or predict patterns, new visual interfaces to geographic data, or new insights into the cognitive and perceptual processes that users apply to solve complex analytical problems. Systems for geovisual analytics typically feature a high-degree of user-driven interactivity and multiple visual representation types for spatial data. Geovisual analytics tools have been developed for a variety of problem scenarios, such as crisis management and disease epidemiology. Looking ahead, the emergence of new spatial data sources and display formats is expected to spur an expanding set of research and application needs for the foreseeable future.
@@ -152,14 +153,10 @@ Some URLs include a string of characters after the path—beginning with a quest
 Also appearing after the path, the anchor tells your browser to scroll to or load a specific part of the page. Usually the anchor begins with a hashtag and is used to direct your browser to a specific part of a very long page, much like a bookmark. Different anchors don’t load different pages; they simply tell the browser to display different parts of the page.
 
 
-
-
 ## 4. References
 
 [1] Robinson, A. (2017). [Geovisual Analytics](https://gistbok.ucgis.org/bok-topics/geovisual-analytics). The Geographic Information Science & Technology Body of Knowledge (3rd Quarter 2017 Edition), John P. Wilson (ed.). doi: 10.22224/gistbok/2017.3.6.
 
 [2] https://fcit.usf.edu/internet/chap1/chap1.htm
 
-[3] https://www.tutorialspoint.com/internet_technologies/internet_overview.htm
-
-[4] https://www.gcflearnfree.org/internetbasics/understanding-urls/1/
+[3] Understanding URLs, https://www.gcflearnfree.org/internetbasics/understanding-urls/1/
