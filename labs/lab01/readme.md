@@ -6,7 +6,7 @@
 >
 > **Assigned:** 04/03/2018 | **Due:** `04/10/2018 @11:59pm` | **Points Available** = 50
 
-Welcome to the lab session of **GEOG 4572: Geovisual Analytics**! In this lab, we will briefly introduce the Digital Earth Lab at Wilkinson 210, download the course material and more importantly, help you get familiar with the major operations on project management for Geovisual Analytics. In practice, you will start with installing the required software (on your own computer or laptop), registering a GitHub account, and learn how to use several software products, such as Webstorm, Typora, and Git. To test your learning outcomes, you will be asked to generate a  GitHub repository to publish your resume on the web. Okay, let us get started!
+Welcome to the lab session of **GEOG 4/572: Geovisual Analytics**! In this lab, we will briefly introduce the Digital Earth Lab at Wilkinson 210, download the course material and more importantly, help you get familiar with the major operations on project management for Geovisual Analytics. In practice, you will start with installing the required software (on your own computer or laptop), registering a GitHub account, and learn how to use several software products, such as Webstorm, Typora, and Git. To test your learning outcomes, you will be asked to generate a  GitHub repository to publish your resume on the web. Okay, let us get started!
 
 # 1. Preparations
 
@@ -65,14 +65,15 @@ C:\Workspace>
 C:\Users\[your_username]>cd Desktop
 C:\Users\[your_username]\Desktop>
 ```
-If the you need to navigate to a different drive, the bellow code will help you navigate to a different drive. This may be desired if you wish to save your files on a drive other than the C: drive or if you are working on a lab computer as opposed to your own. The below example navigates to the F: drive. Substitute this for the appropriate drive in your case.
+If the you need to navigate to a different drive, the bellow code will help you navigate to a different drive. This may be desired if you wish to save your files on a drive other than the C: drive or if you are working on a lab computer as opposed to your own. The below example navigates to the R: drive. Substitute this for the appropriate drive in your case.
+
 ```powershell
 C:\Users\[your_username]>cd\
 C:\>cd windows
 C:\Windows>cd System32
 C:\Windows\System32>cd..
-C:\Windows>f:
-F:
+C:\Windows>R:
+R:
 ```
 
 5\. Having the **git url**, we will need to use the command `git clone` to clone the GitHub repository to your local computer.
