@@ -2,103 +2,14 @@
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** WITH 210 | **Time:** TR 1100 - 1150
+> **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
 
-To find the geovisualization of your interests and the topic for the course project, this lecture will introduce some typical geovisualizations and some potential topics. Students are expected to submit the homework by 11:59pm of April 12th.
 
-- Get to know the Digital Earth Lab @ OSU.
-- Get familiar with the major types of geovisualization via trendy examples.
-- Reflect on which specific geovisual analytical method(s) are of your interests.
-
-## 1. Introduction
-
-This course relies on a series of professional software and web applications to make, debug, and browse web maps, including:
-
-- **Webstorm:** A web mapping programming development environment;
-- **MapBox:** An integrated platform for web mapping services;
-- **QGIS:** An open source GIS desktop;
-- **Chrome:** A Web browser;
-- **Google Earth Pro:** A three-dimensional virtual globe with various geospatial data.
-
-## 2\. Geovisualization Examples
+## 1\. Major types of Geovisual Analytical applications
 
 This section introduces some major types of interactive geovisual applications. Regarding the course project, you are expected to work as a team to make a similar geovisual application. By viewing the following geovisual applications, you would get sense how geovisual skills can be applied for illustrating real-world problems.
 
-### 2.1 Storymap
-
-Esri Story Maps let you combine authoritative maps with narrative text, images, and multimedia content. They make it easy to harness the power of maps and geography to tell your story.
-
-**[A River Reborn](http://storymaps.esri.com/stories/2015/river-reborn/)**
-
-![](img/river-reborn.png)
-
-Please pay attention to how the author uses the 2D map, 3D virtual environment and multi-media (e.g., video, images, etc.).
-
-**[California's Getting Fracked](http://www.facesoffracking.org/data-visualization/)**
-
-![](img/cali-fracked.png)
-
-Please pay attention to the use of map elements, and how the window scrolling behavior triggers the map events.
-
-### 2.2 Virtual Globe
-
-**[World Population](https://globe.chromeexperiments.com/)**
-
-![](img/world-pop.png)
-
-**[Noise Complaints in New York City](http://rawgit.com/jakobzhao/noise_complaints/master/index.html)**
-
-![](img/noise_compaint.png)
-
-Please pay attention to how virtual globe is used to demonstrate thematic features.
-
-**[Cesium-VR](https://github.com/NICTA/cesium-vr)**
-
-![](img/vr-cesium.png)
-
-Enable the geovisualization with the capability of virtual reality. Also, please reflect on how to overlay map and 3d model collected by UAV on to a geovisual application.
-
-### 2.3 Spatial Data Platform
-
-**[National Map of Australia](http://nationalmap.gov.au/)**
-
-![](img/terria.png)
-
-please pay attention to the use of virtual globe, and how different types of geospatial data (especially **maps made by UAV**) are overlain in the same visualization environment.
-
-### 2.4 Data-driven Geovisualization
-
-**[Stweet](http://www.we-love-the.net/Stweet/index.php?location=Portland,US)**
-
-![](img/stweet.png)
-
-Please pay attention to how heterogeneous types of data are mashed up.
-
-**[Trendsmap](img/trendsmap.png)**
-
-![](img/trendsmap.png)
-
-Geo-tagged tweets are real-timely collected and stored in a remote database, a **word cloud** of geo-tagged hashtags are visualized. Please reflect on the multiple dimensions of a real-world issue. Can we clearly describe a phenomena merely based on one type of geovisual analytical method?
-
-**[Climate Proxies Finder](http://climateproxiesfinder.ipsl.fr/)**
-
-![](img/climate-proxies-finder.png)
-
-> This application allows you to select different paleo-oceanographic proxies collected at LSCE according to various dimensions (spatial position, depth, age, archive, material type and chronological information).
-
-One data source, and multiple visual analytical ways.
-
-**[Global temporal change](http://blogs.reading.ac.uk/climate-lab-book/files/2016/05/spiral_optimized.gif)**
-
-![](img/climate-change-spiral.png)
-
-**[Electric Generation in Spain](http://energia.ningunaparte.net/en/)**
-
-![](img/electric-generation.png)
-
-Connect the idea of infographics with the data-driven visualization.
-
-### 2.5 Advanced Geovisual Analytics
+### 2.1 Single-view Geoviz
 
 **[Economic Output of Asian Countries - New York Times](http://www.nytimes.com/interactive/2013/04/08/business/global/asia-map.html)**
 
@@ -118,9 +29,7 @@ The use of isoline maps.
 
 ![](img/migrationmap.png)
 
-**[Small Arms and Ammunition - Import & exports](https://armsglobe.chromeexperiments.com/)**
 
-![](img/firearms-import.png)
 
 **[A Graph of the History of Philosophy](http://www.designandanalytics.com/philosophers-gephi/)**
 
@@ -128,9 +37,58 @@ The use of isoline maps.
 
 Please pay attention to how (social) network is implemented to visualize connectivity.
 
-## 3\. Project Topics (TBA...)
+**[Global temporal change](http://blogs.reading.ac.uk/climate-lab-book/files/2016/05/spiral_optimized.gif)**
 
-This section lists some potential topics for the course projects.
+![](img/climate-change-spiral.png)
+
+**[Electric Generation in Spain](http://energia.ningunaparte.net/en/)**
+
+![](img/electric-generation.png)
+
+Connect the idea of infographics with the data-driven visualization.
+
+
+### 2.2 Coordinated (Multiple) View Geoviz
+
+**[Climate Proxies Finder](http://climateproxiesfinder.ipsl.fr/)**
+
+![](img/climate-proxies-finder.png)
+
+> This application allows you to select different paleo-oceanographic proxies collected at LSCE according to various dimensions (spatial position, depth, age, archive, material type and chronological information).
+
+One data source, and multiple visual analytical ways.
+
+### 2.3 Storymap (a.k.a geo-narrative, online map based storytelling, etc.)
+
+Esri Story Maps let you combine authoritative maps with narrative text, images, and multimedia content. They make it easy to harness the power of maps and geography to tell your story.
+
+**[A River Reborn](http://storymaps.esri.com/stories/2015/river-reborn/)**
+
+![](img/river-reborn.png)
+
+Please pay attention to how the author uses the 2D map, 3D virtual environment and multi-media (e.g., video, images, etc.).
+
+**[California's Getting Fracked](http://www.facesoffracking.org/data-visualization/)**
+
+![](img/cali-fracked.png)
+
+Please pay attention to the use of map elements, and how the window scrolling behavior triggers the map events.
+
+
+### 2.4 Point Cloud Geoviz
+
+Potree is a free open-source WebGL based point cloud renderer for large point clouds, developed at the Institute of Computer Graphics and Algorithms, TU Wien.
+
+![](img/potree.png)
+
+
+### 2.5 Spatial Data Platform
+
+**[National Map of Australia](http://nationalmap.gov.au/)**
+
+![](img/terria.png)
+
+please pay attention to the use of virtual globe, and how different types of geospatial data (especially **maps made by UAV**) are overlain in the same visualization environment.
 
 
 

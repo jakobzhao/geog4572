@@ -2,7 +2,7 @@
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** WITH 210 | **Time:** TR 1100 - 1150
+> **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
 
 **Learning Objectives**
 
@@ -152,8 +152,7 @@ Some URLs include a string of characters after the path—beginning with a quest
 
 Also appearing after the path, the anchor tells your browser to scroll to or load a specific part of the page. Usually the anchor begins with a hashtag and is used to direct your browser to a specific part of a very long page, much like a bookmark. Different anchors don’t load different pages; they simply tell the browser to display different parts of the page.
 
-
-## 4. References
+## 5. References
 
 [1] Robinson, A. (2017). [Geovisual Analytics](https://gistbok.ucgis.org/bok-topics/geovisual-analytics). The Geographic Information Science & Technology Body of Knowledge (3rd Quarter 2017 Edition), John P. Wilson (ed.). doi: 10.22224/gistbok/2017.3.6.
 
