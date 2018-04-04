@@ -669,7 +669,9 @@ Adding jQuery to your webpage is done by including the following line of code at
 
 ## 3. Deliverable
 
-Please create a PE report as a word document, and answer all the following questions in the PE report.
+Please create a lab report as a word document, and answer all the following questions in that that report. Once you finished the report, please submit it to canvas dropbox.
+
+### For those who have not taken Geog 371 or Geog 571
 
 **Question 1.** Inside which HTML element do we put the JavaScript? (5 points)
 
@@ -760,13 +762,16 @@ Please create a PE report as a word document, and answer all the following quest
 
 Once you finish this lab, you need to submit the lab report to **Canvas Dropbox**. On the assignment tab,  check the item of this lab, press the `Submit Assignment` button to submit your lab report. Please contact the instructor or TA if you have any difficulty. Note: only submit your lab report in Word or PDF format.
 
-**Question 10.** which value does the statement `1 == 2` return?
+**Question 10.** Which value does the statement `1 == 2` return?
 
 > A. true;
 >
 > B. 1;
 >
 > C. false;
+
+
+### For those who have already taken Geog 371 or 571
 
 ## Reference
 

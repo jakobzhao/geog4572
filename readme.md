@@ -14,6 +14,9 @@ No required textbook. Recommended Papers and online materials will be available 
 
 Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.(2008). [Thematic cartography and geographic visualization](https://www.amazon.com/Thematic-Cartography-Geovisualization-Terry-Slocum/dp/0132298341/ref=sr_1_fkmr0_1?ie=UTF8&qid=1522646663&sr=8-1-fkmr0&keywords=thematic+cartography+and+geovisualization+3rd+edition+pdf). Pearson; 3rd edition (April 14, 2008). ISBN-13: 978-0132298346
 
+
+> [A Terra Report about this course](http://terra.oregonstate.edu/2017/10/the-great-escape/)
+
 ## SYLLABUS
 
 
