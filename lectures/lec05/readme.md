@@ -1,4 +1,4 @@
-# Interact Maps using Leaflet
+# Interactive Maps using Leaflet
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
