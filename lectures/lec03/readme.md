@@ -50,6 +50,14 @@ Connect the idea of infographics with the data-driven visualization.
 
 ### 2.2 Coordinated (Multiple) View Geoviz
 
+**[Benton County 2040](https://scottwhitson.github.io/benton/dreams.html)**
+
+he Benton County 2040 Thriving Community Initiative (TCI) is a project in which the goal is to identify the core values and vision of the Benton County community. In order to identify community thoughts, the Thriving Communities Council conducted several surveys by hosting public events throughout the County. At these events, community members were asked to to share comments on what they like about where they lived and what they hoped to see in the future.
+
+This project, conducted by students and faculty at Oregon State University, was done to present the results of this survey. The presentation of the results was done in a geo-visual manner which displays demographic results by city or town. The map also contains a word cloud which shows key words which identifies what the community values.
+
+![](img/tci2040.jpg)
+
 **[Climate Proxies Finder](http://climateproxiesfinder.ipsl.fr/)**
 
 ![](img/climate-proxies-finder.png)
@@ -59,6 +67,14 @@ Connect the idea of infographics with the data-driven visualization.
 One data source, and multiple visual analytical ways.
 
 ### 2.3 Storymap (a.k.a geo-narrative, online map based storytelling, etc.)
+
+
+**[Stand with #Standingrock](https://winkyt.github.io/standwithstandingrock/)**
+
+Following months of conflict, triggered by a proposed pipeline, in January 2017, environmental protestors were forced to leave their camping area at Standing Rock. Today, it has become nearly impossible for people to access the former camping area. Even though protestors no longer stay there, a growing number of social media users still stand with #StandingRock by spoofing their check-ins on Facebook. With storymap techniques, this dynamic map geo-narrates the whole story of the environmental protest at Standing Rock and #standing rock.
+
+![](img/sr.jpg)
+
 
 Esri Story Maps let you combine authoritative maps with narrative text, images, and multimedia content. They make it easy to harness the power of maps and geography to tell your story.
 
@@ -74,21 +90,26 @@ Please pay attention to how the author uses the 2D map, 3D virtual environment a
 
 Please pay attention to the use of map elements, and how the window scrolling behavior triggers the map events.
 
-
 ### 2.4 Point Cloud Geoviz
 
-Potree is a free open-source WebGL based point cloud renderer for large point clouds, developed at the Institute of Computer Graphics and Algorithms, TU Wien.
+[Potree](http://potree.org/index.html) is a free open-source WebGL based point cloud renderer for large point clouds, developed at the Institute of Computer Graphics and Algorithms, TU Wien.
 
-![](img/potree.png)
+![](img/potree.jpg)
 
 
 ### 2.5 Spatial Data Platform
 
-**[National Map of Australia](http://nationalmap.gov.au/)**
+**[HJA Geospatial data Platform]**
 
-![](img/terria.png)
+[http://mapious.ceoas.oregonstate.edu:3001/](http://mapious.ceoas.oregonstate.edu:3001/)
 
-please pay attention to the use of virtual globe, and how different types of geospatial data (especially **maps made by UAV**) are overlain in the same visualization environment.
+This project seeks to develop a web map-based data catalog for the H.J. Andrews Experimental Forest. The initial goal is to provide a central platform for researchers and the broader public to visualize geospatial data within a 3D digital landscape. The portal was developed using Cesium, an open-source JavaScript library for 3D maps, in conjunction with TerriaJS, a library for building geospatial data catalogs, and GeoServer, a Java-based software server that allows users to view and edit geospatial data. The datasets currently available are for demonstration purposes; this is a pilot project to be built upon in the future.
+
+
+![](img/hja.jpg)
+
+
+
 
 
 
