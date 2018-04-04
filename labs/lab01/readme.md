@@ -65,6 +65,7 @@ C:\Workspace>
 C:\Users\[your_username]>cd Desktop
 C:\Users\[your_username]\Desktop>
 ```
+
 If the you need to navigate to a different drive, the bellow code will help you navigate to a different drive. This may be desired if you wish to save your files on a drive other than the C: drive or if you are working on a lab computer as opposed to your own. The below example navigates to the R: drive. Substitute this for the appropriate drive in your case.
 
 ```powershell
