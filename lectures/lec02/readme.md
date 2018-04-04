@@ -112,6 +112,7 @@ PING sni.github.map.fastly.net (151.101.53.147): 56 data bytes
 64 bytes from 151.101.53.147: icmp_seq=95 ttl=59 time=6.453 ms
 64 bytes from 151.101.53.147: icmp_seq=96 ttl=59 time=6.549 ms
 64 bytes from 151.101.53.147: icmp_seq=97 ttl=59 time=6.384 ms
+... ...
 ```
 
 ### 3.3 URLs
