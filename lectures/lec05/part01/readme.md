@@ -1,8 +1,8 @@
-# Map Client I: Basics and Geographic Features
+# Basics and Geographic Features
 
-> Fall 2017 | Geography 371 | Geovisualization: Web Mapping
+> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
-> **Instructor:** Bo Zhao | **Location:** WLKN 235 | **Time:** MWF 1200 - 1250
+> **Instructor:** Bo Zhao  **Location:** WITH 210 | **Time:** TR 1100 - 1150
 
 **Learning Objectives**
 
@@ -30,8 +30,8 @@ What Leaflet does not do: Provide any data for you! Leaflet is a framework for s
 The latest stable Leaflet release is hosted on a CDN — to start using it straight away, place this in the head of your HTML code:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
 ```
 
 ## 2. Project Preparation
@@ -88,14 +88,14 @@ Within the head section, after title, copy and paste the following. This adds th
 
 ```html
 <!-- External Stylesheets -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
 ```
 
 Link to the JavaScript library at the bottom of the body section of our site, putting it at the bottom allows our page to load faster. Copy and paste the following. This adds the Leaflet JS file to our web page and is the Leaflet Javascript library.
 
 ```html
 <!-- Add the Leaflet JavaScript library -->
-<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
 ```
 
 We can now begin working with the Leaflet library.

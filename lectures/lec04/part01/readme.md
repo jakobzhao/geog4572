@@ -32,13 +32,14 @@ Standard protocol is that a file named **index** is what will be provided by def
 > **Note:** the HTML file extension, indicating the file is written in HTML). The file structure found in my directory looks like the following.
 
 ```
- Geog371
+ Geog4572
    lectures
-     lec03
-      │  index.html
-      ├─css
-      ├─img
-      └─js
+     lec04
+       part01
+          │  index.html
+          ├─css
+          ├─img
+          └─js
 ```
 
 You can also have supplemental files, such as images, style files, scripts, and other items in your root directory alongside the `index.html` standing alone or in subdirectories. You can see in the above-listed file structure, I have `img` for holding images, `css` for holding style files, `js` for scripts, and usually another folder named `assets` or `data` for holding miscellaneous items.
@@ -84,7 +85,7 @@ $ python -m SimpleHTTPServer 80
 
 Now you can access your site **http://localhost** without specifying a port.
 
-Other than setting up a Server environment through python SimpleHTTPServer, you can also If you work in Webstorm (what we suggested for this course), you do not need to start the Python server by inputting commands in the Terminal or Command promt. In Webstorm's main window, click one of the browser icons at the top right, a server environment will automatically launch, and a browser showing the web page will be opened up.
+Other than setting up a Server environment through python SimpleHTTPServer, you can also use Webstorm (what we suggested for this course). In Webstorm's main window, click one of the browser icons at the top right, a server environment will automatically launch, and a browser showing the web page will be opened up.
 
 ![](img/webstorm.jpg)
 

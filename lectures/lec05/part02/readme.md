@@ -1,8 +1,8 @@
-# Map Client II: Map Events and Mashup
+#  Map Events and Mashup
 
-> Fall 2017 | Geography 371 | Geovisualization: Web Mapping
+> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
-> **Instructor:** Bo Zhao | **Location:** WLKN 235 | **Time:** MWF 1200 - 1250
+> **Instructor:** Bo Zhao  **Location:** WITH 210 | **Time:** TR 1100 - 1150
 
 **Learning Objectives**
 
