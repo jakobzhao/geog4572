@@ -27,7 +27,7 @@ Geovisual analytics is a focus today for a significant amount of geographic rese
 
  - **Analytical Reasoning**: the process of examining information in order to find patterns within that information.
 
- - **Coordinated-view** visualization: dynamic visual interfaces in which multiple data representations are interactively linked to support operations such as cross-filtering, highlighting, and selection.
+ - **Coordinated-view**: or coordianted multiple view. Dynamic visual interfaces in which multiple data representations are interactively linked to support operations such as cross-filtering, highlighting, and selection.
 
 ![](img/ga-interaction.jpg)
 
@@ -42,6 +42,7 @@ The STempo toolkit is a geovisual analytics system designed to support pattern d
 The [SensePlace3](https://www.geovista.psu.edu/SensePlace3/election/) geovisual analytics system allows users to explore the place references included in Twitter messages, including the locations messages are sent from as well as those that are referenced in the message content itself. In this example, tweets about the 2016 United States presidential election are visualized from multiple perspectives. A timeline and list view on the left of the display shows recent activity, while the map at the center of the display shows the density of location mentions for election-related tweets. At right, a matrix view allows users to compare relationships between locations mentioned in tweets to the use of specific hashtags.
 
 ![](img/senseplace.jpg)
+
 
 ## 2\. Major types of geovisual analytical applications
 
@@ -67,8 +68,6 @@ The use of isoline maps.
 **[Migrations Map](http://migrationsmap.net/#/COD/arrivals)**
 
 ![](img/migrationmap.png)
-
-
 
 **[A Graph of the History of Philosophy](http://www.designandanalytics.com/philosophers-gephi/)**
 
@@ -107,13 +106,11 @@ One data source, and multiple visual analytical ways.
 
 ### 2.3 Storymap (a.k.a geo-narrative, online map based storytelling, etc.)
 
-
 **[Stand with #Standingrock](https://winkyt.github.io/standwithstandingrock/)**
 
 Following months of conflict, triggered by a proposed pipeline, in January 2017, environmental protestors were forced to leave their camping area at Standing Rock. Today, it has become nearly impossible for people to access the former camping area. Even though protestors no longer stay there, a growing number of social media users still stand with #StandingRock by spoofing their check-ins on Facebook. With storymap techniques, this dynamic map geo-narrates the whole story of the environmental protest at Standing Rock and #standing rock.
 
 ![](img/sr.jpg)
-
 
 Esri Story Maps let you combine authoritative maps with narrative text, images, and multimedia content. They make it easy to harness the power of maps and geography to tell your story.
 
@@ -135,7 +132,6 @@ Please pay attention to the use of map elements, and how the window scrolling be
 
 ![](img/potree.jpg)
 
-
 ### 2.5 Spatial Data Platform
 
 **[HJA Geospatial data Platform]**
@@ -144,9 +140,7 @@ Please pay attention to the use of map elements, and how the window scrolling be
 
 This project seeks to develop a web map-based data catalog for the H.J. Andrews Experimental Forest. The initial goal is to provide a central platform for researchers and the broader public to visualize geospatial data within a 3D digital landscape. The portal was developed using Cesium, an open-source JavaScript library for 3D maps, in conjunction with TerriaJS, a library for building geospatial data catalogs, and GeoServer, a Java-based software server that allows users to view and edit geospatial data. The datasets currently available are for demonstration purposes; this is a pilot project to be built upon in the future.
 
-
 ![](img/hja.jpg)
-
 
 ## 3\. System Architecture for web based Geovisual Analytics
 
