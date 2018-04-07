@@ -760,8 +760,6 @@ Please create a lab report as a word document, and answer all the following ques
 >
 > C. variable carName;
 
-Once you finish this lab, you need to submit the lab report to **Canvas Dropbox**. On the assignment tab,  check the item of this lab, press the `Submit Assignment` button to submit your lab report. Please contact the instructor or TA if you have any difficulty. Note: only submit your lab report in Word or PDF format.
-
 **Question 10.** Which value does the statement `1 == 2` return?
 
 > A. true;
@@ -771,7 +769,96 @@ Once you finish this lab, you need to submit the lab report to **Canvas Dropbox*
 > C. false;
 
 
+
 ### For those who have already taken Geog 371 or 571
+
+**Question 1.** The external JavaScript file must contain the <script> tag.
+
+>A. True
+>
+>B. False
+
+**Question 2.** How do you write "Hello World" in an alert box?
+
+> A. msg("Hello World");
+>
+> B. msgBox("Hello World");
+>
+> C. alertBox("Hello World");
+>
+> D. alert("Hello World")
+
+**Question 3.**  How does a WHILE loop start?
+
+> A. while (i <= 10)
+>
+> B. while (i <= 10; i++)
+>
+> C. while i = 1 to 10
+
+**Question 4.** How do you round the number 7.25, to the nearest integer?
+
+> A. Math.rnd(7.25)
+>
+> B. Math.round(7.25)
+>
+> C. round(7.25)
+>
+> D. rnd(7.25)
+
+**Question 5.** How do you find the number with the highest value of x and y?
+
+> A. ceil(x, y)
+>
+> B. Math.ceil(x, y)
+>
+> C. top(x, y)
+>
+> D. Math.max(x, y)
+
+**Question 6.** What will the following code return: Boolean(10 > 9)?
+
+> A. NaN
+>
+> B. false
+>
+> C. true
+
+**Question 7.** Is it possible to use jQuery together with AJAX?
+
+> A. No
+>
+> B. Yes
+
+**Question 8.** What is the correct jQuery code to set the background color of all p elements to red?
+
+> A. $("p").layout("background-color","red");
+>
+> B. $("p").css("background-color","red");
+>
+> C. $("p").style("background-color","red");
+>
+> D. $("p").manipulate("background-color","red");
+
+**Question 9.** With jQuery, look at the following selector: $("div.intro"). What does it select?
+
+> A. The first div element with class="intro"
+>
+> B. The first div element with id="intro"
+>
+> C. All div elements with class="intro"
+>
+> D. All div elements with id="intro"
+
+**Question 10.** The jQuery animate() method can be used to animate ANY CSS property?
+
+> A. Only properties containing numeric values
+>
+> B. Yes
+>
+> C. All properties except the shorthand properties
+
+Once you finish this lab, you need to submit the lab report to **Canvas Dropbox**. On the assignment tab,  check the item of this lab, press the `Submit Assignment` button to submit your lab report. Please contact the instructor or TA if you have any difficulty. Note: only submit your lab report in Word or PDF format.
 
 ## Reference
 
