@@ -373,7 +373,7 @@ In JavaScript, a variable can be declared after it has been used. In other words
 
 ```js
 //code snippet 1
-notice = "web mapping"; // Assign a string to notice
+notice = "geovisual analytics"; // Assign a string to notice
 console.log(notice)
 var notice; // Declare x
 ```
@@ -383,7 +383,7 @@ var notice; // Declare x
 ```js
 //code snippet 2
 var notice; // Declare notice
-notice = "web mapping"; // Assign a string to notice
+notice = "geovisual analytics"; // Assign a string to notice
 console.log(notice)
 ```
 
