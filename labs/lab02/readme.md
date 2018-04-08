@@ -250,8 +250,8 @@ Object Literal data type is a comma separated list of name value pairs.
 
 ```javascript
 var course = {
-    name: "Geovisualization: Web Mapping",
-    year: 2017,
+    name: "Geovisualization: Geovisual Analytics",
+    year: 2018,
     univ: "Oregon State University"
 };
 
@@ -373,7 +373,7 @@ In JavaScript, a variable can be declared after it has been used. In other words
 
 ```js
 //code snippet 1
-notice = "web mapping"; // Assign a string to notice
+notice = "geovisual analytics"; // Assign a string to notice
 console.log(notice)
 var notice; // Declare x
 ```
@@ -383,7 +383,7 @@ var notice; // Declare x
 ```js
 //code snippet 2
 var notice; // Declare notice
-notice = "web mapping"; // Assign a string to notice
+notice = "geovisual analytics"; // Assign a string to notice
 console.log(notice)
 ```
 
@@ -617,6 +617,7 @@ Accessing elements of your page in JavaScript is easy because JavaScript can rea
 
 ```
 document;
+
 ```
 
 Try document.body to see elements within the document body.
@@ -650,8 +651,7 @@ function displayDate() {
 
 ### 2.12 Working with Libraries
 
-Unless you want to become a JavaScript master, most often, you will be working with a library that is already written. A library is a collection of pre-written JavaScript with allows for easier development of JavaScript based applications. Libraries are packages of code that when loaded into your document allow access to the objects of that code. In this class, we are primarily going to be using three JavaScript libraries: `
-`, `Leaflet`, and `D3`.
+Unless you want to become a JavaScript master, most often, you will be working with a library that is already written. A library is a collection of pre-written JavaScript with allows for easier development of JavaScript based applications. Libraries are packages of code that when loaded into your document allow access to the objects of that code. In this class, we are primarily going to be using three JavaScript libraries: ```jQuery```, ```Leaflet```, and ```D3```.
 
 What are these used for?
 

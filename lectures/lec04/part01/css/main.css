@@ -9,12 +9,12 @@ body {
 }
 
 a:hover {
-    color: orange;
+    color: blue;
 }
 
 p {
     background-color: #dddddd;
-    padding: 20px;
+    padding: 60px;
     width: 320px;
     height: 40px;
     margin-right: 10px;
