@@ -17,7 +17,7 @@ Geovisual analytics refers to the science of analytical reasoning with spatial i
 ## 1\. What is Geovisual Analytics (Robinson, 2017)
 
 
-### 1.1 Defination of Geovisual Analytics
+### 1.1 Definition of Geovisual Analytics
 
 Geovisual analytics is the science of analytical reasoning with spatial information as facilitated by interactive visual interfaces (G. Andrienko et al., 2007). This domain emerged in the late-2000s following the development of a broader field called visual analytics (Thomas & Cook, 2005). Visual analytics itself emerged as a separable discipline from the field of Information Visualization, becoming distinct via its focus on the science of analytical reasoning with visual interfaces, rather than primarily emphasizing the visual representation of data as is common in Information Visualization. Put simply, visual analytics places emphasis on supporting analytical processes, not just the development of new visual methods for representing data. Therefore, in the context of geographic information science, geovisual analytics is an emerging research domain that advances the state of the art in analytical reasoning with visual interfaces for spatial data sources, and it builds upon a great deal of earlier work in Geovisualization (see Geovisualization, forthcoming) which focused on new visual methods for representing and interacting with spatial data.
 
@@ -27,7 +27,7 @@ Geovisual analytics is a focus today for a significant amount of geographic rese
 
  - **Analytical Reasoning**: the process of examining information in order to find patterns within that information.
 
- - **Coordinated-view**: or coordianted multiple view. Dynamic visual interfaces in which multiple data representations are interactively linked to support operations such as cross-filtering, highlighting, and selection.
+ - **Coordinated-view**: or coordinated multiple view. Dynamic visual interfaces in which multiple data representations are interactively linked to support operations such as cross-filtering, highlighting, and selection.
 
 ![](img/ga-interaction.jpg)
 
@@ -90,7 +90,7 @@ Connect the idea of infographics with the data-driven visualization.
 
 **[Benton County 2040](https://scottwhitson.github.io/benton/dreams.html)**
 
-he Benton County 2040 Thriving Community Initiative (TCI) is a project in which the goal is to identify the core values and vision of the Benton County community. In order to identify community thoughts, the Thriving Communities Council conducted several surveys by hosting public events throughout the County. At these events, community members were asked to to share comments on what they like about where they lived and what they hoped to see in the future.
+The Benton County 2040 Thriving Community Initiative (TCI) is a project in which the goal is to identify the core values and vision of the Benton County community. In order to identify community thoughts, the Thriving Communities Council conducted several surveys by hosting public events throughout the County. At these events, community members were asked to to share comments on what they like about where they lived and what they hoped to see in the future.
 
 This project, conducted by students and faculty at Oregon State University, was done to present the results of this survey. The presentation of the results was done in a geo-visual manner which displays demographic results by city or town. The map also contains a word cloud which shows key words which identifies what the community values.
 
@@ -156,7 +156,7 @@ It can take several different physical machines to create, serve, and use a web 
 >  - The line then branches to drawings of a file server (left) and a database server (right).
 >  - To the left (within the Internal network rectangler) is another computer drawing with the label: Administrators and internal client applications. Desktop workstations that are used by administrators and internal client applications. These machines will also be used to prepare data, author maps, and sometimes administer the other machines.
 
-In some cases, your web based geovis may be designed solely for the use of people within your organization and may never see the open web. In this scenario, client applications may also reside on these desktop workstation machines.
+In some cases, your web based geoviz may be designed solely for the use of people within your organization and may never see the open web. In this scenario, client applications may also reside on these desktop workstation machines.
 
 A database and/or file server holding all of your GIS data. This machine might be equipped with redundant storage mechanisms and regular backup scripts that prevent the loss of data.
 
