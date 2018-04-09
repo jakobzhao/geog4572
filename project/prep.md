@@ -10,7 +10,7 @@ This assignment asks you to show what kind of geoviz application you are interes
 
 - (4) The type of the geoviz that you plan to work. It should be one of the following: storymap, single view, coordinated multiple view, or point cloud geoviz.
 
-Once you finish this homework, you need to submit this one-page slide to **Canvas Dropbox** **by 5:00pm of April 9th (Monday)**. On the assignment tab,  check the item of this homework, press the `Submit Assignment` button to submit. Please contact the instructor or TA if you have any difficulty. Note: only submit your homework in Word or PDF format.
+Once you finish this homework, you need to submit this one-page slide to **Canvas Dropbox** **by 5:00pm of April 9th (Monday)**. On the assignment tab,  check the item of this homework, press the `Submit Assignment` button to submit. Please contact the instructor or TA if you have any difficulty. Note: only submit your homework in ppt or pptx format.
 
 In addition, You will need to present your slide in two minutes during the lecture on Tuesday (**April 10th**).
 
