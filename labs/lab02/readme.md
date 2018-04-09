@@ -55,11 +55,11 @@ In the body of your HTML document, above the script, you will see a button using
 <button type="button" onclick="helloworld()"> Click Me!</button>
 ```
 
-So where is helloworld function? It is in the main.js document. The structure of it is as follows. It looks through the document to find an element named foo, then changes the HTML within that element to 'Hello Web Mapping!'.
+So where is helloworld function? It is in the main.js document. The structure of it is as follows. It looks through the document to find an element named foo, then changes the HTML within that element to 'Hello Geovisual Analytics!'.
 
 ```js
 function helloworld() {
-    document.getElementById('foo').innerHTML = 'Hello, Web Mapping!';
+    document.getElementById('foo').innerHTML = 'Hello, Geovisual Analytics!';
 }
 ```
 
