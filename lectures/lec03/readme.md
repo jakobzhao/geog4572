@@ -16,6 +16,7 @@
 The geoviz lab has collected a large datset of social media data (twitter, instagram) during Hurricane Harvey. This data set contains well-structured tweets, instagram photos, and individual life paths (interpreted by geo-tagged content). In this term, we are thinking of studying how people emotionally response to this natural disaster, evacuation as well as other relevant events using this data set. By detecting the facial expression of the people who are in the nstagram photos, we can study the collective and individual emotional changes before, during and after the hurracane. Also, a correlation between the collective emotion and social-economic varaibles can be done to further understand the causations of the emotional changes.
 
 Type: Coordinated View
+
 Advisor: Bo Zhao
 
 
@@ -39,5 +40,3 @@ Preserving soil resources and enhancing soil health is critical to reducing agri
 Type: Storymap
 
 Co-adivsor: Dr. Gabrielle Roesch-McNally, Fellow with the USDA Climate Hubs and an Affiliate Faculty in the School of Public Policy at Oregon State. She is available for mentoring students interested in this project.
-
- 
