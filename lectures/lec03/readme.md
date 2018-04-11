@@ -29,7 +29,7 @@ Deep Learning has great potential in semantic analysis. It enables computers to 
 
 Type: Coordianted View or Simple View
 
-Co-advsior: Dr. Lei Zou from Louisana State University。 Dr. Zou's recent study entitled ["Mining Twitter Data for Improved Understanding of Disaster Resilience"](assets/lei-annals-2018) was published in the Annals.
+Co-advsior: Dr. Lei Zou from Louisana State University. Dr. Zou's recent study entitled ["Mining Twitter Data for Improved Understanding of Disaster Resilience"](assets/lei-annals-2018) was published in the Annals.
 
 
 
