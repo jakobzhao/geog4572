@@ -110,7 +110,7 @@ Add a div to the body that will hold the map. This is just like any other div el
 
 ### 3.4 Use Javascript to create the map object
 
-Now we can start coding the map using JavaScript. The Leaflet library is referenced by using `L`. followed by the class. The first step is to create the map object using the map class. Set the variable map to be our Leaflet map object. More reading on L.map can be found in the extensive Leaflet documentation. Set the center of the map to be at the Memorial Union Quad  `(44.56576, -123.27888)` and zoom level to `14`. Enter the following in our document at the end of the body section.
+Now we can start coding the map using JavaScript. The Leaflet library is referenced by using `L`. followed by the class. The first step is to create the map object using the map id. Set the variable map to be our Leaflet map object. More reading on L.map can be found in the extensive Leaflet documentation. Set the center of the map to be at the Memorial Union Quad  `(44.56576, -123.27888)` and zoom level to `14`. Enter the following in our document at the end of the body section.
 
 ```html
 <script>
