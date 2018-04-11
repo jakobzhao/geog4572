@@ -89,7 +89,7 @@ In this case, the function changes the properties of the pop up, or in our case,
 
 Save and refresh. Click on the data features to see the pop ups in action.
 
-More on events is found in the [Leaflet documentation](http://leafletjs.com/reference.html), under each object, look at the events and properties that are available for you to utilize and manipulate.
+More on events is found in the [Leaflet documentation](http://leafletjs.com/reference-1.3.0.html#domevent-on), under each object, look at the events and properties that are available for you to utilize and manipulate.
 
 ## 3. Use leaflet-ajax plugin to add a GeoJSON
 
@@ -103,9 +103,9 @@ In the downloaded materials, there is a data folder `assets` that contains a fil
 
 ### 3.1 Use leaflet.ajax JavaScript Library
 
-The first thing is add a super useful JavaScript library called `jQuery` to our page. leaflet.ajax makes it easy to manipulate a web page by finding elements on the page, setting their styles and properties, handling interaction events, and more. It has a nice helper method, called `getJson()`, we will to use to load our GeoJSON file onto our map.
+The first thing is add a super useful JavaScript library called `leaflet.ajax.min.js` to our page. leaflet.ajax makes it easy to manipulate a web page by finding elements on the page, setting their styles and properties, handling interaction events, and more. It has a nice helper method, called `getJson()`, we will to use to load our GeoJSON file onto our map.
 
-Enter the following line of code at the bottom of the body section to add the jQuery library to our page after the lines that add the Leaflet JavaScript library.
+Enter the following line of code at the bottom of the body section to add the leaflet.ajax.min.js library to our page after the lines that add the Leaflet JavaScript library.
 
 ```html
 <head>
