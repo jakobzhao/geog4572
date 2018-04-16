@@ -22,8 +22,7 @@
         zoom: 7,
         maxZoom: 10,
         minZoom: 3,
-        detectRetina: true, //support Retina Display if the client uses high resolution monitor.
-        attribution: 'Cell Tower Data &copy; Map Cruzin | Oregon counties &copy; Oregon Explorer | Base Map &copy; CartoDB | Made By Bo Zhao'});
+        detectRetina: true});
 
     // 2. Add a base map.
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
@@ -33,7 +32,9 @@
     // Null variable that will hold cell tower data
     var cellTowers = null;
     // Get GeoJSON and put on it on the map when it loads
-    cellTowers= L.geoJson.ajax("assets/cell_towers.geojson");
+    cellTowers= L.geoJson.ajax("assets/cell_towers.geojson",{
+        attribution: 'Cell Tower Data &copy; Map Cruzin | Oregon counties &copy; Oregon Explorer | Base Map &copy; CartoDB | Made By Bo Zhao'
+    });
     // Add the cellTowers to the map.
     cellTowers.addTo(mymap);
 

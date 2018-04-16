@@ -1,27 +1,31 @@
-/**
- * Created by jakob on 1/2/2017.
- */
+// 1. Create a map object.
+var mymap = L.map('map', {
+    center: [44.13, -119.93],
+    zoom: 7,
+    maxZoom: 10,
+    minZoom: 3,
+    detectRetina: true});
 
-var mymap = L.map('map', {center: [44.13, -119.93], zoom: 7});
+// 2. Add a base map.
+L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 
-L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-    maxZoom: 11,
-    minZoom: 6,
-    detectRetina: true, //support Retina Display if the client uses high resolution monitor.
-    attribution: 'Cell Tower Data &copy; Map Cruzin | Oregon counties &copy; Oregon Explorer | Base Map &copy; CartoDB'
-}).addTo(mymap);
+// 3. Add cell towers GeoJSON Data
+// Null variable that will hold cell tower data
+var cellTowers = null;
+// Get GeoJSON and put on it on the map when it loads
 
+// 4. build up a set of colors from colorbrewer's set2 category
+var colors = chroma.scale('Set2').mode('lch').colors(9);
 
-//https://github.com/gka/chroma.js/blob/master/src/colors/colorbrewer.coffee
-var colors = chroma.scale('Accent').mode('lch').colors(9);
-
+// 5. dynamically append style classes to this page. This style classes will be used for colorize the markers.
 for (i = 0; i < 9; i++) {
     $('head').append($("<style> .marker-color-" + (i + 1).toString() + " { color: " + colors[i] + "; font-size: 15px; text-shadow: 0 0 3px #ffffff;} </style>"));
 }
 
-
-// Get GeoJSON and put on it on the map when it loads
-L.geoJson.ajax("assets/cell_towers.geojson", {
+cellTowers= L.geoJson.ajax("assets/cell_towers.geojson", {
+    // assign a function to the onEachFeature parameter of the cellTowers object.
+    // Then each (point) feature will bind a popup window.
+    // The content of the popup window is the value of `feature.properties.company`
     onEachFeature: function (feature, layer) {
         layer.bindPopup(feature.properties.company);
     },
@@ -40,9 +44,10 @@ L.geoJson.ajax("assets/cell_towers.geojson", {
     }
 }).addTo(mymap);
 
-//https://github.com/gka/chroma.js/blob/master/src/colors/colorbrewer.coffee
-// Set function for color ramp
+
+// 6. Set function for color ramp
 colors = chroma.scale('OrRd').mode('hsl').colors(5); //colors = chroma.scale('OrRd').colors(5);
+
 function setColor(density) {
     var id = 0;
     if (density > 18) { id = 4; }
@@ -53,19 +58,20 @@ function setColor(density) {
     return colors[id];
 }
 
-// Set style function that sets fill color property equal to cell tower density
+
+// 7. Set style function that sets fill color.md property equal to cell tower density
 function style(feature) {
     return {
         fillColor: setColor(feature.properties.CT_CNT),
         fillOpacity: 0.4,
         weight: 2,
         opacity: 1,
-        color: '#ffffff',
+        color: '#b4b4b4',
         dashArray: '4'
     };
 }
 
-// Add counties polygons
+// Add county polygons
 L.geoJson.ajax("assets/counties.geojson", {
     style: style
 }).addTo(mymap);
