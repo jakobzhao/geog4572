@@ -1,0 +1,10 @@
+[{
+  "name": "John",
+  "age": 30,
+  "city": "New York"
+},
+  {
+    "name": "Jane",
+    "age": 20,
+    "city": "San Francisco"
+  }]

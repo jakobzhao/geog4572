@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+<p>D3 Tutorials</p>
+<script>
+    d3.csv("assets/employees.csv", function(data) {
+        for (var i = 0; i < data.length; i++) {
+            console.log(data[i].Name);
+            console.log(data[i].Age);
+        }
+    });
+</script>
+</body>
+</html>

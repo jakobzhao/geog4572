@@ -397,7 +397,6 @@ In the above example, d3.selectAll("p") selects all the <p> elements and the .st
 
 Thus, function of data is an important feature of D3.js.
 
-
 ## Events in D3
 
 As in all other libraries, D3 also supports built-in events and custom events. We can bind an event listener to any DOM element using d3.selection.on() method.
@@ -503,7 +502,6 @@ The following example demonstrates how to join data as an array into your existi
 ```
 
 ![](assets/data-binding1.png)
-
 
 
 In the above example, we have a paragraph element `<p>D3 Tutorials</p>`. We have created a data array named 'myData' with a single string "Hello World" that we want to bind to the `<p>` element.
@@ -792,7 +790,7 @@ d3.csv(url[, row, callback]);
 
 The first parameter is the url of .csv file, or webapi, or webservice which will return csv data. The second optional parameter is a conversion function which allows us to change the representation. The third optional parameter is a callback function which will be executed once the .csv file/data is loaded. It passes parsed data object as a parameter to callback function.
 
-Lets take a look at how to load the following CSV data stored in a file named "employee.csv".
+Lets take a look at how to load the following CSV data stored in a file named "employees.csv".
 
 ```csv
 Name, Age
@@ -800,11 +798,11 @@ John, 30
 Jane, 32
 ```
 
-Copy the employee.csv file into the data folder of your project's root folder and write the following code in the `<script>` tag.
+Copy the employees.csv file into the data folder of your project's root folder and write the following code in the `<script>` tag.
 
 ```javascript
 <script>
-d3.csv("/data/employees.csv", function(data) {
+d3.csv("assets/employees.csv", function(data) {
     for (var i = 0; i < data.length; i++) {
         console.log(data[i].Name);
         console.log(data[i].Age);
@@ -874,7 +872,7 @@ Let's look at an example. Create a sample file "users.json" in the data folder o
 Now, load the above JSON file using `d3.json()` as shown below.
 
 ```json
-d3.json("\data\users.json", function(data) {
+d3.json("assets/users.json", function(data) {
     console.log(data);
 });
 ```
@@ -915,7 +913,7 @@ Once we have loaded our data, we have the data object available to work with. Fo
 It is an array of person objects, with each object containing a name, age and location. Let's load the above json data using `d3.json()` method and bind it with DOM elements.
 
 ```json
-d3.json("/data/users.json", function(error, data) {
+d3.json("assets/users.json", function(error, data) {
     
     d3.select("body")
         .selectAll("p")
@@ -935,7 +933,7 @@ You will see the following result in the browser when you run the above code.
 
 Let's run through this code.
 
-`d3.json("/data/users.json", function(error, data) {` 
+`d3.json("assets/users.json", function(error, data) {` 
 Our project has a file named "users.json". We loaded this file using d3.json(). The d3.json() method returned a formatted data object. It also returned an argument "error". We will have a look at that shortly.
 
 `d3.select("body")` Once we have our data object, we want to output the content to our page. Where do we want to add it? That's right - to the body element. So, we select the body element. D3 returns the selection and we can pass this on to the next method using [method chaining](http://www.tutorialsteacher.com/d3js/method-chaining-in-d3js).
@@ -960,7 +958,7 @@ And finally the text() method. Most d3 functions accept functions as parameters.
 While loading data from an external source, D3 returns an argument called "error". You can use this argument to check whether your data got loaded successfully.
 
 ```javascript
-d3.json("\data\users.json", function(error, data) {
+d3.json("assets/users.json", function(error, data) {
     
     if (error) {
         return console.warn(error);
