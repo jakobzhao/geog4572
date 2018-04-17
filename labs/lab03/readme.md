@@ -426,9 +426,9 @@ Next, to style all text in our document with the `Titillium Web` font, modify th
 
 Save and refresh your map. Or open `map5.html`.  `Titillium Web` will now be your preferred font for legend panel! 
 
-![](img/final_map.jpg)
+![](img/map5.jpg)
 
-### 5. Advance Features (optional) 
+### 5. Advance Features (Optional) 
 
 ***If you have not taken GEOG 371 or 571, you can skip this and the following section, and directly go to the deliverable.***
 
@@ -477,6 +477,8 @@ Some of the projections (like Lambert) is no straight line, set those options to
 Check out the [Lambert projection example](https://cloudybay.github.io/leaflet.latlng-graticule/example/lambert.html).
 
 Save and refresh your map. Or open `map6.html`.  Graticules are applied!
+
+![](img/map6.jpg)
 
 #### 5.2 Add Dynamic Labels
 
@@ -593,6 +595,8 @@ mymap.on("zoomend", function(){
 
 Save and refresh the map, or open `map7.html`, the dynamic labels are added! Please zoom in and out and see how the visualization of labels changes.
 
+![](img/map7.jpg)
+
 #### 5.3 Reproject a web map
 
 Most of publicly shared base map are projected in Web Mercator (a.k.a Google Mercator). In order to use custom project, we need to follow the procedure below.
@@ -653,6 +657,8 @@ Because the scale bar does not work properly after a reprojection, we need to co
 ```
 
 Then, the final map was made! Please open `map8.html` to see the web map in Oregon Lambert projection!
+
+![](img/map8.jpg)
 
 ## 6. Deliverable
 
