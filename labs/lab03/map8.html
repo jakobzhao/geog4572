@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <style>
 
-        html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff; }
+        html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff;}
 
         .legend {
             line-height: 16px;
@@ -89,11 +89,11 @@
     );
 
     // 1. Create a map object.
-    // 19. assign the custom crs to the crs option. change the zoom levels due to the change of projection.
+
     var mymap = L.map('map', {
-        crs: mycrs,
+        crs: mycrs,  // 19. assign the custom crs to the crs option. change the zoom levels due to the change of projection.
         center: [44.13, -119.93],
-        zoom: 3,
+        zoom: 3, // we choose zoom level 3
         maxZoom: 10,
         minZoom: 3,
         detectRetina: true});
@@ -105,7 +105,7 @@
     // 3. Add cell towers GeoJSON Data
     // Null variable that will hold cell tower data
     var cellTowers = null;
-    // Get GeoJSON and put on it on the map when it loads
+
 
     // 4. build up a set of colors from colorbrewer's dark2 category
     var colors = chroma.scale('Dark2').mode('lch').colors(9);

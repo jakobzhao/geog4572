@@ -428,7 +428,7 @@ Save and refresh your map. Or open `map5.html`.  `Titillium Web` will now be you
 
 ![](img/final_map.jpg)
 
-### 5. Advance Features 
+### 5. Advance Features (optional) 
 
 ***If you have not taken GEOG 371 or 571, you can skip this and the following section, and directly go to the deliverable.***
 
@@ -604,52 +604,112 @@ Above all, includes two necessary libraries `proj4js` and `proj4leaflet`  after 
 	...
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
 	...
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.4/proj4.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.4/proj4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js"></script>
 	...
 </head>
 ```
 
-For your effecient
+Then, we need to find the appropriate projection for Oregon. To do that, go to [http://spatialreference.org/](http://spatialreference.org/), and search “Oregon” on the search input on the top right. For the list of projections, we choose "[EPSG:2991](http://spatialreference.org/ref/epsg/2991/): NAD83 / Oregon Lambert", click into the [web page for EPSG:2991](http://spatialreference.org/ref/epsg/2991/), we need to copy the `proj4` text. So, click on the [Proj4](http://spatialreference.org/ref/epsg/2991/) item, you will have the following text
+
+```javascript
++proj=lcc +lat_1=43 +lat_2=45.5 +lat_0=41.75 +lon_0=-120.5 +x_0=400000 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs 
+```
+
+So, we can define our custom CRS as `mycrs` as below.
+
+```javascript
+// 18. define the coordinate reference system (CRS)
+mycrs = new L.Proj.CRS('EPSG:2991',
+    '+proj=lcc +lat_1=43 +lat_2=45.5 +lat_0=41.75 +lon_0=-120.5 +x_0=400000 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs',
+    {
+        resolutions: [8192, 4096, 2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1] // example zoom level resolutions
+    }
+);
+```
+
+Here, the resolution array is listed for creating zoom level 1 to 14 (There are 14 resolutions). If you are not familiar with the resolution array, you can just input the array above by default. For more information about how to use  `L.Proj.CRS`, please refer to http://kartena.github.io/Proj4Leaflet/api/.
+
+ After the custom projection is created, you will need to assign it to the `crs` option of the map. Also, since the map follows a new zoom level system, we need to update the zoom level. If you do not know which one should use, you can just test different zoom level from 0 to 14 to find the best fit. See the code snippet below.
+
+```javascript
+
+var mymap = L.map('map', {
+    crs: mycrs, // 19. assign the custom crs to the crs option. change the zoom levels due to the change of projection.
+    center: [44.13, -119.93],
+    zoom: 3, // we choose zoom level 3
+    maxZoom: 10,
+    minZoom: 3,
+    detectRetina: true});
+```
+
+Because the scale bar does not work properly after a reprojection, we need to comment off the scale bar. Also, since most publicly shared base map only support web Mercator, we should comment of these base map as well. see the code snippet below.
+
+```javascript
+// 20. comment off the base map, because the publicly shared base map usually cannot reprojected
+// L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);    
+// 21. comment off the scale bar, because in same project, scalebar does not make sense.
+// L.control.scale({position: 'bottomleft'}).addTo(mymap);
+```
+
+Then, the final map was made! Please open `map8.html` to see the web map in Oregon Lambert projection!
 
 ## 6. Deliverable
 
-After you successfully deploy this cell tower map, you are expected to build another web map of airports in United States. In the `assets` directory of this lab, you will see two geojson files: one is [`airports.geojson`](assets/airports.geojson), another is [`us-states.geojson`](assets/us-states.geojson).
+**For student who has not taken GEOG 371 or 571**
 
-`airports.geojson` contains all the airports in United States. This data is converted from a shapefile, which was downloaded and unzipped from https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile. For each airport feature, the field `CNTL_TWR` indicates whether the airport has an air traffic control tower or not. If there is a tower, the value of `CNTL_TWR` is 'Y', otherwise 'N'. You may need to find an appropriate icon on `font awesome`. **(6 points)**
+After you successfully deploy this cell tower map, you are expected to build another web map of airports in United States. In the `assets` directory of this lab, you will see two geojson files: one is [`airports.geojson`](assets/airports.geojson), another is [`us-states.geojson`](assets/us-states.geojson). 
+
+`airports.geojson` contains all the airports in United States. This data is converted from a shapefile, which was downloaded and unzipped from https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile. For each airport feature, the field `CNTL_TWR` indicates whether the airport has an air traffic control tower or not. If there is a tower, the value of `CNTL_TWR` is 'Y', otherwise 'N'. You may need to find an appropriate icon on `font awesome`. **(7 points)**
 
 `us-states.geojson` is a geojson data file containing all the states boundaries of United States. This data is acquired from from [Mike Bostock](http://bost.ocks.org/mike) of [D3](http://d3js.org/). The `count` field indicates the number of airports within the boundary of the state under investigation. So please make a choropleth map based on the number of airports within each state.  **(5 points)**
 
 Regarding the grading criteria, this web map of airports needs include:
 
 - an appropriate basemap;  **(5 points)**
-- some interactive elements, like a clickable marker; **(5points)**
-- some map elements, such as legend, scale bar, credit;  **(5 points)**
-- add on a new feature (e.g., a map control, a map event, or a new map object, etc.) which is not introduced in this lab as well as other lectures of the web map client series; **(6 points)**
+- some interactive elements, like a clickable marker; **(7 points)**
+- some map elements, such as legend, scale bar, credit;  **(8 points)**
 
-- you will need to synchronize this project to a github repository. And make sure the web map is accessible from a url link, which should be similar to `http://[your_github_username].github.io/[your_repository_name]/index.html`. (You may want to check out previous lecture or lab handouts on project management and hosting via github); **(6 points)**
+**For student who has already taken GEOG 371 or 571, or he who wants to challenge yourself**
 
-- please make sure the internal structure of the files in your project repository is well organized. For example, it may be similar to the file structure below. **(4 points)**
+After you successfully deploy this cell tower map, you are expected to build another web map of airports in United States. In the `assets` directory of this lab, you will see two geojson files: one is [`airports.geojson`](assets/airports.geojson), another is [`us-states.geojson`](assets/us-states.geojson). 
 
-```powershell
-[your_repository_name]
-    │index.html
-    │readme.md
-    ├─assets
-    │      airports.geojson
-    │      us-states.geojson
-    ├─css
-    │      main.css
-    ├─img
-    │      xxx.jpg
-    └─js
-            main.js
-```
+`airports.geojson` contains all the airports in United States. This data is converted from a shapefile, which was downloaded and unzipped from https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile. For each airport feature, the field `CNTL_TWR` indicates whether the airport has an air traffic control tower or not. If there is a tower, the value of `CNTL_TWR` is 'Y', otherwise 'N'. You may need to find an appropriate icon on `font awesome`. **(3 points)**
+
+`us-states.geojson` is a geojson data file containing all the states boundaries of United States. This data is acquired from from [Mike Bostock](http://bost.ocks.org/mike) of [D3](http://d3js.org/). The `count` field indicates the number of airports within the boundary of the state under investigation. So please make a choropleth map based on the number of airports within each state.  **(3 points)**
+
+Regarding the grading criteria, this web map of airports needs include:
+
+- an appropriate projection;  **(7 points)**
+- Graticules; **(5 points)**
+- dynamic labels of the state name; **(6 points)**
+- some interactive elements, like a clickable marker; **( 3 points)**
+- Legend;  **(5 points)**
+
+##Submission
+
+- you will need to synchronize this project to a GitHub repository. And make sure the web map is accessible from a url link, which should be similar to `http://[your_github_username].github.io/[your_repository_name]/index.html`. (You may want to check out previous lecture or lab handouts on project management and hosting via GitHub); **(6 points)**
+
+- To simplify your html page, please put the javascript code in the script tag to a separate javascript file `main.js` under the `js` folder, and put the css code in the style tag to a separate css file `main.css` under the `css` folder. If you will use any images or videos, please put to the `img` folder, where the geojson data are in the `assets` folder.  please make sure the project repository structure is well organized. It should be similiar to the file structure below. **(4 points)**
+
+  ```powershell
+  [your_repository_name]
+      │index.html
+      │readme.md
+      ├─assets
+      │      airports.geojson
+      │      us-states.geojson
+      ├─css
+      │      main.css
+      ├─img
+      │      xxx.jpg
+      └─js
+              main.js
+  ```
 
 - write up a project description in the `readme.md` file. This file will introduce the project name, a brief introduction, the major functions(especially the function which was not covered in the lectures), libraries, data sources, credit, acknowledgement, and other necessary information. **(8 points)**
 
-
-Before submitting this lab, please make sure both the **GitHub repository** and the **GitHub page** work properly. In this lab, you are excepted to submit the url of the GitHub repository to the **Canvas Dropbox** of this course. This url should be in the format of `https://www.github.com/[your_github_username]/[your_repository_name]`. To do that, check the item of this lab on the assignment tab, and then press the `Submit Assignment` button. Please contact the instructor if you have any difficulty in submitting the url link. Here are the grading criteria:
+ For submission, you are excepted to submit the **url of the GitHub repository** to the **Canvas Dropbox** of this course. This url should be in the format of `https://www.github.com/[your_github_username]/[your_repository_name]`. Also the TA and other audience should be able to visit your interactive web map through the url `https://[your_github_username].github.ip/[your_repository_name]`. Please contact the instructor if you have any difficulty in submitting the url link. 
 
 
 > If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
