@@ -359,7 +359,6 @@ If we save and refresh, the items you see won't make much sense, we need to use 
     line-height: 16px;
     width: 140px;
     color: #333333;
-    font-family: 'Open Sans', Helvetica, sans-serif;
     padding: 6px 8px;
     background: white;
     background: rgba(255,255,255,0.5);
