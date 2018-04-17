@@ -675,7 +675,7 @@ Regarding the grading criteria, this web map of airports needs include:
 - some interactive elements, like a clickable marker; **(7 points)**
 - some map elements, such as legend, scale bar, credit;  **(8 points)**
 
-**For student who has already taken GEOG 371 or 571, or he who wants to challenge yourself**
+**For student who has already taken GEOG 371 or 571**
 
 After you successfully deploy this cell tower map, you are expected to build another web map of airports in United States. In the `assets` directory of this lab, you will see two geojson files: one is [`airports.geojson`](assets/airports.geojson), another is [`us-states.geojson`](assets/us-states.geojson). 
 
@@ -685,15 +685,17 @@ After you successfully deploy this cell tower map, you are expected to build ano
 
 Regarding the grading criteria, this web map of airports needs include:
 
-- an appropriate projection;  **(7 points)**
-- Graticules; **(5 points)**
-- dynamic labels of the state name; **(6 points)**
+- an appropriate projection - describe that projection in the `readme.md` page;  **(7 points)**
+- Graticules- you need to change the default color, font and build your own version of intervals; **(5 points)**
+- dynamic labels of the state name - use an font different from the font of the legend; **(6 points)**
 - some interactive elements, like a clickable marker; **( 3 points)**
 - Legend;  **(5 points)**
 
 ##Submission
 
-- you will need to synchronize this project to a GitHub repository. And make sure the web map is accessible from a url link, which should be similar to `http://[your_github_username].github.io/[your_repository_name]/index.html`. (You may want to check out previous lecture or lab handouts on project management and hosting via GitHub); **(6 points)**
+- you will need to synchronize this project to a GitHub repository. Please make sure the name of your repository is **NOT** `lab03` or similiar , use a name which can describe the theme of the map you will make. Think about that, which one you prefer - showing your future employer or Ph.D. admission committee a lot of course work on github or a list of professional projects.
+
+- your interactive web map should be accessible from a url link, which should be `http://[your_github_username].github.io/[your_repository_name]/index.html`. (You may want to check out previous lecture or lab handouts on project management, and how to host via GitHub); **(6 points)**
 
 - To simplify your html page, please put the javascript code in the script tag to a separate javascript file `main.js` under the `js` folder, and put the css code in the style tag to a separate css file `main.css` under the `css` folder. If you will use any images or videos, please put to the `img` folder, where the geojson data are in the `assets` folder.  please make sure the project repository structure is well organized. It should be similiar to the file structure below. **(4 points)**
 
