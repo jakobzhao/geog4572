@@ -52,6 +52,13 @@ Include D3 library using CDN url https://d3js.org/d3.v4.min.js into your page as
 </html>
 ```
 
+>**note:** if you want to compare jQuery with D3, please add a jquery library from cdn.
+
+```javascript
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+```
+
+
 ### Select DOM Elements using D3
 
 D3 allows us to manipulate DOM elements in the HTML document and for that we first need to select a particular element, or a group of elements and then manipulate those elements using various D3 methods.
@@ -77,7 +84,7 @@ The d3.select() method returns the first element in the HTML document based on s
 The following example demonstrates selecting the first matching element by tag name using d3.select.
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -114,7 +121,7 @@ The d3.selectAll() method returns all the matching elements in the HTML document
 The following example selects all the elements by tag name.
 
 ```javascript
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
@@ -141,7 +148,7 @@ As you can see in the above result, it applied style attribute to all <p> elemen
 The following example demonstrates selection of elements by CSS class name.
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
@@ -175,7 +182,7 @@ In the above example, first and third <p> element is colored green because both 
 The select() and selectAll() method can be used to select nested elements as shown below.
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -233,7 +240,7 @@ D3 includes the following DOM manipulation methods that you can use after select
 
 ## Method Chaining in D3
 
-In the previous sections, we wrote D3 functions 'connected' to each other with dots. Does that make you curious? This is called "chain syntax". If you are familiar with JQuery, you might be familiar with the following.
+In the previous sections, we wrote D3 functions 'connected' to each other with dots. Does that make you curious? This is called **"chain syntax"**. If you are familiar with JQuery, you might be familiar with the following.
 
 ```javascript
 $("#myDiv").text("Some text").attr("style", "color:red")
@@ -321,7 +328,7 @@ Considert the following example.
 
 ```javascript
 
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -348,9 +355,9 @@ Considert the following example.
 </html>
 ```
 
-In the above example, the parameter "d" gives you your data element, "i" gives you the index of data in the array and this is a reference of the current DOM element. In this case, it is the paragraph element.
+In the above example, **the parameter "d" gives you your data element, "i" gives you the index of data in the array and this is a reference of the current DOM element. In this case, it is the paragraph element.**
 
-Notice that we have called .data(data) function above. The data() function provides data to the selected elements, in our case it is data array. You will learn about data() function in the Data Bindingsection.
+**Notice that we have called .data(data) function above. The data() function provides data to the selected elements, in our case it is data array. You will learn about data() function in the Data Bindingsection.**
 
 ![](assets/data-function.png)
 
@@ -361,7 +368,7 @@ Along with manipulating DOM elements, we might want to add certain properties or
 Function of data can be useful to setting up properties dynamically based on your data or business logic. For example, if you would like to color your paragraph depending on the content of the paragraph, you can do so inside your style property function.
 
 ```javascript
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -416,7 +423,7 @@ The following table lists important event handling method and objects.
 The following example demonstrates handling of mouseover and mouseout events.
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <style>
