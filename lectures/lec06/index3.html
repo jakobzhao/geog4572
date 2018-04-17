@@ -4,22 +4,14 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
-<p></p>
-<p></p>
-<p></p>
-
 <script>
-    var data = [1, 2, 3];
-    var paragraph = d3.select("body")
-        .selectAll("p")
+    var data = [4, 1, 6, 2, 8, 9];
+    var body = d3.select("body")
+        .selectAll("span")
         .data(data)
-        .text(function (d, i) {
-            console.log("d: " + d);
-            console.log("i: " + i);
-            console.log("this: " + this);
-
-            return d;
-        });
+        .enter()
+        .append("span")
+        .text(function(d) { return d + " "; });
 </script>
 </body>
 </html>

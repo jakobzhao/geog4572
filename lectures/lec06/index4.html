@@ -13,6 +13,8 @@
 </head>
 <body>
 <p>D3 Tutorials</p>
+<p></p>
+<p></p>
 <script>
 
     var myData = ["Hello World!"];
@@ -20,10 +22,11 @@
     var p = d3.select("body")
         .selectAll("p")
         .data(myData)
-        .text(function (d) {
+        .text(function (d, i) {
             return d;
-        });
-
+        })
+        .exit()
+        .remove();
 </script>
 </body>
 </html>
