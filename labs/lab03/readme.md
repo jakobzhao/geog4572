@@ -430,7 +430,7 @@ Save and refresh your map. Or open `map5.html`.  `Titillium Web` will now be you
 
 ### 5. Advance Features (Optional) 
 
-***If you have not taken GEOG 371 or 571, you can skip this and the following section, and directly go to the deliverable.***
+***If you have not taken GEOG 371 or 571 before, you can skip this section and directly go to the deliverable.***
 
  #### 5.1 Add Graticules
 
