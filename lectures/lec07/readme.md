@@ -380,6 +380,21 @@ For our purposes we will convert our shapefile into a GeoJson and into a geograp
 
 Now we have a single geojson file opposed to a complicated shapefile structure, and a geojson file in a more appropriate for web based geovisualization.
 
+## 4. Simplify geographic details
+
+Simplifying shapes can be benificial because it lessens the number of vertices in a shape, which ultimately reduces the
+file size. This might be desirable if you’re working with a very large dataset, such as zip codes for the entire United
+States. Simplifying vector will make your file size smaller, which is great if your working with the GeoJSON format to
+create web maps. for example the following figures present applying a simplification method on a shapefile. Mapshaper tool has been used to create a simplified shapefile.
+
+   
+ ![](img/BeforeSimplification.jpg) 
+
+Simplification process results in a smoother shape (see the figure below): 
+ 
+![](img/aftersimplification.jpg)
+
+Please see the reference section for other tools which can be used for simplifying the geographic details of your dataset.
 
 ## References:
 
