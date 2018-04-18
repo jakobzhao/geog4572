@@ -4,7 +4,7 @@
 >
 > **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
 >
-> **Assigned:** 04/17/2018 | **Due:** `04/24/2018 @11:59pm` | **Points Available** = 50
+> **Assigned:** 04/17/2018 | **Due:** `05/01/2018 @11:59pm` | **Points Available** = 50
 >
 > **Contributors:** [Courtney van Stolk](https://github.com/vanstolc)
 
