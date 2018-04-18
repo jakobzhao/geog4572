@@ -396,6 +396,16 @@ Simplification process results in a smoother shape (see the figure below):
 
 Please see the reference section for other tools which can be used for simplifying the geographic details of your dataset.
 
+**Deciding which simplification method to use**
+
+These screengrabs illustrate the difference between different simplification methods in [Mapshaper tool](https://github.com/mbloch/mapshaper/wiki/Simplification-Tips).
+
+Ex. 1: Natural Earth 10m coastlines, simplified with weighted Visvalingam at 5% point retention.
+![](img/mapshaper1.jpg) 
+
+
+Ex 2: Same file using Douglas-Peucker, also 5% simplification.
+![](img/mapshaper2.jpg)
 ## References:
 
 [1] GeoJson/TopoJson Converter: 
