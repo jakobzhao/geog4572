@@ -16,7 +16,7 @@ When creating a web map, one of the key components is styling your elements to p
 
 Our data for this visualization come from the county boundaries is from [Oregon Explorer](http://oregonexplorer.info) and the spatial distribution of cell towers is from [Map Cruzin](http://www.mapcruzin.com/google-earth-maps-resources/kml/us-cell.kmz). Below is the web map you will make by walking through this lab handout.
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/final_map.jpg)
+![](img/final_map.jpg)
 
 To get started, please synchronize the course material to the working space of your local computer. If you are working in the Digital Earth Lab, please synchronize your course material on the desktop directory.  The material for this lab is located at `[your_working_space]/geog4572/labs/lab03`. Next, open the course material in Webstorm.
 
@@ -84,11 +84,11 @@ Please  click the chrome button that appears when you hover your mouse over the 
 
 > **Note to people who have done 371/571:** Please think about how to host this html via python SimpleHTTPServer.
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/map1.jpg)
+![](img/map1.jpg)
 
 The base map (in the format of `tile layer`) is provided by CartoDB. The light color stands out the principal features. If you would like to  switch to other map providers, please refer to [Leaflet providers](http://leaflet-extras.github.io/leaflet-providers/preview/), where you can grab the JavaScript code for a myriad of other base maps!
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/leaflet-basemap-providers.JPG)
+![](img/leaflet-basemap-providers.JPG)
 
 > **Note:** If the provided base maps do not suit you, you can create custom tiles that can be served to your maps. This topic, on the whole, is large and we will have another series of lectures that introduces creating web map services by GeoServer.
 
@@ -124,7 +124,7 @@ Here, we add credit information about the data source and the map author's infor
 
 Then, please open `map2.html` to see how the map looks like at this stage. Your map should look the same if your edits to **map1.html** have succeeded.
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/map2.jpg)
+![](img/map2.jpg)
 
 ## 2. Point Marker Visualization
 
@@ -151,7 +151,7 @@ Furthermore, we also need some predefined color ramp to symbolize geographic fea
 - Diverging palettes are suited to centered data with extremes in either direction.
 - Qualitative palettes are suited to nominal or categorical data.
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/colorbrewer.jpg)
+![](img/colorbrewer.jpg)
 
 > **Note:** Color palettes and their names are taken from Color Brewer
 
@@ -244,7 +244,7 @@ onEachFeature: function (feature, layer) {
 
  Please open **map3.html** to see how the map looks like. We have changed the icons to cell towers!
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/map3.jpg)
+![](img/map3.jpg)
 
 ## 3. Polygon Visualization
 
@@ -257,7 +257,7 @@ L.geoJson.ajax("assets/counties.geojson").addTo(mymap);
 
 Save and refresh your map. Counties of Oregon will be displayed on the map, symbolized in a default blue.
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/map4-1.jpg)
+![](img/map4-1.jpg)
 
 Let's do something about that default blue and thematically style our data to these polygons useful by turning them into a choropleth layer. The `counties.geojson` file contains numbers of cell towers in each county, calculated in QGIS.  To symbolize the counties  by the number of cell towers, we will use the `style` option that contains styling properties.
 
@@ -319,7 +319,7 @@ While `fillColor` and `fillOpacity` properties are for the fill; `weight`, `opac
 
 There are many ways to change the color of items in your code. For example, Webstorm allows you to easily change the color by clicking on the "color box" icon to the left of the line of code.
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/webstormcolorchange.JPG)
+![](img/webstormcolorchange.JPG)
 
 ### 3.3 Set style option
 
@@ -334,7 +334,7 @@ L.geoJson.ajax("assets/counties.geojson", {
 
 Save and refresh the html page. Open `map4.html`  to see our styled polygons! If you're on the right track the two should look the same.
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/map4.jpg)
+![](img/map4.jpg)
 
 ## 4. Map Elements
 
@@ -479,7 +479,7 @@ Lastly, to help you explore the power of CSS, style the credits at the bottom of
 
 Save and refresh your map. Or open `map5.html`.  `Titillium Web` will now be your preferred font for legend panel!
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/map5.jpg)
+![](img/map5.jpg)
 
 > A few cartographic notes to keep in mind - try to avoid using more than 3 fonts on a map, and stick to all serif or all sans-serif.
 
@@ -533,7 +533,7 @@ Check out the [Lambert projection example](https://cloudybay.github.io/leaflet.l
 
 Save and refresh your map. Or open[ `map6.html`](.  Graticules are applied!
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/map6.jpg)
+![](img/map6.jpg)
 
 #### 5.2 Add Dynamic Labels
 
@@ -652,7 +652,7 @@ mymap.on("zoomend", function(){
 
 Save and refresh the map, or open `map7.html`, the dynamic labels are added! Please zoom in and out and see how the visualization of labels changes.
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/map7.jpg)
+![](img/map7.jpg)
 
 #### 5.3 Reproject a web map
 
@@ -675,7 +675,7 @@ Then, we need to find the appropriate projection for Oregon. To do that, go to [
 
 For the list of projections, we choose "[EPSG:2991](http://spatialreference.org/ref/epsg/2991/): NAD83 / Oregon Lambert", click into the [web page for EPSG:2991](http://spatialreference.org/ref/epsg/2991/), and then click the `proj4` link in the grey box.
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/spatial-reference.JPG)
+![](img/spatial-reference.JPG)
 
 Once you click on the [Proj4](http://spatialreference.org/ref/epsg/2991/) item, you will have the following text appear in the window:
 
@@ -721,7 +721,7 @@ Because the scale bar does not work properly after a reprojection, we need to co
 
 Then, the final map is done! Please open `map8.html` to see the web map in Oregon Lambert projection!
 
-![](R:/GEOG572/Students/vanstolc/geog4572/labs/lab03/img/final_map.jpg)
+![](img/final_map.jpg)
 
 ## 6. Deliverable
 
