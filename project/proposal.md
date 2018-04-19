@@ -17,4 +17,3 @@ This assignment asks you to describe your proposal in two or three paragaphs. Pl
 
 
 Once you finish this homework, you need to submit the url to **Canvas Dropbox** **by 5:00pm of April 27th (Friday)**.On the assignment tab,  check the item of this homework, press the `Submit Assignment` button to submit. Please contact the instructor or TA if you have any difficulty. Note: only submit your homework in ppt or pptx format.
-
