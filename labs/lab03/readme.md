@@ -427,7 +427,7 @@ Save and refresh your map. Or open `map5.html`.  `Titillium Web` will now be you
 
 ![](img/map5.jpg)
 
-### 5. Advanced Features (Optional)
+### 5. Advance Features (Optional) 
 
 ***If you have not taken GEOG 371 or 571 before, you can skip this section and directly go to the deliverable.***
 
@@ -457,7 +457,7 @@ L.latlngGraticule({
 }).addTo(mymap);
 ```
 
-The object `L.latlngGraticule` is provided by the `leaflet.latlng-graticule.js` library. Its options such as `showLabel`, `opacity`, `color` are straightforward to understand.  As for `zoomInterval`,  `{start: 2, end: 7, interval: 2}` means, from the zoom level 6 to 7, both the latitude and longitude interval is 2 degree, while ` {start: 8, end: 11, interval: 0.5}` means,  from zoom level 8 to 11,  both the latitude and longitude interval is 0.5 degree. For more information about this Graticules library, please visit [https://github.com/cloudybay/leaflet.latlng-graticule](https://github.com/cloudybay/leaflet.latlng-graticule).
+The object `L.latlngGraticule` is provided by the `leaflet.latlng-graticule.js` library. Its options such as `showLabel`, `opacity`, `color` are straightforward to understand.  As for `zoomInterval`,  `{start: 6, end: 7, interval: 2}` means, from the zoom level 6 to 7, both the latitude and longitude interval is 2 degree, while ` {start: 8, end: 11, interval: 0.5}` means,  from zoom level 8 to 11,  both the latitude and longitude interval is 0.5 degree. For more information about this Graticules library, please visit [https://github.com/cloudybay/leaflet.latlng-graticule](https://github.com/cloudybay/leaflet.latlng-graticule).
 
 - **showLabel**: Show the grid tick label at the edges of the map. Default `true`
 - **opacity**: Opacity of the Graticule and Label. Default `1`
