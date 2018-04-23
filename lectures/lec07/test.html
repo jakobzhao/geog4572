@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cities in Oregon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!--add required stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+
+
+
+    <!--add required libraries-->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+
+
+</head>
+<body>
+
+<div id="map"  style="width: 1200px; height: 800px;"></div>
+
+<!-- main javascript -->
+<script type="text/javascript">
+
+
+
+    var map = L.map('map').setView([-3, 34], 5);
+
+ //   L.tileLayer('http://earthengine.google.org/static/hansen_2013/tree_alpha/{z}/{x}/{y}.png').addTo(map);
+
+    //
+    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    // }).addTo(map);
+
+    L.tileLayer('http://storage.googleapis.com/gee_exports/mapToCloudExample/{z}/{x}/{y}').addTo(map);
+
+
+
+    // https:\/\/storage.googleapis.com\/gee_exports\/mapToCloudExample\/
+</script>
+</body>
+</html>
