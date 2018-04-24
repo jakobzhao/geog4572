@@ -25,7 +25,13 @@ D3 - Pie Chart
 
 [3] Stephen Levine (2018) Examples of using dc.js http://dc-js.github.io/dc.js/examples/
 
+[Area Chart](http://dc-js.github.io/dc.js/examples/area.html)
 
+[Bar Chart](http://dc-js.github.io/dc.js/examples/bar.html)
+
+[Line Chart](http://dc-js.github.io/dc.js/examples/line.html)
+
+>Note: Other examples are also recommended to walk over.
 
 ## Optional
 
