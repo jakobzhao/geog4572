@@ -102,7 +102,7 @@ The following example demonstrates selecting the first matching element by tag n
 
 In the above example, `d3.select("p")` returns first `<p>` element and then, `.style("color","green")` method sets the color attribute to green. When you run this on your browser, this is how it will look:
 
-![](assets/d3js-dom1.png)
+![](img/d3js-dom1.png)
 
 You can see in the above result that the first paragraph has now been colored green. Open the developer tools (from Chrome settings > More Tools > Developer Tools). In the developer tools, under the Elements tab, you can see the paragraph elements and a style applied to the paragraphs.
 
@@ -139,7 +139,7 @@ The following example selects all the elements by tag name.
 
 In the above example, d3.selectAll("p") returns all the <p> element and .style("color","green") makes its font color green. When you run this on your browser, this is how it will look:
 
-![](assets/d3js-dom3.png)
+![](img/d3js-dom3.png)
 
 As you can see in the above result, it applied style attribute to all <p> elements.
 
@@ -173,7 +173,7 @@ The following example demonstrates selection of elements by CSS class name.
 
 In the above example, d3.selectAll(".myclass") will return all the elements whose css class is "myclass". Then .style() method sets the style attribute with the value color:green.
 
-![](assets/d3js-dom4.png)
+![](img/d3js-dom4.png)
 
 In the above example, first and third <p> element is colored green because both include "myClass".
 
@@ -214,7 +214,7 @@ The select() and selectAll() method can be used to select nested elements as sho
 </html>
 ```
 
-![](assets/d3js-dom5.png)
+![](img/d3js-dom5.png)
 
 In the above example, d3.select("tr") returns the first matching <tr> element, then the selectAll("td") method returns all matching <td> elements within that <tr>. Finally, .style() method applies yellow background color to these <td>. Calling selectAll() method immediately after select() method is called **Method Chaining**.
 
@@ -359,7 +359,7 @@ In the above example, **the parameter "d" gives you your data element, "i" gives
 
 **Notice that we have called .data(data) function above. The data() function provides data to the selected elements, in our case it is data array. You will learn about data() function in the Data Bindingsection.**
 
-![](assets/data-function.png)
+![](img/data-function.png)
 
 **Dynamic Properties**
 
@@ -501,7 +501,7 @@ The following example demonstrates how to join data as an array into your existi
 </body>
 ```
 
-![](assets/data-binding1.png)
+![](img/data-binding1.png)
 
 
 In the above example, we have a paragraph element `<p>D3 Tutorials</p>`. We have created a data array named 'myData' with a single string "Hello World" that we want to bind to the `<p>` element.
@@ -558,7 +558,7 @@ The following example demonstrates joining data to multiple elements.
 
 The above example would display the following result in the browser.
 
-![](assets/data-binding2.png)
+![](img/data-binding2.png)
 
 In the above example, HTML includes three `<p>` elements and data array myData also includes three values. So, data() joins three data values to three selected `<p>` elements respectively and text() function displays this data value as a text. Let's take a look at another example.
 
@@ -581,7 +581,7 @@ In the above example, HTML includes three `<p>` elements and data array myData a
 
 The above example would display the following result.
 
-![](assets/data-binding6.png)
+![](img/data-binding6.png)
 
 In this example, we have replaced our data array with [1, 2, 3, 4, 5]. Just like in the previous example, we select all the paragraph elements from the body. We then bind our data to the selection and add the data as text to our paragraph selection. Notice how the text 'D3 tutorial' got replaced with the first element from our data array `<p>1</p>`.
 
@@ -615,7 +615,7 @@ In the following example, there are 6 data values in our array. So enter() will 
 </body>
 ```
 
-![](assets/data-binding3.png)
+![](img/data-binding3.png)
 
 Just like our previous example, we have taken a data array [4, 1, 6, 2, 8, 9].
 
@@ -661,7 +661,7 @@ Let's take the program to the next level and add logic to paint the numbers gree
 </body>
 ```
 
-![](assets/data-binding4.png)
+![](img/data-binding4.png)
 
 
 
@@ -713,7 +713,7 @@ As mentioned in the data() section, you can specify a function instead of an arr
 </body>
 ```
 
-![](assets/data-binding7.png)
+![](img/data-binding7.png)
 
 As you can see, we have specified a function as a parameter in the data() after selection of `td`. The `tr.selectAll("td")` returns multiple `td` for the selection of each `tr` and thus it forms multiple `<tr><td></td></tr>` groups. As you can see in the result, `console.log(d)`returns 1st element in the two dimensional array that is a row in an array. The parameter d in the `text(function(d))` represents a single element of a row returned from the previous data() function.
 
@@ -747,7 +747,7 @@ In the below code, all p elements will be removed. With exit(), the elements ent
 
 ```
 
-![](assets/data-binding1.png)
+![](img/data-binding1.png)
 
 In the above example, HTML included three <p> elements whereas data array includes only one data value. So, the .exit().remove() removed additional `<p>` elements.
 
@@ -813,7 +813,7 @@ d3.csv("assets/employees.csv", function(data) {
 
 Run the above example in a browser and open the developer tools, and click on Console tab and you will see the following result.
 
-![](assets/loading-csv-data.png)
+![](img/loading-csv-data.png)
 
 As you can see in the above example code, the D3 function d3.csv() takes a file name as an input, processes the file and loads the data into an array of objects. Note that the first row of the csv file does not get printed. This is because the first row is treated as the column name and rest of the rows are considered as the data. The data object loaded by d3 uses these column names as the object's properties and hence are converted to object keys.
 
@@ -880,7 +880,7 @@ d3.json("assets/users.json", function(data) {
 
 You should see the following output in the developer console:
 
-![](assets/loading-json-data.png)
+![](img/loading-json-data.png)
 
 As you can see in the above result, D3 created an array of objects with name, city and age properties. This makes it easy for us to work with the data.
 
@@ -930,7 +930,7 @@ d3.json("assets/users.json", function(error, data) {
 
 You will see the following result in the browser when you run the above code.
 
-![](assets/bind-loaded-data.png)
+![](img/bind-loaded-data.png)
 
 Let's run through this code.
 

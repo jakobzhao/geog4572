@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+<div> </div>
+<script>
+    d3.json("assets/users.json", function(error, data) {
+
+        if (error) {
+            return console.warn(error);
+        }
+
+        d3.select("body")
+            .data(data)
+            .enter()
+            .append("p")
+            .text(function(d) {
+                return d.name + ", " + d.location;
+            });
+    });
+</script>
+</body>
+</html>
