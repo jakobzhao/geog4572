@@ -1,10 +1,20 @@
 [{
-  "name": "John",
+  "name": "Jon",
   "age": 30,
-  "city": "New York"
+  "location": "The Wall"
 },
   {
-    "name": "Jane",
-    "age": 20,
-    "city": "San Francisco"
+    "name": "Arya",
+    "age": 12,
+    "location": "Braavos"
+  },
+  {
+    "name": "Cersei",
+    "age": 42,
+    "location": "Kings Landing"
+  },
+  {
+    "name": "Tyrion",
+    "age": 40,
+    "location": "Kings Landing "
   }]
