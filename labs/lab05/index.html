@@ -2,19 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Crossfilter Geo Test</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" >
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" >
   <link rel="stylesheet" href="https://dc-js.github.io/dc.js/css/dc.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" type="text/css" href="css/storymap.css">
 
   <style>
 
-    .main {
-      background: rgba(243, 243, 243, 0.81);
-    }
+    html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff;}
+
     #mag-chart {
       width:100%;
       margin: 0 auto;
@@ -35,30 +32,20 @@
   <script src="https://dc-js.github.io/dc.js/js/d3.js"></script>
   <script src="https://dc-js.github.io/dc.js/js/crossfilter.js"></script>
   <script src="https://dc-js.github.io/dc.js/js/dc.js"></script>
-  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-  <!--<script src="//api.tiles.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js"></script>-->
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!--story map plugin-->
-  <script src="js/storymap.js"></script>
 
 </head>
 
 <body>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-6 col-md-4 main">
-        <div class="dc-data-count"></div>
-        <h4>Count by Magnitude</h4>
-        <div id="mag-chart"></div>
-        <h4>Count by Depth(m)</h4>
-        <div id="depth-chart"></div>
-        <h4>Count by Day</h4>
-        <div id="date-chart"></div>
-    </div>
-        <div id="map" class="col-sm-6 col-md-8 sidebar"></div>
-  </div>
-</div>
+    <h4>Count by Magnitude</h4>
+    <div id="mag-chart"></div>
+    <h4>Count by Depth(m)</h4>
+    <div id="depth-chart"></div>
+    <h4>Count by Day</h4>
+    <div id="date-chart"></div>
+    <div id="map"></div>
 
 <script>
 
@@ -134,12 +121,12 @@ d3.json('assets/earthquakes.geojson').then(function(data) {
   var magChart = dc.barChart('#mag-chart');
 
   magChart
-    .height(180)
+    .height(100)
     .margins({top: 10, right: 50, bottom: 30, left: 40})
     .dimension(magDimension)
     .group(magDimensionGroup)
     .elasticY(true)
-    .x(d3.scale.ordinal())
+    .x(d3.scaleOrdinal())
     .xUnits(dc.units.ordinal)
     .yAxis()
     .ticks(3);
@@ -149,12 +136,12 @@ d3.json('assets/earthquakes.geojson').then(function(data) {
   var depthChart = dc.barChart('#depth-chart');
 
   depthChart
-    .height(180)
+    .height(100)
     .margins({top: 10, right: 50, bottom: 30, left: 40})
     .dimension(depthDimension)
     .group(depthDimensionGroup)
     .elasticY(true)
-    .x(d3.scale.ordinal())
+    .x(d3.scaleOrdinal())
     .xUnits(dc.units.ordinal)
     .yAxis()
     .ticks(3);
@@ -163,13 +150,13 @@ d3.json('assets/earthquakes.geojson').then(function(data) {
   var dateChart = dc.lineChart('#date-chart');
   dateChart
       .renderArea(true)
-      .height(200)
+      .height(150)
       .transitionDuration(1000)
       .margins({top: 30, right: 50, bottom: 25, left: 40})
       .dimension(dateDimension)
       .group(dateDimensionGroup)
       .elasticY(true)
-      .x(d3.time.scale().domain([new Date(2016, 7, 15), new Date(2016, 8, 1)]))
+      .x(d3.scaleTime().domain([new Date(2016, 7, 15), new Date(2016, 8, 1)]))
       .xUnits(d3.timeDays);
 
 
@@ -208,41 +195,14 @@ d3.json('assets/earthquakes.geojson').then(function(data) {
   }
 
   //map listeners
-  map.on('moveend', function() {
-    updateMapFilter()
+  map.on('zoomend moveend', function() {
+     // alert("321")
+   updateMapFilter();
   });
 
-  map.on('zoomend', function() {
-    updateMapFilter()
-  });
 
   function updateMapFilter() {
-
-        //    var bounds = map.getBounds(),
-        //      n=bounds._northEast.lat,
-        //      e=bounds._northEast.lng,
-        //      s=bounds._southWest.lat,
-        //      w=bounds._southWest.lng;
-        //
-        //    var boundsFeature = {
-        //      type: 'Feature',
-        //      geometry: {
-        //        type:'Polygon',
-        //        coordinates: [
-        //          [
-        //            [w, s], [w, n], [e, n], [e, s], [w, s]
-        //          ]
-        //        ]
-        //      }
-        //    };
-
     geomDimension.filter(function(d) {
-        //make feature
-        //      var point = {
-        //        type: 'Feature',
-        //        geometry: d
-        //      };
-        //      return turf.inside(point, boundsFeature)
         return map.getBounds().contains(L.geoJSON(d).getBounds())
     });
     dc.redrawAll();
