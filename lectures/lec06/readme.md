@@ -471,8 +471,8 @@ D3 includes the following important methods for data binding.
 | ethod   | Description                              |
 | ------- | ---------------------------------------- |
 | data()  | Joins data to the selected elements      |
-| enter() | Creates a selection with placeholder references for missing elements |
-| [exit() | Removes nodes and adds them to the exit selection which can be later removed from the DOM |
+| enter() | Creates a selection with placeholder references for **missing elements** |
+| exit() | Removes nodes and adds them to the exit selection which can be later removed from the DOM |
 | datum() | Injects data to the selected element without computing a join. |
 
 ### data()
@@ -871,7 +871,7 @@ Let's look at an example. Create a sample file "users.json" in the data folder o
 
 Now, load the above JSON file using `d3.json()` as shown below.
 
-```json
+```javascript
 d3.json("assets/users.json", function(data) {
     console.log(data);
 });
@@ -912,7 +912,7 @@ Once we have loaded our data, we have the data object available to work with. Fo
 
 It is an array of person objects, with each object containing a name, age and location. Let's load the above json data using `d3.json()` method and bind it with DOM elements.
 
-```json
+```javascript
 d3.json("assets/users.json", function(error, data) {
     
     d3.select("body")

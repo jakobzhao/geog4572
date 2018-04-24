@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: steelblue;
+            margin:5px;
+        }
+    </style>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+<div> </div>
+<script>
+    d3.selectAll("div")
+        .on("mouseover", function(){
+            d3.select(this)
+                .style("background-color", "orange");
+
+            // Get current event info
+            console.log(d3.event);
+
+            // Get x & y co-ordinates
+            console.log(d3.mouse(this));
+        })
+        .on("mouseout", function(){
+            d3.select(this)
+                .style("background-color", "steelblue")
+        });
+   //d3.selectAll("div").dispatch("mouseover")
+</script>
+</body>
+</html>
