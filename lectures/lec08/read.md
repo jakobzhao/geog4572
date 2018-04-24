@@ -1,4 +1,4 @@
-# Reading List for Lecture 6
+# Reading List for Lecture 8
 
 ## Required
 
