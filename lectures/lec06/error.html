@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+<script>
+    d3.json("assets/users.json").then(function( data) {
+
+        d3.select("body")
+            .selectAll("p")
+            .data(data)
+            .enter()
+            .append("span")
+            .text(function(d) {
+                return d.name + ", " + d.location;
+            });
+    });
+</script>
+</body>
+</html>

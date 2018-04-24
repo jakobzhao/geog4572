@@ -102,7 +102,7 @@ The following example demonstrates selecting the first matching element by tag n
 
 In the above example, `d3.select("p")` returns first `<p>` element and then, `.style("color","green")` method sets the color attribute to green. When you run this on your browser, this is how it will look:
 
-![](assets/d3js-dom1.png)
+![](img/d3js-dom1.png)
 
 You can see in the above result that the first paragraph has now been colored green. Open the developer tools (from Chrome settings > More Tools > Developer Tools). In the developer tools, under the Elements tab, you can see the paragraph elements and a style applied to the paragraphs.
 
@@ -139,7 +139,7 @@ The following example selects all the elements by tag name.
 
 In the above example, d3.selectAll("p") returns all the <p> element and .style("color","green") makes its font color green. When you run this on your browser, this is how it will look:
 
-![](assets/d3js-dom3.png)
+![](img/d3js-dom3.png)
 
 As you can see in the above result, it applied style attribute to all <p> elements.
 
@@ -173,7 +173,7 @@ The following example demonstrates selection of elements by CSS class name.
 
 In the above example, d3.selectAll(".myclass") will return all the elements whose css class is "myclass". Then .style() method sets the style attribute with the value color:green.
 
-![](assets/d3js-dom4.png)
+![](img/d3js-dom4.png)
 
 In the above example, first and third <p> element is colored green because both include "myClass".
 
@@ -214,7 +214,7 @@ The select() and selectAll() method can be used to select nested elements as sho
 </html>
 ```
 
-![](assets/d3js-dom5.png)
+![](img/d3js-dom5.png)
 
 In the above example, d3.select("tr") returns the first matching <tr> element, then the selectAll("td") method returns all matching <td> elements within that <tr>. Finally, .style() method applies yellow background color to these <td>. Calling selectAll() method immediately after select() method is called **Method Chaining**.
 
@@ -359,7 +359,7 @@ In the above example, **the parameter "d" gives you your data element, "i" gives
 
 **Notice that we have called .data(data) function above. The data() function provides data to the selected elements, in our case it is data array. You will learn about data() function in the Data Bindingsection.**
 
-![](assets/data-function.png)
+![](img/data-function.png)
 
 **Dynamic Properties**
 
@@ -471,8 +471,8 @@ D3 includes the following important methods for data binding.
 | ethod   | Description                              |
 | ------- | ---------------------------------------- |
 | data()  | Joins data to the selected elements      |
-| enter() | Creates a selection with placeholder references for missing elements |
-| [exit() | Removes nodes and adds them to the exit selection which can be later removed from the DOM |
+| enter() | Creates a selection with placeholder references for **missing elements** |
+| exit() | Removes nodes and adds them to the exit selection which can be later removed from the DOM |
 | datum() | Injects data to the selected element without computing a join. |
 
 ### data()
@@ -501,7 +501,7 @@ The following example demonstrates how to join data as an array into your existi
 </body>
 ```
 
-![](assets/data-binding1.png)
+![](img/data-binding1.png)
 
 
 In the above example, we have a paragraph element `<p>D3 Tutorials</p>`. We have created a data array named 'myData' with a single string "Hello World" that we want to bind to the `<p>` element.
@@ -558,7 +558,7 @@ The following example demonstrates joining data to multiple elements.
 
 The above example would display the following result in the browser.
 
-![](assets/data-binding2.png)
+![](img/data-binding2.png)
 
 In the above example, HTML includes three `<p>` elements and data array myData also includes three values. So, data() joins three data values to three selected `<p>` elements respectively and text() function displays this data value as a text. Let's take a look at another example.
 
@@ -581,7 +581,7 @@ In the above example, HTML includes three `<p>` elements and data array myData a
 
 The above example would display the following result.
 
-![](assets/data-binding6.png)
+![](img/data-binding6.png)
 
 In this example, we have replaced our data array with [1, 2, 3, 4, 5]. Just like in the previous example, we select all the paragraph elements from the body. We then bind our data to the selection and add the data as text to our paragraph selection. Notice how the text 'D3 tutorial' got replaced with the first element from our data array `<p>1</p>`.
 
@@ -615,7 +615,7 @@ In the following example, there are 6 data values in our array. So enter() will 
 </body>
 ```
 
-![](assets/data-binding3.png)
+![](img/data-binding3.png)
 
 Just like our previous example, we have taken a data array [4, 1, 6, 2, 8, 9].
 
@@ -661,7 +661,7 @@ Let's take the program to the next level and add logic to paint the numbers gree
 </body>
 ```
 
-![](assets/data-binding4.png)
+![](img/data-binding4.png)
 
 
 
@@ -713,7 +713,7 @@ As mentioned in the data() section, you can specify a function instead of an arr
 </body>
 ```
 
-![](assets/data-binding7.png)
+![](img/data-binding7.png)
 
 As you can see, we have specified a function as a parameter in the data() after selection of `td`. The `tr.selectAll("td")` returns multiple `td` for the selection of each `tr` and thus it forms multiple `<tr><td></td></tr>` groups. As you can see in the result, `console.log(d)`returns 1st element in the two dimensional array that is a row in an array. The parameter d in the `text(function(d))` represents a single element of a row returned from the previous data() function.
 
@@ -747,7 +747,7 @@ In the below code, all p elements will be removed. With exit(), the elements ent
 
 ```
 
-![](assets/data-binding1.png)
+![](img/data-binding1.png)
 
 In the above example, HTML included three <p> elements whereas data array includes only one data value. So, the .exit().remove() removed additional `<p>` elements.
 
@@ -813,7 +813,7 @@ d3.csv("assets/employees.csv", function(data) {
 
 Run the above example in a browser and open the developer tools, and click on Console tab and you will see the following result.
 
-![](assets/loading-csv-data.png)
+![](img/loading-csv-data.png)
 
 As you can see in the above example code, the D3 function d3.csv() takes a file name as an input, processes the file and loads the data into an array of objects. Note that the first row of the csv file does not get printed. This is because the first row is treated as the column name and rest of the rows are considered as the data. The data object loaded by d3 uses these column names as the object's properties and hence are converted to object keys.
 
@@ -869,9 +869,10 @@ Let's look at an example. Create a sample file "users.json" in the data folder o
 }];
 ```
 
+
 Now, load the above JSON file using `d3.json()` as shown below.
 
-```json
+```javascript
 d3.json("assets/users.json", function(data) {
     console.log(data);
 });
@@ -879,7 +880,7 @@ d3.json("assets/users.json", function(data) {
 
 You should see the following output in the developer console:
 
-![](assets/loading-json-data.png)
+![](img/loading-json-data.png)
 
 As you can see in the above result, D3 created an array of objects with name, city and age properties. This makes it easy for us to work with the data.
 
@@ -912,7 +913,7 @@ Once we have loaded our data, we have the data object available to work with. Fo
 
 It is an array of person objects, with each object containing a name, age and location. Let's load the above json data using `d3.json()` method and bind it with DOM elements.
 
-```json
+```javascript
 d3.json("assets/users.json", function(error, data) {
     
     d3.select("body")
@@ -929,7 +930,7 @@ d3.json("assets/users.json", function(error, data) {
 
 You will see the following result in the browser when you run the above code.
 
-![](assets/bind-loaded-data.png)
+![](img/bind-loaded-data.png)
 
 Let's run through this code.
 
@@ -979,6 +980,52 @@ If there is some error while loading your data, say your data is malformed; D3 w
 
 Thus, you can load data from various sources using the available D3 methods.
 
+
+### Changes in D3 V5
+
+D3 5.0 introduces only a few non-backwards-compatible changes.
+
+To include D3 V5, you can simply change the version nunmber to `5` in the script linking element. So in the head elements.
+
+```html
+<script src="https://d3js.org/d3.v5.min.js"></script>
+```
+
+
+D3 now uses [Promises](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Using_promises) instead of asynchronous callbacks to load data. Promises simplify the structure of asynchronous code, especially in modern browsers that support [async and await](https://javascript.info/async-await). (See this [introduction to promises](https://beta.observablehq.com/@mbostock/introduction-to-promises) on [Observable](https://beta.observablehq.com).) For example, to load a CSV file in v4, you might say:
+
+```js
+d3.csv("file.csv", function(error, data) {
+  if (error) throw error;
+  console.log(data);
+});
+```
+
+In v5, using promises:
+
+```js
+d3.csv("file.csv").then(function(data) {
+  console.log(data);
+});
+```
+
+Note that you don’t need to rethrow the error—the promise will reject automatically, and you can *promise*.catch if desired. Using await, the code is even simpler:
+
+```js
+const data = await d3.csv("file.csv");
+console.log(data);
+```
+
+
+> D3 no longer provides the d3.schemeCategory20* categorical color schemes. These twenty-color schemes were flawed because their grouped design could falsely imply relationships in the data: a shared hue can imply that the encoded data are part of a group (a super-category), while relative lightness can imply order. Instead, D3 now includes [d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic), which implements excellent schemes from ColorBrewer, including [categorical](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#categorical), [diverging](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#diverging), [sequential single-hue](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#sequential-single-hue) and [sequential multi-hue](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#sequential-multi-hue) schemes. These schemes are available in both discrete and continuous variants.
+>
+> D3 now provides implementations of [marching squares](https://beta.observablehq.com/@mbostock/d3-contour-plot) and [density estimation](https://beta.observablehq.com/@mbostock/d3-density-contours) via [d3-contour](https://github.com/d3/d3-contour)! There are two new [d3-selection](https://github.com/d3/d3-selection) methods: [*selection*.clone](https://github.com/d3/d3-selection/blob/master/README.md#selection_clone) for inserting clones of the selected nodes, and [d3.create](https://github.com/d3/d3-selection/blob/master/README.md#create) for creating detached elements. [Geographic projections](https://github.com/d3/d3-geo) now support [*projection*.angle](https://github.com/d3/d3-geo/blob/master/README.md#projection_angle), which has enabled several fantastic new [polyhedral projections](https://github.com/d3/d3-geo-polygon) by Philippe Rivière.
+>
+ Lastly, D3’s [package.json](https://github.com/d3/d3/blob/master/package.json) no longer pins exact versions of the dependent D3 modules. This fixes an issue with [duplicate installs](https://github.com/d3/d3/issues/3256) of D3 modules.
+
+
 ## References:
 
 [1] http://www.tutorialsteacher.com/d3js
+
+[2] https://github.com/d3/d3/blob/master/CHANGES.md
