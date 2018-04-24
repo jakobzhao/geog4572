@@ -869,6 +869,7 @@ Let's look at an example. Create a sample file "users.json" in the data folder o
 }];
 ```
 
+
 Now, load the above JSON file using `d3.json()` as shown below.
 
 ```javascript
