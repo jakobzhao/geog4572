@@ -8,15 +8,11 @@
 <script>
     d3.json("assets/users.json").then(function( data) {
 
-        // if (error) {
-        //     return console.warn(error);
-        // }
-
         d3.select("body")
             .selectAll("p")
             .data(data)
             .enter()
-            .append("p")
+            .append("span")
             .text(function(d) {
                 return d.name + ", " + d.location;
             });
