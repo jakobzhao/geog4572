@@ -89,12 +89,9 @@
     }
 
     // 8. Add county polygons
-    // create counties variable, and assign null to it.
-    var world = null;
-    world = L.geoJson.ajax("assets/world.geojson", {
+    L.geoJson.ajax("assets/world.geojson", {
         style: style
     }).addTo(map);
-
 
 
     d3.json('assets/earthquakes.geojson').then(function(data) {
@@ -113,10 +110,10 @@
         var magDimension = filter.dimension(function(d) {
             var mag = d.properties.mag;
             return  mag < 1.2 ? '1-1.2' :
-                mag < 1.5 ? '1.2-1.5' :
+                    mag < 1.5 ? '1.2-1.5' :
                     mag <   2 ? '1.5-2' :
-                        mag < 2.5 ? '2-2.5' :
-                            mag <   3 ? '2.5-3' :
+                    mag < 2.5 ? '2-2.5' :
+                    mag <   3 ? '2.5-3' :
                                 '>3'
         });
 
@@ -241,7 +238,6 @@
 
         //map listeners
         map.on('zoomend moveend', function() {
-            // alert("321")
             updateMapFilter();
         });
 
