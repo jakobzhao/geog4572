@@ -985,6 +985,13 @@ Thus, you can load data from various sources using the available D3 methods.
 
 D3 5.0 introduces only a few non-backwards-compatible changes.
 
+To include D3 V5, you can simply change the version nunmber to `5` in the script linking element. So in the head elements.
+
+```html
+<script src="https://d3js.org/d3.v5.min.js"></script>
+```
+
+
 D3 now uses [Promises](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Using_promises) instead of asynchronous callbacks to load data. Promises simplify the structure of asynchronous code, especially in modern browsers that support [async and await](https://javascript.info/async-await). (See this [introduction to promises](https://beta.observablehq.com/@mbostock/introduction-to-promises) on [Observable](https://beta.observablehq.com).) For example, to load a CSV file in v4, you might say:
 
 ```js
@@ -1020,4 +1027,5 @@ console.log(data);
 ## References:
 
 [1] http://www.tutorialsteacher.com/d3js
+
 [2] https://github.com/d3/d3/blob/master/CHANGES.md
