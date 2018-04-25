@@ -31,7 +31,7 @@ D3 - Pie Chart
 
 [Line Chart](http://dc-js.github.io/dc.js/examples/line.html)
 
->Note: Other examples are also recommended to walk over.
+>Note: If you have more time, please also walk through other examples.
 
 ## Optional
 
