@@ -6,8 +6,6 @@
 
 
 
-- https://bl.ocks.org/NPashaP
-
 ## Bar Chart
 
 https://bl.ocks.org/mbostock/3885304
