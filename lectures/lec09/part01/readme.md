@@ -5,7 +5,6 @@
 > **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
 
 
-
 ## Create SVG Elements using D3
 
 We had briefly introduced Scalable Vector Graphics (SVG) in our web standards chapter. In this chapter, we will learn about creating SVG elements using D3.
