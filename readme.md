@@ -61,35 +61,42 @@ Graduate students in GEOG 572 are required to provide **additional contributions
 
 1\. Leaflet
 
-css: https://unpkg.com/leaflet@1.3.1/dist/leaflet.css
-js: https://unpkg.com/leaflet@1.3.1/dist/leaflet.js
+- css: https://unpkg.com/leaflet@1.3.1/dist/leaflet.css
+- js: https://unpkg.com/leaflet@1.3.1/dist/leaflet.js
 
 2\. jQuery
 
-js: https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
+- js: https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
 
 3\. D3
 
-js v4： https://d3js.org/d3.v4.min.js
-js v5： https://d3js.org/d3.v5.min.js
+- js v4： https://d3js.org/d3.v4.min.js
+- js v5： https://d3js.org/d3.v5.min.js
 
 4\. Dc.js
 
-css: http://dc-js.github.io/dc.js/css/dc.css
-js: http://dc-js.github.io/dc.js/js/dc.js
+- css: http://dc-js.github.io/dc.js/css/dc.css
+- js: http://dc-js.github.io/dc.js/js/dc.js
 
 5\. crossfilter
 
-js: https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js
+- js: https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js
 
 6\. Chroma.js
 
-js: https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.6/chroma.min.js
+- js: https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.6/chroma.min.js
 
 7\. Leaflet Ajax
 
-js: https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js
+- js: https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js
 
+8\. Font awesome
+
+- css: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+
+9\. Animate.css
+
+- css: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css
 
 
 ## RESOURCES
