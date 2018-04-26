@@ -36,3 +36,5 @@ D3 - Pie Chart
 ## Optional
 
 [4] Square Inc. (20XX) Crossfilter API https://github.com/crossfilter/crossfilter/wiki/API-Reference
+
+[5] Peter Cook (201X) Getting to know Crossfilter http://animateddata.co.uk/articles/crossfilter/
