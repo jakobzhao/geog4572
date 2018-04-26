@@ -4,10 +4,13 @@
 >
 > **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
 
+**Learning Objectives**
 
-## Create SVG Elements using D3
+- Get to know the basics of SVG, 
+- Understand how to draw graphics and chart using D3; and
+- Get familiar with D3 Scale and Axes.
 
-We had briefly introduced Scalable Vector Graphics (SVG) in our web standards chapter. In this chapter, we will learn about creating SVG elements using D3.
+## 1\. Create SVG Elements using D3
 
 SVG provides different shapes like lines, rectangles, circles, ellipses etc. Hence, designing visualizations with SVG gives you more flexibility and power in what you can achieve.
 
@@ -129,7 +132,7 @@ g.append("text")
 
 Thus, we can create SVG elements using D3.js. Let's create SVG chart using D3 in the next section.
 
-## Create SVG Chart using D3
+## 2\. Create SVG Chart using D3
 
 Let's create a bar chart in SVG with D3.js. For the bar chart, we will use `<rect>` elements for the bars and `<text>` elements to display our data values corresponding to the bars. The following is a simple SVG bar chart HTML which we will create using D3.
 
@@ -189,7 +192,7 @@ In our `<rect>` and `<text>` elements, we provided the width and height attribut
 
 When it comes to styles, we use classes to give styles to our elements. We use the below class to paint our bar `<rect>` elements orange.
 
-```
+```css
 svg rect {
         fill: orange;
     }
@@ -197,7 +200,7 @@ svg rect {
 
 Also, use the below CSS class to apply styles to our data values. SVG has a `<text>` element that can be used to display text output.
 
-```
+```css
 svg text {
         fill: white;
         font: 10px sans-serif;
@@ -209,7 +212,7 @@ As you can see, some of the properties used in SVG are different from the proper
 
 Now, let's create this SVG bar chart with D3.
 
-```xml
+```html
 <html>
 <head>
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -269,7 +272,7 @@ Let's walk through the code step by step:
 
 `var data = [5, 10, 12];` defines our data array.
 
-```
+```javascript
 var width = 200,
     scaleFactor = 10,
     barHeight = 20;
@@ -282,7 +285,7 @@ The above code defines three variables to use later in our program:
 - scalefactor: Since our data values are too small, they need to be scaled to a pixel value that is visible on the screen.
 - barHeight: This is the static height of our horizontal bars.
 
-```
+```javascript
 var graph = d3.select("body")
               .append("svg")
               .attr("width", width)
@@ -292,7 +295,7 @@ var graph = d3.select("body")
 
 We first select the document body and create a new SVG element and append it. We will build our bar graph inside this SVG element. We then set the width and height of our SVG. Height is calculated as bar height * number of data values. We have taken 20 as bar height and data array length is 3. So SVG height would be 60 px.
 
-```
+```javascript
 var bar = graph.selectAll("g") 
                .data(data)
                .enter().append("g")
@@ -304,7 +307,7 @@ var bar = graph.selectAll("g")
 
 Next, we want to place each of our bars inside corresponding `<g>` elements. So here, we create our group elements. We also apply the translate transformation here. Each of our group elements needs to be positioned one below the other because we want to build a horizontal bar chart. So our translation formula will be (current element index * bar height).
 
-```
+```javascript
 bar.append("rect")
    .attr("width", function(d) {
        return d * scaleFactor;
@@ -322,9 +325,9 @@ bar.append("text")
    .text(function(d) { return d; });
 ```
 
-Finally, we want to display our data values as text on each bar. Width is defined as (data value * scalefactor) Text elements do not support padding or margin. For this reason, we need to give it a "dy" offset. This is used to align the text vertically.
+Finally, we want to display our data values as text on each bar. Width is defined as (`data value * scalefactor`) Text elements do not support padding or margin. For this reason, we need to give it a `"dy"` offset. This is used to align the text vertically.
 
-### Scales
+## 3\. Scales
 
 In our examples so far, when we wanted to draw shapes driven by our data values, we added a scaling factor to our data values. This was to ensure that our shapes are visible on the screen. Data values may not always correspond to pixel values on the screen. Some data values may be too large while others too small, to be used directly with pixel values.
 
@@ -376,7 +379,7 @@ But now that we have learnt how to work with scales, instead of multiplying a sc
 
 Let's use the above dataset to create our bar chart: `var data = [100, 400, 300, 900, 850, 1000];` and use the d3.scaleLinear to do the scaling for us as shown below.
 
-```
+```javascript
 var data = [100, 400, 300, 900, 850, 1000];
 
 var scale = d3.scaleLinear()
@@ -384,11 +387,11 @@ var scale = d3.scaleLinear()
             .range([50, 500]);
 ```
 
-Above, we created a linear scale variable with the domain values [100, 1000] where 100 is the minimum value and 1000 is the maximum value in our data array and the output range is [50, 500]. So, we mapped our minimum data value to the output value 50, and maximum alue 1000 to 500. The values between 100 to 1000 will be calculated automatically using the above scale function. Please note that a variable *scale* is a conversion function which will return output value according to the specified domain and range. We can pass any value between 100 to 1000 to scale function, and it will return the output value. For example, scale(200) will return 100 or scale(350) will return 175.
+Above, we created a linear scale variable with the domain values [100, 1000] where 100 is the minimum value and 1000 is the maximum value in our data array and the output range is [50, 500]. So, we mapped our minimum data value to the output value 50, and maximum value 1000 to 500. The values between 100 to 1000 will be calculated automatically using the above scale function. Please note that a variable *scale* is a conversion function which will return output value according to the specified domain and range. We can pass any value between 100 to 1000 to scale function, and it will return the output value. For example, scale(200) will return 100 or scale(350) will return 175.
 
 In the above example, instead of providing minimum and maximum value for our domain manually we can use built-in d3.min() and d3.max() functions which will return minimum and maximum values respectively from our data array.
 
-```
+```javascript
 var data = [100, 400, 300, 900, 850, 1000];
 
 var scale = d3.scaleLinear()
@@ -399,7 +402,7 @@ var scale = d3.scaleLinear()
 Now, let's create a bar chart for our large data values using d3.scaleLinear() function as below.
 
 
-```
+```javascript
 <body>
 <script>
     var data = [100, 400, 300, 900, 850, 1000]
@@ -464,7 +467,7 @@ g.append("rect")
     .attr("height", barHeight - margin)
 ```
 
-### Axes
+## 4\. Axes
 
 The axes renders human-readable reference marks for scales. Graphs have two axes: the horizontal axis or the x-axis and the vertical axis or the y-axis.
 
@@ -524,7 +527,7 @@ Let's walk through the above code:
 
 `var data = [10, 15, 20, 25, 30];` defines our dataset as an array.
 
-```
+```javascript
 var svg = d3.select("body")
             .append("svg")
             .attr("width", width)
@@ -543,14 +546,14 @@ We create a linear scale and specify our domain and range. Observe how we have u
 
 `.range([0,width-100])` specifies the range [0,300]. So value 10 will be map to 0 and value 300 woill be map to 30.
 
-```
+```javascript
  var x_axis = d3.axisBottom()
                 .scale(scale);
 ```
 
 We use d3.axisBottom to create our x-axis and provide it with the scale we defined earlier.
 
-```
+```javascript
  svg.append("g")
     .call(x_axis);
 ```
@@ -561,7 +564,7 @@ Similarly, we can create a vertical axis using `d3.axisLeft()` function as shown
 
 Example: y-axis
 
-```
+```javascript
 <body>
 <script>
     var width = 400, height = 100;
@@ -593,7 +596,7 @@ This will draw y-axis in the browser as shown below.
 
 Let's understand the above example code.
 
-```
+```javascript
 var scale = d3.scaleLinear()
              .domain([d3.min(data), d3.max(data)])
              .range([height/2, 0]);
@@ -601,14 +604,14 @@ var scale = d3.scaleLinear()
 
 We created a linear scale and specified our domain and range using the data. We used d3.min and d3.max functions to get the minimum and maximum values from our dataset.
 
-```
+```javascript
 var y_axis = d3.axisLeft()
             .scale(scale);
 ```
 
 We use d3.axisLeft to create our y-axis and provide it with the scale we defined above.
 
-```
+```javascript
 svg.append("g")
    .attr("transform", "translate(50, 10)")
    .call(y_axis);
@@ -622,7 +625,7 @@ Let's get both the axes together now!
 
 Example: Axes
 
-```
+```html
 <body>
 <script>
     var width = 400, height = 100;
@@ -665,20 +668,20 @@ And the grand output:
 
 [![img](http://www.tutorialsteacher.com/Content/images/d3js/axes-in-d3.png)](http://www.tutorialsteacher.com/Content/images/d3js/axes-in-d3.png)X & Y Axes
 
+## 5\. More examples
 
-
-### Bar Chart
+#### Bar Chart
 
 https://bl.ocks.org/mbostock/3885304
 
-### Line Chart
+#### Line Chart
 
 https://bl.ocks.org/mbostock/3883245
 
-### Pie Chart
+#### Pie Chart
 
 https://bl.ocks.org/mbostock/3887235
 
-### DashBoard
+#### DashBoard
 
 http://bl.ocks.org/NPashaP/96447623ef4d342ee09b

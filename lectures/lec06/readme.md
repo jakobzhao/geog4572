@@ -4,26 +4,22 @@
 >
 > **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
 
+**Learning Objectives**
 
+- Understand the basic concept, functions, and methods of D3.js;
+- Be familiar with the different in selection between jQuery and D3; and
+- Able to update your code from D3 version 4 to version 5.
 
-D3 stands for Data-Driven Documents. It is an open-source JavaScript library developed by Mike Bostock to create custom interactive data visualizations in the web browser using SVG, HTML and CSS.
+D3 stands for Data-Driven Documents. It is an open-source JavaScript library developed by Mike Bostock to create custom interactive data visualizations in the web browser using SVG, HTML and CSS. This lecture will help you learn the essentials of D3.js starting from the basics to an intermediate level. 
 
-These tutorials will help you learn the essentials of D3.js starting from the basics to an intermediate level. These tutorials are broken down into chapters, where each chapter contains a number of related topics that are packed with easy to understand explanations and real-world examples.
-
-> **Prerequisites:** Basic knowledge of HTML, CSS and JavaScript is required.
-
-## D3.js setup
-
-In this chapter, we will learn how to setup D3.js development environment.
-
-Before we start, you'll need the following components:
+**D3.js setup**: Before we start, you'll need the following components:
 
 - D3 library
 - Web server
 - Editor
 - Web browser
 
-### D3 Library:
+### 1\. D3 Library:
 
 You need to include D3.js library into your HTML webpage in order to use D3 to create data visualization. You can do it in two ways:
 
@@ -58,8 +54,13 @@ Include D3 library using CDN url https://d3js.org/d3.v4.min.js into your page as
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 ```
 
+also, if you want to use v5 instead of v4, please simply change the number 4 to 5..
 
-### Select DOM Elements using D3
+```html
+<script src="https://d3js.org/d3.v5.min.js"></script>
+```
+
+### 2\. Select DOM Elements using D3
 
 D3 allows us to manipulate DOM elements in the HTML document and for that we first need to select a particular element, or a group of elements and then manipulate those elements using various D3 methods.
 
@@ -70,10 +71,10 @@ This defines a global JavaScript object d3, which includes all the important met
 Before manipulating DOM elements, we need to get the reference of DOM elements using the following methods.
 
 
-| Method                     | Description                              |
-| -------------------------- | ---------------------------------------- |
-| d3.select(css-selector     | Returns the first matching element in the HTML document based on specified css-selector |
-| d3.selectAll(css-selector) | Returns all the matching elements in the HTML document based on specified css-selector |
+| Method                       | Description                                                  |
+| ---------------------------- | ------------------------------------------------------------ |
+| `d3.select(css-selector`     | Returns the first matching element in the HTML document based on specified css-selector |
+| `d3.selectAll(css-selector)` | Returns all the matching elements in the HTML document based on specified css-selector |
 
 #### d3.select():
 
@@ -120,7 +121,7 @@ The d3.selectAll() method returns all the matching elements in the HTML document
 
 The following example selects all the elements by tag name.
 
-```javascript
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -220,7 +221,7 @@ In the above example, d3.select("tr") returns the first matching <tr> element, t
 
 Thus, you can use d3.select and d3.selectAll method to select matching DOM elements based on specified criteria. After DOM selection, learn how to manipulate DOM elements in the next section.
 
-## DOM Manipulation using D3
+## 3\. DOM Manipulation using D3
 
 In the previous section, we learned how to select DOM elements using D3. In this section, we will learn how to modify DOM elements.
 
@@ -238,7 +239,7 @@ D3 includes the following DOM manipulation methods that you can use after select
 | style("name", "value")     | Gets or sets the style of the selected element |
 | classed("css class", bool) | Gets, adds or removes a css class from the selection |
 
-## Method Chaining in D3
+## 4\. Method Chaining in D3
 
 In the previous sections, we wrote D3 functions 'connected' to each other with dots. Does that make you curious? This is called **"chain syntax"**. If you are familiar with JQuery, you might be familiar with the following.
 
@@ -300,7 +301,7 @@ d3.select("body")
   .text("Third paragraph");
 ```
 
-## Function of Data
+## 5\. Function of Data
 
 In the DOM Manipulation chapter, we learned about different DOM manipulation methods in D3 such as append(), style(), text() etc. Each of these functions can take in a constant value or a function as a parameter. This function is a function of data. So each of these methods will be called for each of our data values bound to the DOM. Consider the following text() function.
 
@@ -397,7 +398,7 @@ In the above example, d3.selectAll("p") selects all the <p> elements and the .st
 
 Thus, function of data is an important feature of D3.js.
 
-## Events in D3
+## 6\. Events in D3
 
 As in all other libraries, D3 also supports built-in events and custom events. We can bind an event listener to any DOM element using d3.selection.on() method.
 
@@ -462,7 +463,7 @@ In the above example, we have two div elements and applied a css to each with a 
 
 Notice that we display current event object (d3.event) and x & y co-ordinates of the mouse using d3.mouse() method to the developer console of the browser. Please visit D3 documentation to know more about [Event Handling](https://github.com/d3/d3-selection/blob/master/README.md#handling-events).
 
-## Data Binding in D3
+## 7\. Data Binding in D3
 
 In this section, you will learn how to bind data to DOM elements and create new elements based on your data.
 
@@ -772,7 +773,7 @@ The datum() function is used for static visualization which does not need update
 
 In the next chapter, learn how to load different types of data from files.
 
-## Data Loading in D3
+## 8\. Data Loading in D3
 
 n the previous sections, we have worked with data stored in local variables. In this chapter, we will learn to load data from different types of files and bind it to DOM elements.
 
@@ -954,7 +955,7 @@ We now have the references to our elements. The append() method adds these eleme
 `.text(function(d) { return d.name + ", " + d.location; }); `
 And finally the text() method. Most d3 functions accept functions as parameters. In our case, we have passed an anonymous function to the text method that returns a concatenation of name and location from our data object. text() is called and bound to each of our page elements with the corresponding data value.
 
-### Error Handling:
+### 9\. Error Handling:
 
 While loading data from an external source, D3 returns an argument called "error". You can use this argument to check whether your data got loaded successfully.
 
@@ -981,7 +982,7 @@ If there is some error while loading your data, say your data is malformed; D3 w
 Thus, you can load data from various sources using the available D3 methods.
 
 
-### Changes in D3 V5
+### 10\. Changes in D3 V5
 
 D3 5.0 introduces only a few non-backwards-compatible changes.
 
@@ -1017,7 +1018,7 @@ console.log(data);
 ```
 
 
-> D3 no longer provides the d3.schemeCategory20* categorical color schemes. These twenty-color schemes were flawed because their grouped design could falsely imply relationships in the data: a shared hue can imply that the encoded data are part of a group (a super-category), while relative lightness can imply order. Instead, D3 now includes [d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic), which implements excellent schemes from ColorBrewer, including [categorical](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#categorical), [diverging](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#diverging), [sequential single-hue](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#sequential-single-hue) and [sequential multi-hue](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#sequential-multi-hue) schemes. These schemes are available in both discrete and continuous variants.
+> D3 no longer provides the **d3.schemeCategory20*** categorical color schemes. These twenty-color schemes were flawed because their grouped design could falsely imply relationships in the data: a shared hue can imply that the encoded data are part of a group (a super-category), while relative lightness can imply order. Instead, D3 now includes [d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic), which implements excellent schemes from ColorBrewer, including [categorical](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#categorical), [diverging](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#diverging), [sequential single-hue](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#sequential-single-hue) and [sequential multi-hue](https://github.com/d3/d3-scale-chromatic/blob/master/README.md#sequential-multi-hue) schemes. These schemes are available in both discrete and continuous variants.
 >
 > D3 now provides implementations of [marching squares](https://beta.observablehq.com/@mbostock/d3-contour-plot) and [density estimation](https://beta.observablehq.com/@mbostock/d3-density-contours) via [d3-contour](https://github.com/d3/d3-contour)! There are two new [d3-selection](https://github.com/d3/d3-selection) methods: [*selection*.clone](https://github.com/d3/d3-selection/blob/master/README.md#selection_clone) for inserting clones of the selected nodes, and [d3.create](https://github.com/d3/d3-selection/blob/master/README.md#create) for creating detached elements. [Geographic projections](https://github.com/d3/d3-geo) now support [*projection*.angle](https://github.com/d3/d3-geo/blob/master/README.md#projection_angle), which has enabled several fantastic new [polyhedral projections](https://github.com/d3/d3-geo-polygon) by Philippe Rivière.
 >

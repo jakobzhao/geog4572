@@ -4,15 +4,20 @@
 >
 > **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
 
+**Learning Objectives**
+
+- Understand the fundamental concepts, functions of DC.js; and
+- Able to draw a chart using Dc.js.
+
 `dc.js` is a JavaScript Library that allow you to develop graphs/charts, and highly interactive Dashboards. `dc.js` builds on `d3.js` and use `d3.js` to render charts in CSS friendly SVG format. By using this library you will be able to develop bar chart (histogram), pie chart, row chart, line chart, bubble chart, geo choropleth chart, and others. You can link the charts to each other to make a well connected charting interface for your work.
 
 This JavaScript library is really a powerful tool for data visualization and analysis on the web. Here in this tutorial we'll try to cover some basics of `dc.js` that will help you to move on with `dc.js`.
 
-**Dependency**: dc.js didn't works alone, it require `crossfilter.js` and `d3.js` to work.
+>  **note:** dc.js didn't works alone, it require `crossfilter.js` and `d3.js` to work.
 
 1\. [crossfilter](https://github.com/square/crossfilter/wiki) is also a JavaScript library released by Square, allow you to explore large multidimensional datasets. It aggregates and filter raw data extremely fast (<30ms). It doesn't have its own user interface, so it combine to work with `d3.js` and Google Visualization API. It’s really easy to get your raw data into `crossfilter.js` by using JSON data format.
 
-2.\ [D3](https://d3js.org/) also known as Data-Driven Documents or `d3.js`, a JavaScript Library for data visualization, allow you to present raw data into a more visual form using SVG, Canvas and HTML5 and CSS standards. It is the more powerful library of JavaScript as to visualize data in graphical format as compared to above mentioned.
+2\. [D3](https://d3js.org/) also known as Data-Driven Documents or `d3.js`, a JavaScript Library for data visualization, allow you to present raw data into a more visual form using SVG, Canvas and HTML5 and CSS standards. It is the more powerful library of JavaScript as to visualize data in graphical format as compared to above mentioned.
 
 Please copy the following libraries in the same order to your html file. Besides, make sure you include the css stylesheet for `dc.css`.
 
@@ -156,7 +161,7 @@ Thats it, you see how it is easy to create charts with dc.js
 
 ## References
 
-[1] https://utopian.io/utopian-io/@faad/tutorial-1-dive-into-dc-js-a-javascript-library-bar-chart
+[1] [https://utopian.io/utopian-io/@faad/tutorial-1-dive-into-dc-js-a-javascript-library-bar-chart](https://utopian.io/utopian-io/@faad/tutorial-1-dive-into-dc-js-a-javascript-library-bar-chart)
 
 [2] Dc.js examples
 
