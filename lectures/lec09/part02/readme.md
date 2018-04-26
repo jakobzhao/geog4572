@@ -128,7 +128,7 @@ output ![barChart.JPG](https://steemitimages.com/0x0/https://res.cloudinary.com/
 
 ***
 
-###### Odinal-Bar Chart
+###### Ordinal-Bar Chart
 
 Bar charts that display the data that are classified into nominal or ordinal categories, such as in our raw data if we want to classified our data by Type, there are three types of data in our raw data, visa, tab, cash. If we develop a bar chart on type dimension the bar chart is called Odinal-Bar Chart.
 
@@ -163,3 +163,11 @@ Output
 ## References
 
 [1] https://utopian.io/utopian-io/@faad/tutorial-1-dive-into-dc-js-a-javascript-library-bar-chart
+
+[2] Dc.js examples
+
+- [Area Chart](http://dc-js.github.io/dc.js/examples/area.html)
+
+- [Bar Chart](http://dc-js.github.io/dc.js/examples/bar.html)
+
+- [Line Chart](http://dc-js.github.io/dc.js/examples/line.html)
