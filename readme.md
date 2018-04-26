@@ -98,6 +98,15 @@ Graduate students in GEOG 572 are required to provide **additional contributions
 
 - css: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css
 
+10\. Bootstrap 4
+
+- css: https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css
+- js: https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js
+
+11\. Popper (required by Bootstrap 4)
+
+- js: https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js
+
 
 ## RESOURCES
 
