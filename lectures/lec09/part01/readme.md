@@ -668,13 +668,17 @@ And the grand output:
 
 
 
-## Bar Chart
+### Bar Chart
 
 https://bl.ocks.org/mbostock/3885304
 
-## Line Chart
+### Line Chart
 
 https://bl.ocks.org/mbostock/3883245
+
+### Pie Chart
+
+https://bl.ocks.org/mbostock/3887235
 
 ## DashBoard
 
