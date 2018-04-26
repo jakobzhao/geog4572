@@ -21,11 +21,11 @@
         });
 
         var dimensionByType = facts.dimension(function (d){ return d.type;});
-        var groupByTotal = dimensionByTotal.group(function(d) {
-            return Math.floor(d / 100) * 100;
-        });
+        // var groupByTotal = dimensionByTotal.group(function(d) {
+        //     return Math.floor(d / 100) * 100;
+        // });
 
-        var groupByType = dimensionByTotal.group().reduceCount(function(d){ return d.total; });
+        var groupByType = dimensionByType.group().reduceCount(function(d){ return d.type; });
         var barChart = dc.barChart('#barChart')
             .width(1024) // width of the chart
             .height(200) // height of the chart
