@@ -35,4 +35,4 @@ D3 - Pie Chart
 
 ## Optional
 
-[4] Square Inc. (20XX) Crossfilter http://crossfilter.github.io/crossfilter/
+[4] Square Inc. (20XX) Crossfilter API https://github.com/crossfilter/crossfilter/wiki/API-Reference

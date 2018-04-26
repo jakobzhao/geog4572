@@ -15,7 +15,7 @@
 </head>
 <body>
 <script>
-    var data = [100, 400, 300, 900, 850, 1000]
+    var data = [100, 400, 300, 900, 850, 1000];
 
     var width = 500,
         barHeight = 20,
@@ -42,7 +42,7 @@
         .attr("width", function (d) {
             return scale(d);
         })
-        .attr("height", barHeight - margin)
+        .attr("height", barHeight - margin);
 
     g.append("text")
         .attr("x", function (d) { return (scale(d)); })
