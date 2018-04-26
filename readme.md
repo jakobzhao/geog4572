@@ -62,6 +62,7 @@ Graduate students in GEOG 572 are required to provide **additional contributions
 1\. Leaflet
 
 - css: https://unpkg.com/leaflet@1.3.1/dist/leaflet.css
+
 - js: https://unpkg.com/leaflet@1.3.1/dist/leaflet.js
 
 2\. jQuery
@@ -70,12 +71,14 @@ Graduate students in GEOG 572 are required to provide **additional contributions
 
 3\. D3
 
-- js v4： https://d3js.org/d3.v4.min.js
-- js v5： https://d3js.org/d3.v5.min.js
+- js v4: https://d3js.org/d3.v4.min.js
+
+- js v5: https://d3js.org/d3.v5.min.js
 
 4\. Dc.js
 
 - css: http://dc-js.github.io/dc.js/css/dc.css
+
 - js: http://dc-js.github.io/dc.js/js/dc.js
 
 5\. crossfilter
