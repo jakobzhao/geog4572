@@ -19,22 +19,22 @@
             console.log(d.total);
             return d.total;
         });
-        //var dimensionByType = facts.dimension(function (d){ return d.type;});
 
+        var dimensionByType = facts.dimension(function (d){ return d.type;});
         var groupByTotal = dimensionByTotal.group(function(d) {
             return Math.floor(d / 100) * 100;
         });
-        // var groupByType = dimensionByTotal.group().reduceCount(function(d){ return d.total; });
 
+        var groupByType = dimensionByTotal.group().reduceCount(function(d){ return d.total; });
         var barChart = dc.barChart('#barChart')
             .width(1024) // width of the chart
             .height(200) // height of the chart
-            .dimension(dimensionByTotal) // dimension we create before passed as parameter
+            .dimension(dimensionByType) // dimension we create before passed as parameter
             .group(groupByType) // group we created before passed as parameter to barChart method
-            .x(d3.scaleLinear().domain([0, 400])) // created x-axis scales
-            .xUnits(dc.units.fp.precision(100)); // it defines the units of x-axis
-            // .x(d3.scaleOrdinal())
-            // .xUnits(dc.units.ordinal);
+            // .x(d3.scaleLinear().domain([0, 400])) // created x-axis scales
+            // .xUnits(dc.units.fp.precision(100)); // it defines the units of x-axis
+            .x(d3.scaleOrdinal())
+            .xUnits(dc.units.ordinal);
         barChart.yAxis().ticks(5);
         barChart.xAxis().ticks(4);
         dc.renderAll();
