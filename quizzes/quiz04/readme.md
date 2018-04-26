@@ -16,5 +16,4 @@ For each item, you are asked to use both `d3` and `jquery` to select. For exampl
 
 ![](assets/console.jpg)
 
-
-
+Please write down your answer to a word or pdf document, and then submit the document to canvas. Make sure that the document is in doc, docx or pdf format.
