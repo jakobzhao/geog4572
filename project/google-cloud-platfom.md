@@ -1,1 +1,1 @@
-This content will move to another date. Because the group who works on it are not well prepared yet.
+A 20-min tutorial will be given on how to visualize rasters from google earth engine to web map platforms.
