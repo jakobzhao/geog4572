@@ -34,8 +34,6 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | **Wk 10** | Course Summary                                    | Project Q&A                                            | Final Presentation             | Presentation                                              |
 
 
-> ***Note:*** :cloud: [*Google Cloud Platform?*](project/google-cloud-platfom.md) will be introduced in one of the lab sessions.
-
 ## LECTURES
 
 You are expected to attend lectures twice a week. Most lectures have time allotted for discussions,in-class work and other activities. Your contribution in these generally, will be noted, and used to determine part of your final grade; just showing up won't count a whole lot toward this component.
