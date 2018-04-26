@@ -33,7 +33,8 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | **Wk 09**  | Network                                           | Lab6: cont’d                                           | Flow maps, Sankeys             | Fine-tuning                                               |
 | **Wk 10** | Course Summary                                    | Project Q&A                                            | Final Presentation             | Presentation                                              |
 
-> ***Note:*** [*Google Cloud Platform?*](project/google-cloud-platfom.md) will be introduced in one of the labs.
+
+> ***Note:*** :cloud: [*Google Cloud Platform?*](project/google-cloud-platfom.md) will be introduced in one of the lab sessions.
 
 ## LECTURES
 
