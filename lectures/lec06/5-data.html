@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+<p>D3 Tutorials </p>
+
+<script>
+    var myData = [1, 2, 3, 4, 5];
+
+    var p = d3.select("body")
+        .selectAll("p")
+        .data(myData)
+        .text(function (d, i) {
+            return d;
+        });
+</script>
+</body>
+</body>
+</html>

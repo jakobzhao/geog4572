@@ -25,14 +25,16 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | **Wk 01**  | [Intro to this course](lectures/lec01/1-Intro.pdf)                            | [Lab1: Project Management for GeoViz](labs/lab01/) ([*`reading`*](labs/lab01/read.md))                    | [Geovisual Analytics Basics](lectures/lec02/) ([*`reading`*](lectures/lec02/read.md))            | [Introduction](project/intro.md), [*Project Prep*](project/prep.md)                                              |
 | **Wk 02**  | [Brainstorm](lectures/lec03/)                                       | [GeoViz Programming Basics - Html, Css](lectures/lec04/) ([*`reading`*](lectures/lec04/part01/read.md)) and [jQuery](lectures/lec04/part02/) ([*`reading`*](lectures/lec04/part02/read.md)); [Lab2: GeoViz Programming Basics](labs/lab02/) ([*`reading`*](labs/lab02/read.md)) | [Interactive Maps using Leaflet](lectures/lec05/) ([*`reading`*](lectures/lec05/read.md)) | [Team-up](project/team-up.md)                                                   |
 | **Wk 03**  | [D3 I](lectures/lec06/) ([*`reading`*](lectures/lec06/read.md))                                     | [Lab3: Interactive Map Design](labs/lab03/)                                       | [Spatial data Processing](lectures/lec07/)  ([*`reading`*](lectures/lec07/read.md))       | [*Proposal (`Due: 04/27, 5pm`)*](project/proposal.md)                                                  |
-| **Wk 04**  | [D3 II](lectures/lec06) ([*`reading`*](lectures/lec06/read.md))                                            | [*Google Cloud Platform?*](project/google-cloud-platfom.md); Lab3 cont’d                     | D3 III ([D3 graphics](lectures/lec09/part01/), [DC.js](http://dc-js.github.io/dc.js/docs/stock.html)) ([*`reading`*](lectures/lec09/read.md))                         | Proposal revision                                         |
-| **Wk 05**  | Layout Design using Bootstrap, GeoViz evaluation | Lab4: Geoviz Module                                    | Color, Topography              | Sketch; Interface Design                                  |
+| **Wk 04**  | [D3 II](lectures/lec06) ([*`reading`*](lectures/lec08/read.md))                                            | Lab3 cont’d; [*debugging*:bug:](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)                     | [D3 III](lectures/lec09/) ([D3 graphics](lectures/lec09/part01/), [DC.js](lectures/lec09/part02/) ([*`reading`*](lectures/lec09/read.md))                         | Proposal revision; [:book:Name Convention](project/naming.md)                                         |
+| **Wk 05**  | Layout Design using Bootstrap, GeoViz evaluation  ([*`reading`*](lectures/lec10/read.md)) | Lab4: Geoviz Module                                    | Color, Topography              | Sketch; Interface Design                                  |
 | **Wk 06**  | SVG, Icons                                        | Lab5: Coordinated View or Storymap GeoViz                  | Word cloud                     | Design Scheme (Color, label, icon, and multimedia,  etc.) |
 | **Wk 07**  | Real-time mapping, Heatmap                        | Fieldwork for Drone Mapping                            | GeoViz Critique                | Coding                                                    |
 | **Wk 08**  | Geoviz of Structure-from-motion                   | Lab6: Point-cloud GeoViz                               | Hexagonal Geoviz               | Coding                                                    |
 | **Wk 09**  | Network                                           | Lab6: cont’d                                           | Flow maps, Sankeys             | Fine-tuning                                               |
 | **Wk 10** | Course Summary                                    | Project Q&A                                            | Final Presentation             | Presentation                                              |
 
+
+> ***Note:*** :cloud: [*Google Cloud Platform?*](project/google-cloud-platfom.md) will be introduced in one of the lab sessions.
 
 ## LECTURES
 
@@ -53,6 +55,58 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
 The final project is a major component of this course. For each group, there should be no more than three students. I recommend a group should be formed by graduate and undergraduate students. Each group will collaboratively work on a final project using geovisual analytics. The instructor will provide several topics for students to choose from. Students can also bring their own topics. Students in a group can work on a project of their common interests. Although the project topic is important, this project is more about how to apply the geovisual skills. So,students who want to team up as a group need to have a consensus that they are interested in using the similar geovisual tools and methods. Regarding the project topics, the instructor will provide a pool of topics to choose from during the first two weeks. In the rest of the term, students will concentrate on developing the project. The instructor and TA will provide necessary guidance in applying the geovisual skills for the projects. Since some of the topics are proposed by other faculty members in the university, a co-advisor/group member will join you to provide extra help.
 
 Graduate students in GEOG 572 are required to provide **additional contributions** to the course.A graduate student can choose either making a presentation related to the lecture topic or being responsible for coordinating the project. The projects are expected to have advanced interactive features, introductory pages and other additional materials. All the final projects are expected to publish online, and the codes are expected to be shared on GitHub to contribute to both the open source community and academia.
+
+
+## LIBRARIES
+
+1\. Leaflet
+
+- css: https://unpkg.com/leaflet@1.3.1/dist/leaflet.css
+- js: https://unpkg.com/leaflet@1.3.1/dist/leaflet.js
+
+2\. jQuery
+
+- js: https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
+
+3\. D3
+
+- js v4: https://d3js.org/d3.v4.min.js
+- js v5: https://d3js.org/d3.v5.min.js
+
+4\. Dc.js
+
+- css: http://dc-js.github.io/dc.js/css/dc.css
+- js: http://dc-js.github.io/dc.js/js/dc.js
+
+5\. crossfilter
+
+- js: https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js
+
+6\. Chroma.js
+
+- js: https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.6/chroma.min.js
+
+7\. Leaflet Ajax
+
+- js: https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js
+
+8\. Font awesome
+
+- css: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+
+9\. Animate.css
+
+- css: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css
+
+10\. Bootstrap 4
+
+- css: https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css
+- js: https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js
+
+11\. Popper (required by Bootstrap 4)
+
+- js: https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js
+
 
 ## RESOURCES
 

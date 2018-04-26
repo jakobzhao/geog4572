@@ -31,8 +31,10 @@ D3 - Pie Chart
 
 [Line Chart](http://dc-js.github.io/dc.js/examples/line.html)
 
->Note: Other examples are also recommended to walk over.
+>Note: If you have more time, please also walk through other examples.
 
 ## Optional
 
-[4] Square Inc. (20XX) Crossfilter http://crossfilter.github.io/crossfilter/
+[4] Square Inc. (20XX) Crossfilter API https://github.com/crossfilter/crossfilter/wiki/API-Reference
+
+[5] Peter Cook (201X) Getting to know Crossfilter http://animateddata.co.uk/articles/crossfilter/

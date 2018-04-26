@@ -157,7 +157,7 @@ In this section, we will introduce a series of operations related to project man
 
 ### 3.1 Create a repository for your project
 
-1\. Navigate to [https://github.com/new](https://github.com/new), and input your repository name in the blank text box for `Repository name`. Here, please name your repository in the format of **[account_username].github.io**. So, if your account_username is `jakobzhao`, this repository name will be **jakobzhao.github.io**. 
+1\. Navigate to [https://github.com/new](https://github.com/new), and input your repository name in the blank text box for `Repository name`. Here, please name your repository in the format of **[account_username].github.io**. So, if your account_username is `jakobzhao`, this repository name should be **jakobzhao.github.io**.
 
 ![""](img/create-new-repository-2.jpg)
 

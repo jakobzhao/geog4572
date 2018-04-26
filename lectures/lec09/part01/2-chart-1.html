@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<style>
+    svg rect {
+        fill: orange;
+    }
+
+    svg text {
+        fill:white;
+        font: 10px sans-serif;
+        text-anchor: end;
+    }
+</style>
+<body>
+<svg class="chart" width="420" height="120">
+    <!--Relative to the font-size of the element (2em means 2 times the size of the current font)-->
+    <g transform="translate(0,0)">
+        <rect width="50" height="19"></rect>
+        <text x="50" y="10" dy=".35em">5</text>
+    </g>
+    <g transform="translate(0,20)">
+        <rect width="100" height="19"></rect>
+        <text x="100" y="10" dy="0.35em">10</text>
+    </g>
+    <g transform="translate(0,40)">
+        <rect width="120" height="19"></rect>
+        <text x="120" y="10" dy=".35em">12</text>
+    </g>
+</svg>
+</body>
+</html>
