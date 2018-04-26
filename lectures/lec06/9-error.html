@@ -6,13 +6,16 @@
 </head>
 <body>
 <script>
-    d3.json("assets/users.json").then(function( data) {
+    d3.json("assets/users.json").then(function( data, error) {
+
+
+        if (error) throw errors;
 
         d3.select("body")
             .selectAll("p")
             .data(data)
             .enter()
-            .append("span")
+            .append("p")
             .text(function(d) {
                 return d.name + ", " + d.location;
             });
