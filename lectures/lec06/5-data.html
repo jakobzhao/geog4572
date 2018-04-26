@@ -6,16 +6,14 @@
 </head>
 
 <body>
-<p>D3 Tutorials </p>
-
+<span></span>
 <script>
     var myData = [1, 2, 3, 4, 5];
-
     var p = d3.select("body")
-        .selectAll("p")
+        .selectAll("span")
         .data(myData)
         .text(function (d, i) {
-            return d;
+            return d + " ";
         });
 </script>
 </body>

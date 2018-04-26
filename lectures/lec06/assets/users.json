@@ -1,20 +1,4 @@
-[{
-  "name": "Jon",
-  "age": 30,
-  "location": "The Wall"
-},
-  {
-    "name": "Arya",
-    "age": 12,
-    "location": "Braavos"
-  },
-  {
-    "name": "Cersei",
-    "age": 42,
-    "location": "Kings Landing"
-  },
-  {
-    "name": "Tyrion",
-    "age": 40,
-    "location": "Kings Landing "
-  }]
+[
+  {"name": "Jon", "age": 30, "location": "The Wall"},
+  {"name": "Arya", "age": 12, "location": "Braavos"}
+]

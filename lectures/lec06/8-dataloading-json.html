@@ -6,11 +6,8 @@
 <body>
 <p>D3 Tutorials</p>
 <script>
-    d3.csv("assets/employees.csv").then(function(data) {
-        for (var i = 0; i < data.length; i++) {
-            console.log(data[i].Name);
-            console.log(data[i].Age);
-        }
+    d3.json("assets/users.json").then(function(data) {
+        console.log(data);
     });
 </script>
 </body>

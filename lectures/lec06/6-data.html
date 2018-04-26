@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
-
 <body>
 <script>
-    var data = [4, 1, 6, 2, 8, 9];
+    var myData = [1, 2, 3, 4, 5];
     var body = d3.select("body")
         .selectAll("span")
-        .data(data)
+        .data(myData)
         .enter()
         .append("span")
         .text(function(d) { return d + " "; });
