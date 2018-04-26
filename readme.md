@@ -78,12 +78,19 @@ js v5： https://d3js.org/d3.v5.min.js
 css: http://dc-js.github.io/dc.js/css/dc.css
 js: http://dc-js.github.io/dc.js/js/dc.js
 
+5\. crossfilter
 
-5\. Chroma.js
+js: https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js
+
+6\. Chroma.js
 
 js: https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.6/chroma.min.js
 
-6\. leaflet.
+7\. Leaflet Ajax
+
+js: https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js
+
+
 
 ## RESOURCES
 
