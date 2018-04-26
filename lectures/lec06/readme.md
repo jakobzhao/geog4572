@@ -10,6 +10,8 @@
 - Be familiar with the different in selection between jQuery and D3; and
 - Able to update your code from D3 version 4 to version 5.
 
+
+
 D3 stands for Data-Driven Documents. It is an open-source JavaScript library developed by Mike Bostock to create custom interactive data visualizations in the web browser using SVG, HTML and CSS. This lecture will help you learn the essentials of D3.js starting from the basics to an intermediate level. 
 
 **D3.js setup**: Before we start, you'll need the following components:
