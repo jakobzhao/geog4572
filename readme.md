@@ -56,6 +56,35 @@ The final project is a major component of this course. For each group, there sho
 
 Graduate students in GEOG 572 are required to provide **additional contributions** to the course.A graduate student can choose either making a presentation related to the lecture topic or being responsible for coordinating the project. The projects are expected to have advanced interactive features, introductory pages and other additional materials. All the final projects are expected to publish online, and the codes are expected to be shared on GitHub to contribute to both the open source community and academia.
 
+
+## Libraries
+
+1\. Leaflet
+
+css: https://unpkg.com/leaflet@1.3.1/dist/leaflet.css
+js: https://unpkg.com/leaflet@1.3.1/dist/leaflet.js
+
+2\. jQuery
+
+js: https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
+
+3\. D3
+
+js v4： https://d3js.org/d3.v4.min.js
+js v5： https://d3js.org/d3.v5.min.js
+
+4\. Dc.js
+
+css: http://dc-js.github.io/dc.js/css/dc.css
+js: http://dc-js.github.io/dc.js/js/dc.js
+
+
+5\. Chroma.js
+
+js: https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.6/chroma.min.js
+
+6\. leaflet.
+
 ## RESOURCES
 
 <img src="https://jakobzhao.github.io/img/brand.png" align="right" width="30%" height="30%"></img>
