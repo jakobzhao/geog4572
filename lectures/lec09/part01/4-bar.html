@@ -35,6 +35,9 @@
     var g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+
+    // "+" will change a string to a numeric value
+    // function(d) is the initialize function.
     d3.csv("assets/bar.csv", function(d) {
         d.frequency = +d.frequency;
         return d;

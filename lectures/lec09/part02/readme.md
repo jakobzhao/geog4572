@@ -51,7 +51,7 @@ To develop any chart you need some raw data, for which you want to build a chart
 ]
 ```
 
-**The web page:**
+**The web page: `index.html`**
 
 ```html
 <!DOCTYPE html>
@@ -88,33 +88,35 @@ After that feed this data to crossfilter object to process this data.
 
 You can also check this data in the console writing this line `console.log(facts);`
 
-Now we'll have to create a dimension of our data, It means, if you want to know how many total payments you've made, for this we need to create a dimension. You can create any dimension of your data. For this write the code, here is the dimension by total.
+> **Note:** More details about crossfilter functions, please look at Peter Cook (201X) Getting to know Crossfilter http://animateddata.co.uk/articles/crossfilter/
 
-```
+Now we'll have to create a dimension of our data, It means, if you want to know how many total payments you've made, for this we need to create a dimension. You can create any dimension of your data.
+
+```javascript
 var dimensionByTotal = facts.dimension(function (d){ return d.total;});
 ```
 
-Then we grouped our data with the help of dimension we just created. It means if you want to know how many payments are done of the each amount (how many $100 payments). As you can see in our data there are six $90 payment and two $200 and so on. To group our data we'll write the code.
+Then we grouped our data with the help of dimension we just created. It means if you want to know how many payments are done of the each amount (how many $100 payments). As you can see in our data there are six $90 payment and two $200 and so on. To group our data, here is the statement.
 
-```
+```javascript
 var groupByTotal = dimensionByTotal.group(function(d){ return Math.floor(d/100)*100; });
 ```
 
-Here "dimensionByTotal " is the variable we just created to create dimension.
+Here "dimensionByTotal " is the variable we just created to generate dimension.
 
 All we have done our data related stuff, now we will move to build a bar chart. For this create an object of bar chart.
 
-```
+```javascript
 var barChart = dc.barChart("#chart")
 ```
 
 `#barChart` is the ID of the `div` in which we want to show our data.
 
-```
+```javascript
         var barChart = dc.barChart('#barChart')
             .width(1024) // width of the chart
             .height(200) // height of the chart
-            .dimension(dimensionByTotal) // dimention we create beforre passed as parameter
+            .dimension(dimensionByTotal) // dimension we create before passed as parameter
             .group(groupByTotal) // group we created before passed as parameter to barChart method
             .x(d3.scaleLinear().domain([0, 400])) // created x-axis scales
             .xUnits(dc.units.fp.precision(100)); // it defines the units of x-axis

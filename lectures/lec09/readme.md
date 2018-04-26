@@ -11,4 +11,3 @@
 ### Part II
 
 [Lecture on DC.js](part02)
-
