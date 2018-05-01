@@ -379,7 +379,7 @@ Font-size: Between 10px and 36px (depending on the type of chart)
 
 Please choose from these colors:
 
-![](assets/colors.jpg)
+![](img/colors.jpg)
 
 >
 >
