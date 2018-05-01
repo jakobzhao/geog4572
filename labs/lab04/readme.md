@@ -16,7 +16,7 @@ In this lab, we will walk through the process of creating a simple bar chart usi
 
 In the first part of this lab, we will create a bar chart showing last winter's average precipitation in Corvallis. It is based on this [example](https://bl.ocks.org/mbostock/3885304) from [Mike Bostock](https://bost.ocks.org/mike/), the creator of D3.js. Data for this visualization come from [US Climate Data](https://www.usclimatedata.com/climate/corvallis/oregon/united-states/usor0076). Below is the chart you will make by walking through this lab handout.
 
-![](assets/img/image.jpg)
+![](img/image.jpg)
 
 To get started, please synchronize the course material to the working space of your local computer. If you are working in the Digital Earth Lab, please synchronize your course material on the desktop directory. The material for this lab is located at `[your_working_space]/geog4572/labs/lab04`. Next, open the course material in Webstorm.
 
@@ -64,7 +64,7 @@ In addition,  we put our JavaScript code between `script` tags, which is inside 
 Please click the chrome button that appears when you hover your mouse over the top right corner of the editing window in Webstorm. In the browser window you should be able, using the inspect tool and placing the mouse over the `svg` tag, to see the area that will be occupied by our chart (image below).
 
 
-![](assets/img/step1.jpg)
+![](img/step1.jpg)
 
 
 ### **1.1 Set dimensions and margins of the graph**
@@ -154,7 +154,7 @@ y.domain([0, d3.max(data, function(d) { return d.rain; })]);
 
 Once the workspace has been set up and we have the data, we can build our chart using D3.js. From the folder, open the file `step3.html`. The final result should look like in the image below.
 
-![](assets/img/step3.jpg)
+![](img/step3.jpg)
 
 ### 3.1 Adding the x and y axes
 
@@ -379,7 +379,7 @@ Font-size: Between 10px and 36px (depending on the type of chart)
 
 Please choose from these colors:
 
-![](assets\colors.jpg)
+![](assets/colors.jpg)
 
 >
 >
@@ -439,7 +439,7 @@ Add an `img` folder inside the `assets` folder and place in it an SVG image of y
 
 The extracted SVG will not have color information, therefore you will need to add color (same colors of the html visualization) using an image editor. The most known software to manipulate vector images is Adobe Illustrator, but a good (and open source) alternative is [Gravit](https://gravit.io/). Once you added the color, you will need to resize the chart leaving a 30 px border on top and bottom sides and a 20 px border on the left and right sides, as shown in the image below.
 
-![](assets\scheme.png)
+![](assets/scheme.png)
 
 #### Grading criteria:
 
