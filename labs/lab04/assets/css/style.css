@@ -1,0 +1,26 @@
+.bar {
+  fill:#F3BB3B;
+  stroke: #DC4404;
+}
+
+.bar:hover {
+  fill:#DC4404;
+}  
+
+.axis{
+    stroke: #DC4404;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+  }
+
+.axis line {
+    stroke: #DC4404;
+  }
+
+.axis path {
+    stroke: #DC4404;
+  }
+
+.axis--x path {
+  display: none;
+}
