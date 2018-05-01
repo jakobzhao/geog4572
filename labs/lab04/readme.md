@@ -34,9 +34,8 @@ In addition,  we put our JavaScript code between `script` tags, which is inside 
 
 ```html
 <!DOCTYPE html>
-<meta charset="utf-8">
-
 <head>
+    <meta charset="utf-8">
     <svg width="400" height="400"></svg>
     <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
