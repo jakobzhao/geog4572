@@ -407,8 +407,6 @@ Please choose from these colors:
 >
 > color5: rgba(85, 129, 186, 1);
 
-
-
 #### License
 
 Please credit the author of the example you are basing your visualization on and acknowledge the license. A software license tells others what they can and can't do with your source code, so it's important to mention it. More info on licenses can be found [here](https://help.github.com/articles/licensing-a-repository/).
