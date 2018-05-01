@@ -359,8 +359,6 @@ g.selectAll(".bar")
 
 ## 5. Deliverables
 
-****
-
 After you successfully build this chart, you are expected to build another data visualization using D3.js. You can use some of your own data or you can get inspiration visiting one of many sites that host D3 examples. The [official website](https://d3js.org/) of D3.js is the best place to start. Other websites with live examples and code snippets are [bl.ocks.org](https://bl.ocks.org/), [d3-discovery.net](https://d3-discovery.net/) and [christopheviau.com](http://christopheviau.com/d3list/gallery.html#title=all). To get an idea about the different chart types and what kind of data they are better suited for, take a look at [datavizproject.com](http://datavizproject.com/).
 
 As said before, your visualization will be used to enrich the [Neocarto](http://geoviz.ceoas.oregonstate.edu/neocarto/index.html) website, hosted by the Cartography and Geovisualization Group at Oregon State University. For this reason, the style of your chart should comply with these rules:
@@ -381,7 +379,6 @@ Please choose from these colors:
 
 ![](img/colors.jpg)
 
->
 >
 >  HSL
 >
@@ -407,9 +404,9 @@ Please choose from these colors:
 >
 > color5: rgba(85, 129, 186, 1);
 
-#### License
+#### Acknowlegement
 
-Please credit the author of the example you are basing your visualization on and acknowledge the license. A software license tells others what they can and can't do with your source code, so it's important to mention it. More info on licenses can be found [here](https://help.github.com/articles/licensing-a-repository/).
+Please credit the author of the example you are basing your geoviz module on and acknowledge the license. A software license tells others what they can and can't do with your source code, so it's important to mention it. More info on licenses can be found [here](https://help.github.com/articles/licensing-a-repository/).
 
 #### Readme.md
 
@@ -435,7 +432,6 @@ Add an `img` folder inside the `assets` folder and place in it an SVG image of y
 >
 > 4. Paste in your favorite text editor (*VS Code*), and save as a `.svg`
 >
->    ​
 
 The extracted SVG will not have color information, therefore you will need to add color (same colors of the html visualization) using an image editor. The most known software to manipulate vector images is Adobe Illustrator, but a good (and open source) alternative is [Gravit](https://gravit.io/). Once you added the color, you will need to resize the chart leaving a 30 px border on top and bottom sides and a 20 px border on the left and right sides, as shown in the image below.
 
@@ -454,19 +450,23 @@ The extracted SVG will not have color information, therefore you will need to ad
 
 - you will need to synchronize this project to a GitHub repository. And make sure the chart is accessible from a url link, which should be similar to `http://[your_github_username].github.io/[your_repository_name]/index.html`. (You may want to check out previous lecture or lab handouts on project management and hosting via GitHub); **(7 points)**
 
+> **Note:** Make sure you follow the [naming convention](../../project/naming.md).
+
 - To simplify your html page, please put the CSS file `style.css` inside a `css` folder and all images in an `img` folder. These folders will be placed inside an `assets` folder, which will contain also your data (csv or json).  Please make sure the project repository structure is well organized. It should be similar to the file structure below. **(8 points)**
 
   ```powershell
   [your_repository_name]
       │index.html
       │readme.md
+      ├─css
+      │      style.css
+      ├─js
+      │      main.js
+      ├─img
+      │      image.jpg
+      │      image.svg
       ├─assets
           │
-          ├─css
-          │      style.css
-          ├─img
-          │      image.jpg
-          │      image.svg
           └─data.csv
   ```
 
