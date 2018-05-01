@@ -361,6 +361,9 @@ g.selectAll(".bar")
 
 After you successfully build this chart, you are expected to build another data visualization using D3.js. You can use some of your own data or you can get inspiration visiting one of many sites that host D3 examples. The [official website](https://d3js.org/) of D3.js is the best place to start. Other websites with live examples and code snippets are [bl.ocks.org](https://bl.ocks.org/), [d3-discovery.net](https://d3-discovery.net/) and [christopheviau.com](http://christopheviau.com/d3list/gallery.html#title=all). To get an idea about the different chart types and what kind of data they are better suited for, take a look at [datavizproject.com](http://datavizproject.com/).
 
+> **Note:** We required all the geoviz module you build are based on v5.js. If your geoviz moduel is based on a module made by d3 v4. Please try to update the version from v4 to v5. To do that, please refer to the last section of [lecture 06](https://github.com/jakobzhao/geog4572/tree/master/lectures/lec06)
+
+
 As said before, your visualization will be used to enrich the [Neocarto](http://geoviz.ceoas.oregonstate.edu/neocarto/index.html) website, hosted by the Cartography and Geovisualization Group at Oregon State University. For this reason, the style of your chart should comply with these rules:
 
 #### SVG
@@ -408,9 +411,11 @@ Please choose from these colors:
 
 Please credit the author of the example you are basing your geoviz module on and acknowledge the license. A software license tells others what they can and can't do with your source code, so it's important to mention it. More info on licenses can be found [here](https://help.github.com/articles/licensing-a-repository/).
 
-#### Readme.md
+#### readme.md
 
-You are also required to write a project description in the `readme.md` file. This file will describe the type of visualization, a brief introduction, the major functions (for example what type of data are best visualized with it), data sources, credit acknowledgement, and other necessary information.
+You are also required to write a project description in the `readme.md` file. This file will describe the type of visualization (e.g., bar chart, line chart, network, word cloud, etc.), a brief introduction of this goeviz, the major functions (for example what type of data are best visualized with it, ordinal nominal, ratio or interval), data sources, acknowledgement, and other necessary information.
+
+
 
 #### Images
 
@@ -430,7 +435,7 @@ Add an `img` folder inside the `assets` folder and place in it an SVG image of y
 >
 > 3. Copy the outer HTML
 >
-> 4. Paste in your favorite text editor (*VS Code*), and save as a `.svg`
+> 4. Paste in your favorite text editor (*webstorme*), and save as a `.svg`
 >
 
 The extracted SVG will not have color information, therefore you will need to add color (same colors of the html visualization) using an image editor. The most known software to manipulate vector images is Adobe Illustrator, but a good (and open source) alternative is [Gravit](https://gravit.io/). Once you added the color, you will need to resize the chart leaving a 30 px border on top and bottom sides and a 20 px border on the left and right sides, as shown in the image below.
@@ -460,14 +465,21 @@ The extracted SVG will not have color information, therefore you will need to ad
       │readme.md
       ├─css
       │      style.css
+      │      other stylesheets
       ├─js
       │      main.js
+      │      other.js
       ├─img
       │      image.jpg
       │      image.svg
+      │      other images, etc.
       ├─assets
           │
           └─data.csv
+          │
+          └─data.geojson
+          │
+          └─data.topojson
   ```
 
 
