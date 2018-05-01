@@ -5,10 +5,9 @@
 
 .bar:hover {
   fill:#DC4404;
-}  
+}
 
 .axis{
-    stroke: #DC4404;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
   }
@@ -23,4 +22,8 @@
 
 .axis--x path {
   display: none;
+}
+
+text {
+    fill: #DC4404;
 }

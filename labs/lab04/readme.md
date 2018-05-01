@@ -1,4 +1,4 @@
-# Lab 4:  Data Visualization with D3.js
+# Lab 4:  GeoViz Modules - Data Visualization with D3.js and Dc.js
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
@@ -10,7 +10,7 @@
 
 D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document. For example, you can use D3 to generate an HTML table from an array of numbers. Or, use the same data to create an interactive SVG bar chart with smooth transitions and interaction.
 
-In this lab, we will walk through the process of creating a simple bar chart using D3.js. Then, you will apply these techniques to create a different type of chart based on your interests or on data you would like to visualize. The final result, which will be in the form of a git repository, will be used to enrich the [Neocarto](http://geoviz.ceoas.oregonstate.edu/neocarto/index.html) website, hosted by the Cartography and Geovisualization Group at Oregon State University. Neocarto is a collaborative project whose purpose is to to create reusable charts and other visualizations using d3.js. For this reason, the outcome of this project will need to comply with some stylistic rules, like using the same font type and color scheme. Inside the geog4572 git file for Lab 4 you will find a series of 4 HTML files labeled step1 through step4 which show you the correct outcome for each set of steps.
+In this lab, we will walk through the process of creating a simple bar chart using D3.js. Then, you will apply these techniques to create a different type of chart based on your interests or on data you would like to visualize. The final result, which will be in the form of a git repository, will be used to enrich the [Neocarto](http://geoviz.ceoas.oregonstate.edu/neocarto/index.html) website, hosted by the Cartography and Geovisualization Group at Oregon State University. Neocarto is a collaborative project whose purpose is to to create reusable charts and other visualizations using d3.js or Dc.js. For this reason, the outcome of this project will need to comply with some stylistic rules, like using the same font type and color scheme. Inside the geog4572 git file for Lab 4 you will find a series of 4 HTML files labeled step1 through step4 which show you the correct outcome for each set of steps.
 
 > Throughout the walk-through section, areas with this `markdown` format indicate extra resources to explore the many options in D3.js. A great reference to always keep in mind is the [D3 API reference](https://github.com/d3/d3/blob/master/API.md).
 
@@ -18,7 +18,7 @@ In the first part of this lab, we will create a bar chart showing last winter's 
 
 ![](assets/img/image.jpg)
 
-To get started, please synchronize the course material to the working space of your local computer. If you are working in the Digital Earth Lab, please synchronize your course material on the desktop directory.  The material for this lab is located at `[your_working_space]/geog4572/labs/lab04`. Next, open the course material in Webstorm.
+To get started, please synchronize the course material to the working space of your local computer. If you are working in the Digital Earth Lab, please synchronize your course material on the desktop directory. The material for this lab is located at `[your_working_space]/geog4572/labs/lab04`. Next, open the course material in Webstorm.
 
 ## 1. Set up the workspace
 
@@ -28,9 +28,9 @@ In this file you will see a basic HTML page which will not display anything on t
 
 To make use of D3’s capabilities, you must include the `d3.js` file in your web page. Inside the `head` tag, we include the latest version of D3.js (v.5) directly from the [d3js.org]() website.
 
-D3 leverages the Scalable Vector Graphic, or **SVG** format, which allows you to render shapes, lines and fills that can be zoomed in or out without losing quality. Inside the `head` tag, we include an SVG tag specifying width and height of our chart (400x400 pixels).
+D3 leverages the Scalable Vector Graphic, or **SVG** format, which allows you to render shapes, lines and fills that can be zoomed in or out without losing quality. Inside the `body` tag, we include an SVG tag specifying width and height of our chart (400x400 pixels).
 
-Inside the `body`, we put our JavaScript code between `script` tags.
+In addition,  we put our JavaScript code between `script` tags, which is inside `body` tag as wellas after the `svg` tag.
 
 ```html
 <!DOCTYPE html>
@@ -61,13 +61,10 @@ Inside the `body`, we put our JavaScript code between `script` tags.
 ```
 
 
-
-Please  click the chrome button that appears when you hover your mouse over the top right corner of the editing window in Webstorm. In the browser window you should be able, using the inspect tool and placing the mouse over the `svg` tag, to see the area that will be occupied by our chart (image below).
-
+Please click the chrome button that appears when you hover your mouse over the top right corner of the editing window in Webstorm. In the browser window you should be able, using the inspect tool and placing the mouse over the `svg` tag, to see the area that will be occupied by our chart (image below).
 
 
 ![](assets/img/step1.jpg)
-
 
 
 ### **1.1 Set dimensions and margins of the graph**
@@ -75,13 +72,11 @@ Please  click the chrome button that appears when you hover your mouse over the 
 [By convention](https://bl.ocks.org/mbostock/3019563), margins in D3 are specified as an object with top, right, bottom and left properties. Then, the *outer* size of the chart area, which includes the margins, is used to compute the *inner* size available for graphical marks by subtracting the margins. Using this convention is a convenient way to setup the workspace so that all subsequent code can be written without having to worry about margins.
 
 ```js
-        var svg = d3.select("svg"),
-            margin = {top: 20, right: 20, bottom: 30, left: 40},
-            width = +svg.attr("width") - margin.left - margin.right,
-            height = +svg.attr("height") - margin.top - margin.bottom;
+var svg = d3.select("svg"),
+    margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = +svg.attr("width") - margin.left - margin.right,
+    height = +svg.attr("height") - margin.top - margin.bottom;
 ```
-
-
 
 ### **1.2 Set scales and ranges**
 
@@ -90,12 +85,12 @@ Now we set the scale type and ranges for x and y. Scales are a convenient abstra
 For continuous quantitative data, you typically want a linear scale.  For discrete ordinal (ordered) or categorical (unordered) data, an ordinal scale specifies an explicit mapping from a set of data values to a corresponding set of visual attributes. Band scales are like ordinal scales except the output range is continuous and numeric. We chose for the x axis a band scale with range between 0 and the width of the graph we defined in the previous section. We also add a padding value (0.2) to keep the individual bars separated from each other. For he y axis we chose a linear scale using as range value the height of the chart. Linear scales are a good default choice for continuous quantitative data because they preserve proportional differences.
 
 ```js
-        var x = d3.scaleBand().range([0, width]).padding(0.2),
-            y = d3.scaleLinear().range([height, 0]);
+var x = d3.scaleBand().range([0, width]).padding(0.2),
+    y = d3.scaleLinear().range([height, 0]);
 ```
 
-> For more on scales in D3.js look [here](https://github.com/d3/d3-scale/blob/master/README.md)
 
+> For more on scales in D3.js look [here](https://github.com/d3/d3-scale/blob/master/README.md)
 
 
 ### 1.3 Append and move the group (g) element
@@ -107,15 +102,14 @@ To apply the margins to the SVG container, we set the width and height of the SV
 We use attr() to apply transform as an attribute of `g`. Here using a `translation` transform, we push the whole `g` group to apply the margins we determined earlier. In this way when we add other elements, such as axes, they will be positioned correctly and will not overtype the chart.
 
 ```javascript
-        var g = svg.append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+var g = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 ```
-
 
 
 ## 2. Add the data
 
-We can add the data directly in the code or call it from an external file. D3 supports several different file types when loading data, and one of the most common is probably CSV (comma separated values).In our example we are using a file (data.csv) containing the average precipitation in Corvallis last year. To see the code, look at step2.html in the folder. This html page also will not display anything on the screen.
+We can add the data directly in the code or call it from an external file. D3 supports several different file types when loading data, and one of the most common is probably CSV (comma separated values).In our example we are using a file `data.csv` containing the average precipitation in Corvallis last year. To see the code, look at `step2.html` in the folder. This html page also will not display anything on the screen.
 
 ```csv
 month,rain
@@ -134,10 +128,14 @@ Mar,4.45
 We use the `d3.csv` method to fetch a csv file at the specified URL. The anonymous function (d) gets the data from the 'rain' column of the csv and returns an array of objects. The + operator `+d` is used to return the numeric representation of the object.
 
 ```js
-        d3.csv("assets/data.csv", function(d) {
-        d.rain = +d.rain;
-        return d;
-        }.then(function(data) {
+d3.csv("assets/data.csv", function(d) {
+    d.rain = +d.rain;
+    return d;
+}.then(function(data) {
+
+    //add the code for data processing here
+
+}));
 ```
 
 Then we set the domain for the x and y axis. You should recall from the lesson that the **domain** is the complete set of values, so for example all the precipitation values from 0.47 to 7.72 inches. The **range** is the set of resulting values of a function, in this case the resulting values of scaling precipitations from 0 to 400 (the max height of our chart defined before).
@@ -147,10 +145,9 @@ For our x value we use the `map` method, to map a discrete domain to a discrete 
 For our y value, we use the `max` method, that sets the highest value in the precipitation column as the higher value of the domain.
 
 ```js
-        x.domain(data.map(function(d) { return d.month; }));
-        y.domain([0, d3.max(data, function(d) { return d.rain; })]);
+x.domain(data.map(function(d) { return d.month; }));
+y.domain([0, d3.max(data, function(d) { return d.rain; })]);
 ```
-
 
 
 ## 3. Building the chart
@@ -168,12 +165,12 @@ For the `x` axis we use the `d3.axisBottom` method to create a new bottom-orient
 For the `y` axis we use the `d3.axisLeft` method and we concatenate the method `ticks` to determine the number of horizontal lines we would like to display on the y axis.
 
 ```js
-        g.append("g")
-            .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x));
+g.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x));
 
-        g.append("g")
-            .call(d3.axisLeft(y).ticks(10))
+g.append("g")
+    .call(d3.axisLeft(y).ticks(10))
 ```
 
 > More on axes in D3.js [here](https://github.com/d3/d3-axis)
@@ -183,13 +180,13 @@ For the `y` axis we use the `d3.axisLeft` method and we concatenate the method `
 Finally we draw the chart using the SVG element `rect` to build the individual bars of the chart. As you can see below, the code calls the data and appends [rectangular shapes](https://www.w3schools.com/graphics/svg_rect.asp) using the x (month) and y (rain) values. The width is computed by dividing the available chart width by the size of the dataset (`x.bandwidth`). The height is determined by a function. We want the zero-value to be positioned at the bottom of the chart, rather than the top (remember that the SVG by default sets the origin in the top left corner). Therefore before adding the bar using the y value, we need to subtract the height.
 
 ```js
-        g.selectAll(".bar")
-            .data(data)
-            .enter().append("rect")
-            .attr("x", function(d) { return x(d.month); })
-            .attr("y", function(d) { return y(d.rain); })
-            .attr("width", x.bandwidth())
-            .attr("height", function(d) { return height - y(d.rain); });
+g.selectAll(".bar")
+    .data(data)
+    .enter().append("rect")
+    .attr("x", function(d) { return x(d.month); })
+    .attr("y", function(d) { return y(d.rain); })
+    .attr("width", x.bandwidth())
+    .attr("height", function(d) { return height - y(d.rain); });
 ```
 
 
@@ -224,7 +221,6 @@ So, what did we do here?
 - Lastly, we defined `text`, the actual label that will be displayed on the chart (in this case, *Inches*)
 
 
-
 ### 4.2 Use CSS to Style
 
 We are going to use CSS to style the chart. Rather than writing the code in the html page between style tags, we'll create an external file called style.css.
@@ -240,7 +236,6 @@ We are going to use CSS to style the chart. Rather than writing the code in the 
 }
 
 .axis{
-    stroke: #DC4404;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
   }
@@ -255,6 +250,10 @@ We are going to use CSS to style the chart. Rather than writing the code in the 
 
 .axis--x path {
   display: none;
+}
+
+text {
+    fill: #DC4404;
 }
 ```
 
@@ -285,20 +284,27 @@ Instead of `Titillium`, we will use the font `Open Sans`
 
 ```html
 <head>...
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-...</head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    ...
+</head>
 ```
 
-To style all the text in our chart with the `Open Sans` font, we modify the `.axis` tag in the CSS file. We also specify the `font-size` and the color (`stroke`)
+To style all the text in our chart with the `Open Sans` font, we modify the `.axis` tag in the CSS file. We also specify the `font-size`.
 
 ```css
 .axis{
-    stroke: #DC4404;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
   }
 ```
 
+To change the color of the text, we need to apply `fill` property to the `text` tag.
+
+```css
+text {
+    fill: #DC4404;
+}
+```
 
 
 #### 4.2.3 Final editing
@@ -322,34 +328,33 @@ Finally we give a value for the `stroke` property of line (horizontal lines in t
 To see these changes applied in the chart, we need to add the classes to the SVG element. So we insert as attribute in the g element the classes `axis`, `axis--x` and `axis--y`.
 
 ```js
-        g.append("g")
-            .attr("class", "axis axis--x")
-            .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x));
+g.append("g")
+    .attr("class", "axis axis--x")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x));
 
-        // add the y Axis
-        g.append("g")
-            .attr("class", "axis axis--y")
-            .call(d3.axisLeft(y).ticks(10))
-            .append("text")
-            .attr("transform", "rotate(-90)")
-            .attr("y", 6)
-            .attr("dy", "0.7em")
-            .attr("fill", "#DC4404")
-            .attr("text-anchor", "end")
-            .text("Inches");
+// add the y Axis
+g.append("g")
+    .attr("class", "axis axis--y")
+    .call(d3.axisLeft(y).ticks(10))
+    .append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 6)
+    .attr("dy", "0.7em")
+    .attr("fill", "#DC4404")
+    .attr("text-anchor", "end")
+    .text("Inches");
 
-        // append the rectangles for the bar chart
-        g.selectAll(".bar")
-            .data(data)
-            .enter().append("rect")
-            .attr("class", "bar")
-            .attr("x", function(d) { return x(d.month); })
-            .attr("y", function(d) { return y(d.rain); })
-            .attr("width", x.bandwidth())
-            .attr("height", function(d) { return height - y(d.rain); });
+// append the rectangles for the bar chart
+g.selectAll(".bar")
+    .data(data)
+    .enter().append("rect")
+    .attr("class", "bar")
+    .attr("x", function(d) { return x(d.month); })
+    .attr("y", function(d) { return y(d.rain); })
+    .attr("width", x.bandwidth())
+    .attr("height", function(d) { return height - y(d.rain); });
 ```
-
 
 
 ## 5. Deliverables
@@ -438,8 +443,6 @@ The extracted SVG will not have color information, therefore you will need to ad
 
 ![](assets\img\scheme.png)
 
-
-
 #### Grading criteria:
 
 - SVG dimensions (400 x 400 pixels) and margins (50 x 50 px)  **(7 points)**
@@ -448,8 +451,6 @@ The extracted SVG will not have color information, therefore you will need to ad
 - Color palette **( 8 points)**
 - License acknowledgement  **(4 points)**
 - Readme.md file **(8 points)**
-
-
 
 ## Submission
 
