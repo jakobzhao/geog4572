@@ -239,7 +239,7 @@ https://analytics.google.com/
 
 4.2 Create A new Property
 
-Click on the `admin` page, and click the `create property` button to create a new property on the popped up right panel.
+Click on the `admin` page at the end of the left side bar, and then click the `create property` button on the opened-up page to create a new property.
 
 ![](img/createproperty.png)
 
@@ -261,11 +261,9 @@ Click on the `admin` page, and click the `create property` button to create a ne
 </script>
 ```
 
-This is the Global Site Tag (gtag.js) tracking code for this property. Copy and paste this code as the last elemennt inside `<body>` of every webpage you want to track. If you already have a Global Site Tag on your page, simply add the config line from the snippet below to your existing Global Site Tag.
+Copy and paste this code as the last elemennt inside `<body>` of every webpage you want to track. If you already have a Global Site Tag on your page, simply add the config line from the snippet below to your existing Global Site Tag.
 
 [Here](view-source:jakobzhao.github.io) is an example of web page using the `gtag.js`. (Pleas scroll down to the very end of this page.)
-
-
 
 
 ## References:
