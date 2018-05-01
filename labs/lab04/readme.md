@@ -379,7 +379,7 @@ Font-size: Between 10px and 36px (depending on the type of chart)
 
 Please choose from these colors:
 
-![](assets\img\colors.jpg)
+![](assets\colors.jpg)
 
 >
 >
@@ -439,7 +439,7 @@ Add an `img` folder inside the `assets` folder and place in it an SVG image of y
 
 The extracted SVG will not have color information, therefore you will need to add color (same colors of the html visualization) using an image editor. The most known software to manipulate vector images is Adobe Illustrator, but a good (and open source) alternative is [Gravit](https://gravit.io/). Once you added the color, you will need to resize the chart leaving a 30 px border on top and bottom sides and a 20 px border on the left and right sides, as shown in the image below.
 
-![](assets\img\scheme.png)
+![](assets\scheme.png)
 
 #### Grading criteria:
 
