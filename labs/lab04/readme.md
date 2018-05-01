@@ -382,86 +382,86 @@ Please choose from these colors:
 
 ![](img/colors.jpg)
 
->
->  HSL
->
-> color1: hsla(18%, 96%, 44%, 1);
->
-> color2: hsla(42%, 88%, 59%, 1);
->
-> color3: hsla(0%, 1%, 86%, 1);
->
-> color4: hsla(203%, 38%, 65%, 1);
->
-> color5: hsla(214%, 42%, 53%, 1);
->
-> RGB
->
-> color1: rgba(220, 68, 4, 1);
->
-> color2: rgba(243, 187, 59, 1);
->
-> color3: rgba(220, 219, 219, 1);
->
-> color4: rgba(132, 174, 200, 1);
->
-> color5: rgba(85, 129, 186, 1);
 
-#### Acknowlegement
+The series of color in **HSL** values:
 
-Please credit the author of the example you are basing your geoviz module on and acknowledge the license. A software license tells others what they can and can't do with your source code, so it's important to mention it. More info on licenses can be found [here](https://help.github.com/articles/licensing-a-repository/).
+ - color1: hsla(18%, 96%, 44%, 1);
 
-#### readme.md
+ - color2: hsla(42%, 88%, 59%, 1);
 
-You are also required to write a project description in the `readme.md` file. This file will describe the type of visualization (e.g., bar chart, line chart, network, word cloud, etc.), a brief introduction of this goeviz, the major functions (for example what type of data are best visualized with it, ordinal nominal, ratio or interval), data sources, acknowledgement, and other necessary information.
+ - color3: hsla(0%, 1%, 86%, 1);
 
+ - color4: hsla(203%, 38%, 65%, 1);
 
+ - color5: hsla(214%, 42%, 53%, 1);
+
+in **RGB** values:
+
+ - color1: rgba(220, 68, 4, 1);
+
+ - color2: rgba(243, 187, 59, 1);
+
+ - color3: rgba(220, 219, 219, 1);
+
+ - color4: rgba(132, 174, 200, 1);
+
+ - color5: rgba(85, 129, 186, 1);
 
 #### Images
 
-Add an `img` folder inside the `assets` folder and place in it an SVG image of your visualization. To do so you need to export it from the html page.
+You will need to create an SVG image to illustrate the type of geoviz you generated. To do so you need to export it from the html page.
 
-> To extract an SVG image from an html file proceed like this:
->
-> In Microsoft Edge
->
-> 1. Right Click **>** Save Picture As
->
-> In Chrome, Firefox, etc.
->
-> 1. Inspect Element (*Make sure you've selected the root svg element you'd like to save*).
->
-> 2. Right Click **>** Edit as HTML
->
-> 3. Copy the outer HTML
->
-> 4. Paste in your favorite text editor (*webstorme*), and save as a `.svg`
->
+ To extract an SVG image from an html file proceed like this:
+
+ In Microsoft Edge
+
+ 1\. Right Click **** Save Picture As
+
+ In Chrome, Firefox, etc.
+
+ 1\. Inspect Element (*Make sure you've selected the root svg element you'd like to save*).
+
+ 2\. Right Click **** Edit as HTML
+
+ 3\. Copy the outer HTML
+
+ 4\. Paste in your favorite text editor (*webstorm*), and save as a `.svg`
 
 The extracted SVG will not have color information, therefore you will need to add color (same colors of the html visualization) using an image editor. The most known software to manipulate vector images is Adobe Illustrator, but a good (and open source) alternative is [Gravit](https://gravit.io/). Once you added the color, you will need to resize the chart leaving a 30 px border on top and bottom sides and a 20 px border on the left and right sides, as shown in the image below.
 
 ![](assets/scheme.png)
 
+After you generated the image, please name it `image.svg` and the convert it to another jpg file named `image.jpg`.
+
+#### readme.md
+
+You are also required to write a project description in the `readme.md` file. This file will describe the type of visualization (e.g., bar chart, line chart, network, word cloud, etc.), a brief introduction of this goeviz, the major functions (for example what type of data are best visualized with it, ordinal nominal, ratio or interval), data sources, acknowledgement, and more importantly, you will need to walk through the code function by function, just as how this lab note] organizes. Here is [*`a template for your readme.md`*](template.md).
+
+> **Acknowlegement:** Please credit the author of the example you are basing your geoviz module on and acknowledge the license. A software license tells others what they can and can't do with your source code, so it's important to mention it. More info on licenses can be found [here](https://help.github.com/articles/licensing-a-repository/).
+
 #### Grading criteria:
 
-- SVG dimensions (400 x 400 pixels) and margins (50 x 50 px)  **(7 points)**
-- Font-type Open Sans **(4 points)**
+- SVG dimensions (400 x 400 pixels) and margins (50 x 50 px)  **(6 points)**
+- Font-type Open Sans **(5 points)**
 - Font size between 10 and 36 (depending on the type of chart) **(4 points)**
 - Color palette **( 8 points)**
-- License acknowledgement  **(4 points)**
 - Readme.md file **(8 points)**
 
 ## Submission
 
-- you will need to synchronize this project to a GitHub repository. And make sure the chart is accessible from a url link, which should be similar to `http://[your_github_username].github.io/[your_repository_name]/index.html`. (You may want to check out previous lecture or lab handouts on project management and hosting via GitHub); **(7 points)**
+- you will need to synchronize this project to a GitHub repository. **And make sure the chart is accessible from a url link, which should be similar to `http://[your_github_username].github.io/[your_repository_name]/index.html`**. (You may want to check out previous lectures or lab handouts on project management and hosting via GitHub); **(12 points)**
 
 > **Note:** Make sure you follow the [naming convention](../../project/naming.md).
 
-- To simplify your html page, please put the CSS file `style.css` inside a `css` folder and all images in an `img` folder. These folders will be placed inside an `assets` folder, which will contain also your data (csv or json).  Please make sure the project repository structure is well organized. It should be similar to the file structure below. **(8 points)**
+- To simplify your html page, please put the CSS file `style.css` inside a `css` folder and all images in an `img` folder. These folders will be placed inside an `assets` folder, which will contain also your data (csv or json).  Please make sure the project repository structure is well organized. It should be similar to the file structure below. **(7 points)**
 
   ```powershell
   [your_repository_name]
       │index.html
+      │step1.html
+      │step2.html
+      │ ... ...
+      │stepn.html
       │readme.md
       ├─css
       │      style.css

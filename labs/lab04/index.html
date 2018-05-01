@@ -2,11 +2,9 @@
 <html>
 <meta charset="utf-8">
 <head>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
-
 <body>
 <svg width="400" height="400"></svg>
 <script>
@@ -23,11 +21,11 @@
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     d3.csv("assets/data.csv", function(d) {
-        // format the data
         d.rain = +d.rain;
         return d;
     }).then(function(data) {
 
+        //add the code for data processing here
         x.domain(data.map(function(d) { return d.month; }));
         y.domain([0, d3.max(data, function(d) { return d.rain; })]);
 
@@ -49,7 +47,8 @@
 
         g.selectAll(".bar")
             .data(data)
-            .enter().append("rect")
+            .enter()
+            .append("rect")
             .attr("class", "bar")
             .attr("x", function(d) { return x(d.month); })
             .attr("y", function(d) { return y(d.rain); })
