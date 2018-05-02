@@ -4,8 +4,7 @@
 >
 > **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
 >
-> **Contributors:** [Hannah Friedrich](https://github.com/hannahfriedrich), [Anna Talucci](https://github.com/taluccia)
-
+> **Contributors:** Anna Talucci](https://github.com/taluccia), [Hannah Friedrich](https://github.com/hannahfriedrich)
 
 **Objectives**:
 
