@@ -363,8 +363,6 @@ After you successfully build this chart, you are expected to build another data 
 > **Note:** We required all the geoviz module you build are based on v5.js. If your geoviz moduel is based on a module made by d3 v4. Please try to update the version from v4 to v5. To do that, please refer to the last section of [lecture 06](https://github.com/jakobzhao/geog4572/tree/master/lectures/lec06)
 
 
-As said before, your visualization will be used to enrich the [Neocarto](http://geoviz.ceoas.oregonstate.edu/neocarto/index.html) website, hosted by the Cartography and Geovisualization Group at Oregon State University. For this reason, the style of your chart should comply with these rules:
-
 Here is a list of geoviz module you can learn from.
 
 - Bubble Chart: https://bl.ocks.org/mbostock/4063269
@@ -388,6 +386,11 @@ Here is a list of geoviz module you can learn from.
 - Hexagon map: http://bl.ocks.org/tnightingale/4668062 (Giovanni Svevo)
 
 - D3 Liquid Fill Gauge: http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6 (Ginny Katz)
+
+
+As said before, your visualization will be used to enrich the [Neocarto](http://geoviz.ceoas.oregonstate.edu/neocarto/index.html) website, hosted by the Cartography and Geovisualization Group at Oregon State University. For this reason, the style of your chart should comply with these rules:
+
+
 
 
 #### SVG
