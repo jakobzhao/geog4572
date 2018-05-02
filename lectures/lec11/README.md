@@ -206,5 +206,5 @@ var mytile =L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
 ![leafletmap](img/leafletmap.JPG)
 
 
-Here is what the final output looks like **[here](http://taluccia.github.io/earthengine.cloud.qgis.leaflet)**
+Here is what the final output looks like **[here](http://jakobzhao.github.io/lectures/lec11/index.html)**
 
