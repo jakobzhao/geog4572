@@ -369,7 +369,7 @@ Here is a list of geoviz module you can learn from.
 
 - Bubble Chart: https://bl.ocks.org/mbostock/4063269
 
-- Streamgraph https://bl.ocks.org/mbostock/4060954
+- Streamgraph https://bl.ocks.org/mbostock/4060954 (Ginny Katz)
 
 - Voronoi: https://bl.ocks.org/mbostock/4060366
 
@@ -383,7 +383,7 @@ Here is a list of geoviz module you can learn from.
 
 - Pie Donut Chart: http://bl.ocks.org/dbuezas/9306799
 
-- Sankey diagram: https://github.com/d3/d3-sankey (Ginny Katz)
+- Sankey diagram: https://github.com/d3/d3-sankey 
 
 - Hexagon map: http://bl.ocks.org/tnightingale/4668062
 
