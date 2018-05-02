@@ -367,39 +367,25 @@ As said before, your visualization will be used to enrich the [Neocarto](http://
 
 Here is a list of geoviz module you can learn from.
 
-- Bubble Chart
-https://bl.ocks.org/mbostock/4063269
+- Bubble Chart: https://bl.ocks.org/mbostock/4063269
 
-- Calendar
+- Streamgraph https://bl.ocks.org/mbostock/4060954
 
-https://bl.ocks.org/mbostock/4063318
+- Voronoi: https://bl.ocks.org/mbostock/4060366
 
-- Streamgraph
+- Word Cloud: https://www.jasondavies.com/wordcloud/
 
-https://bl.ocks.org/mbostock/4060954
+- Calendar Heatmap: http://bl.ocks.org/oyyd/859fafc8122977a3afd6
 
-- Voronoi
+- Force Atlas: https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
 
-https://bl.ocks.org/mbostock/4060366
+- Area Chart: https://bl.ocks.org/mbostock/3883195
 
-- Word Cloud
+- Pie Donut Chart: http://bl.ocks.org/dbuezas/9306799
 
-https://www.jasondavies.com/wordcloud/
+- Sankey diagram: https://github.com/d3/d3-sankey
 
-- Calendar Heatmap
-
-http://bl.ocks.org/oyyd/859fafc8122977a3afd6
-
-- Force Atlas
-https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
-
-- Area Chart
-
-https://bl.ocks.org/mbostock/3883195
-
-- Pie Donut Chart
-
-http://bl.ocks.org/dbuezas/9306799
+- Hexagon map: http://bl.ocks.org/tnightingale/4668062
 
 
 #### SVG
