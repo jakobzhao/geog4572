@@ -379,7 +379,7 @@ Here is a list of geoviz module you can learn from.
 
 - Force Atlas: https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
 
-- Area Chart: https://bl.ocks.org/mbostock/3883195
+- Area Chart: https://bl.ocks.org/mbostock/3883195 (Alex Walters)
 
 - Pie Donut Chart: http://bl.ocks.org/dbuezas/9306799
 
