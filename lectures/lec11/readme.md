@@ -206,5 +206,5 @@ var mytile =L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
 ![leafletmap](img/leafletmap.JPG)
 
 
-Here is what the final output looks like **[here](http://jakobzhao.github.io/lectures/lec11/index.html)**
+Here is what the final output looks like **[here](http://jakobzhao.github.io/geog4572/lectures/lec11/index.html)**
 
