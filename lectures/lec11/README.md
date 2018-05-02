@@ -4,7 +4,7 @@
 >
 > **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
 >
-> **Contributors:** [Hannah Friedrich](https://github.com/hannahfriedrich), [Brain Katz](https://github.com/briangkatz)
+> **Contributors:** [Hannah Friedrich](https://github.com/hannahfriedrich), [Anna Talucci](https://github.com/taluccia)
 
 
 **Objectives**:
