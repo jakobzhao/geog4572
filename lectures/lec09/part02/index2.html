@@ -16,14 +16,13 @@
         var facts = crossfilter(data);
 
         var dimensionByTotal = facts.dimension(function(d) {
-            console.log(d.total);
             return d.total;
         });
 
-        var dimensionByType = facts.dimension(function (d){ return d.type;});
-        // var groupByTotal = dimensionByTotal.group(function(d) {
-        //     return Math.floor(d / 100) * 100;
-        // });
+        var dimensionByType = facts.dimension(function (d) {
+            return d.type;
+        });
+
 
         var groupByType = dimensionByType.group().reduceCount(function(d){ return d.type; });
         var barChart = dc.barChart('#barChart')
@@ -31,8 +30,6 @@
             .height(200) // height of the chart
             .dimension(dimensionByType) // dimension we create before passed as parameter
             .group(groupByType) // group we created before passed as parameter to barChart method
-            // .x(d3.scaleLinear().domain([0, 400])) // created x-axis scales
-            // .xUnits(dc.units.fp.precision(100)); // it defines the units of x-axis
             .x(d3.scaleOrdinal())
             .xUnits(dc.units.ordinal);
         barChart.yAxis().ticks(5);

@@ -22,9 +22,9 @@
         margin = 1;
 
     // d3-array statistics https://github.com/d3/d3-array
-    var scale = d3.scalePow()
+    var scale = d3.scaleLinear()
         .domain([d3.min(data), d3.max(data)])
-        .range([50, 500]);
+        .range([90, 500]);
 
     var svg = d3.select("body")
         .append("svg")
