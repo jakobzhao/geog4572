@@ -365,6 +365,43 @@ After you successfully build this chart, you are expected to build another data 
 
 As said before, your visualization will be used to enrich the [Neocarto](http://geoviz.ceoas.oregonstate.edu/neocarto/index.html) website, hosted by the Cartography and Geovisualization Group at Oregon State University. For this reason, the style of your chart should comply with these rules:
 
+Here is a list of geoviz module you can learn from.
+
+- Bubble Chart
+https://bl.ocks.org/mbostock/4063269
+
+- Calendar
+
+https://bl.ocks.org/mbostock/4063318
+
+- Streamgraph
+
+https://bl.ocks.org/mbostock/4060954
+
+- Voronoi
+
+https://bl.ocks.org/mbostock/4060366
+
+- Word Cloud
+
+https://www.jasondavies.com/wordcloud/
+
+- Calendar Heatmap
+
+http://bl.ocks.org/oyyd/859fafc8122977a3afd6
+
+- Force Atlas
+https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
+
+- Area Chart
+
+https://bl.ocks.org/mbostock/3883195
+
+- Pie Donut Chart
+
+http://bl.ocks.org/dbuezas/9306799
+
+
 #### SVG
 
 The SVG area of the chart should be 400 x 400 pixels
