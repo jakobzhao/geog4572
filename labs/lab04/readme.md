@@ -369,7 +369,7 @@ Here is a list of geoviz module you can learn from.
 
 - Bubble Chart: https://bl.ocks.org/mbostock/4063269
 
-- Streamgraph https://bl.ocks.org/mbostock/4060954
+- Streamgraph https://bl.ocks.org/mbostock/4060954 (Max Boath)
 
 - Voronoi: https://bl.ocks.org/mbostock/4060366
 
