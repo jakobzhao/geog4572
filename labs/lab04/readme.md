@@ -383,7 +383,7 @@ Here is a list of geoviz module you can learn from.
 
 - Pie Donut Chart: http://bl.ocks.org/dbuezas/9306799
 
-- Sankey diagram: https://github.com/d3/d3-sankey
+- Sankey diagram: https://github.com/d3/d3-sankey (Ginny Katz)
 
 - Hexagon map: http://bl.ocks.org/tnightingale/4668062
 
