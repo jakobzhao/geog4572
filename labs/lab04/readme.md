@@ -373,9 +373,9 @@ Here is a list of geoviz module you can learn from.
 
 - Voronoi: https://bl.ocks.org/mbostock/4060366
 
-- Word Cloud: https://www.jasondavies.com/wordcloud/
+- Word Cloud: https://www.jasondavies.com/wordcloud/ (Anna Catherine)
 
-- Calendar Heatmap: http://bl.ocks.org/oyyd/859fafc8122977a3afd6
+- Calendar Heatmap: http://bl.ocks.org/oyyd/859fafc8122977a3afd6 (Hannah Friedrich)
 
 - Force Atlas: https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
 
@@ -385,7 +385,7 @@ Here is a list of geoviz module you can learn from.
 
 - Sankey diagram: https://github.com/d3/d3-sankey 
 
-- Hexagon map: http://bl.ocks.org/tnightingale/4668062
+- Hexagon map: http://bl.ocks.org/tnightingale/4668062 (Giovanni Svevo)
 
 - D3 Liquid Fill Gauge: http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6 (Ginny Katz)
 
