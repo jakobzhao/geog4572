@@ -369,7 +369,7 @@ Here is a list of geoviz module you can learn from.
 
 - Bubble Chart: https://bl.ocks.org/mbostock/4063269
 
-- Streamgraph https://bl.ocks.org/mbostock/4060954 (Ginny Katz)
+- Streamgraph https://bl.ocks.org/mbostock/4060954
 
 - Voronoi: https://bl.ocks.org/mbostock/4060366
 
@@ -386,6 +386,8 @@ Here is a list of geoviz module you can learn from.
 - Sankey diagram: https://github.com/d3/d3-sankey 
 
 - Hexagon map: http://bl.ocks.org/tnightingale/4668062
+
+- D3 Liquid Fill Gauge: http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6 (Ginny Katz)
 
 
 #### SVG
