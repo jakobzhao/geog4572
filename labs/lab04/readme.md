@@ -428,7 +428,7 @@ You will need to create an SVG image to illustrate the type of geoviz you genera
 
 The extracted SVG will not have color information, therefore you will need to add color (same colors of the html visualization) using an image editor. The most known software to manipulate vector images is Adobe Illustrator, but a good (and open source) alternative is [Gravit](https://gravit.io/). Once you added the color, you will need to resize the chart leaving a 30 px border on top and bottom sides and a 20 px border on the left and right sides, as shown in the image below.
 
-![](assets/scheme.png)
+![](img/scheme.png)
 
 After you generated the image, please name it `image.svg` and the convert it to another jpg file named `image.jpg`.
 
