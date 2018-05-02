@@ -1,4 +1,4 @@
-# Integrating Google Earth Engine, Google Cloud, QGIS, and Leaflet
+# Mashup Google Earth Engine Layers to Web Mapping Environment
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
