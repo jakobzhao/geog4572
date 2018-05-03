@@ -19,6 +19,9 @@
 
 
 
+Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed. The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing (leading), and letter-spacing (tracking), and adjusting the space between pairs of letters (kerning). The term typography is also applied to the style, arrangement, and appearance of the letters, numbers, and symbols created by the process. Type design is a closely related craft, sometimes considered part of typography; most typographers do not design typefaces, and some type designers do not consider themselves typographers. Typography also may be used as a decorative device, unrelated to communication of information.
+
+
 
 The `font-family` property specifies the font for an element. The font-family property can hold several font names as a ***"fallback"*** system. If the browser does not support the first font, it tries the next font.
 
@@ -189,6 +192,16 @@ In this section, I listed the google web font alternative to the commonly used c
 
 ### Use a Google Web Font
 
+
+Google Fonts (previously called Google Web Fonts) is a library of over 800 libre licensed fonts, an interactive web directory for browsing the library, and APIs for conveniently using the fonts via CSS and Android.
+
+The Google Fonts directory is intended to enable font discovery and exploration, and the service is used extensively with over 17 trillion font served, which means that each of its 877 fonts has been downloaded over 19 billion times, which means that each person on Earth has, on average, downloaded each font at least 2 or 3 times. Popular fonts include `Open Sans`, `Roboto`, `Lato`, `Slabo 27px`, `Oswald` and `Lobster`.
+
+
+To use google font, Looking up the font families on [Google Web Fonts](https://fonts.google.com/), and generate the font css for the following html elements, including `html`, `body`, `h1` to `h6`, and other elements you think is necessary.
+
+The library is maintained through Google Fonts' GitHub repository at [github.com/google/fonts](github.com/google/fonts), where all font files can be obtained directly. Source files for many of the fonts are available from git repositories within the github.com/googlefonts Github organization, along with libre software tools used by the Google Fonts community.
+
 To use a google font in your web application, you should include the font link in the head element as shown below:
 
 ```html
@@ -205,9 +218,6 @@ Apply a google font for a specific div. For example, the code below applies the 
     </style>
 ```
 
-
-### Font Template
-Look for the font families on [Google Web Fonts](https://fonts.google.com/), and generate the font css for the following html elements, including `html`, `body`, `h1` to `h6`, and other elements you think is necessary.
 
 > **Note:** regarding the header elements, perhaps your project will not use al the six headers, please only list those are important.
 
@@ -239,3 +249,5 @@ Look for the font families on [Google Web Fonts](https://fonts.google.com/), and
 ## References
 
 [1] https://www.canva.com/font-combinations/gesta/
+
+[2] https://developers.google.com/fonts/docs/getting_started
