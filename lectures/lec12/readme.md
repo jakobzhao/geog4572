@@ -17,6 +17,20 @@ Color is the visual perceptual property corresponding in humans to the categorie
 
 Color plays an important role in geospatial science and technology, especially in Cartography and Remote sensing, due to its ability to convey qualitative and quantitative information. Thus, the proper understanding and use of color is crucial to the creation of visual representations that clearly portray aspects of the real world with minimal confusion and misinterpretation.
 
+**Color Values**
+
+```css
+rgb(255, 255, 255)
+rgb(10%, 20%, 30%)
+rgba(255, 255, 255, 0.4)
+rgba(10%, 20%, 30%, 0.4)
+hsl(120, 50%, 20%)
+hsla(120, 50%, 20%, 0.4)
+#ffeeaa
+#fea
+steelblue
+```
+
 **Hex triplet for color**
 
 A hex triplet is a six-digit, three-byte hexadecimal number used in HTML, CSS, SVG, and other computing applications to represent colors. The bytes represent the red, green and blue components of the color. One byte represents a number in the range 00 to FF (in hexadecimal notation), or 0 to 255 in decimal notation. This represents the least (0) to the most (255) intensity of each of the color components. Thus web colors specify colors in the True Color (24-bit RGB) color scheme. The hex triplet is formed by concatenating three bytes in hexadecimal notation, in the following order:
