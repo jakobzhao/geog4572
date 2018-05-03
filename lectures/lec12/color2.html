@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+    body {
+        font: 14px sans-serif;
+    }
+    div {
+        max-width: 1600px;
+    }
+    span {
+        background-color: white;
+    }
+    span:hover {
+        background-color: #bbbbbb;
+
+    }
+</style>
+
+<div class="categoricalButtons" > <span style="font-weight: bold">Ordinal Color Scales: </span> </div>
+
+<p />
+
+<div class="container"></div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<!--<script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>-->
+
+<script>
+
+    var categorical = [
+        { "name" : "schemeAccent", "n": 8},
+        { "name" : "schemeDark2", "n": 8},
+        { "name" : "schemePastel2", "n": 8},
+        { "name" : "schemeSet2", "n": 8},
+        { "name" : "schemeSet1", "n": 9},
+        { "name" : "schemePastel1", "n": 9},
+        { "name" : "schemeCategory10", "n" : 10},
+        { "name" : "schemeSet3", "n" : 12 },
+        { "name" : "schemePaired", "n": 12}
+    ]
+
+    var width = 960,
+        height = 400;
+
+    var svg = d3.select("body")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g");
+
+    var colorScale = d3.scaleOrdinal(d3[categorical[0].name]);
+
+    var n = categorical[0].n,
+        unit = width/n;
+
+    var bars = svg.selectAll(".bars")
+        .data(d3.range(n), function(d) { return d; })
+        .enter().append("rect")
+        .attr("class", "bars")
+        .attr("x", function(d, i) { return i * unit; })
+        .attr("y", 0)
+        .attr("height", height)
+        .attr("width", unit)
+        .style("fill", function(d, i ) { return colorScale(d); });
+
+    var sequentialButtons = d3.select(".categoricalButtons")
+        .selectAll("span")
+        .data(categorical)
+        .enter().append("span")
+        .text(function(d) { return d.name + "  "; })
+        .on("mouseover", function(datum) {
+
+            var colorScale = d3.scaleOrdinal(d3[datum.name]);
+
+            var bars = svg.selectAll(".bars")
+                .data(d3.range(datum.n), function(d) { return d; });
+
+            bars.exit()
+                .remove();
+
+            bars.transition()
+                .attr("x", function(d, i) { return i*(width/datum.n); })
+                .attr("width", width/datum.n)
+                .style("fill", function(d, i) { return colorScale(i); });
+
+            bars.enter().append("rect")
+                .attr("class", "bars")
+                .attr("y", 0)
+                .attr("height", height)
+                .attr("x", function(d, i) { return i*(width/datum.n); })
+                .attr("width", width/datum.n)
+                .style("fill", function(d, i) { return colorScale(i); });
+
+        });
+
+</script>
