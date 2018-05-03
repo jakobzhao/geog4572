@@ -53,6 +53,14 @@ The final project is a major component of this course. For each group, there sho
 Graduate students in GEOG 572 are required to provide **additional contributions** to the course.A graduate student can choose either making a presentation related to the lecture topic or being responsible for coordinating the project. The projects are expected to have advanced interactive features, introductory pages and other additional materials. All the final projects are expected to publish online, and the codes are expected to be shared on GitHub to contribute to both the open source community and academia.
 
 
+```html
+<meta charset="utf-8">
+    <title>Online Atlas Front Page Template</title>
+    <!--add required stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+```
+
 ## LIBRARIES
 
 1\. Leaflet
