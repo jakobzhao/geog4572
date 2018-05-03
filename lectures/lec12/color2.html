@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <body>
+<meta charset="UTF-8">
+<title>D3 Color Scheme Support</title>
 <style>
     body {
         font: 14px sans-serif;
@@ -22,10 +24,7 @@
 <p />
 
 <div class="container"></div>
-
 <script src="https://d3js.org/d3.v5.min.js"></script>
-<!--<script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>-->
-
 <script>
 
     var categorical = [
@@ -51,8 +50,7 @@
 
     var colorScale = d3.scaleOrdinal(d3[categorical[0].name]);
 
-    var n = categorical[0].n,
-        unit = width/n;
+    var n = categorical[0].n, unit = width/n;
 
     var bars = svg.selectAll(".bars")
         .data(d3.range(n), function(d) { return d; })
@@ -64,11 +62,11 @@
         .attr("width", unit)
         .style("fill", function(d, i ) { return colorScale(d); });
 
-    var sequentialButtons = d3.select(".categoricalButtons")
+    d3.select(".categoricalButtons")
         .selectAll("span")
         .data(categorical)
         .enter().append("span")
-        .text(function(d) { return d.name + "  "; })
+        .text(function(d) { return d.name + " | "; })
         .on("mouseover", function(datum) {
 
             var colorScale = d3.scaleOrdinal(d3[datum.name]);
