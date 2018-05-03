@@ -75,9 +75,23 @@ Lab can describe all colours that the human eye can perceive, but also many beyo
 
 Lch (or CIELCH) is a cylindrical version of Lab, which means that the two opponent colour dimensions (a and b) are represented by a hue, h, and chroma, c (if a and b are Cartesian coordinates, h and c are polar coordinates). Gradients interpolated in the Lch colour space will transition between hues, so a gradient between yellow and blue (opposing colours in Lab) will transition via green (or red/magenta) in Lch, but via grey in Lab.
 
+### Color brewer scheme
+
+![](assets/cb.jpg)
+
+Color Brewer schemes (supported by both chroma.js and d3.js)
+
+[bivariate color palette](http://geoviz.ceoas.oregonstate.edu/storymap/color.html)
+
+![](assets/bivariate.jpg)
+
+
 ### Color Schemes Generator
 
 refer to https://www.w3schools.com/colors/colors_schemes.asp
+
+
+
 
 ## 2\. Web Typography
 
