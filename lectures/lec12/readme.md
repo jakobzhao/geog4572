@@ -17,15 +17,15 @@
 
 ## 2\. Web Typography
 
-Difference Between Serif and Sans-serif Fonts
 
-![](assets/serif.gif)
+
 
 The `font-family` property specifies the font for an element. The font-family property can hold several font names as a ***"fallback"*** system. If the browser does not support the first font, it tries the next font.
 
 There are two types of font family names:
 
 `family-name` - The name of a font-family, like "times", "courier", "arial", etc.
+
 `generic-family` - The name of a generic-family, like "serif", "sans-serif", "monospace".
 
 Start with the font you want, and always end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.
@@ -45,6 +45,91 @@ p.b {
 
 **Note:** If a font name contains white-space, it must be quoted. Single quotes must be used when using the "style" attribute in HTML.
 
+
+### Difference Between Serif and Sans-serif Fonts
+
+![](assets/serif.gif)
+
+`Serif` -  Serif fonts have small lines at the ends on some characters, like "Times New Roman", "Georgia".
+
+`Sans-serif` - "Sans" means without - these fonts do not have the lines at the ends of characters, like "Arial", "Verdana". **On computer screens, sans-serif fonts are considered easier to read than serif fonts.**
+
+`Mobospace`  - All monospace characters have the same width, like "Courier New", "Lucida Console".
+
+### Font Style, Size and Weight
+
+The **font-style** property is mostly used to specify italic text.
+
+This property has three values:
+
+normal - The text is shown normally
+italic - The text is shown in italics
+oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+
+```css
+p.normal {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.oblique {
+    font-style: oblique;
+}
+```
+
+
+The **font-size** property sets the size of the text.
+
+Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
+
+Always use the proper HTML tags, like <h1> - <h6> for headings and <p> for paragraphs.
+
+The font-size value can be an absolute, or relative size.
+
+```css
+
+body {
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 14px;
+}
+```
+
+The **font-weight** property specifies the weight of a font:
+
+```css
+p.normal {
+    font-weight: normal;
+}
+
+p.thick {
+    font-weight: bold;
+}
+```
+
+```html
+<h1 style="font-size:10vw">Hello World</h1>
+```
+
+
+### Responsive Font Size
+
+The text size can be set with a vw unit, which means the "viewport width".
+
+That way the text size will follow the size of the browser window:
 
 ### Popular Font Alternatives
 
@@ -119,7 +204,6 @@ Apply a google font for a specific div. For example, the code below applies the 
         }
     </style>
 ```
-
 
 
 ### Font Template
