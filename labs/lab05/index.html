@@ -5,9 +5,6 @@
   <title>Crossfilter Geo Test</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" >
   <link rel="stylesheet" href="https://dc-js.github.io/dc.js/css/dc.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
   <style>
 
     html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff;}
@@ -34,11 +31,10 @@
   <script src="https://dc-js.github.io/dc.js/js/dc.js"></script>
   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+<p class="dc-data-count"> </p>
     <h4>Count by Magnitude</h4>
     <div id="mag-chart"></div>
     <h4>Count by Depth(m)</h4>
@@ -50,7 +46,9 @@
 <script>
 
 var map = L.map('map', {zoomControl: false, scrollWheelZoom: true}).setView([30,-150], 3);
+
 L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png').addTo(map);
+
 
 d3.json('assets/earthquakes.geojson').then(function(data) {
 
@@ -67,6 +65,7 @@ d3.json('assets/earthquakes.geojson').then(function(data) {
 
   var magDimension = filter.dimension(function(d) {
     var mag = d.properties.mag;
+    //la
     return  mag < 1.2 ? '1-1.2' :
             mag < 1.5 ? '1.2-1.5' :
             mag <   2 ? '1.5-2' :
@@ -74,6 +73,8 @@ d3.json('assets/earthquakes.geojson').then(function(data) {
             mag <   3 ? '2.5-3' :
                       '>3'
   });
+
+
 
   var magDimensionGroup = magDimension.group();
 
@@ -92,6 +93,7 @@ d3.json('assets/earthquakes.geojson').then(function(data) {
   var dateDimension = filter.dimension(function(d) {
 
     return d3.timeDay(new Date(d.properties.time));
+
   });
 
   var dateDimensionGroup = dateDimension.group();
@@ -150,7 +152,7 @@ d3.json('assets/earthquakes.geojson').then(function(data) {
   var dateChart = dc.lineChart('#date-chart');
   dateChart
       .renderArea(true)
-      .height(150)
+      .height(190)
       .transitionDuration(1000)
       .margins({top: 30, right: 50, bottom: 25, left: 40})
       .dimension(dateDimension)
@@ -188,10 +190,10 @@ d3.json('assets/earthquakes.geojson').then(function(data) {
 
   function updateMap() {
     geoJsonLayer.clearLayers();
-    geoJsonLayer.addData({
-      type: 'FeatureCollection',
-      features: everything.top(Infinity)
-    });
+      geoJsonLayer.addData({
+          type: 'FeatureCollection',
+          features: geomDimension.top(Infinity)
+      });
   }
 
   //map listeners
@@ -199,6 +201,8 @@ d3.json('assets/earthquakes.geojson').then(function(data) {
      // alert("321")
    updateMapFilter();
   });
+
+
 
 
   function updateMapFilter() {
