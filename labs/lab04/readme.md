@@ -1,5 +1,4 @@
-# Lab 4:  GeoViz Modules - Data Visualization with D3.js and Dc.js
-
+# Lab 4:  GeoViz Modules - Data Visualization with D3.js
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
 > **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
