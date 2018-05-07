@@ -1,4 +1,4 @@
-# Mashup Google Earth Engine Layers to Web Mapping Environment
+# Using Google Cloud Platform to Mashup Google Earth Engine Layers to Web Mapping Environment
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
