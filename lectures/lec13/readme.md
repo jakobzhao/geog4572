@@ -188,36 +188,48 @@ With the introduction of the improved Image Trace function in Adobe Illustrator 
 
 This process works best with an image with a subject that stands out clearly against its background, such as the cow in the image above.
 
-To add an image to trace, select `File > Place` and locate the image to be added to the document. When you see the “Place Gun,” click the mouse and the image drops into place.
-
-To start the tracing process, click once on the image to select it.
+To add an image to trace, select `File > Place` and locate the image to be added to the document, Or just drag a image to illustrator. Please use the image named "`dh.jpg`" under the path `lectures/lec13/assets/`. This image is an photo of a well-known Post-Marxist Geographer David Harvey. In this section, we would like to generate a portrait of him, and make the background transparent.
 
 When converting an image to vectors, the areas of contiguous colors are converted to shapes. The more shapes and vector points, such as in the village image above, the larger the file size and the greater CPU resources required as the computer works to map all of those shapes, points, and colors to the screen.
 
+![](img/ai-1.png)
+
 #### 2\. Types of Tracing
 
-With the image in place, the most obvious starting point is the Image Trace dropdown in the Illustrator Control Panel. There are a lot of choices that are aimed at specific tasks; you may wish to try each one to see the result. You can always return to your starting point by pressing Control-Z (PC) or Command-Z (Mac) or, if you really messed up, by selecting `File > Revert`.
+With the image in place, the most obvious starting point is the Image Trace dropdown in the Illustrator Control Panel. There are a lot of choices that are aimed at specific tasks; you may wish to try each one to see the result. You can always return to your starting point by pressing Control-Z (PC) or Command-Z (Mac) or, if you really messed up, by selecting `File > Revert`. 
 
-When you choose a Trace method, you will see a progress bar showing you what is going on. When it finishes, the image is converted to a series of vector paths.
+When you choose a Trace method, you will see a progress bar showing you what is going on. When it finishes, the image is converted to a series of vector paths. In our case, we choose `High Fidelity Photo`.
+
+![](img/ai-2.png)
 
 
 #### 3\. View and Edit
 
 If you select the tracing result with either the Selection Tool or the Direct Selection Tool, the entire image is selected. To see the paths themselves, click the `Expand` button in the Control Panel. The tracing object is converted to a series of paths.
 
-In the case of the above image, we can select the sky and grass areas and delete them.
+In the case of the above image, we can select the trees and leaves and delete them.
 
-To further simplify the image, we can select `Object > Path > Simplify` and use the sliders in the Simplify panel to reduce the number of points and curves in the traced image.
+![](img/ai-3.png)
+
+To further simplify the image, we can select `Object > Path > Simplify` and use the sliders in the Simplify panel to reduce the number of points and curves in the traced image. In our case, we choose the Curve Precision `100%`, and check the `straight lines` option.
+
+![](img/ai-4.png)
 
 #### 4\. Edit a Traced Image
 
-With the trace completed, you may want to remove portions of it. In this example, we wanted just the cow without the sky or the grass.
+With the trace completed, you may want to remove portions of it. In this example, we wanted just the portrait of David Harvey, and without the trees and leaves. 
 
-To edit any traced object, click the `Expand` button in the Control Panel. This will turn the image into a series of editable paths. Switch to the `Direct Selection` tool and click on the paths to be edited.
+![](img/ai-5.png)
+
+![](img/ai-6.png)
+
+To edit any traced object, right-click on the image, on the opened-up menu, choose `Ungrouop`. Then you can directly select the polygons of the trees and leaves, and press the `delete` key to delete these polygons. 
+
+![](img/ai-7.png)
 
 #### 5\. Export as a SVG file
 
-
+Once having the portrait of David Harvey, we save it as a svg file. To do that, click the `File` button on the top menu, and then `Export--> Export As...` In the export window, please choose `svg`, and name it "`dh.svg`". In addition, please export another `png` file.  Now, you can see that the background of either the `svg` or the `png` image is transparent. Certainly, you can also add on more features on the portrait to make it as an illustrator. For example, add on David Harvey's name on the image, Please think about how you can use this vectorization to generate illustrator or cartoonish images for your geovisualization or storymap. 
 
 ## 3\. Favicons for web pages
 
@@ -242,9 +254,9 @@ To properly show the favicon, I added one line in the `head` tag of the `index.h
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 ```
 
-Regarding the code, I declare that I added the favicon for the web page, and include from the right place. If everything works correctly, you will see an icon showing on the web page tab on your Google Chrome browser.
+ If everything works correctly, you will see an icon showing on the web page tab on your Google Chrome browser.
 
-![](img/favicon-web-page-tab.png)
+![](img/favicon-tab.png)
 
 
 ## References
