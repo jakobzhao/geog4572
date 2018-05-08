@@ -56,7 +56,7 @@ Projecti Development:
 
 - [Intro](intro.md)
 
-- [Team-up]
+- [Team-up]()
 
 - [Preparation](prep.md)
 
@@ -68,9 +68,9 @@ Projecti Development:
 
 - [Design Scheme](design_scheme.md)
 
-- [Project Summary *`(about page)`*]
+- [Project Summary *`(about page)`*]()
 
-- [Presentation]
+- [Presentation]()
 
 ## LIBRARIES
 
