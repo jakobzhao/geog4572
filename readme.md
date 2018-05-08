@@ -20,7 +20,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 ## SYLLABUS
 
 
-| **WK**    | **LECTURE  (T)**                                  | **LAB (T)**                                            | **LECTURE(R)**                 | **PROJECT**                                               |
+| **WK**    | **LECTURE  (T)**                                  | **LAB (T)**                                            | **LECTURE (R)**                 | **PROJECT**                                               |
 | --------- | ------------------------------------------------- | ------------------------------------------------------ | ------------------------------ | --------------------------------------------------------- |
 | **Wk 01**  | [Intro to this course](lectures/lec01/1-Intro.pdf)                            | [Lab1: Project Management for GeoViz](labs/lab01/) ([*`reading`*](labs/lab01/read.md))                    | [Geovisual Analytics Basics](lectures/lec02/) ([*`reading`*](lectures/lec02/read.md))            | [Introduction](project/intro.md), [*Project Prep*](project/prep.md)                                              |
 | **Wk 02**  | [Brainstorm](lectures/lec03/)                                       | [GeoViz Programming Basics - Html, Css](lectures/lec04/) ([*`reading`*](lectures/lec04/part01/read.md)) and [jQuery](lectures/lec04/part02/) ([*`reading`*](lectures/lec04/part02/read.md)); [Lab2: GeoViz Programming Basics](labs/lab02/) ([*`reading`*](labs/lab02/read.md)) | [Interactive Maps using Leaflet](lectures/lec05/) ([*`reading`*](lectures/lec05/read.md)) | [Team-up](project/team-up.md)                                                   |
@@ -70,6 +70,7 @@ Projecti Development:
 
 - [Project Summary *`(about page)`*]
 
+- [Presentation]
 
 ## LIBRARIES
 
