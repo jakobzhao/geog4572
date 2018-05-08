@@ -368,7 +368,7 @@ Here is a list of geoviz module you can learn from.
 
 - Streamgraph https://bl.ocks.org/mbostock/4060954 (Max Boath)
 
-- Voronoi: https://bl.ocks.org/mbostock/4060366
+- Voronoi: https://bl.ocks.org/mbostock/4060366 (Brad Black)
 
 - Word Cloud: https://www.jasondavies.com/wordcloud/ (Anna Catherine)
 
@@ -385,6 +385,10 @@ Here is a list of geoviz module you can learn from.
 - Hexagon map: http://bl.ocks.org/tnightingale/4668062 (Giovanni Svevo)
 
 - D3 Liquid Fill Gauge: http://bl.ocks.org/brattonc/5e5ce9beee483220e2f6 (Ginny Katz)
+
+- Cord Graph (Bryce Bradshaw)
+
+- Column Graph (Majid Reza Hosseinieh Farahani)
 
 
 As said before, your visualization will be used to enrich the [Neocarto](http://geoviz.ceoas.oregonstate.edu/neocarto/index.html) website, hosted by the Cartography and Geovisualization Group at Oregon State University. For this reason, the style of your chart should comply with these rules:
