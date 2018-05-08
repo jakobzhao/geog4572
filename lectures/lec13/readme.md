@@ -8,6 +8,8 @@
 
 - Icons
 
+
+
 - Illustrators
 
 - SVG
@@ -51,3 +53,4 @@ Regarding the code, I declare that I added the favicon for the web page, and inc
 
 [1] https://www.flaticon.com/
 [2] https://mangomap.com/blog/3-more-free-map-icon-packs/
+[3] https://fontawesome.com/how-to-use/web-fonts-with-css
