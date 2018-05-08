@@ -6,9 +6,9 @@
 
 **Learning Objectives**
 
-- Learn the basic syntax of Bootstrap;
-- Learn how to use Bootstrap to set up a web user interface.
-- Learn how to set up a google analytics to assess your web site.
+- Understand the different format of defining colors on the web;
+- Make choropleth color ramps using chroma.js, and
+- Understand how to use Google fonts.
 
 
 ## Color
