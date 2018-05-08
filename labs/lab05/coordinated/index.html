@@ -33,6 +33,7 @@
             width: 100%;
             margin: 0 auto;
         }
+
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -50,6 +51,7 @@
 <div id="date-chart"></div>
 <div id="map"></div>
 <script>
+
     //create a map object for us to input the map and it's components into.
     var map = L.map('map', {
         zoomControl: false,
@@ -221,7 +223,7 @@
         //define in functions what we want to have happen to the map
         //This function sees which features are in the bounding box and returns the points that are in it; This filters the
         //data for the charts and map.
-        function updateMapFilter() {
+        function updateCharts() {
             geomDimension.filter(function(d) {
                 return map.getBounds().contains(L.geoJSON(d).getBounds())
             });
@@ -239,7 +241,7 @@
 
         //selects the map and runs a filter function on it once it's done moving and zooming
         map.on('zoomend moveend', function() { //passes the zoom and move locations as the new filter
-            updateMapFilter(); //triggers the new function
+            updateCharts(); //triggers the new function
         });
 
         //When the chart is "filtered" it runs the function to update the map

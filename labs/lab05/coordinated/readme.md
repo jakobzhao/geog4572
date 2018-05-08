@@ -4,14 +4,21 @@
 >
 > **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
 
+> **Contributors:** [Alex Water](https://github.com/walteral)
+
 **Learning Objectives**
+
 -create bar charts that are filtered dynamiclly
+
 -create a line chart that is filtered dynamiclly
+
 -create a map that acts as the filter for the charts
 
 `dc.js` is a JavaScript Library that allow you to develop graphs/charts, and highly interactive Dashboards. `dc.js` builds on `d3.js` and use `d3.js` to render charts in CSS friendly SVG format. By using this library you will be able to develop bar chart (histogram), pie chart, row chart, line chart, bubble chart, geo choropleth chart, and others. You can link the charts to each other to make a well connected charting interface for your work.
 
-This JavaScript library is really a powerful tool for data visualization and analysis on the web. Here in this tutorial we'll try to cover some basics of `dc.js` that will help you to move on with `dc.js`.
+This JavaScript library is really a powerful tool for data visualization and analysis on the web. Here in this tutorial we'll try to cover some basics of `dc.js` that will help you to move on with `dc.js`. This tutorial shows you a coordinated view geovisualization of global Earthquakes from August 15 to Septmeber 1, 2016. The original data is downloaded from USGS, and later converted to geojson. Open up the geovisualization at [here](http://jakobzhao.github.io/labs/lab05/coordinated/index.html)
+
+![](img/final.png)
 
 >  **note:** dc.js didn't works alone, it require `crossfilter.js` and `d3.js` to work.
 
@@ -27,7 +34,6 @@ Please copy the following libraries in the same order to your html file. Besides
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
 <script type="text/javascript" src="https://dc-js.github.io/dc.js/js/dc.js"></script>
 ```
-
 
 **The web page: `index.html`**
 
@@ -275,7 +281,7 @@ For each of the charts we will run `updateMap()` whenever the map is `filtered` 
     })
 
 
-
+To sum up, the tutorial above shows yout a detailed step-by-step tutorial on how to generate a coordinated-view geovisualization through a combination of charts and maps. In `dc.js`, you can actually find mutiple types of charts. Try to make your coordinated view using Dc.js and Leaflet at the same time.
 
 
 
