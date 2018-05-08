@@ -30,7 +30,7 @@ However, students can freely pick up either type of geoviz they feel interested 
 
 - At least three charts and a coordinated map; (**10 POINTS**)
 
-> **Note:** Challenging yourself! Because you have used several charts to show multiple dimensions of a geographic phenomonon. You can try to apply [a bivariate color ramp for your map as well as your charts](http://geoviz.ceoas.oregonstate.edu/storymap/color.html)
+- Because you have used several charts to show multiple dimensions of a geographic phenomonon. Please appy [a bivariate color ramp for your map as well as your charts](http://geoviz.ceoas.oregonstate.edu/storymap/color.html).
 
 - At least two types of map layers (e.g., tileLayer, geojson layer). These layers can be made by yourself or from other web map providers; (**10 POINTS**)
 
@@ -42,20 +42,21 @@ However, students can freely pick up either type of geoviz they feel interested 
 
 - At least two types of map layers (e.g., tileLayer or geojson layer). These layers can be made by yourself or from other web map providers; (**10 POINTS**)
 
+- A video or image on the front or end page; (**5 POINTS**)
+
+<hr>
+
 Both the coordinated view and storymap should at least include the following components.
 
-    - A favicon; (**5 POINTS**)
+- A favicon; (**5 POINTS**)
 
-    - customized fonts for the texts of the storymap; (**5 POINTS**)
+- customized fonts from Google fonts; (**5 POINTS**)
 
-    - A video or image on the front or end page; (**5 POINTS**)
+- A social media button to share the storymap to Facebook or Twitter; #### If you want to generate a Storymap. (**5 POINTS**)
 
-    - A social media button to share the storymap to Facebook or Twitter; #### If you want to generate a Storymap
+- credit information or acknowledgement; (**5 POINTS**)
 
-    - credit information or acknowledgement;
-
-    - A github button to point to your github repository.
-
+- A github button linking to your github repository. (**5 POINTS**)
 
 The structure of your github repository should like something below. (**5 POINTS**)
 
