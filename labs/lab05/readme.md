@@ -62,8 +62,8 @@ The structure of your github repository should like something below. (**6 POINTS
 
 ```Powershell
 [Submission_Lab_05]
-│   readme.md
-│   index.html
+│──────readme.md
+│──────index.html
 ├─assets
 ├─js
 ├─css
