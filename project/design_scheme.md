@@ -43,6 +43,7 @@ Then, whil designing the geovisualization, you can easily open or calibrate your
 In this section, I listed the google web font alternative to the commonly used commerical fonts.
 
 ![](img/GoogleFontAlt.png)
+
 > From [http://www.designsellout.com/google-web-font-alternatives-2/](http://www.designsellout.com/google-web-font-alternatives-2/)
 
 | Commonly Used Commercial Fonts | Google Web Fonts |
