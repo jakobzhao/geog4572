@@ -142,11 +142,11 @@ To better align the SVG image, we open up the rulers and guide lines by clicking
 
 ![](img/gravit-6.png)
 
-According to the scheme provided in Lab 4, we drag guide lines from both the horizontal and vertical rulers on the side. So, make sure the guide lines away from a distance to the edge of the white drawing board according to the suggestion of the scheme. 
+According to the scheme provided in Lab 4, we drag guide lines from both the horizontal and vertical rulers on the side. So, make sure the guide lines away from a distance to the edge of the white drawing board according to the suggestion of the scheme.
 
 ![](img/scheme.png)
 
-Here shows the drawing board with guide lines. 
+Here shows the drawing board with guide lines.
 
 ![](img/gravit-7.png)
 
@@ -168,11 +168,11 @@ In the end, export the svg file by click `File` on the top menu, and the click `
 
 Here is exported bar chart in svg.
 
-![](img/colorized-barchart.svg)
+![](assets/colorized-barchart.svg)
 
 and the exported bar chart in png
 
-![](img/colorized-barchart.png)
+![](assets/colorized-barchart.png)
 
 Here, we have gone over the basics of using Gravit Design. You can do the same task in `Adobe illustrator`. For more information about how to use Gravit Design, please check the following two tutorials.
 
@@ -196,7 +196,7 @@ When converting an image to vectors, the areas of contiguous colors are converte
 
 #### 2.2.2\. Types of Tracing
 
-With the image in place, the most obvious starting point is the Image Trace dropdown in the Illustrator Control Panel. There are a lot of choices that are aimed at specific tasks; you may wish to try each one to see the result. You can always return to your starting point by pressing Control-Z (PC) or Command-Z (Mac) or, if you really messed up, by selecting `File > Revert`. 
+With the image in place, the most obvious starting point is the Image Trace dropdown in the Illustrator Control Panel. There are a lot of choices that are aimed at specific tasks; you may wish to try each one to see the result. You can always return to your starting point by pressing Control-Z (PC) or Command-Z (Mac) or, if you really messed up, by selecting `File > Revert`.
 
 When you choose a Trace method, you will see a progress bar showing you what is going on. When it finishes, the image is converted to a series of vector paths. In our case, we choose `High Fidelity Photo`.
 
@@ -217,19 +217,19 @@ To further simplify the image, we can select `Object > Path > Simplify` and use 
 
 #### 2.2.4\. Edit a Traced Image
 
-With the trace completed, you may want to remove portions of it. In this example, we wanted just the portrait of David Harvey, and without the trees and leaves. 
+With the trace completed, you may want to remove portions of it. In this example, we wanted just the portrait of David Harvey, and without the trees and leaves.
 
 ![](img/ai-5.png)
 
 ![](img/ai-6.png)
 
-To edit any traced object, right-click on the image, on the opened-up menu, choose `Ungrouop`. Then you can directly select the polygons of the trees and leaves, and press the `delete` key to delete these polygons. 
+To edit any traced object, right-click on the image, on the opened-up menu, choose `Ungrouop`. Then you can directly select the polygons of the trees and leaves, and press the `delete` key to delete these polygons.
 
 ![](img/ai-7.png)
 
 #### 2.2.5\. Export as a SVG file
 
-Once having the portrait of David Harvey, we save it as a svg file. To do that, click the `File` button on the top menu, and then `Export--> Export As...` In the export window, please choose `svg`, and name it "`dh.svg`". In addition, please export another `png` file.  Now, you can see that the background of either the `svg` or the `png` image is transparent. Certainly, you can also add on more features on the portrait to make it as an illustrator. For example, add on David Harvey's name on the image, Please think about how you can use this vectorization to generate illustrator or cartoonish images for your geovisualization or storymap. 
+Once having the portrait of David Harvey, we save it as a svg file. To do that, click the `File` button on the top menu, and then `Export--> Export As...` In the export window, please choose `svg`, and name it "`dh.svg`". In addition, please export another `png` file.  Now, you can see that the background of either the `svg` or the `png` image is transparent. Certainly, you can also add on more features on the portrait to make it as an illustrator. For example, add on David Harvey's name on the image, Please think about how you can use this vectorization to generate illustrator or cartoonish images for your geovisualization or storymap.
 
 ## 3\. Favicons for web pages
 
