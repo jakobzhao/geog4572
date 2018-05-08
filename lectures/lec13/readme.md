@@ -100,6 +100,8 @@ And then you can apply the styles to the icons. As you might notice, you need to
 ### 2\.1 Creating a vector using Gravit Design
 
 
+
+
 ### 2\.2 Vectorizing a raster image using Illustrator
 
 With the introduction of the improved Image Trace function in Adobe Illustrator CS6 and later upgrades, a whole world of possibility opened up to users of graphics software who want the ability to trace line art and photos and turn them into vector images. Now users can turn bitmap to vectors and PNG files into SVG files using Illustrator with relative ease.
@@ -176,3 +178,7 @@ Regarding the code, I declare that I added the favicon for the web page, and inc
 [3] https://fontawesome.com/how-to-use/web-fonts-with-css
 
 [4] https://www.lifewire.com/use-image-trace-in-adobe-illustrator-cc-2017-4125254
+
+[5] https://medium.com/gravitdesigner/design-a-professional-logo-using-gravit-835408f7fd9d
+
+[6] https://medium.com/gravitdesigner/gravit-designer-tips-tricks-ee6a1353aa3
