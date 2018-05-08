@@ -479,7 +479,7 @@ You are also required to write a project description in the `readme.md` file. Th
 
 #### Grading criteria:
 
-- SVG dimensions (400 x 400 pixels) and margins (50 x 50 px)  **(6 points)**
+- SVG dimensions (400 x 400 pixels) and margins (20px, 30px, 20px, 30px)  **(6 points)**
 - Font-type Open Sans **(5 points)**
 - Font size between 10 and 36 (depending on the type of chart) **(4 points)**
 - Color palette **( 8 points)**
