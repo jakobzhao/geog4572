@@ -164,15 +164,15 @@ Similarly, we change the color of the bar to `#f3bb3b`, and the color of the bar
 
 Now, we select all the elements of the bar chat, resize its size, and make sure the width equals to `340px`, and the height equals to `360px`. Also, make sure the elements are aligned well. You can use the alignment and distribution toolkits.
 
-In the end, export the svg file by click `File` on the top menu, and the click `Export --> svg`, and name the svg file as `styled-barchat.svg`. Moreover, export another png file `styled-barchat.png`
+In the end, export the svg file by click `File` on the top menu, and the click `Export --> svg`, and name the svg file as `colorized-barchat.svg`. Moreover, export another png file `colorized-barchat.png`
 
-Here is styled bar chart in svg.
+Here is exported bar chart in svg.
 
-![](styled-barchart.svg)
+![](img/colorized-barchart.svg)
 
-and the bar chart in png
+and the exported bar chart in png
 
-![](styled-barchart.png)
+![](img/colorized-barchart.png)
 
 Here, we have gone over the basics of using Gravit Design. You can do the same task in `Adobe illustrator`. For more information about how to use Gravit Design, please check the following two tutorials.
 
