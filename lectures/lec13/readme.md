@@ -97,9 +97,22 @@ And then you can apply the styles to the icons. As you might notice, you need to
 
 ## 2\. Scalable Vector Graphics (SVG)
 
+Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) since 1999.
+
+SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted, and compressed. As XML files, SVG images can be created and edited with any text editor, as well as with drawing software.
+
+All major modern web browsers—including Mozilla Firefox, Internet Explorer, Google Chrome, Opera, Safari, and Microsoft Edge—have SVG rendering support.
+
+SVG allows three types of graphic objects: vector graphic shapes such as paths and outlines consisting of straight lines and curves, bitmap images, and text. Graphical objects can be grouped, styled, transformed and composited into previously rendered objects. The feature set includes nested transformations, clipping paths, alpha masks, filter effects and template objects. SVG drawings can be interactive and can include animation, defined in the SVG XML elements or via scripting that accesses the SVG Document Object Model (DOM). SVG uses CSS for styling and JavaScript for scripting. Text, including internationalization and localization, appearing in plain text within the SVG DOM enhances the accessibility of SVG graphics.
+
+![](img/svg.svg)
+
+> **Note:** This image illustrates the difference between bitmap and vector images. The bitmap image is composed of a fixed set of pixels, while the vector image is composed of a fixed set of shapes. In the picture, scaling the bitmap reveals the pixels while scaling the vector image preserves the shapes.
+
+
 ### 2\.1 Creating a vector using Gravit Design
 
-
+in this section, we will illustrate how to create a vector data using Gravit Design
 
 
 ### 2\.2 Vectorizing a raster image using Illustrator
