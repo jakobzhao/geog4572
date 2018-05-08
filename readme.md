@@ -54,19 +54,19 @@ Graduate students in GEOG 572 are required to provide **additional contributions
 
 Projecti Development:
 
-- [Intro](intro.md)
+- [Intro](project/intro.md)
 
 - [Team-up]()
 
-- [Preparation](prep.md)
+- [Preparation](project/prep.md)
 
-- [Proposal](proposal.md)
+- [Proposal](project/proposal.md)
 
-- [Sketch](sketch.md)
+- [Sketch](project/sketch.md)
 
-- [Data Table](data.md)
+- [Data Table](project/data.md)
 
-- [Design Scheme](design_scheme.md)
+- [Design Scheme](project/design_scheme.md)
 
 - [Project Summary *`(about page)`*]()
 
