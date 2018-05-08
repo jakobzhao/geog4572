@@ -62,7 +62,7 @@ Graduate students in GEOG 572 are required to provide **additional contributions
 
 2\. jQuery
 
-- js: https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
+- js: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
 
 3\. D3
 
