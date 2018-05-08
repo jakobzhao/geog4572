@@ -24,9 +24,15 @@ However, students can freely pick up either type of geoviz they feel interested 
 
 ### Below  is the grading criteria:
 
-#### If you want to generate a coordinated view
+#### If you want to develop a coordinated-view
 
+- In the readme file, please describe your geovisualization. Especially, what specific pattern(s) you have observed through the coordianted view, and how the multiple charts and map helped you to find that pattern. (**10 POINTS**)
 
+- At least three charts and a coordinated map; (**10 POINTS**)
+
+> **Note:** Challenging yourself! Because you have used several charts to show multiple dimensions of a geographic phenomonon. You can try to apply [a bivariate color ramp for your map as well as your charts](http://geoviz.ceoas.oregonstate.edu/storymap/color.html)
+
+- At least two types of map layers (e.g., tileLayer, geojson layer). These layers can be made by yourself or from other web map providers; (**10 POINTS**)
 
 #### If you want to generate a Storymap
 
@@ -36,9 +42,7 @@ However, students can freely pick up either type of geoviz they feel interested 
 
 - At least two types of map layers (e.g., tileLayer or geojson layer). These layers can be made by yourself or from other web map providers; (**10 POINTS**)
 
-> **Note:** Challenging yourself! Applying [a bivariate color ramp for your map](http://geoviz.ceoas.oregonstate.edu/storymap/color.html)
-
-- The storymap should at least include the following controls.
+Both the coordinated view and storymap should at least include the following components.
 
     - A favicon; (**5 POINTS**)
 
@@ -64,9 +68,6 @@ The structure of your github repository should like something below. (**5 POINTS
 ├─css
 ├─img
 ```
-
-## Coordinated View
-
 
 ## 3. Deliverable
 
