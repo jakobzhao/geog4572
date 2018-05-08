@@ -87,40 +87,45 @@
             return d.geometry
         });
 
-        //defines the categories from magnitude property using a lamda operation
+        //defines the categories from magnitude property
         var magDimension = filter.dimension(function(d) {
 
             var mag = d.properties.mag;
-            mag_class = ">3";
+            magClass = "> 3.1";
 
-            if (mag <1.2) {
-            	mag_class = "1-1.2"
-            } else if ( mag >= 1.2 && mag < 1.5) {
-            	mag_class = "1.2-1.5"
-            } else if (mag >= 1.5 && mag < 2) {
-	            mag_class = "1.5-2"
-            } else if (mag >= 2 && mag < 2.5) {
-	            mag_class = "2-2.5"
-            } else if (mag >= 2 && mag < 2.5) {
-	            mag_class = "2-2.5"
-            } else if (mag >= 2.5 && mag < 3) {
-	            mag_class = "2.5-3"
+            if (mag <=1.2) {
+            	magClass = "1-1.2"
+            } else if ( mag > 1.2 && mag <= 1.5) {
+            	magClass = "1.3-1.5"
+            } else if (mag > 1.5 && mag <= 2) {
+	            magClass = "1.6-2"
+            } else if (mag > 2 && mag <= 2.5) {
+	            magClass = "2.1-2.5"
+            } else if (mag > 2.5 && mag <= 3) {
+	            magClass = "2.5-3"
             } else {
-            	mag_class = ">3"
+            	magClass = ">3.1"
             }
-
-            return mag_class;
+            return magClass;
         });
-
 
         //sorts through the data and finds the depth of each earthquake. Then returns a category based on the depth using the lamda operations
         var depthDimension = filter.dimension(function(d) {
             var depth = d.properties.depth;
-            return depth < 5 ? ' <5' :
-                depth < 10 ? ' 5-10' :
-                    depth < 50 ? '10-50' :
-                        depth < 100 ? '50-100' :
-                            '>100'
+            depthClass = ">100";
+
+            if (depth <5 ) {
+                depthClass = '<5'
+            } else if  (depth >= 5 && depth < 10) {
+                depthClass = "5-9"
+            } else if  (depth >= 10 && depth < 50) {
+	            depthClass = "10-49"
+            } else if  (depth >= 50 && depth < 100) {
+	            depthClass = "50-99"
+            } else {
+	            depthClass = ">100"
+            }
+            return depthClass
         });
 
         var dateDimension = filter.dimension(function(d) {
