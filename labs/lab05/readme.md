@@ -1,14 +1,28 @@
-# Lab 5:  Integrated Geovisualization (storymap or Coordinated View)
+# Lab 5:  Integrated Geovisualization - Storymap or Coordinated Views
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
 > **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
 >
-> **Assigned:** 05/01/2018 | **Due:** `05/08/2018 @11:59pm` | **Points Available** = 50
+> **Assigned:** 05/08/2018 | **Due:** `05/22/2018 @11:59pm` | **Points Available** = 50
 
 
-In this lab, you are asked to make a storymap or coordinated view . This storymap.js library is hosted at [https://github.com/jakobzhao/storymap](https://github.com/jakobzhao/storymap).
+In this lab, you are expected to make a geovisualization, which can be either storymap or coordinated view. Before you make your own geoviz, please please go over and start with emulate the  templates below.
 
+- [Storymap Tutorial](storymap/readme.md), [Example 1](https://jakobzhao.github.io/geog4572/labs/lab05/coordinated/index.html), [Example 2](https://jakobzhao.github.io/geog4572/labs/lab05/coordinated/helloworld.html)
+
+- [Coordianted View Tutorial](coordinated/readme.md), [Example](https://jakobzhao.github.io/geog4572/labs/lab05/coordinated/index.html)
+
+
+To help you choose a type of geovisualization to work on, we encouarge
+
+- students to work on a geovisualization which is as the same type as the final project.
+
+- Students who have already taken GEOG 371 (Web Mapping) to work on a coordinated view.
+
+However, students can freely pick up either type of geoviz they feel interested in.
+
+Below, is the grading creteira:
 
 ## Storymap
 
@@ -18,7 +32,7 @@ In this lab, you are asked to make a storymap or coordinated view . This storyma
 
 - At least 5 scenes. The content of the scenes can be obtained from Internet, historical archives, or even writing up by yourself. If you would like to use an external sources, please do mention their contribution in your credits information; (**10 POINTS**)
 
-- At least two types of layers (e.g., tileLayer or geojson layer). These layers can be made by yourself or from other web map providers; (**10 POINTS**)
+- At least two types of map layers (e.g., tileLayer or geojson layer). These layers can be made by yourself or from other web map providers; (**10 POINTS**)
 
 > **Note:** Challenging yourself! Applying [a bivariate color ramp for your map](http://geoviz.ceoas.oregonstate.edu/storymap/color.html)
 
