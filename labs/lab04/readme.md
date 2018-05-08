@@ -3,7 +3,7 @@
 >
 > **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
 >
-> **Assigned:** 05/01/2018 | **Due:** `05/08/2018 @11:59pm` | **Points Available** = 50
+> **Assigned:** 05/01/2018 | **Due:** `05/11/2018 @11:59pm` | **Points Available** = 50
 >
 > **Contributors:** [Giovanni Svevo](https://github.com/gsvevo)
 
