@@ -8,8 +8,6 @@
 
 - Icons
 
-
-
 - Illustrators
 
 - SVG
