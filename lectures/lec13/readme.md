@@ -184,7 +184,7 @@ Here, we have gone over the basics of using Gravit Design. You can do the same t
 
 With the introduction of the improved Image Trace function in Adobe Illustrator CS6 and later upgrades, a whole world of possibility opened up to users of graphics software who want the ability to trace line art and photos and turn them into vector images. Now users can turn bitmap to vectors and PNG files into SVG files using Illustrator with relative ease.
 
-#### 1\. Getting Started
+#### 2.2.1\. Getting Started
 
 This process works best with an image with a subject that stands out clearly against its background, such as the cow in the image above.
 
@@ -194,7 +194,7 @@ When converting an image to vectors, the areas of contiguous colors are converte
 
 ![](img/ai-1.png)
 
-#### 2\. Types of Tracing
+#### 2.2.2\. Types of Tracing
 
 With the image in place, the most obvious starting point is the Image Trace dropdown in the Illustrator Control Panel. There are a lot of choices that are aimed at specific tasks; you may wish to try each one to see the result. You can always return to your starting point by pressing Control-Z (PC) or Command-Z (Mac) or, if you really messed up, by selecting `File > Revert`. 
 
@@ -203,7 +203,7 @@ When you choose a Trace method, you will see a progress bar showing you what is 
 ![](img/ai-2.png)
 
 
-#### 3\. View and Edit
+#### 2.2.3\. View and Edit
 
 If you select the tracing result with either the Selection Tool or the Direct Selection Tool, the entire image is selected. To see the paths themselves, click the `Expand` button in the Control Panel. The tracing object is converted to a series of paths.
 
@@ -215,7 +215,7 @@ To further simplify the image, we can select `Object > Path > Simplify` and use 
 
 ![](img/ai-4.png)
 
-#### 4\. Edit a Traced Image
+#### 2.2.4\. Edit a Traced Image
 
 With the trace completed, you may want to remove portions of it. In this example, we wanted just the portrait of David Harvey, and without the trees and leaves. 
 
@@ -227,7 +227,7 @@ To edit any traced object, right-click on the image, on the opened-up menu, choo
 
 ![](img/ai-7.png)
 
-#### 5\. Export as a SVG file
+#### 2.2.5\. Export as a SVG file
 
 Once having the portrait of David Harvey, we save it as a svg file. To do that, click the `File` button on the top menu, and then `Export--> Export As...` In the export window, please choose `svg`, and name it "`dh.svg`". In addition, please export another `png` file.  Now, you can see that the background of either the `svg` or the `png` image is transparent. Certainly, you can also add on more features on the portrait to make it as an illustrator. For example, add on David Harvey's name on the image, Please think about how you can use this vectorization to generate illustrator or cartoonish images for your geovisualization or storymap. 
 
