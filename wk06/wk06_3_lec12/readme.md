@@ -7,7 +7,7 @@
 **Learning Objectives**
 
 - Understand how to create a simple web icon.
-- Tips in using illustrator.
+- Tips of using illustrator.
 
 In this lecture, we are designing a camera icon using Adobe Illustrator. Adobe Illustrator is a vector graphics editor developed and marketed by Adobe Systems. The latest version, Illustrator CC 2017, is the twenty-first generation in the product line. 
 
