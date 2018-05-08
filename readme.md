@@ -52,6 +52,24 @@ The final project is a major component of this course. For each group, there sho
 
 Graduate students in GEOG 572 are required to provide **additional contributions** to the course.A graduate student can choose either making a presentation related to the lecture topic or being responsible for coordinating the project. The projects are expected to have advanced interactive features, introductory pages and other additional materials. All the final projects are expected to publish online, and the codes are expected to be shared on GitHub to contribute to both the open source community and academia.
 
+Projecti Development:
+
+- [Intro](intro.md)
+
+- [Team-up]
+
+- [Preparation](prep.md)
+
+- [Proposal](proposal.md)
+
+- [Sketch](sketch.md)
+
+- [Data Table](data.md)
+
+- [Design Scheme](design_scheme.md)
+
+- [Project Summary *`(about page)`*]
+
 
 ## LIBRARIES
 
