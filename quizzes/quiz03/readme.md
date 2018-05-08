@@ -13,8 +13,8 @@ In the readme.md file of this repo, please briefly introduce this data, and also
 <table>
 <tbody>
 <tr>
-<td>name</td>
-<td>size(kb)</td>
+<td><strong>Name</strong></td>
+<td><strong>Size (kb)</strong></td>
 </tr>
 <tr>
 <td>xxx.geojson</td>
