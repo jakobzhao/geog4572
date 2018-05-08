@@ -22,11 +22,13 @@ To help you choose a type of geovisualization to work on, we encouarge
 
 However, students can freely pick up either type of geoviz they feel interested in.
 
-Below, is the grading creteira:
+### Below  is the grading criteria:
 
-## Storymap
+#### If you want to generate a coordinated view
 
- If your final project is a storymap, it will at least have the following features:
+
+
+#### If you want to generate a Storymap
 
 - In the readme file, please describe the storyline of your story map. You may refer to the lecture notes on three-action (step, confrantation, and resolution) or five-action storytelling structures. (**10 POINTS**)
 
@@ -44,13 +46,14 @@ Below, is the grading creteira:
 
     - A video or image on the front or end page; (**5 POINTS**)
 
-    - A social media button to share the storymap to Facebook or Twitter; (**5 POINTS**)
+    - A social media button to share the storymap to Facebook or Twitter; #### If you want to generate a Storymap
 
     - credit information or acknowledgement;
 
     - A github button to point to your github repository.
 
-The structure of your github repository should like something below.
+
+The structure of your github repository should like something below. (**5 POINTS**)
 
 ```Powershell
 [Submission_Lab_05]
