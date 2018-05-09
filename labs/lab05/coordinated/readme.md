@@ -4,7 +4,7 @@
 >
 > **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
 
-> **Contributors:** [Alex Water](https://github.com/walteral)
+> **Contributors:** [Alex Walters](https://github.com/walteral)
 
 **Learning Objectives**
 
