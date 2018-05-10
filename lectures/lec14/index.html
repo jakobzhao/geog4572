@@ -6,7 +6,7 @@
     <style>
         html, body, #cloud { width: 100%; height: 100%; margin: 0; background: #757575;}
         .jqcloud-word {
-            font-family: Lobster !important;
+            font-family: Lobster;
             text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
         }
     </style>
@@ -24,10 +24,12 @@
 
 
 function wordFrequency(txt, freq) {
-
+	
+	// a regular expression to define the symbols to seperate the words
     var wordArray = txt.split(/[ .?!,*'"”“]/);
     //var wordArray = txt.split(" ");
     var newArray = [], filteredArray = [], wordObj;
+	// calculate the frequency of each unique terms from the text.
     wordArray.forEach(function (word) {
         wordObj = newArray.filter(function (w){
             return w.text == word.toLowerCase();
@@ -41,7 +43,7 @@ function wordFrequency(txt, freq) {
 
     var words = ["", "that", "this", "we", "needs", "I", "you", "he", "she", "and", "be", "are", "is", "was", "were", "Could", "Would", "of", "it", "with", "A", "s", "t", "with", "of", "to", "the", "for", "in", "not", ",", ")", "&", "our", "more", "people", "at", "We", "_", "our", "so", "throughout", "5", "maybe", "if", "use", "by", "as", "all", "4", "survey", "The", "on", "a", "on", "lots", "The", "-", "All", "but", "can", "up", "or", "need", "like", "will", "should", "way", "its", "do", "make", "between", "null", "many", "/", "want", "what", "It", "an", "g", "It", "don", "re", "think", "30", "lot", "about", "m", "re", "get", "good", "must",  "-", "them", "had", "take", "out", "etc", "has", "would", "20", "no", "_", "around", "how", "In", "city", '"',"“", "”", "am", "i", "they", "from", "I've", "his", "who", "my", "one", "23", "don't", "W", "C", "10", "than", "their", "me", "have", "into", "other", "only", "when", "because", "rather", "being", "then", "himself", "him", "don’t", "own", "two", "may", "group", "which", "just", "same", "there", "too", "also", "less", "asks", "let", "itself", "day", "example", "another", "say", "myself", "cannot", "self", "bad", "such", "part", "after", "much", "does", "both", "very", "come", "new", "very", "often", "end", "isn’t", "some", "much", "said", "your"];
 
-
+	//disinclude the word larger than the lowerst frequency as well as not in the commonly used terms.
     newArray.filter(function(word){
         if (!words.includes(word.text) && word.weight > freq) {
             filteredArray.push(word);
@@ -66,7 +68,6 @@ $.getJSON( "assets/yft.json", function( data ) {
     $("#cloud").jQCloud(frequencyList, {
        colors: colorscheme,
        autoResize: true,
-       // steps: 20,
        delay:5,
        shape: 'rectangular',
        fontSize: {
