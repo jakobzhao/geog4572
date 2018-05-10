@@ -19,7 +19,7 @@ In principle, the font size of a word in a word cloud is determined by its incid
 
 ## Data
 
-![](img/yft-archives.jpg)
+![](img/yft-archives.png)
 
 A word cloud can be used to explore textual data.  For example, if you collected comments from hundreds of participants in a survey, a word cloud can visualize the top-frequency terms all the participants have been mentioned collectively. Also, word cloud can explore text, letter, book chapter, with the goal to quickly understand its main topics and opinions.
 
@@ -27,7 +27,7 @@ In this lecture, we would like to explore all the lectures which Yi-fu Tuan, a w
 
 Here is the visualization of the word cloud we will generate.
 
-![](img/wc.jpg)
+![](img/wc.png)
 
 As you can easily observe, for all the letters from 2011 to 2012, he mentioned `music, political, why, person, human, social, culture, walking, ...` quite often. From these term, we can tell what were his major concerns; and how he interacted with the word, like the high-frequency term he used `see, feel, walk, rationalize, ...`.
 
@@ -226,11 +226,11 @@ Now, we have defined the color, font. they will be used in symbolize the word cl
 
 As a result, we can visualize the whole piece of code as a word cloud. Check [here](http://jakobzhao.github.io/geog4572/lectures/lec14/index.html) to see how it looks like. 
 
-![](img/wc.jpg)
+![](img/wc.png)
 
 We also apply a coordinated view of word cloud and a bar chart showing the number of letters  wrotten in each year. Check [here](http://jakobzhao.github.io/geog4572/lectures/lec14/index2.html) to see how it looks like. Please try to read this cloud, and how it was made to be coordinated.
 
-![](img/cv.jpg)
+![](img/cv.png)
 
 In this lecture, we introduced a word cloud using the text analysis of Yi-Fu's letters as an example, I encourage you to make a word cloud with your own data, and reflect on how this visual analysis can help you to explore your data set. 
 
