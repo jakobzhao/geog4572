@@ -22,49 +22,49 @@
 <div id="cloud"></div>
 <script>
 
-    var frequencyList = null;
 
-    function wordFrequency(txt, freq) {
 
-        var wordArray = txt.split(/[ .?!,*'"”“]/);
-        //var wordArray = txt.split(" ");
-        var newArray = [], filteredArray = [], wordObj;
-        wordArray.forEach(function (word) {
-            wordObj = newArray.filter(function (w){
-                return w.text == word.toLowerCase();
-            });
-            if (wordObj.length) {
-                wordObj[0].weight += 1;
-            } else {
-                newArray.push({text: word, weight: 1});
-            }
+function wordFrequency(txt, freq) {
+
+    var wordArray = txt.split(/[ .?!,*'"”“]/);
+    //var wordArray = txt.split(" ");
+    var newArray = [], filteredArray = [], wordObj;
+    wordArray.forEach(function (word) {
+        wordObj = newArray.filter(function (w){
+            return w.text == word.toLowerCase();
         });
+        if (wordObj.length) {
+            wordObj[0].weight += 1;
+        } else {
+            newArray.push({text: word, weight: 1});
+        }
+    });
 
-        var words = ["", "that", "this", "we", "needs", "I", "you", "he", "she", "and", "be", "are", "is", "was", "were", "Could", "Would", "of", "it", "with", "A", "s", "t", "with", "of", "to", "the", "for", "in", "not", ",", ")", "&", "our", "more", "people", "at", "We", "_", "our", "so", "throughout", "5", "maybe", "if", "use", "by", "as", "all", "4", "survey", "The", "on", "a", "on", "lots", "The", "-", "All", "but", "can", "up", "or", "need", "like", "will", "should", "way", "its", "do", "make", "between", "null", "many", "/", "want", "what", "It", "an", "g", "It", "don", "re", "think", "30", "lot", "about", "m", "re", "get", "good", "must",  "-", "them", "had", "take", "out", "etc", "has", "would", "20", "no", "_", "around", "how", "In", "city", '"',"“", "”", "am", "i", "they", "from", "I've", "his", "who", "my", "one", "23", "don't", "W", "C", "10", "than", "their", "me", "have", "into", "other", "only", "when", "because", "rather", "being", "then", "himself", "him", "don’t", "own", "two", "may", "group", "which", "just", "same", "there", "too", "also", "less", "asks", "let", "itself", "day", "example", "another", "say", "myself", "cannot", "self", "bad", "such", "part", "after", "much", "does", "both", "very", "come", "new", "very", "often", "end", "isn’t", "some", "much", "said", "your"];
+    var words = ["", "that", "this", "we", "needs", "I", "you", "he", "she", "and", "be", "are", "is", "was", "were", "Could", "Would", "of", "it", "with", "A", "s", "t", "with", "of", "to", "the", "for", "in", "not", ",", ")", "&", "our", "more", "people", "at", "We", "_", "our", "so", "throughout", "5", "maybe", "if", "use", "by", "as", "all", "4", "survey", "The", "on", "a", "on", "lots", "The", "-", "All", "but", "can", "up", "or", "need", "like", "will", "should", "way", "its", "do", "make", "between", "null", "many", "/", "want", "what", "It", "an", "g", "It", "don", "re", "think", "30", "lot", "about", "m", "re", "get", "good", "must",  "-", "them", "had", "take", "out", "etc", "has", "would", "20", "no", "_", "around", "how", "In", "city", '"',"“", "”", "am", "i", "they", "from", "I've", "his", "who", "my", "one", "23", "don't", "W", "C", "10", "than", "their", "me", "have", "into", "other", "only", "when", "because", "rather", "being", "then", "himself", "him", "don’t", "own", "two", "may", "group", "which", "just", "same", "there", "too", "also", "less", "asks", "let", "itself", "day", "example", "another", "say", "myself", "cannot", "self", "bad", "such", "part", "after", "much", "does", "both", "very", "come", "new", "very", "often", "end", "isn’t", "some", "much", "said", "your"];
 
 
-        newArray.filter(function(word){
-            if (!words.includes(word.text) && word.weight > freq) {
-                filteredArray.push(word);
-            }
-        });
+    newArray.filter(function(word){
+        if (!words.includes(word.text) && word.weight > freq) {
+            filteredArray.push(word);
+        }
+    });
 
-        return filteredArray;
+    return filteredArray;
+}
+
+colorscheme = chroma.scale('OrRd').colors(10).reverse(); //colorscheme = chroma.scale('OrRd').colors(5);
+
+$.getJSON( "assets/yft.json", function( data ) {
+    var texts = "";
+    for(var i=0;i< data.length; i++){
+
+        texts += data[i].content + " ";
     }
 
-    colorscheme = chroma.scale('OrRd').colors(10).reverse(); //colorscheme = chroma.scale('OrRd').colors(5);
-
-    $.getJSON( "assets/yft.json", function( data ) {
-        var texts = "";
-        for(var i=0;i< data.length; i++){
-
-            texts += data[i].content + " ";
-        }
-
-       frequencyList = wordFrequency(texts, 3);
+    var  frequencyList = wordFrequency(texts, 3);
 
 
-   $("#cloud").jQCloud(frequencyList, {
+    $("#cloud").jQCloud(frequencyList, {
        colors: colorscheme,
        autoResize: true,
        // steps: 20,
@@ -74,9 +74,9 @@
            from: 0.06,
            to: 0.01
        }
-   });
-
     });
+
+});
 
 
 
