@@ -25,21 +25,59 @@
 		.append("g")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	d3.csv("assets/letters.").then(function(data){
+
+	function wordFrequency(txt) {
+
+		var wordArray = txt.split(/[ .?!,*'"]/);
+		var newArray = [], filteredArray = [], wordObj;
+		wordArray.forEach(function (word) {
+			wordObj = newArray.filter(function (w){
+				return w.text == word.toLowerCase();
+			});
+			if (wordObj.length) {
+				wordObj[0].frequency += 1;
+			} else {
+				newArray.push({term: word, frequency: 1});
+			}
+		});
+
+		var words = ["", "that", "this", "we", "needs", "I", "you", "he", "she", "and", "be", "are", "is", "was", "were", "Could", "Would", "of", "it", "with", "A", "s", "t", "with", "of", "to", "the", "for", "in", "not", ",", ")", "&", "our", "more", "people", "at", "We", "_", "our", "so", "throughout", "5", "maybe", "if", "use", "by", "as", "all", "4", "survey", "The", "on", "a", "on", "lots", "The", "-", "All", "but", "can", "up", "or", "need", "like", "will", "should", "way", "its", "do", "make", "between", "null", "many", "/", "want", "what", "It", "an", "g", "It", "g", "don", "re", "think", "30", "lot", "about", "m", "re", "get", "good", "must",  "-", "them", "had", "take", "out", "etc", "has", "would", "20", "no", "_", "around", "how", "In", "city", '"',"“", "”", "am", "“I”"];
+
+		newArray.filter(function(word){
+			if (!words.includes(word.term)) {
+				filteredArray.push(word);
+			}
+		})
+
+		return filteredArray;
+	}
+
+
+	d3.csv("assets/yft.csv").then(function(data){
+
+		var texts = "";
+
+		for (var i= 0; i < data.length; i ++) {
+			texts += data[i].content;
+		}
+
+
+		var frequencyList = wordFrequency(texts);
+
 		var color = d3.scaleOrdinal(d3.schemeCategory10);
-		var categories = d3.keys(d3.nest().key(function(d) { return d.State; }).map(data));
+		var frequencies = d3.keys(d3.nest().key(function(d) { return d.weight; }).map(data));
 		var fontSize = d3.scalePow().exponent(5).domain([0,1]).range([40,80]);
-		var fontStyle = d3.scaleLinear().domain([categories]).range(['楷体','仿宋']);
+		var fontStyle = d3.scalePow().domain([frequencies]).range([10,30]);
 
 		var layout = d3.layout.cloud()
 			.size([width, height])
 			.timeInterval(20)
-			.words(data)
+			.words(frequencyList)
 			.rotate(function(d) { return 0; })
 			.fontSize(function(d,i) { return fontSize(Math.random()); })
 			//.fontStyle(function(d,i) { return fontSyle(Math.random()); })
 			.fontWeight(["bold"])
-			.text(function(d) { return d.Team_CN; })
+			.text(function(d) { return d.term; })
 			.spiral("rectangular") // "archimedean" or "rectangular"
 			.on("end", draw)
 			.start();
