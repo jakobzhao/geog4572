@@ -1,7 +1,15 @@
 # Course Project: Design Scheme
 
+In this week, you are expected to submit our design scheme of your final project. This assignment provides you an opportunity to design the color use, icon styel, fonts and other multip-media you planned to use.
 
-Please upload the design scheme of your group project to github, and submit the url for your design scheme to canvas. The Design Scheme should contains a color palette, a font page, a icon page and the multi-media you planned to use.
+For sumbission, we want like to see a new design scheme section on the `readme` file of your final project repository on github. In this section, you are expected to have the following items:
+
+1\. Color palette 
+2\. Fonts
+3\. Web Icons
+4\. Multimedia (landing page video? image?)
+
+To generate these four items, please refer to the consponding sections listed below. For submission, please only submit the url of the repository to canvas.
 
 
 ## 1. Color Palette
