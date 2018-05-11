@@ -1,4 +1,4 @@
-# Course Project: Design Scheme
+# Design Scheme
 
 In this week, you are expected to submit our design scheme of your final project. This assignment provides you an opportunity to design the color use, icon styel, fonts and other multip-media you planned to use.
 
