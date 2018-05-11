@@ -215,7 +215,9 @@ If you want to apply any advanced animation features, please refer to [https://g
 
 You can always shoot video and images by yourself, or find those under open-source or free license. ***If you use any proprietary multi-media, you need to credit their authors' contribution to your project in your about page.***
 
-Find Free high resolution photos at
+Find Free high resolution photos and video at
+
+- [https://pixabay.com/](https://pixabay.com/)
 - [https://unsplash.com/](https://unsplash.com/)
 - [http://nothingtochance.co/](http://nothingtochance.co/)
 
