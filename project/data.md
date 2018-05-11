@@ -1,4 +1,4 @@
-# Data Source Table
+# Data Source Table (Optional)
 
 The requirement:
 
@@ -10,4 +10,4 @@ The requirement:
 
 - Please organize the geospatial data in ArcGIS or QGIS, and take a screenshot of Arc or Q's GUI(graphic user interface) when all the geospatial data are added on, and then put this screenshot to the `readme.md` file. (usually images will be saved in a folder named as `img` or `assets`).
 
-For submission, please only submit the url of the repository.
+**THis home assignment is optional. But a data source table will help you organize your project**
