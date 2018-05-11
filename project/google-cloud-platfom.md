@@ -1,1 +1,0 @@
-A 20-min tutorial will be given on how to visualize rasters from google earth engine to web map platforms.
