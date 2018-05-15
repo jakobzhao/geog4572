@@ -9,6 +9,7 @@
 - Get to know the Server-side Javascript;
 - Understand some basic packages for Server-side Javascript; and
 - Making a real-time twitter map using Node.js.
+- make a heat map of points.
 
 In this lecture, we will show how to stream real-time twitter data to leaflet map using NodeJS. Before coding, we will firstly cover some basic concepts, such as Server-side Javascript, nodejs, npm, express.js, socket.io and twitter. After that, I will take you walk through how to make a real-time twitter map like below.
 
