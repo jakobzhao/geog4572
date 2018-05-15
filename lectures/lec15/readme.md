@@ -1,4 +1,4 @@
-# Real-Time Mapping: TweetMap
+# Real-Time Mapping: Heatmap
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
