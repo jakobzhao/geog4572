@@ -255,7 +255,7 @@ Using this Heatmap plugin for leaflet, I created a heatmap of cell towers in Ore
 > using leaflet.heat to create a heat map at the client side.
 
 
-## 3. Sum-up
+## 4. Sum-up
 
 How do we take this further? It would be great to dig deeper into the incoming data and rather than just visualizing the data explore trends and gain intelligence. I also wonder what happens if we want to mashup different data sources and read data from other web services or lower-level protocols, such as TCP/IP or WebSockets.
 
