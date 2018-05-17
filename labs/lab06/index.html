@@ -5,7 +5,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>Potree Viewer</title>
+	<title>Quest: Alice Biddle</title>
 
 	<link rel="stylesheet" type="text/css" href="libs/potree/potree.css">
 	<link rel="stylesheet" type="text/css" href="libs/jquery-ui/jquery-ui.min.css">
@@ -52,15 +52,15 @@
 		document.title = "";
 		viewer.setEDLEnabled(false);
 		viewer.setBackground("gradient"); // ["skybox", "gradient", "black", "white"];
-		viewer.setDescription(``);
+		viewer.setDescription(`<H4>Quest: Alice Biddle</H4><p>By: Jared Ritchey </p><p>GEOG4/572: Geovisual Analytics</p>`);
 		viewer.loadSettingsFromURL();
 		
 		viewer.loadGUI(() => {
 			viewer.setLanguage('en');
-			$("#menu_appearance").next().show();
-			$("#menu_tools").next().show();
-			$("#menu_scene").next().show();
-			viewer.toggleSidebar();
+//			$("#menu_appearance").next().show();
+//			$("#menu_tools").next().show();
+//			$("#menu_scene").next().show();
+//			viewer.toggleSidebar();
 		});
 		
 		Potree.loadPointCloud("pointclouds/index/cloud.js", "index", e => {
