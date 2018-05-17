@@ -30,7 +30,7 @@ However, students can freely pick up either type of geoviz they feel interested 
 
 - At least three charts and a coordinated map; (**8 POINTS**)
 
-- Because you have used several charts to show multiple dimensions of a geographic phenomonon. Please appy [a bivariate color ramp for your map as well as your charts](http://geoviz.ceoas.oregonstate.edu/storymap/color.html). (**8 POINTS**)
+- Because you have used several charts to show multiple dimensions of a geographic phenomonon. Please appy ~~[a bivariate color ramp for your map as well as your charts](http://geoviz.ceoas.oregonstate.edu/storymap/color.html)~~ **Please use the same color scheme for your map and charts.** (**8 POINTS**)
 
 - At least two types of map layers (e.g., tileLayer, geojson layer). These layers can be made by yourself or from other web map providers; (**6 POINTS**)
 
