@@ -72,7 +72,7 @@ B+ 87 – 89%     C 72 – 77%      D- 60 – 61%
 B 83 – 86%      C- 70 – 71%     F < 60%
 
 
-> **Note:** To caculate the final grade, we use all the earned points of each item (e.g., lab, quizzes, project development, project) divided by the total points of tis item, and then time the allocated percentage of this item. Take the lab for geog 572 for example, if a student got 45 points for lab 1, 5o for lab 2, 46 for lab 3, 45 for lab 4 and 50 for lab 5, the lab portion of the final grade will be (45+50+46+45+50) /250 *30% = 28.32%. Accordingly, by adding up the grades of each item, we will get the final grade of the examined student.
+> **Note:** To calculate the final grade, we use all the earned points of each item (e.g., lab, quizzes, project development, project) divided by the total points of its item, and then time the allocated percentage of this item. Take the lab for geog 572 for example, if a student got 45 points for lab 1, 50 for lab 2, 46 for lab 3, 45 for lab 4 and 50 for lab 5, the lab portion of the final grade will be (45+50+46+45+50) /250 *30% = 28.32%. Accordingly, by adding up the grades of each item, we will get the final grade of the examined student.
 
 
 ### Labs
