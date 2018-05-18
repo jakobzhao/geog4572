@@ -54,13 +54,13 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | Item                | Desc.                                                        | % of Final Grade (GEOG 472) | % of Final Grade (GEOG 572) |
 | ------------------- | ------------------------------------------------------------ | --------------------------- | --------------------------- |
 | Participation       | Discussion, in-class work and other activities               | 5                           | 5                           |
-| Quizzes             | 8 in-class or take-home quizzes covering topics from lecture and reading assignments. | 25                          | 20                          |
-| Labs                | 2 lab assignments (15% each). We understand that many of the programming techniques discussed early in the course will be relatively new. Recognizing this, the first few assignments will contain more detailed instructions. | 35                          | 30                          |
+| Quizzes             | ~~8~~ **6** in-class or take-home quizzes covering topics from lecture and reading assignments. | 25                          | 20                          |
+| Labs                | ~~2 lab assignments (15% each)~~ **5 lab assignment, and 1 extra lab assignment as extra credit**. We understand that many of the programming techniques discussed early in the course will be relatively new. Recognizing this, the first few assignments will contain more detailed instructions. | 35                          | 30                          |
 | Project Development | Each student is expected to make concrete contribute to one major component of the final project. It could be the proposal, the about page, icon, color scheme, font scheme, sketch or etc. | 20                          | 20                          |
 | Project             | Each student is required to collaboratively develop a final project using geovisual analytics. Each project should be no more than three members.Graduate students are encouraged to be the group leader or the project coordinator, and undergraduate students are encouraged to be a principle group member.Each group will make a presentation to demonstrate their work. This final project is mainly evaluated by both the presentation and the quality of the geovisual application. | 15                          | 25                          |
 |                     |                                                              | 100                         | 100                         |
 
-Grades are based on the percentage of maximum points accumulated and assigned
+Grades are based on **the percentage of maximum points** accumulated and assigned
 according to this table:
 
 A 93 – 100%     B- 80 – 82%     D+ 68 – 69%
