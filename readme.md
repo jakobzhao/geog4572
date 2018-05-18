@@ -29,18 +29,70 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | **Wk 05**  | [Layout Design using Bootstrap, GeoViz evaluation](lectures/lec10/)  ([*`reading`*](lectures/lec10/read.md)) | [Lab4: Geoviz Module](labs/lab04); [*Google Cloud Platform*](lectures/lec11/)                                    | [Color, Typography](lectures/lec12) ([*`reading`*](lectures/lec12/read.md))              | [Sketch](project/sketch.md)                                  |
 | **Wk 06**  | [Icons, Illustrators and Scalable Vector Graphics](lectures/lec13/)                                        | [Lab5: Integrated Geovisualization](labs/lab05/readme.md): [coordinated view](labs/lab05/coordinated/readme.md) or [storymap](labs/lab05/storymap/readme.md)                  | [Word cloud](lectures/lec14/readme.md)                     | [Data Source(`Optional`)](project/data.md); [Design Scheme (Color, font, icon, and multimedia, etc.)(`Due: 05/17, 5pm`)](project/design_scheme.md) |
 | **Wk 07**  | [Real-time mapping, Heatmap](lectures/lec15/)                        | ~~Fieldwork for Drone Mapping~~, Lab5 cont'd                          | [GeoViz Critique](lectures/lec16/critique.pdf)                | Coding                                                    |
-| **Wk 08**  | Geoviz of Structure-from-motion                   | Lab6: Point-cloud GeoViz, Fieldwork for Drone Mapping                               | Hexagonal Geoviz               | Coding                                                    |
-| **Wk 09**  | [Network](https://earth.nullschool.net/)                                           | Lab6: cont’d                                           | Flow maps, Sankeys             | Fine-tuning                                               |
+| **Wk 08**  | Geoviz of Structure-from-motion                   | [Lab6: Point-cloud GeoViz (***Optional***)](http://jakobzhao.github.io/geog4572/labs/lab06), Fieldwork for Drone Mapping                               | ~~Hexagonal Geoviz~~ Final Project Q&A               | Coding                                                    |
+| **Wk 09**  | [Network](https://earth.nullschool.net/)                                           | Lab6: cont’d                                           | ~~Flow maps, Sankeys~~ Final Project Q&A             | Fine-tuning                                               |
 | **Wk 10** | Course Summary                                    | Project Q&A                                            | Final Presentation             | Presentation                                              |
 
+## GRADING CRITERIA
 
-## LECTURES
+### Labs
+
+- lab 1: Project Management for Geoviz (Due: 04/10/2018 @11:59pm)  50 Points
+
+- lab 2: GeoViz Programming Basics (Due: 04/17/2018 @11:59pm)  50 Points
+
+- lab 3: Interactive Map Design (Due: 04/24/2018 @11:59pm)  50 Points
+
+- lab 4: Geoviz Modules (Due: 05/11/2018 @11:59pm )  50 Points
+
+- lab 5: Integrated Geovisualization (Due: 05/22/2018 @11:59pm )  50 Points
+
+- lab 6 (Optional): Point-cloud Geoviz (optional) (Due: 05/31/2018 @11:59pm ) 25 Bonus Points
+
+
+### Quizzes/ Homework Assignments
+
+- Quiz 1: HTML, CSS, and JQuery (Due: 04/10/2018)  15 Points
+
+- Quiz 2: Leaflet and Javascript Basics (Due: 04/19/2018)   15 Points
+
+- Quiz 3: Geojson and Topojson (Due: 04/23/2018) 15 Points
+
+- Quiz 4: D3 and JQuery Selectors (Due: Extended to 05/06/2018) 15 Points
+
+- Quiz 5: Layout Design using Bootstrap (Due: 05/07/2018) 15 Points
+
+- Quiz 6: Vectorize a Rater Image (Due: 05/18/2018) 15 Points
+
+### Project Development
+
+- Project Preparation (Due 04/09/2018) 10 Points
+
+- Proposal  (Due 04/27/2018) 10 Points
+
+- Interface Sketch (Due 05/08/2018) 15 Points
+
+- Design Scheme  (Due 05/17/2018) 15 Points
+
+- Data Table (Optional)  0 Points
+
+- GEOG 572 Students Contribution 30 Points
+
+### Project
+
+(A final group project)
+
+
+
+
 
 You are expected to attend lectures twice a week. Attending lectures and labs is important since these times provide you with access to the instructor and to other students. Keep in mind that not all lab assignment will be possible to finish in the allotted class time. Students will be expected to work on assignments outside of class during posted Lab hours. You are welcome to discuss the exercises amongst yourselves, in fact this is encouraged, but the final product you hand in must be your own work.
 
 ## LABS
 
-During the term, there will be two lab assignments. The main purpose of the lab assignments is to learn how to apply and reflect upon the things we cover during the lectures, and to grasp proficient hands-on skills to solve real world problems. If you are having difficulty with these assignments you should ask for assistance, whether from fellow students, or from me. Whatever you do, ask someone but please note the academic integrity policy!
+During the term, there will be six lab assignments. The main purpose of the lab assignments is to learn how to apply and reflect upon the things we cover during the lectures, and to grasp proficient hands-on skills to solve real world problems. If you are having difficulty with these assignments you should ask for assistance, whether from fellow students, or from me. Whatever you do, ask someone but please note the academic integrity policy!
+
+> **Note:** We decide to change lab 6 as an optional one. If you decide to finish lab 6, you will have 25 extra points.
 
 Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted.Lab assignments are expected to be completed by the due date. *A late penalty of at least 10 percentage units will be taken off each day after the due date.*
 
