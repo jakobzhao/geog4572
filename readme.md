@@ -19,7 +19,7 @@
 >
 > [4] From 5/18/2018, there will be no more project development assignment; and
 >
-> [5] Other than the lecture on `structure from motion` and lab 6 `(fielwork and point cloud geoviz)`, there will be no more new lecture matertial. The lectures and office hours will be primarly used to help each group to complete the final projects.
+> [5] Other than the lecture on `structure from motion` and lab 6 `(fielwork and point cloud geoviz)`, there will be no more new lecture matertial. The rest of this term will be primarly used to help each group to complete the final project.
 >
 > If you still need any clarification, please directly contact the instructor or the TA.
 
