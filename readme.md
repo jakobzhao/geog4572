@@ -35,6 +35,30 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 
 ## GRADING CRITERIA
 
+| Item                | Desc.                                                        | % of Final Grade (GEOG 472) | % of Final Grade (GEOG 572) |
+| ------------------- | ------------------------------------------------------------ | --------------------------- | --------------------------- |
+| Participation       | Discussion, in-class work and other activities               | 5                           | 5                           |
+| Quizzes             | 8 in-class or take-home quizzes covering topics from lecture and reading assignments. | 25                          | 20                          |
+| Labs                | 2 lab assignments (15% each). We understand that many of the programming techniques discussed early in the course will be relatively new. Recognizing this, the first few assignments will contain more detailed instructions. | 35                          | 30                          |
+| Project Development | Each student is expected to make concrete contribute to one major component of the final project. It could be the proposal, the about page, icon, color scheme, font scheme, sketch or etc. | 20                          | 20                          |
+| Project             | Each student is required to collaboratively develop a final project using geovisual analytics. Each project should be no more than three members.Graduate students are encouraged to be the group leader or the project coordinator, and undergraduate students are encouraged to be a principle group member.Each group will make a presentation to demonstrate their work. This final project is mainly evaluated by both the presentation and the quality of the geovisual application. | 15                          | 25                          |
+|                     |                                                              | 100                         | 100                         |
+
+Grades are based on the percentage of maximum points accumulated and assigned
+according to this table:
+
+A 93 – 100%     B- 80 – 82%     D+ 68 – 69%
+
+A- 90 – 92%     C+ 78 – 79%     D 62 – 67%
+
+B+ 87 – 89%     C 72 – 77%      D- 60 – 61%
+
+B 83 – 86%      C- 70 – 71%     F < 60%
+
+
+> **Note:** To caculate the final grade, we use all the earned points of each item (e.g., lab, quizzes, project development, project) divided by the total points of tis item, and then time the allocated percentage of this item. Take the lab for geog 572 for example, if a student got 45 points for lab 1, 5o for lab 2, 46 for lab 3, 45 for lab 4 and 50 for lab 5, the lab portion of the final grade will be (45+50+46+45+50) /250 *30% = 28.32%. Accordingly, by adding up the grades of each item, we will get the final grade of the examined student.
+
+
 ### Labs
 
 - lab 1: Project Management for Geoviz (Due: 04/10/2018 @11:59pm)  50 Points
@@ -54,29 +78,29 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 
 - Quiz 1: HTML, CSS, and JQuery (Due: 04/10/2018)  15 Points
 
-- Quiz 2: Leaflet and Javascript Basics (Due: 04/19/2018)   15 Points
+- Quiz 2: Leaflet and Javascript Basics (Due: 04/19/2018)  15 Points
 
-- Quiz 3: Geojson and Topojson (Due: 04/23/2018) 15 Points
+- Quiz 3: Geojson and Topojson (Due: 04/23/2018)  15 Points
 
-- Quiz 4: D3 and JQuery Selectors (Due: Extended to 05/06/2018) 15 Points
+- Quiz 4: D3 and JQuery Selectors (Due: Extended to 05/06/2018)  15 Points
 
-- Quiz 5: Layout Design using Bootstrap (Due: 05/07/2018) 15 Points
+- Quiz 5: Layout Design using Bootstrap (Due: 05/07/2018)  15 Points
 
-- Quiz 6: Vectorize a Rater Image (Due: 05/18/2018) 15 Points
+- Quiz 6: Vectorize a Rater Image (Due: 05/18/2018)  15 Points
 
 ### Project Development
 
-- Project Preparation (Due 04/09/2018) 10 Points
+- Project Preparation (Due 04/09/2018)  10 Points
 
-- Proposal  (Due 04/27/2018) 10 Points
+- Proposal  (Due 04/27/2018)  10 Points
 
-- Interface Sketch (Due 05/08/2018) 15 Points
+- Interface Sketch (Due 05/08/2018)  15 Points
 
-- Design Scheme  (Due 05/17/2018) 15 Points
+- Design Scheme  (Due 05/17/2018)  15 Points
 
 - Data Table (Optional)  0 Points
 
-- GEOG 572 Students Contribution 30 Points
+- GEOG 572 Students Contribution  30 Points
 
 ### Project
 
@@ -84,7 +108,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 
 
 
-
+## LECTURES
 
 You are expected to attend lectures twice a week. Attending lectures and labs is important since these times provide you with access to the instructor and to other students. Keep in mind that not all lab assignment will be possible to finish in the allotted class time. Students will be expected to work on assignments outside of class during posted Lab hours. You are welcome to discuss the exercises amongst yourselves, in fact this is encouraged, but the final product you hand in must be your own work.
 
