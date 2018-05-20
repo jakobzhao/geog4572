@@ -9,7 +9,7 @@
 
 In this lab, you are expected to make a geovisualization, which can be either storymap or coordinated view. Before you make your own geoviz, please please go over and start with emulate the  templates below.
 
-- [Storymap Tutorial](storymap/readme.md), [Example 1](https://jakobzhao.github.io/geog4572/labs/lab05/coordinated/index.html), [Example 2](https://jakobzhao.github.io/geog4572/labs/lab05/coordinated/helloworld.html)
+- [Storymap Tutorial](storymap/readme.md), [Example 1](https://jakobzhao.github.io/geog4572/labs/lab05/storymap/index.html), [Example 2](https://jakobzhao.github.io/geog4572/labs/lab05/storymap/helloworld.html)
 
 - [Coordianted View Tutorial](coordinated/readme.md), [Example](https://jakobzhao.github.io/geog4572/labs/lab05/coordinated/index.html)
 
