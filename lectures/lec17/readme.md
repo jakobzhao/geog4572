@@ -1,4 +1,6 @@
-# Intro to UAV Mapping and Point Cloud Geoviz
+# Geoviz of Structure-from-motion
+
+**Intro to UAV Mapping and Point Cloud Geoviz**
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
