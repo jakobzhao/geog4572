@@ -9,7 +9,7 @@
 
 **This lab is optional rather than required.** You can get extra points if you can compelete and submit this lab. This lab accounts 25 points in total.
 
-In this lab, you are expected to generate a structure from Motion (SfM) using a dataset of 2-dimensional photoes. You can use the dataset provided by the course or collected by yourself. Once the SfM is generated, you will need to visualize this SfM model on github page as usual. To do that, you will need to use a dedicated web based point cloud platform - Potree.  (a free open-source WebGL based point cloud renderer for large point clouds, originally developed at the Institute of Computer Graphics and Algorithms, TU Wien). [Check this demo](https://jakobzhao.github.io/geog4572/labs/lab06/index.html)
+In this lab, you are expected to generate a structure from Motion (SfM) using a dataset of 2-dimensional photos. You can use the dataset provided by the course or collected by yourself. Once the SfM is generated, you will need to visualize this SfM model on github page as usual. To do that, you will need to use a dedicated web based point cloud platform - Potree.  (a free open-source WebGL based point cloud renderer for large point clouds, originally developed at the Institute of Computer Graphics and Algorithms, TU Wien). [Check this demo](https://jakobzhao.github.io/geog4572/labs/lab06/index.html)
 
 ![](img/potree.png)
 
@@ -20,7 +20,7 @@ In this lab, you are expected to generate a structure from Motion (SfM) using a 
 Create a new repository on github to store this lab submission.
 
 
-- Generate a SfM from Photoscan from a dataset of photoes. This dataset can be the one which provided by this course (click here to download), or collect a dataset all by yourself. To generate the dataset, you will need to use PhotoScan, you can use a demo version, which can be downloaded from the photo official website. The demo version would not allow you export the SfM model, so for turning in, please get a screenshot of the point cloud of the generated SfM model, and then insert this screenshot image to the `readme.md` file in the root directory of this repository (**9 POINTS**)
+- Generate a SfM from Photoscan from a dataset of photos. This dataset can be the one which provided by this course ([Clink here to download](https://drive.google.com/open?id=18jXLaFHFg0y2aqSsJ61Q0QOYaV_1nqdX)), or collect a dataset all by yourself. To generate the dataset, you will need to use PhotoScan, you can use a demo version, which can be downloaded from the photo official website. The demo version would not allow you export the SfM model, so for turning in, please get a screenshot of the point cloud of the generated SfM model, and then insert this screenshot image to the `readme.md` file in the root directory of this repository (**9 POINTS**)
 
 > **Note:** If you want to export the point cloud, you will need to use an full version of PhotoScan. In Strand Ag Hall 347 (Instructor's office), there is a dedicated workstation which has installed a full version of the PhotoScan. If you want to export your SfM, you can use that workstation with you onid whenever the door is open.
 
