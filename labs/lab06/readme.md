@@ -29,7 +29,7 @@ Create a new repository on github to store this lab submission.
  In the end, the file structure of this repository should look like:
 
 ```Powershell
-[Submission_Lab_05]
+[Submission_Lab_06]
 │──────readme.md
 │──────index.html
 ├─libs
