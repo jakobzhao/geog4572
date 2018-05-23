@@ -17,7 +17,7 @@ In this lab, you are expected to generate a structure from Motion (SfM) using a 
 
 ## Grading Criteria:
 
-####In depth directions for this lab can be found by clicking [here](https://github.com/ritcheja/geog4572_lab6directions).
+#### In depth directions for this lab can be found by clicking [here](https://github.com/ritcheja/geog4572_lab6directions).
 
 Create a new repository on github to store this lab submission.
 
