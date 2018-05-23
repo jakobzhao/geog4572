@@ -2,7 +2,7 @@
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
+> **Instructor:** Bo Zhao | **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
 >
 > **Assigned:** 05/22/2018 | **Due:** `06/05/2018 @11:59pm` | **Points Available** = 25
 
