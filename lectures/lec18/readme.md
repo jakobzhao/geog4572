@@ -10,5 +10,5 @@
 
 [demo](https://jakobzhao.github.io/lectures/lec18/index.html)
 
-
+[Legend](https://jakobzhao.github.io/lectures/lec18/legend.html)
 
