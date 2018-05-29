@@ -6,9 +6,4 @@
 
 > **Contributors：** Brandi Black, Lila Leatherman, Brian Katz
 
-[d3-leaflet](https://github.com/Asymmetrik/leaflet-d3)
-
-[demo](https://jakobzhao.github.io/lectures/lec18/index.html)
-
-[Legend](https://jakobzhao.github.io/lectures/lec18/legend.html)
 
