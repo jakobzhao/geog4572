@@ -56,6 +56,5 @@ Refresh the map if the browser windows are resized.
  
 ### 4 font family in a chart  The `!important` rule
 
-Please look at the `dc-fonts` folder under the [troubleshoot](../../troubleshoot/dc-fonts) folder.
 
-In your css stylesheet, a rule that has the `!important` property will always be applied no matter where that rule appears in the CSS document.
+> **Note:** In your css stylesheet, a rule that has the `!important` property will always be applied no matter where that rule appears in the CSS document.
