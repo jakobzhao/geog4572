@@ -17,7 +17,7 @@ Please refer to the `layout` folder under the [troubleshoot](../../troubleshoot/
 
 ### 3 model
 
-- fullscreen `lab 03` and `storymap`
+- fullscreen `lab 03` and `the storymap template of lab`
 
 **fullscreen**
 
