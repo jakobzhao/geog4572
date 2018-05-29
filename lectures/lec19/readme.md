@@ -27,7 +27,7 @@ html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff; }
 
 **leaflet `div` placeholder/element inside a `div` element**
 
-the style sheet
+The stylesheet
 
 ```css
 .storymap-map {
@@ -45,7 +45,7 @@ the style sheet
 }
 ```
 
-the javascript
+The javascript
 
 Refresh the map if the browser windows are resized.
 
