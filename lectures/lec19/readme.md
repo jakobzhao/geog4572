@@ -6,6 +6,13 @@
 
 > **Contributors：** Brandi Black, Lila Leatherman, Brian Katz
 
+[Lila and Brandi's tutorial on Vector Field](https://github.com/lleather/sif_vector)
+
+[Brian's Tutorial on Vectgor Field](https://github.com/briangkatz/vector-field-animation)
+
+[Leaflet.CanvasLayer.Field](https://github.com/IHCantabria/Leaflet.CanvasLayer.Field)
+
+
 
 ## Project Q&A:
 
