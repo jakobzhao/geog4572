@@ -8,7 +8,7 @@
 
 [Lila and Brandi's tutorial on Vector Field](https://github.com/lleather/sif_vector)
 
-[Brian's Tutorial on Vectgor Field](https://github.com/briangkatz/vector-field-animation)
+[Brian's Tutorial on Vector Field](https://github.com/briangkatz/vector-field-animation)
 
 [Leaflet.CanvasLayer.Field](https://github.com/IHCantabria/Leaflet.CanvasLayer.Field)
 
