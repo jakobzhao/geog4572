@@ -62,6 +62,27 @@
     $("#element2").on("click", function(){$("#element1").hide()});
 
 
+    for(let i=0; i<kits.features.length; i++) {
+
+        setTimeout(function () {
+            lng = kits.features[i].geometry.coordinates[0];
+            lat = kits.features[i].geometry.coordinates[1];
+
+            L.swoopyArrow([45.505374, -122.978524], [lat, lng], {
+                labelFontSize: 12,
+                iconAnchor: [20, 10],
+                iconSize: [30, 16],
+                color: '#fff20f',
+                opacity: 0.7,
+                weight:'3'
+            }).addTo(map);
+            // layergroup2.addLayer( L.marker([lat, lng], {icon: pwbIcon}));
+
+        }, 400 * i);
+    }
+
+
+
 
 
 </script>

@@ -18,6 +18,9 @@ Flow map
 
 ### 1 jQuery Show and Hide
 
+[Demo](http://jakobzhao.github.io/geog4572/lectures/lec20/hide.html)
 
 
 ### 2 Animation
+
+[Demo](http://jakobzhao.github.io/geog4572/lectures/lec20/animation.html)
