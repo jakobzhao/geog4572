@@ -32,7 +32,7 @@ The final project can be simple and focused in nature, but must include:
 
 ## 2\. Presentation and peer review
 
-Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. on **June 7th**, we will hold a final presentation meeting at 361 Strand Hall (the GAZE lab). Each team is expected to present their final project in ~10 minutes. And there will be a F&A session in 2 ~ 3 minutes. During the final presentation, each student will need to review all final projects and submit your review notes.
+Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. on **June 11th at 1pm**, we will hold a final presentation meeting at 361 Strand Hall (the GAZE lab). Each team is expected to present their final project in ~10 minutes. And there will be a F&A session in 2 ~ 3 minutes. During the final presentation, each student will need to review all final projects and submit your review notes.
 
 Additionally, you will need to submit **peer review form** for each project right after the presentation meeting.
 
