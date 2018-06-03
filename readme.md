@@ -49,7 +49,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | **Wk 07**  | [Real-time mapping, Heatmap](lectures/lec15/)                        | ~~Fieldwork for Drone Mapping~~, Lab5 cont'd                          | [GeoViz Critique](lectures/lec16/critique.pdf)                | Coding                                                    |
 | **Wk 08**  | [Geoviz of Structure-from-motion](lectures/lec17)                   | [Lab6: Point-cloud GeoViz (***Optional***)](labs/lab06/readme.md), Fieldwork for Drone Mapping                               | [Hexagonal Geoviz](lectures/lec18/readme.md) Final Project Q&A               | Coding, :bell:  [Final Project Guidelines](project/guideline.md)                                                    |
 | **Wk 09**  | [Vector Field, Final Project Q&A](lectures/lec19/readme.md)                                           | Lab6: cont’d                                           | [Flow maps, Final Project Q&A](lectures/lec20/readme.md)             | Fine-tuning                                               |
-| **Wk 10** | Course Summary                                    | Project Q&A                                            | <p style="color:red">Final Presentation moves to June 11th, 1:00 PM.</p>            | Presentation                                              |
+| **Wk 10** | Course Summary                                    | Project Q&A                                            | <p style="color:red"><b>Final Presentation moves to June 11th, 1:00 PM.</b></p>            | Presentation                                              |
 
 ## GRADING CRITERIA
 
