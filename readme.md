@@ -8,7 +8,7 @@
 >
 > **Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3).** Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
- <p style="color:red">Final Presentation moves to June 11th, 1:00 PM.</p> 
+ <p style="color:red"><bold> Final Presentation moves to June 11th, 1:00 PM.</bold></p> 
  
 :bell:  **Please pay attention to the `grading criteria` section which was attached in this page, we slightly updated it as below**
 >
