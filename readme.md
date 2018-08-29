@@ -8,23 +8,6 @@
 >
 > **Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3).** Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
- <p style="color:red"><b> Final Presentation moves to June 11th, 1:00 PM.</b></p> 
- 
-:bell:  **Please pay attention to the `grading criteria` section which was attached in this page, we slightly updated it as below**
->
-> [1] A typo was corrected: there are 6 labs rather than 2;
->
-> [2] Lab 6 becomes optional rather than required. If you can finish lab 6, there will be 25 extra points;
->
-> [3] From 5/18/2018, there will be no more quizzes or homework assignments;
->
-> [4] From 5/18/2018, there will be no more project development assignment; and
->
-> [5] Other than the lecture on `structure from motion` and lab 6 `(fieldwork and point cloud geoviz)`, there will be no more new lecture material. The rest of this term will be primarily used to help each group to complete the final project.
->
-> If any further clarification is needed, please directly contact the instructor or the TA.
-
-
 
 Welcome to GEOG 472/572: Geovisual Analytics! This course introduces geovisual analytical theories, advanced geovisual analytical methodologies, and some popular toolkits. In this course, students work collaboratively to solve a real-world problem using geovisual analytics. Also, This course is financially supported by [`Google Cloud Platform`](https://cloud.google.com/) :cloud:, each student of this course will have $50 budget for using the google cloud services.
 
