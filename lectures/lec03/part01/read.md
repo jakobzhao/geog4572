@@ -1,4 +1,4 @@
-# Reading List for Lecture 4: Part I
+# Reading List for Lecture 3: Part I
 
 **Required:**
 
