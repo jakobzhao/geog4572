@@ -1,8 +1,8 @@
 # Interactive Maps using Leaflet
 
-> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
+> Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
+> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** TR 1600 - 1650
 >
 > **Contributors:** [Brain Katz](https://github.com/briangkatz), [Hannah Friedrich](https://github.com/hannahfriedrich)
 

@@ -1,8 +1,8 @@
 # D3.js Fundamentals
 
-> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
+> Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
+> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** TR 1600 - 1650
 
 **Learning Objectives**
 
@@ -12,7 +12,7 @@
 
 
 
-D3 stands for Data-Driven Documents. It is an open-source JavaScript library developed by Mike Bostock to create custom interactive data visualizations in the web browser using SVG, HTML and CSS. This lecture will help you learn the essentials of D3.js starting from the basics to an intermediate level. 
+D3 stands for Data-Driven Documents. It is an open-source JavaScript library developed by Mike Bostock to create custom interactive data visualizations in the web browser using SVG, HTML and CSS. This lecture will help you learn the essentials of D3.js starting from the basics to an intermediate level.
 
 **D3.js setup**: Before we start, you'll need the following components:
 
@@ -448,7 +448,7 @@ The following example demonstrates handling of mouseover and mouseout events.
 
           // Get current event info
           console.log(d3.event);
-          
+
           // Get x & y co-ordinates
           console.log(d3.mouse(this));
       })
@@ -492,14 +492,14 @@ The following example demonstrates how to join data as an array into your existi
     <script>
 
          var myData = ["Hello World!"];
-     
+
          var p = d3.select("body")
                 .selectAll("p")
                 .data(myData)
                 .text(function (d) {
                     return d;
                 });
-     
+
     </script>
 </body>
 ```
@@ -526,7 +526,7 @@ Remember, you need to pass an array to the data() function. It does not do anyth
     <p> </p>
     <script>
         var myData = 100;
-     
+
          var p = d3.select("body")
                  .selectAll("p")
                  .data(myData)
@@ -548,7 +548,7 @@ The following example demonstrates joining data to multiple elements.
     <p> </p>
     <script>
         var myData = ["Hello World!", "Hello D3","Hello JavaScript"];
-     
+
          var p = d3.select("body")
                  .selectAll("p")
                  .data(myData)
@@ -571,7 +571,7 @@ In the above example, HTML includes three `<p>` elements and data array myData a
 
     <script>
         var myData = [1, 2, 3, 4, 5];
-     
+
          var p = d3.select("body")
                    .selectAll("p")
                    .data(myData)
@@ -624,10 +624,10 @@ Just like our previous example, we have taken a data array [4, 1, 6, 2, 8, 9].
 
 Let's see what our program does:
 
-`d3.select("body")` 
+`d3.select("body")`
 This statement selects the HTML Body.
 
-`.selectAll("span")` 
+`.selectAll("span")`
 At this point, there are no span elements in the body. So this will return an empty array.
 
 `.data(data)`
@@ -697,7 +697,7 @@ As mentioned in the data() section, you can specify a function instead of an arr
         var tr = d3.select("body")
             .append("table")  // adds <table>
             .selectAll("tr")  // selects all <tr>
-            .data(matrix)      // joins matrix array 
+            .data(matrix)      // joins matrix array
             .enter()           // create placeholders for each row in the array
             .append("tr");// create <tr> in each placeholder
 
@@ -734,7 +734,7 @@ In the below code, all p elements will be removed. With exit(), the elements ent
     <p></p>
     <p></p>
     <script>
-    
+
     var myData = ["Hello World!"];
 
     var p = d3.select("body")
@@ -918,7 +918,7 @@ It is an array of person objects, with each object containing a name, age and lo
 
 ```javascript
 d3.json("assets/users.json", function(error, data) {
-    
+
     d3.select("body")
         .selectAll("p")
         .data(data)
@@ -937,12 +937,12 @@ You will see the following result in the browser when you run the above code.
 
 Let's run through this code.
 
-`d3.json("assets/users.json", function(error, data) {` 
+`d3.json("assets/users.json", function(error, data) {`
 Our project has a file named "users.json". We loaded this file using d3.json(). The d3.json() method returned a formatted data object. It also returned an argument "error". We will have a look at that shortly.
 
 `d3.select("body")` Once we have our data object, we want to output the content to our page. Where do we want to add it? That's right - to the body element. So, we select the body element. D3 returns the selection and we can pass this on to the next method using [method chaining](http://www.tutorialsteacher.com/d3js/method-chaining-in-d3js).
 
-`.selectAll("p")` 
+`.selectAll("p")`
 We choose to output our data as paragraphs. You can use divs, spans, lists, whatever you fancy. We want four <p> elements because that is the size of our data. Now, D3 will look for <p> elements on the page. It looks up all <p> elements and sends the references to the next method in the chain. But whoa! We don't have any, do we? Don't panic just yet. D3 is very smart. Read on.
 
 `.data(data)`
@@ -963,7 +963,7 @@ While loading data from an external source, D3 returns an argument called "error
 
 ```javascript
 d3.json("assets/users.json", function(error, data) {
-    
+
     if (error) {
         return console.warn(error);
     }
