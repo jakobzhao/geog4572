@@ -1,5 +1,5 @@
 # GEOG 4/572: Geovisual Analytics
->
+
 > **Instructor:** [Bo Zhao](http://ceoas.oregonstate.edu/profile/zhao/), zhao2@oregonstate.edu | **Office Hours:** T 5-5:50pm or by appt. @ [WLKN 210](https://www.google.com/maps/place/Wilkinson+Hall/@44.5682215,-123.2824915,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040bb62b60cb5:0x27ea6238495f5669!8m2!3d44.5682215!4d-123.2803028)
 >
 > **Lecture:** [TR 4-4:50pm](http://r25wv.ucsadm.oregonstate.edu/r25_wv/wv_servlet/wrd/run/wv_space.ByNameFindGroup?spid=118,spdt=today) @[WLKN 210](https://www.google.com/maps/place/Wilkinson+Hall/@44.5682215,-123.2824915,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040bb62b60cb5:0x27ea6238495f5669!8m2!3d44.5682215!4d-123.2803028) | **Lab:**  [T 6-7:50pm](http://dusk.geo.orst.edu/de/de_teach.html) @[WLKN 210](https://www.google.com/maps/place/Wilkinson+Hall/@44.5682215,-123.2824915,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040bb62b60cb5:0x27ea6238495f5669!8m2!3d44.5682215!4d-123.2803028)
