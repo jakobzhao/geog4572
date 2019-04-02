@@ -1,4 +1,4 @@
-# Preliminary project ideas and teams
+# Preliminary project ideas and teams (TBD)
 
 | **Group Member**                         | **Project Idea**                         | GeoViz Type         |
 | ---------------------------------------- | ---------------------------------------- | ------------------- |

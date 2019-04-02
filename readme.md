@@ -24,7 +24,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | **Wk 05**  | [Layout Design using Bootstrap](lectures/lec10/)  ([*`reading`*](lectures/lec10/read.md)) |  [Lab3: Integrated Geovisualization](labs/lab03/readme.md)                  | [Color, Typography](lectures/lec12) ([*`reading`*](lectures/lec12/read.md))              | [Sketch](project/sketch.md)                                  |
 | **Wk 06**  | [Vector Graphics](lectures/lec13/)                                        |   *Lab3 cont’d*                | [Word Cloud](lectures/lec14/readme.md)                     |  [Design Scheme](project/design_scheme.md) |
 | **Wk 07**  | [ Heatmap](lectures/lec15/)                        |  *Lab3 cont'd*                          | [GeoViz Critique](lectures/lec16/critique.pdf)                | Coding                                                    |
-| **Wk 08**  | [GeoViz Evaluation using Google Analytics]()  | [Hexagonal Maps](lectures/lec18/readme.md)   |  Final Project Q&A               | Coding                                            |
+| **Wk 08**  | [GeoViz Evaluation]()  | [Hexagonal Maps](lectures/lec18/readme.md)   |  Final Project Q&A               | Coding                                            |
 | **Wk 09**  | [Flow maps](lectures/lec20/readme.md)                                     | Final Project Q&A                                           | Final Project Q&A          | Fine-tuning                                               |
 | **Wk 10** | Course Summary                                    | Project Q&A                                            | **Final Project Presentation**            | Presentation                                              |
 
