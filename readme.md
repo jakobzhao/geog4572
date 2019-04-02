@@ -19,7 +19,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | --------- | ------------------------------------------------- | ------------------------------------------------------ | ------------------------------ | --------------------------------------------------------- |
 | **Wk 01**  | Intro to this course                            | [Lab1: Project Management for GeoViz](labs/lab01/) ([*`reading`*](labs/lab01/read.md))                    | [Geovisual Analytics Basics](lectures/lec02/) ([*`reading`*](lectures/lec02/read.md))            | [Introduction](project/intro.md), [*Project Prep*](project/prep.md)  |
 | **Wk 02**  | [GeoViz Programming Basics](lectures/lec03/) | [Lab2: Interactive Map Design](labs/lab02/)  | [Interactive Maps using Leaflet](lectures/lec05/) ([*`reading`*](lectures/lec04/read.md)) | [Team-up](project/team-up.md)                                                   |
-| **Wk 03**  | [D3 I](lectures/lec06/) ([*`reading`*](lectures/lec06/read.md))                                     |       *Lab2 cont’d*  ; [*Debugging*:bug:](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)                            | [Spatial Data Processing](lectures/lec07/)  ([*`reading`*](lectures/lec07/read.md))       | [*Proposal*](project/proposal.md)                                                  |
+| **Wk 03**  | [D3 I](lectures/lec06/) ([*`reading`*](lectures/lec06/read.md))                                     |*Lab2 cont’d*; [*Debugging*:bug:](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)                            | [Spatial Data Processing](lectures/lec07/)  ([*`reading`*](lectures/lec07/read.md))       | [*Proposal*](project/proposal.md)                                                  |
 | **Wk 04**  | [D3 II](lectures/lec06) ([*`reading`*](lectures/lec08/read.md))                                            | *Lab2 cont’d*                   | [D3 III](lectures/lec09/) ([D3 Graphics](lectures/lec09/part01/), [C3.js](lectures/lec09/part02/) ([*`reading`*](lectures/lec09/read.md))                         | [Data Source](project/data.md); Proposal revision;                                        |
 | **Wk 05**  | [Layout Design using Bootstrap](lectures/lec10/)  ([*`reading`*](lectures/lec10/read.md)) |  [Lab3: Integrated Geovisualization](labs/lab03/readme.md)                  | [Color, Typography](lectures/lec12) ([*`reading`*](lectures/lec12/read.md))              | [Sketch](project/sketch.md)                                  |
 | **Wk 06**  | [Vector Graphics](lectures/lec13/)                                        |   *Lab3 cont’d*                | [Word Cloud](lectures/lec14/readme.md)                     |  [Design Scheme](project/design_scheme.md) |
@@ -38,9 +38,11 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | **Presentation**  | Each student is required to present an existing geovisualization project to the class before the lecture.                                                   | 10                          | 10                          |
 | **Course Contribution** | Each graduate student is expected to contribute to this course. It could be leading the course, updating the expirment, or working with the instructor on some related course work. This course contribution is designed to help the graduate student to work closely with the insturctor on geoviz related skills.                                                   | 0                          | 20                          |
 | **Project**                              | Each student is required to collaboratively develop a final project using geovisual analytics. Each project should be no more than foure members. Graduate students are encouraged to be the group leader or the project coordinator, and undergraduate students are encouraged to be a principle group member. Each group will make a presentation to demonstrate their work. This final project is mainly evaluated by both the presentation and the quality of the geovisual application. | 30                          | 35                          |
-|                                      |        |  **100**                         | **100**                         |
+|               **Total**                       |        |  **100**                         | **100**                         |
 
-Grades are based on **the percentage of maximum points** accumulated and assigned
+**Note:** to calculate the final grade, we use all the earned points of each item (e.g., lab, quizzes, project development, project) divided by the total points of its item, and then mutiply it by the allocated percentage of this item. Take the lab for geog 572 for example, if a student got 45 points for lab 1, 50 for lab 2, 46 for lab 3, the lab portion of the final grade will be (45+50+46) /150 *20% = 18.8%. Accordingly, by adding up the grades of each item, we will get the final grade of the examined student.
+
+Final grades are based on **the percentage of maximum points** accumulated and assigned
 according to this table:
 
 A 93 – 100%     B- 80 – 82%     D+ 68 – 69%
@@ -52,7 +54,7 @@ B+ 87 – 89%     C 72 – 77%      D- 60 – 61%
 B 83 – 86%      C- 70 – 71%     F < 60%
 
 
-> **Note:** To calculate the final grade, we use all the earned points of each item (e.g., lab, quizzes, project development, project) divided by the total points of its item, and then mutiply it by the allocated percentage of this item. Take the lab for geog 572 for example, if a student got 45 points for lab 1, 50 for lab 2, 46 for lab 3, the lab portion of the final grade will be (45+50+46) /150 *20% = 18.8%. Accordingly, by adding up the grades of each item, we will get the final grade of the examined student.
+
 
 
 
