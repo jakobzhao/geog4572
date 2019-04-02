@@ -1,4 +1,4 @@
-# GEOG 472/572: Geovisual Analytics
+# GEOG 4/572: Geovisual Analytics
 >
 > **Instructor:** [Bo Zhao](http://ceoas.oregonstate.edu/profile/zhao/), zhao2@oregonstate.edu | **Office Hours:** T 5-6pm or by appt. @ [WLKN 210](https://www.google.com/maps/place/Wilkinson+Hall/@44.5682215,-123.2824915,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040bb62b60cb5:0x27ea6238495f5669!8m2!3d44.5682215!4d-123.2803028)
 >
@@ -6,14 +6,14 @@
 >
 > **Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3).** Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
-Welcome to GEOG 472/572: Geovisual Analytics! This course introduces geovisual analytical theories, advanced geovisual analytical methodologies, and some popular toolkits. In this course, students work collaboratively to solve a real-world problem using geovisual analytics.
+Welcome to GEOG 4/572: Geovisual Analytics! This course introduces geovisual analytical theories, advanced geovisual analytical methodologies, and some popular toolkits. In this course, students work collaboratively to solve a real-world problem using geovisual analytics.
 
 No required textbook. Recommended Papers and online materials will be available on the course website, and some recommended books will be reserved in valley library. ***Students must complete required reading assignments before attending the corresponding lecture. Quizzes or Homeworks will cover the content of the reading assignments.***
 
 Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.(2008). [Thematic cartography and geographic visualization](https://www.amazon.com/Thematic-Cartography-Geovisualization-Terry-Slocum/dp/0132298341/ref=sr_1_fkmr0_1?ie=UTF8&qid=1522646663&sr=8-1-fkmr0&keywords=thematic+cartography+and+geovisualization+3rd+edition+pdf). Pearson; 3rd edition (April 14, 2008). ISBN-13: 978-0132298346
 
 
-## SYLLABUS
+## SCHEDULE
 
 | **WEEK**    | **LECTURE  (T)**                                  | **LAB (T)**                                            | **LECTURE (R)**                 | **[PROJECT](project/guideline.md)**                                                     |
 | --------- | ------------------------------------------------- | ------------------------------------------------------ | ------------------------------ | --------------------------------------------------------- |
@@ -67,7 +67,7 @@ Lab assignments are required to be submitted electronically to Canvas unless sta
 
 If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
 
-## COURSE PROJECT
+## FINAL PROJECT
 
 The final project is a major component of this course. For each group, there should be no more than three students. I recommend a group should be formed by graduate and undergraduate students. Each group will collaboratively work on a final project using geovisual analytics. The instructor will provide several topics for students to choose from. Students can also bring their own topics. Students in a group can work on a project of their common interests. Although the project topic is important, this project is more about how to apply the geovisual skills. So,students who want to team up as a group need to have a consensus that they are interested in using the similar geovisual tools and methods. Regarding the project topics, the instructor will provide a pool of topics to choose from during the first two weeks. In the rest of the term, students will concentrate on developing the project. The instructor and TA will provide necessary guidance in applying the geovisual skills for the projects. Since some of the topics are proposed by other faculty members in the university, a co-advisor/group member will join you to provide extra help.
 
