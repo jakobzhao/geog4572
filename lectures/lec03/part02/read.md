@@ -1,4 +1,4 @@
-# Reading List for Lab 2
+# Reading List for Lecture 3: Part II
 
 **W3Schools (201X) Javascript Tutorial, retrieved December 28, 2016 from [http://www.w3schools.com/js/](http://www.w3schools.com/js/)**
 
