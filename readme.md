@@ -1,8 +1,8 @@
 # GEOG 472/572: Geovisual Analytics
 >
-> **Instructor:** [Bo Zhao](http://ceoas.oregonstate.edu/profile/zhao/), zhao2@oregonstate.edu | **Office Hours:** T 3-4pm or by appt. @ [Strand Ag Hall 347A](https://www.google.com/maps/place/Strand+Agriculture+Hall,+170+SW+Waldo+Pl,+Corvallis,+OR+97331/@44.5656488,-123.2794268,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040beaf30bd99:0x263a8015b6c0b3b5!8m2!3d44.5656481!4d-123.2772384)
+> **Instructor:** [Bo Zhao](http://ceoas.oregonstate.edu/profile/zhao/), zhao2@oregonstate.edu | **Office Hours:** T 5-6pm or by appt. @ [WLKN 210](https://www.google.com/maps/place/Wilkinson+Hall/@44.5682215,-123.2824915,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040bb62b60cb5:0x27ea6238495f5669!8m2!3d44.5682215!4d-123.2803028)
 >
-> **Lecture:** [TR 11-11:50am](http://r25wv.ucsadm.oregonstate.edu/r25_wv/wv_servlet/wrd/run/wv_space.ByNameFindGroup?spid=118,spdt=today) @[WITH 205](http://r25wv.ucsadm.oregonstate.edu/r25_wv/wv_servlet/wrd/run/wv_space.Detail?RoomID=118) | **Lab:**  [T 6-7:50pm](http://dusk.geo.orst.edu/de/de_teach.html) @[WLKN 210](https://www.google.com/maps/place/Wilkinson+Hall/@44.5682215,-123.2824915,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040bb62b60cb5:0x27ea6238495f5669!8m2!3d44.5682215!4d-123.2803028)
+> **Lecture:** [TR 4-5:50am](http://r25wv.ucsadm.oregonstate.edu/r25_wv/wv_servlet/wrd/run/wv_space.ByNameFindGroup?spid=118,spdt=today) @[WLKN 210](https://www.google.com/maps/place/Wilkinson+Hall/@44.5682215,-123.2824915,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040bb62b60cb5:0x27ea6238495f5669!8m2!3d44.5682215!4d-123.2803028) | **Lab:**  [T 6-7:50pm](http://dusk.geo.orst.edu/de/de_teach.html) @[WLKN 210](https://www.google.com/maps/place/Wilkinson+Hall/@44.5682215,-123.2824915,17z/data=!3m1!4b1!4m5!3m4!1s0x54c040bb62b60cb5:0x27ea6238495f5669!8m2!3d44.5682215!4d-123.2803028)
 >
 > **Catalog Course Description: GEOVISUALIZATION III: GEOVISUAL ANALYTICS (3).** Concepts and techniques underlying the production of maps by computer. Practical experience with a variety of computer mapping packages.
 
@@ -15,30 +15,30 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 
 ## SYLLABUS
 
-
-| **WK**    | **LECTURE  (T)**                                  | **LAB (T)**                                            | **LECTURE (R)**                 | **PROJECT**                                               |
+| **WEEK**    | **LECTURE  (T)**                                  | **LAB (T)**                                            | **LECTURE (R)**                 | **[PROJECT](project/guideline.md)**                                                     |
 | --------- | ------------------------------------------------- | ------------------------------------------------------ | ------------------------------ | --------------------------------------------------------- |
 | **Wk 01**  | [Intro to this course](lectures/lec01/1-Intro.pdf)                            | [Lab1: Project Management for GeoViz](labs/lab01/) ([*`reading`*](labs/lab01/read.md))                    | [Geovisual Analytics Basics](lectures/lec02/) ([*`reading`*](lectures/lec02/read.md))            | [Introduction](project/intro.md), [*Project Prep*](project/prep.md)  |
 | **Wk 02**  | [GeoViz Programming Basics](lectures/lec04/) | [Lab2: Interactive Map Design](labs/lab02/),  | [Interactive Maps using Leaflet](lectures/lec05/) ([*`reading`*](lectures/lec05/read.md)) | [Team-up](project/team-up.md)                                                   |
-| **Wk 03**  | [D3 I](lectures/lec06/) ([*`reading`*](lectures/lec06/read.md))                                     |       Lab2 cont’d; [*debugging*:bug:](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)                            | [Spatial data Processing](lectures/lec07/)  ([*`reading`*](lectures/lec07/read.md))       | [*Proposal*](project/proposal.md)                                                  |
-| **Wk 04**  | [D3 II](lectures/lec06) ([*`reading`*](lectures/lec08/read.md))                                            | Lab2 cont’d;                    | [D3 III](lectures/lec09/) ([D3 graphics](lectures/lec09/part01/), [C3.js](lectures/lec09/part02/) ([*`reading`*](lectures/lec09/read.md))                         | [Data Source](project/data.md); Proposal revision;                                        |
-| **Wk 05**  | [Layout Design using Bootstrap, GeoViz evaluation](lectures/lec10/)  ([*`reading`*](lectures/lec10/read.md)) |  [Lab3: Integrated Geovisualization](labs/lab05/readme.md): [coordinated view](labs/lab05/coordinated/readme.md) or [storymap](labs/lab05/storymap/readme.md)                  | [Color, Typography](lectures/lec12) ([*`reading`*](lectures/lec12/read.md))              | [Sketch](project/sketch.md)                                  |
-| **Wk 06**  | [Icons, Illustrators and Scalable Vector Graphics](lectures/lec13/)                                        |   Lab3 cont'd              | [Word cloud](lectures/lec14/readme.md)                     |  [Design Scheme (Color, font, icon, and multimedia, etc.)](project/design_scheme.md) |
+| **Wk 03**  | [D3 I](lectures/lec06/) ([*`reading`*](lectures/lec06/read.md))                                     |       Lab2 cont’d; [*Debugging*:bug:](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)                            | [Spatial Data Processing](lectures/lec07/)  ([*`reading`*](lectures/lec07/read.md))       | [*Proposal*](project/proposal.md)                                                  |
+| **Wk 04**  | [D3 II](lectures/lec06) ([*`reading`*](lectures/lec08/read.md))                                            | Lab2 cont’d                   | [D3 III](lectures/lec09/) ([D3 Graphics](lectures/lec09/part01/), [C3.js](lectures/lec09/part02/) ([*`reading`*](lectures/lec09/read.md))                         | [Data Source](project/data.md); Proposal revision;                                        |
+| **Wk 05**  | [Layout Design using Bootstrap](lectures/lec10/)  ([*`reading`*](lectures/lec10/read.md)) |  [Lab3: Integrated Geovisualization](labs/lab05/readme.md): [coordinated view](labs/lab05/coordinated/readme.md) or [storymap](labs/lab05/storymap/readme.md)                  | [Color, Typography](lectures/lec12) ([*`reading`*](lectures/lec12/read.md))              | [Sketch](project/sketch.md)                                  |
+| **Wk 06**  | [Vector Graphics](lectures/lec13/)                                        |   Lab3 cont'd              | [Word Cloud](lectures/lec14/readme.md)                     |  [Design Scheme](project/design_scheme.md) |
 | **Wk 07**  | [ Heatmap](lectures/lec15/)                        |  Lab3 cont'd                          | [GeoViz Critique](lectures/lec16/critique.pdf)                | Coding                                                    |
-| **Wk 08**  | [Geoviz of Structure-from-motion](lectures/lec17)                   | [Lab6: Point-cloud GeoViz (***Optional***)](labs/lab06/readme.md), Fieldwork for Drone Mapping                               | [Hexagonal Geoviz](lectures/lec18/readme.md) Final Project Q&A               | Coding, :bell:  [Final Project Guidelines](project/guideline.md)                                                    |
-| **Wk 09**  | [Flow maps](lectures/lec20/readme.md)                                     | Lab6: cont’d                                           | Final Project Q&A          | Fine-tuning                                               |
+| **Wk 08**  | [GeoViz Evaluation Using Google Analytics]()  | [Hexagonal Geoviz](lectures/lec18/readme.md)   |  Final Project Q&A               | Coding                                            |
+| **Wk 09**  | [Flow maps](lectures/lec20/readme.md)                                     | Final Project Q&A                                           | Final Project Q&A          | Fine-tuning                                               |
 | **Wk 10** | Course Summary                                    | Project Q&A                                            | <p style="color:red"><i><b>Final Presentation </b></i></p>            | Presentation                                              |
 
 ## GRADING CRITERIA
 
-| Item                | Desc.                                                        | % of Final Grade (GEOG 472) | % of Final Grade (GEOG 572) |
-| ------------------- | ------------------------------------------------------------ | --------------------------- | --------------------------- |
-| Participation       | Discussion, in-class work and other activities               | 5                           | 5                           |
-| Quizzes             | no more than **6** in-class or take-home quizzes covering topics from lecture and reading assignments. | 25                          | 20                          |
-| Labs                |**3** lab assignments. We understand that many of the programming techniques discussed early in the course will be relatively new. Recognizing this, the first 2 lab assignments will contain more detailed instructions. | 35                          | 30                          |
-| Presentation and Course Contribution | Each student is required to present an existing geovisualization project to the class before the lecture. In addition, each graduate student is expected to contribute to this course. It could be leading the course, updating the expirment, or working with the instructor on some related course work. This course contribution is designed to help the graduate student to work closely with the insturctor on geoviz related skills.   | 20                          | 20                          |
-| Project             | Each student is required to collaboratively develop a final project using geovisual analytics. Each project should be no more than foure members. Graduate students are encouraged to be the group leader or the project coordinator, and undergraduate students are encouraged to be a principle group member. Each group will make a presentation to demonstrate their work. This final project is mainly evaluated by both the presentation and the quality of the geovisual application. | 15                          | 25                          |
-|                     |                                                              | 100                         | 100                         |
+| Item  | Desc. | % of Final Grade (GEOG 472) | % of Final Grade (GEOG 572) |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
+| Participation                        | Discussion, in-class work and other activities   | 5                           | 5                           |
+| Quizzes                              | no more than **6** in-class or take-home quizzes covering topics from lecture and reading assignments.      | 25                         | 10                        |
+| Labs                                 | **3** lab assignments. We understand that many of the programming techniques discussed early in the course will be relatively new. Recognizing this, the first 2 lab assignments will contain more detailed instructions.         | 30                          | 20                          |
+| Presentation  | Each student is required to present an existing geovisualization project to the class before the lecture.                                                   | 10                          | 10                          |
+| Course Contribution | Each graduate student is expected to contribute to this course. It could be leading the course, updating the expirment, or working with the instructor on some related course work. This course contribution is designed to help the graduate student to work closely with the insturctor on geoviz related skills.                                                   | 0                          | 20                          |
+| Project                              | Each student is required to collaboratively develop a final project using geovisual analytics. Each project should be no more than foure members. Graduate students are encouraged to be the group leader or the project coordinator, and undergraduate students are encouraged to be a principle group member. Each group will make a presentation to demonstrate their work. This final project is mainly evaluated by both the presentation and the quality of the geovisual application. | 30                          | 35                          |
+|                                      |        |  **100**                         | **100**                         |
 
 Grades are based on **the percentage of maximum points** accumulated and assigned
 according to this table:
@@ -52,12 +52,9 @@ B+ 87 – 89%     C 72 – 77%      D- 60 – 61%
 B 83 – 86%      C- 70 – 71%     F < 60%
 
 
-> **Note:** To calculate the final grade, we use all the earned points of each item (e.g., lab, quizzes, project development, project) divided by the total points of its item, and then time the allocated percentage of this item. Take the lab for geog 572 for example, if a student got 45 points for lab 1, 50 for lab 2, 46 for lab 3, 45 for lab 4 and 50 for lab 5, the lab portion of the final grade will be (45+50+46+45+50) /250 *30% = 28.32%. Accordingly, by adding up the grades of each item, we will get the final grade of the examined student.
+> **Note:** To calculate the final grade, we use all the earned points of each item (e.g., lab, quizzes, project development, project) divided by the total points of its item, and then mutiply it by the allocated percentage of this item. Take the lab for geog 572 for example, if a student got 45 points for lab 1, 50 for lab 2, 46 for lab 3, the lab portion of the final grade will be (45+50+46) /150 *20% = 18.8%. Accordingly, by adding up the grades of each item, we will get the final grade of the examined student.
 
 
-### Project
-
-:bell:  [Final Project Guidelines](project/guideline.md)
 
 ## LECTURES
 
@@ -75,9 +72,6 @@ If you have a genuine reason(known medical condition, a pile-up of due assignmen
 ## COURSE PROJECT
 
 The final project is a major component of this course. For each group, there should be no more than three students. I recommend a group should be formed by graduate and undergraduate students. Each group will collaboratively work on a final project using geovisual analytics. The instructor will provide several topics for students to choose from. Students can also bring their own topics. Students in a group can work on a project of their common interests. Although the project topic is important, this project is more about how to apply the geovisual skills. So,students who want to team up as a group need to have a consensus that they are interested in using the similar geovisual tools and methods. Regarding the project topics, the instructor will provide a pool of topics to choose from during the first two weeks. In the rest of the term, students will concentrate on developing the project. The instructor and TA will provide necessary guidance in applying the geovisual skills for the projects. Since some of the topics are proposed by other faculty members in the university, a co-advisor/group member will join you to provide extra help.
-
-Graduate students in GEOG 572 are required to provide **additional contributions** to the course. A graduate student can choose either making a presentation related to the lecture topic or being responsible for coordinating the project. The projects are expected to have advanced interactive features, introductory pages and other additional materials. All the final projects are expected to publish online, and the codes are expected to be shared on GitHub to contribute to both the open source community and academia.
-
 
 
 ## RESOURCES
