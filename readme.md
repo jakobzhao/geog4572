@@ -30,7 +30,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 
 ## GRADING CRITERIA
 
-| Item  | Desc. | % of Final Grade (GEOG 472) | % of Final Grade (GEOG 572) |
+| Item  | Description | % of Final Grade (GEOG 472) | % of Final Grade (GEOG 572) |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
 | **Participation**                        | Discussion, in-class work and other activities   | 5                           | 5                           |
 | **Quizzes**                              | no more than **6** in-class or take-home quizzes covering topics from lecture and reading assignments.      | 25                         | 10                        |
@@ -65,7 +65,7 @@ You are expected to attend lectures twice a week. Attending lectures and labs is
 During the term, there will be three lab assignments. The main purpose of the lab assignments is to learn how to apply and reflect upon the things we cover during the lectures, and to grasp proficient hands-on skills to solve real world problems. If you are having difficulty with these assignments you should ask for assistance, whether from fellow students, or from me. Whatever you do, ask someone but please note the academic integrity policy!
 
 
-Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted.Lab assignments are expected to be completed by the due date. *A late penalty of at least 10 percentage units will be taken off each day after the due date.*
+Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted.Lab assignments are expected to be completed by the due date. ***A late penalty of at least 10 percentage units will be taken off each day after the due date.***
 
 If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
 
