@@ -1,4 +1,4 @@
-# Lab 5:  Integrated Geovisualization - Storymap or Coordinated-view
+# Lab 3:  Integrated Geovisualization - Storymap or Coordinated-view
 
 > Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
