@@ -12,7 +12,7 @@ Welcome to the lab session of **GEOG 4/572: Geovisual analytics**! In this lab, 
 
 ## 1.1 Digital Earth Lab @ Oregon State University
 
-Digital Earth Lab is a teaching facility primarily for GIS, remote sensing, cartography, numerical analysis, and scientific visualization. The classroom is a facility of the OSU College of Earth, Ocean, and Atmospheric Science and is supported by the OSU Media Services. The lab was originally funded by a NASA infrastructure grant to Sherm Bloomer (Professor & Dean, College of Science) and Nick Pisias (Professor & former associate dean of CEOAS). Digital Earth is located in 210 Wilkinson Hall and is one of the most advanced teaching facilities on the Oregon State campus. We have been operational since the beginning of Spring term, 1999.
+Digital Earth Lab is a teaching facility primarily for GIS, remote sensing, cartography, numerical analysis, and scientific visualization. The classroom is a facility of the OSU College of Earth, Ocean, and Atmospheric Science and is supported by the OSU Media Services. The lab was originally funded by a NASA infrastructure grant to Sherm Bloomer (Professor & former Dean, College of Science) and Nick Pisias (Professor & former associate dean of CEOAS). Digital Earth is located in 210 Wilkinson Hall and is one of the most advanced teaching facilities on the Oregon State campus. We have been operational since the beginning of Spring term, 1999.
 
 The lab generally opens 8am-5pm , a detailed schedule can be found at [http://dusk.geo.orst.edu/de/de_teach.html](http://dusk.geo.orst.edu/de/de_teach.html). The manager of the facility is Cory Langhoff. If you need afterhours access, contact Cory by email [langhofc@oregonstate.edu](mailto:langhofc@oregonstate.edu), or dial 7-2532 to make arrangements.
 
@@ -49,6 +49,14 @@ Using `git`, you can synchronize the course materials and also publish your own 
 
 You will apply for a GitHub account for managing and synchronizing your web mapping project. If you do not have a GitHub account yet, please sign up at [https://www.github.com](https://www.github.com). Notably, you will need to choose a username. It is worth noting that, **this username will be used as a part of the domain name of your home github ['username'.github.io](). So, make sure this username is succinct, simple and English-character only. Apparently, an easily-recognized domain name is more popular.**
 
+> **Naming Convention:** In this course, you frequently use github for project management and geovisualization. So, we carefully chose Github to undertake the above-mentioned tasks mainly because it provides a powerful function [`GitHub Page`](https://pages.github.com/) to immediately visualize a repository of web program to a web application, which can be accessed through an url in the format of `http[s]://[github-account-name].github.io/[repository-name]/[web-page].html`. Usually, a url is made up by lower-case characters, numbers, and symbols like `&`, `=`, `-`, `_`, or `?`. We rarely see upper case characters or other symbols in a url. Therefore, the following naming rules are recommended.
+
+* use a combination of lower-case characters and/or numbers to name your github account name.
+* use a combination of lower-case characters and/or numbers to name your github repository name. You can only name the main repository in the format of `[github-account-name].github.io`.
+* name the main page of your repository as `index.html`. Because all browser will automatically visit `index.html` if you have not specified a page name under the domain name (e.g. www.www.www).
+* If spacing is neccessary, dash/hyphen `-` is prioritized, or you can use underscore `_`. Please make sure no upper case character is used. For example, both `repo-name-proj` or `repo_name_proj` are fine. However, `repoNameProj` is not recommended.
+
+
 > **Note: Do you know the differences between Git and GitHub?**
 >
 > **Git** is a version control system for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for software development, but it can be used to keep track of changes in any files. Git was created by **Linus Torvalds** in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.
@@ -63,11 +71,11 @@ You will apply for a GitHub account for managing and synchronizing your web mapp
 
 In this course, I decide to store all material on GitHub instead of Canvas system. By doing so, my goal is not to create extra trouble or sharp the learn curve. Instead, hosting on github will help you save a lot of time in downloading or migrating course materials, testing lab or lecture applications. Also, more practically, a lot of companies in the geospatial industries have already used github for their project managment, such as [ESRI](https://github.com/Esri), [CartoBD](https://github.com/CartoDB), [MapBox](https://github.com/mapbox), and etc. To prepare you with the capabilities of using github, you will be familiar with an industry-level project management approach. In this lab, let us go through the procedure of downlaoding the course material as below.
 
-1\. On GitHub, each project is stored as a project repository. The repository for this course is located at [https://github.com/jakobzhao/geog371](https://github.com/jakobzhao/geog371). Please navigate to this url on a browser such as `Chrome`. As indicated by the course website url, this repository is created by me; my GitHub account name is `jakobzhao`, while the repository name is `geog371`.
+1\. On GitHub, each project is stored as a project repository. The repository for this course is located at [https://github.com/jakobzhao/geog4572](https://github.com/jakobzhao/geog4572). Please navigate to this url on a browser such as `Chrome`. As indicated by the course website url, this repository is created by me; my GitHub account name is `jakobzhao`, while the repository name is `geog4572`.
 
 2\. On the front page of this repository, please click the green button named after `Clone or download` . To download the course material, you can click the `Download ZIP` button, as a result, a compressed file of the course material will be downloaded.
 
-3\. However, **we recommend you to clone this project repository**. You can get the **git url** of this repository on the same information window. The git url is [https://github.com/jakobzhao/geog371.git](https://github.com/jakobzhao/geog371.git).
+3\. However, **we recommend you to clone this project repository**. You can get the **git url** of this repository on the same information window. The git url is [https://github.com/jakobzhao/geog4572.git](https://github.com/jakobzhao/geog4572.git).
 
 4\. Next, open your working space on your local computer through command prompt if you are on Windows or through terminal if you are on a Mac or Linux. Here, the working space is just a folder on your local computer where you store all your working materials.For me, I created a working folder to locally store my github repositories. For some of my studuents, a working folder is a place to store course materials. For example, the working space of my computer is located as `C:\Workspace`.
 
@@ -89,8 +97,8 @@ C:\Users\[your_username]>
 5\. Having the **git url**, we will need to use the command `git clone` to clone the GitHub repository to your local computer.
 
  ```powershell
-C:\Users\[you_username]\workspace\>git clone https://github.com/jakobzhao/geog371.git
-Cloning into 'geog371'...
+C:\Users\[you_username]\workspace\>git clone https://github.com/jakobzhao/geog4572.git
+Cloning into 'geog4572'...
 remote: Counting objects: 962, done.
 remote: Compressing objects: 100% (750/750), done.
 remote: Total 962 (delta 214), reused 917 (delta 177), pack-reused 0Receiving objects:  99% (953/962), 158.77 MiB | 1.60 MiB/s
@@ -102,13 +110,13 @@ Checking out files: 100% (650/650), done.
 6\. To review the files and folders in the downloaded/cloned repository, you need to `cd` into the root directory of this repository. If you are on a Mac or Linux, type `ls` to check the file list of this repository, or try `dir` if you are on a Windows. Take windows for example.
 
 ```powershell
-C:\Users\[you_username]\workspace>cd geog371
+C:\Users\[you_username]\workspace>cd geog4572
 
-C:\Users\[you_username]\workspace\geog371>dir
+C:\Users\[you_username]\workspace\geog4572>dir
  Volume in drive C has no label.
  Volume Serial Number is 3E8C-9A9E
 
- Directory of C:\Users\[you_username]\workspace\geog371
+ Directory of C:\Users\[you_username]\workspace\geog4572
 
 09/19/2017  09:12 PM    <DIR>          .
 09/19/2017  09:12 PM    <DIR>          ..
@@ -131,7 +139,7 @@ In the root directory, there are folders like labs, lectures and readings, and f
 
 7\. Next, we open the `readme.md` file using `Atom`. To do that, make sure you have installed `Atom` and also an `Atom` packge named `markdown-preview-enhanced`.
 
-Once `Atom` is opened, press `crtl+shift+a` to open the open project dialog window, naviagte to `geog371` folder from your workspace and press `select folder`. Then the `geog371` repo will be opened, and a file tree will be shown in the project list panel on the left of the atom editor.
+Once `Atom` is opened, press `crtl+shift+a` to open the open project dialog window, naviagte to `geog4572` folder from your workspace and press `select folder`. Then the `geog4572` repo will be opened, and a file tree will be shown in the project list panel on the left of the atom editor.
 
 ![](img/atom-open-project.png)
 
@@ -143,15 +151,15 @@ In the project list panel, navigate to the `readme.md` in the project tree panel
 8\. Once the course material is hosted on GitHub, it can be easily shared with a larger community. To synchronize the course material on remote GitHub repository to your local computer, you need to implement two sequential command lines `git checkout --force` and `git pull` in the root directory of the repository. Once the two commands are executed. An update notice will be shown as below.
 
 ```powershell
-C:\Users\[you_username]\workspace\geog371>git checkout --force
+C:\Users\[you_username]\workspace\geog4572>git checkout --force
 Your branch is up-to-date with 'origin/master'.
 
-C:\Users\[you_username]\workspace\geog371>git pull
+C:\Users\[you_username]\workspace\geog4572>git pull
 remote: Counting objects: 3, done.
 remote: Compressing objects: 100% (3/3), done.
 remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From https://github.com/jakobzhao/geog371
+From https://github.com/jakobzhao/geog4572
    13b2cab..baf74b1  master     -> origin/master
 Updating 13b2cab..baf74b1
 Fast-forward
@@ -356,15 +364,7 @@ Before submitting this lab, please make sure both the **GitHub repository** and 
 * One or several images (6 POINTS); and
 * A list (7 POINTS);
 
-#### Optional Task
-
-5\. Please further customize your resume to have the following features:
-
-* adding emoji icons to the resume. Here is [a cheatsheet of emoji icons](https://gist.github.com/rxaviers/7360908). (2 POINTS)
-
-* adding a table to the resume. To do that, you might need to use [Typora](https://typora.io/). (3 POINTS).
 
 > **Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted.Lab assignments are expected to be completed by the due date. ***A late penalty of at least 10 percentage units will be taken off each day after the due date.***
-
-
+> 
 > If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.

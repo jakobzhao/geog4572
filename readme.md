@@ -54,10 +54,6 @@ B+ 87 – 89%     C 72 – 77%      D- 60 – 61%
 B 83 – 86%      C- 70 – 71%     F < 60%
 
 
-
-
-
-
 ## LECTURES
 
 You are expected to attend lectures twice a week. Attending lectures and labs is important since these times provide you with access to the instructor and to other students. Keep in mind that not all lab assignment will be possible to finish in the allotted class time. Students will be expected to work on assignments outside of class during posted Lab hours. You are welcome to discuss the exercises amongst yourselves, in fact this is encouraged, but the final product you hand in must be your own work.
