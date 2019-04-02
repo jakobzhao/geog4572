@@ -12,8 +12,8 @@
 
 ### Part II
 
-[Lab on Javascript](../../labs/lab02/)
+[Lab on Javascript](part02)
 
 ### Part III
 
-[Lecture on jQuery](part02/)
+[Lecture on jQuery](part03)
