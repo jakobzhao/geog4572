@@ -1,10 +1,10 @@
 # Lab 5:  Integrated Geovisualization - Storymap or Coordinated-view
 
-> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
+> Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
 > **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
 >
-> **Assigned:** 05/08/2018 | **Due:** `05/22/2018 @11:59pm` | **Points Available** = 50
+> **Assigned:** 04/30/2019 | **Due:** `05/21/2019 @11:59pm` | **Points Available** = 50
 
 
 In this lab, you are expected to make a geovisualization, which can be either storymap or coordinated view. Before you make your own geoviz, please please go over and start with emulate the  templates below.

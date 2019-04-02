@@ -1,10 +1,10 @@
-# Lab 3:  Interactive Map Design
+# Lab 2:  Interactive Map Design
 
-> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
+> Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
-> **Instructor:** Bo Zhao | **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
+> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** T 1800 - 1950
 >
-> **Assigned:** 04/17/2018 | **Due:** `04/24/2018 @11:59pm` | **Points Available** = 50
+> **Assigned:** 04/09/2019 | **Due:** `04/30/2018 @11:59pm` | **Points Available** = 50
 >
 > **Contributors:** [Courtney Van Stolk](https://github.com/vanstolc)
 
@@ -18,11 +18,11 @@ To get started, please synchronize the course material to the working space of y
 
 In your IDE (Webstorm), open `map1.html` to prepare for editing.
 
-In this file, you will see a basic HTML page. 
+In this file, you will see a basic HTML page.
 
 Inside the `head` tag, we include both the latest version of `leaflet.css` and `leaflet.js`. After the `leaflet.css` we add a `style` tag in order to include our customized CSS styling codes.
 
-Inside the `body` tag, we put a `map` div tag for holding the map object. After that map `div` tag, we include a `script` tag to put the javascript codes.  
+Inside the `body` tag, we put a `map` div tag for holding the map object. After that map `div` tag, we include a `script` tag to put the javascript codes.
 
 ```html
 <!DOCTYPE html>
@@ -32,7 +32,7 @@ Inside the `body` tag, we put a `map` div tag for holding the map object. After 
     <title>Cell Towers in Oregon (2009)</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"/>
     <style>
-        
+
     </style>
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
 </head>
@@ -79,7 +79,7 @@ If you are using WebStorm, please press the Google chrome button on the top righ
 
 ![](img/map1.jpg)
 
-The base map (in the format of `tile layer`) is provided by CartoDB. The light color stands out the principal features. If you would like to  In addition to switch to other map providers, please refer to [Leaflet providers](http://leaflet-extras.github.io/leaflet-providers/preview/). 
+The base map (in the format of `tile layer`) is provided by CartoDB. The light color stands out the principal features. If you would like to  In addition to switch to other map providers, please refer to [Leaflet providers](http://leaflet-extras.github.io/leaflet-providers/preview/).
 
 
 **Add the Cell Towers Data**
@@ -104,7 +104,7 @@ cellTowers= L.geoJson.ajax("assets/cell_towers.geojson",{
 cellTowers.addTo(mymap);
 ```
 
-The `cellTowers` object hold the GeoJSON data, and then it adds to the `mymap` object. Save and refresh your map. You should see the points populate. That is a lot of cell towers! 
+The `cellTowers` object hold the GeoJSON data, and then it adds to the `mymap` object. Save and refresh your map. You should see the points populate. That is a lot of cell towers!
 
 Besides, to append some credit information to the Leaflet link at the right bottom corner, we will assign the `attribute` option the credit information. as shown below.
 
@@ -120,7 +120,7 @@ Then, please open `map2.html` to see how the map looks like at this stage.
 
 ## 2. Point Marker Visualization
 
-Right now, each cell towers is visualized as the default blue marker. To differentiate the cell tower ownership by color, we will introduce how to apply a custom icon using **Font Awesome** and how to make a color scheme with **Chroma.js**.  
+Right now, each cell towers is visualized as the default blue marker. To differentiate the cell tower ownership by color, we will introduce how to apply a custom icon using **Font Awesome** and how to make a color scheme with **Chroma.js**.
 
 ### 2.1 Create the color scheme for markers
 
@@ -229,7 +229,7 @@ onEachFeature: function (feature, layer) {
     layer.bindPopup(feature.properties.company);
 },
 ```
- Please open **map3.html** to see how the map looks like. We have changed icon to cell tower! 
+ Please open **map3.html** to see how the map looks like. We have changed icon to cell tower!
 
 ![](img/map3.jpg)
 
@@ -307,7 +307,7 @@ Save and refresh the html page. Open `map4.html`  to see our styled polygons!
 
 ## 4. Map Elements
 
-Now we add a legend to help the audience to read this map. To do that, the main Leaflet object is the `Control` object, or `L.control`. It allows for adding various elements to your map. 
+Now we add a legend to help the audience to read this map. To do that, the main Leaflet object is the `Control` object, or `L.control`. It allows for adding various elements to your map.
 
 ### 4.1 Add a Legend
 
@@ -399,7 +399,7 @@ The Leaflet Control object allows you to add a number of elements, including att
 L.control.scale({position: 'bottomleft'}).addTo(mymap);
 ```
 
-Save and refresh the html page. Open `map4.html`  to see the legend and scale bar. 
+Save and refresh the html page. Open `map4.html`  to see the legend and scale bar.
 
 ### 4.3 Change the fonts
 
@@ -423,11 +423,11 @@ Next, to style all text in our document with the `Titillium Web` font, modify th
 }
 ```
 
-Save and refresh your map. Or open `map5.html`.  `Titillium Web` will now be your preferred font for legend panel! 
+Save and refresh your map. Or open `map5.html`.  `Titillium Web` will now be your preferred font for legend panel!
 
 ![](img/map5.jpg)
 
-### 5. Advance Features (Optional) 
+### 5. Advance Features (Optional)
 
 ***If you have not taken GEOG 371 or 571 before, you can skip this section and directly go to the deliverable.***
 
@@ -568,7 +568,7 @@ function addLabel(layer, id) {
             label.innerText,
             false
         );
-        
+
         // If the label hasn't been added to the map already
         // add it and set the added flag to true
         if (!layer.added) {
@@ -616,7 +616,7 @@ Above all, includes two necessary libraries `proj4js` and `proj4leaflet`  after 
 Then, we need to find the appropriate projection for Oregon. To do that, go to [http://spatialreference.org/](http://spatialreference.org/), and search “Oregon” on the search input on the top right. For the list of projections, we choose "[EPSG:2991](http://spatialreference.org/ref/epsg/2991/): NAD83 / Oregon Lambert", click into the [web page for EPSG:2991](http://spatialreference.org/ref/epsg/2991/), we need to copy the `proj4` text. So, click on the [Proj4](http://spatialreference.org/ref/epsg/2991/) item, you will have the following text
 
 ```javascript
-+proj=lcc +lat_1=43 +lat_2=45.5 +lat_0=41.75 +lon_0=-120.5 +x_0=400000 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs 
++proj=lcc +lat_1=43 +lat_2=45.5 +lat_0=41.75 +lon_0=-120.5 +x_0=400000 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs
 ```
 
 So, we can define our custom CRS as `mycrs` as below.
@@ -650,7 +650,7 @@ Because the scale bar does not work properly after a reprojection, we need to co
 
 ```javascript
 // 20. comment off the base map, because the publicly shared base map usually cannot reprojected
-// L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);    
+// L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 // 21. comment off the scale bar, because in same project, scalebar does not make sense.
 // L.control.scale({position: 'bottomleft'}).addTo(mymap);
 ```
@@ -663,7 +663,7 @@ Then, the final map was made! Please open `map8.html` to see the web map in Oreg
 
 **For student who has not taken GEOG 371 or 571**
 
-After you successfully deploy this cell tower map, you are expected to build another web map of airports in United States. In the `assets` directory of this lab, you will see two geojson files: one is [`airports.geojson`](assets/airports.geojson), another is [`us-states.geojson`](assets/us-states.geojson). 
+After you successfully deploy this cell tower map, you are expected to build another web map of airports in United States. In the `assets` directory of this lab, you will see two geojson files: one is [`airports.geojson`](assets/airports.geojson), another is [`us-states.geojson`](assets/us-states.geojson).
 
 `airports.geojson` contains all the airports in United States. This data is converted from a shapefile, which was downloaded and unzipped from https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile. For each airport feature, the field `CNTL_TWR` indicates whether the airport has an air traffic control tower or not. If there is a tower, the value of `CNTL_TWR` is 'Y', otherwise 'N'. You may need to find an appropriate icon on `font awesome`. **(7 points)**
 
@@ -677,7 +677,7 @@ Regarding the grading criteria, this web map of airports needs include:
 
 **For student who has already taken GEOG 371 or 571**
 
-After you successfully deploy this cell tower map, you are expected to build another web map of airports in United States. In the `assets` directory of this lab, you will see two geojson files: one is [`airports.geojson`](assets/airports.geojson), another is [`us-states.geojson`](assets/us-states.geojson). 
+After you successfully deploy this cell tower map, you are expected to build another web map of airports in United States. In the `assets` directory of this lab, you will see two geojson files: one is [`airports.geojson`](assets/airports.geojson), another is [`us-states.geojson`](assets/us-states.geojson).
 
 `airports.geojson` contains all the airports in United States. This data is converted from a shapefile, which was downloaded and unzipped from https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile. For each airport feature, the field `CNTL_TWR` indicates whether the airport has an air traffic control tower or not. If there is a tower, the value of `CNTL_TWR` is 'Y', otherwise 'N'. You may need to find an appropriate icon on `font awesome`. **(3 points)**
 
@@ -716,7 +716,7 @@ Regarding the grading criteria, this web map of airports needs include:
 
 - write up a project description in the `readme.md` file. This file will introduce the project name, a brief introduction, the major functions(especially the function which was not covered in the lectures), libraries, data sources, credit, acknowledgement, and other necessary information. **(8 points)**
 
- For submission, you are excepted to submit the **url of the GitHub repository** to the **Canvas Dropbox** of this course. This url should be in the format of `https://www.github.com/[your_github_username]/[your_repository_name]`. Also the TA and other audience should be able to visit your interactive web map through the url `https://[your_github_username].github.ip/[your_repository_name]`. Please contact the instructor if you have any difficulty in submitting the url link. 
+ For submission, you are excepted to submit the **url of the GitHub repository** to the **Canvas Dropbox** of this course. This url should be in the format of `https://www.github.com/[your_github_username]/[your_repository_name]`. Also the TA and other audience should be able to visit your interactive web map through the url `https://[your_github_username].github.ip/[your_repository_name]`. Please contact the instructor if you have any difficulty in submitting the url link.
 
 
 > If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
