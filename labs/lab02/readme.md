@@ -691,7 +691,7 @@ Regarding the grading criteria, this web map of airports needs include:
 - some interactive elements, like a clickable marker; **( 3 points)**
 - Legend;  **(5 points)**
 
-##Submission
+## Submission
 
 - you will need to synchronize this project to a GitHub repository. Please make sure the name of your repository is **NOT** `lab03` or similiar , use a name which can describe the theme of the map you will make. Think about that, which one you prefer - showing your future employer or Ph.D. admission committee a lot of course work on github or a list of professional projects.
 
