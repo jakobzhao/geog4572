@@ -24,7 +24,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | **Wk 06**  | [Vector Graphics](lectures/lec13/)                                        |   *Lab3 cont’d*                | [Word Cloud - *Ashley*](lectures/lec14/readme.md)                     |  [Design Scheme](project/design_scheme.md) |
 | **Wk 07**  | [ Heatmap - *Michael*](lectures/lec15/)                        |  *Lab3 cont'd*                          | [GeoViz Critique](lectures/lec16/critique.pdf)                | Coding                                                    |
 | **Wk 08**  | [GeoViz Evaluation]()  | [Hexagonal Maps](lectures/lec18/readme.md)   |  Final Project Q&A               | Coding                                            |
-| **Wk 09**  | ~~*[Flow maps](lectures/lec20/readme.md)*~~ [Structor from Motion and Point Cloud Viz - *Katherine and Bryan*]() |  [Potential Fieldwork - *Katherine and Bryan*]()                                           | Final Project Q&A          | Fine-tuning                                               |
+| **Wk 09**  | ~~*[Flow maps](lectures/lec20/readme.md)*~~ [Structure from Motion and Point Cloud Viz - *Katherine and Bryan*]() |  [Potential Fieldwork - *Katherine and Bryan*]()                                           | Final Project Q&A          | Fine-tuning                                               |
 | **Wk 10** | Course Summary                                    | Project Q&A                                            | **Final Project Presentation**            | Presentation                                              |
 
 ## GRADING CRITERIA
