@@ -1,6 +1,6 @@
 # Final Project Guidelines
 
-The final project is a major component of this course. For each group, there should be no more than three students. I recommend a group should be formed by graduate and undergraduate students. Each group will collaboratively work on a final project using geovisual analytics. **Although the project topic is important, this project is more about how to apply the geovisual skills. ** So,students who want to team up as a group need to have a consensus that they are interested in using the similar geovisual tools and methods.
+The final project is a major component of this course. For each group, there should be no more than four students. I recommend a group should be formed by graduate and undergraduate students. Each group will collaboratively work on a final project using geovisual analytics. **Although the project topic is important, this project is more about how to apply the geovisual skills. ** So,students who want to team up as a group need to have a consensus that they are interested in using the similar geovisual tools and methods.
 
 
 The projects are expected to have **advanced interactive features**, **an introductory page** and **(other additional materials)**. All the final projects are expected to **publish online**, and the **codes are expected to be shared on GitHub** to contribute to both the open source community and academia.

@@ -1,19 +1,21 @@
-# Geoviz Programming Basics: HTML, CSS, Javascript and jQuery
+# Interactive Maps using Leaflet
 
-> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
+> Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
+> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** TR 1600 - 1650
 >
-> **Contributors:** [Hannah Friedrich](https://github.com/hannahfriedrich), [Brain Katz](https://github.com/briangkatz)
+> **Contributors:** [Brain Katz](https://github.com/briangkatz), [Hannah Friedrich](https://github.com/hannahfriedrich)
+
+
 
 ### Part I
 
-[Lecture on HTML, CSS](part01)
+[Basics and Geographic Features](part01/)
 
 ### Part II
 
-[Lab on Javascript](../../labs/lab02/)
+[Map Events and Mashup](part02/)
 
 ### Part III
 
-[Lecture on jQuery](part02/)
+[Map Interaction](part03/)

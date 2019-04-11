@@ -1,8 +1,8 @@
 # Word Cloud
 
-> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
+> Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
+> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** TR 1600 - 1650
 
 **Learning Objectives**
 
@@ -23,7 +23,7 @@ In principle, the font size of a word in a word cloud is determined by its incid
 
 A word cloud can be used to explore textual data.  For example, if you collected comments from hundreds of participants in a survey, a word cloud can visualize the top-frequency terms all the participants have been mentioned collectively. Also, word cloud can explore text, letter, book chapter, with the goal to quickly understand its main topics and opinions.
 
-In this lecture, we would like to explore all the lectures which Yi-fu Tuan, a well-known geographer, have wrote and publicly shared to its colleagues. There are only 7 letters in total, each of them has ~500 words. 
+In this lecture, we would like to explore all the lectures which Yi-fu Tuan, a well-known geographer, have wrote and publicly shared to its colleagues. There are only 7 letters in total, each of them has ~500 words.
 
 Here is the visualization of the word cloud we will generate.
 
@@ -91,7 +91,7 @@ So, the head of the html will include the following libraries:
 
 Having a large chuck of texts,  we will need to calculate the world frequency.
 
-firstly, we combine all the texts as a long text string. 
+firstly, we combine all the texts as a long text string.
 
 ```javacript
  var texts = "";
@@ -102,7 +102,7 @@ firstly, we combine all the texts as a long text string.
 ```
 
 And then,  we create the word frequency list. The first input variable is the text to process, and the second input variable is the lowest word frequency of a word which will be included in the
-frequency word list. 
+frequency word list.
 
 ```javascript
 frequencyList = wordFrequency(texts, 3);
@@ -147,7 +147,7 @@ function wordFrequency(txt, freq) {
     var words = ["", "that", "this", "we", "needs",...];
 
 	//disinclude the word larger than the lowerst frequency as well as not in the commonly used terms.
-	
+
     newArray.filter(function(word){
         if (!words.includes(word.text) && word.weight > freq) {
             filteredArray.push(word);
@@ -159,7 +159,7 @@ function wordFrequency(txt, freq) {
 ```
 ## Data processing and visualization
 
-As usually, to visualize the word cloud, we will need to create a html element (place holder) to hold the javacript object of  world cloud. So, in the `<body>` element, we create a `<div>` element to hold the javascript object of word cloud. 
+As usually, to visualize the word cloud, we will need to create a html element (place holder) to hold the javacript object of  world cloud. So, in the `<body>` element, we create a `<div>` element to hold the javascript object of word cloud.
 
 ```html
 <div id="cloud"></div>
@@ -224,7 +224,7 @@ As above, we create an array of two colors in an orange to red color ramp, and r
 
 Now, we have defined the color, font. they will be used in symbolize the word cloud.
 
-As a result, we can visualize the whole piece of code as a word cloud. Check [here](http://jakobzhao.github.io/geog4572/lectures/lec14/index.html) to see how it looks like. 
+As a result, we can visualize the whole piece of code as a word cloud. Check [here](http://jakobzhao.github.io/geog4572/lectures/lec14/index.html) to see how it looks like.
 
 ![](img/wc.png)
 
@@ -232,7 +232,7 @@ We also apply a coordinated view of word cloud and a bar chart showing the numbe
 
 ![](img/cv.png)
 
-In this lecture, we introduced a word cloud using the text analysis of Yi-Fu's letters as an example, I encourage you to make a word cloud with your own data, and reflect on how this visual analysis can help you to explore your data set. 
+In this lecture, we introduced a word cloud using the text analysis of Yi-Fu's letters as an example, I encourage you to make a word cloud with your own data, and reflect on how this visual analysis can help you to explore your data set.
 
 ## References
 

@@ -1,8 +1,8 @@
 # Icons, Illustrator and Scalable Vector Graphics (SVG)
 
-> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
+> Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
+> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** TR 1600 - 1650
 
 **Learning Objectives**
 
@@ -268,4 +268,3 @@ To properly show the favicon, I added one line in the `head` tag of the `index.h
 [3] https://fontawesome.com/how-to-use/web-fonts-with-css
 
 [4] https://www.lifewire.com/use-image-trace-in-adobe-illustrator-cc-2017-4125254
-

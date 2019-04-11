@@ -1,16 +1,16 @@
 # Using Google Cloud Platform to Mashup Google Earth Engine Layers to Web Mapping Environment
 
-> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
+> Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
+> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** TR 1600 - 1650
 >
 > **Contributors:** [Anna Talucci](https://github.com/taluccia), [Hannah Friedrich](https://github.com/hannahfriedrich)
 
 **Objectives**:
 
 - Integrate Remote Sensing applications from Google Earth Engine (GEE)
-- Use Google Cloud Platform to save tiles from GEE outputs 
-- Use QGIS to take Tiles from bucket in Google Cloud Platform and generate QTiles 
+- Use Google Cloud Platform to save tiles from GEE outputs
+- Use QGIS to take Tiles from bucket in Google Cloud Platform and generate QTiles
 - Use Leaflet to integrate QTiles in html
 
 
@@ -30,7 +30,7 @@ This should be the same account that you are using with GEE.
 
 If you have not redeemed your education grant, click **[here](https://google.secure.force.com/GCPEDU/?cid=d0GOdFV%2BTF1xdIizooBa1z8ehdyk91t3C51Dsuzk3BOlTJYPq0BfaE4gxD7ysKNK/)**. Use your OSU email to redeem the coupon. Make sure you are logged into the Cloud Platform with the same log-in as GEE. Then follow the instructions  **[here](https://console.cloud.google.com/education)** to redeem the coupon.
 
-## 2 Google Earth Engine 
+## 2 Google Earth Engine
 
 GEE is *'a planetary-scale platform for Earth science data and analysis'*. Cloud based platform to query and process remotely sensed imagery such as Landsat, MODIS, Sentinel. Explore **[here](https://earthengine.google.com/)**.
 
@@ -44,7 +44,7 @@ GEE operates with javascript.
 
 ### 2.2 Resources and Tools
 
-GEE offers a number of resources and tools including code for certain tasks. Check out *'Get Started with Earth Engine'*,  **[here](https://developers.google.com/earth-engine/getstarted)**. 
+GEE offers a number of resources and tools including code for certain tasks. Check out *'Get Started with Earth Engine'*,  **[here](https://developers.google.com/earth-engine/getstarted)**.
 
 ## 3 Google Earth Engine to Cloud
 
@@ -54,7 +54,7 @@ Let's look at an example fro GEE.  We will use GEE code from an API example **[h
 
 https://code.earthengine.google.com/e6ad8ac8a45a2e25c2cf976e0f372cc0
 
-Once we are in the GEE code interface, we will run the code by clicking the run button. 
+Once we are in the GEE code interface, we will run the code by clicking the run button.
 
 On the right hand side of the GEE interface there are 3 tabs, Inspector, Console, Tasks. The **Tasks** tab turns orange when we run the code to tell us there is something there that needs our attention.  Click on the **Tasks** tab. Our 'mapToCloudExample' appears here. In order to to actually send the output to the cloud we need to click the run button next to 'mapToCloudExample'. This may take a few minutes.
 
@@ -90,7 +90,7 @@ Cartographers loved the tiled maps, because now they could invest all the tools 
 
 ### 4.1 Things to think about
 
-Tiles are not layers in terms of how we typically think about raster and vector layers when working in a GIS platform. Tiles need a base map to reference themselves. 
+Tiles are not layers in terms of how we typically think about raster and vector layers when working in a GIS platform. Tiles need a base map to reference themselves.
 
 
 
@@ -98,7 +98,7 @@ Tiles are not layers in terms of how we typically think about raster and vector 
 
 QTiles is a plugin for QGIS - it only works with QGIS versions 2.0-2.99 - recommend version 2.18.19 (most stable). QGIS is an open source platform and is freely available. QGIS can be down loaded **[here](https://qgis.org/en/site/forusers/download.html#)**.
 
-Open QGIS. 
+Open QGIS.
 
 ### 5.1 Install Plugins
 
@@ -116,9 +116,9 @@ We now want to add our bucket from Google Cloud to the Tile Server. To do this o
 
 In order to enter the tile layer we will navigate back to our bucket in Google cloud. Open the bucket. We need to open the index.html file, which is the last item in the bucket. Click index.html.
 
-A new tab opens with a map and the tiles generated from GEE. Click on the settings in the upper right (3 vertical dots). Click **'More tools'**. Then click **'Developer tools'**. 
+A new tab opens with a map and the tiles generated from GEE. Click on the settings in the upper right (3 vertical dots). Click **'More tools'**. Then click **'Developer tools'**.
 
-We need to open the source code. To do this make sure the source tab is selected and open the index.html so we can look at the code. 
+We need to open the source code. To do this make sure the source tab is selected and open the index.html so we can look at the code.
 
 We want to copy and paste the URL from the var tilePrefix (See Images Below).
 
@@ -132,23 +132,23 @@ We will need to edit the URL slightly so it looks like this https://storage.goog
 
 ![Tile Server URL](img/tileserver_newconnection_URL.JPG)
 
-Then Click OK. The tile server then appears in the Browser Window. 
+Then Click OK. The tile server then appears in the Browser Window.
 
 Add your tiles by right clicking the tile server, in the example here we would right click the **'eetest'**, and select add layer to add it to our map.
 
 ### 5.3 View Tiles
 
-Add a base map and zoom on the base map to you tile location. The **'zoom to layer'** function will not work on the tiles. Make sure you turn the base map off once you have located your tiles.  
+Add a base map and zoom on the base map to you tile location. The **'zoom to layer'** function will not work on the tiles. Make sure you turn the base map off once you have located your tiles.
 
 ### 5.4 Canvas Extent
 
-Zoom into your tiles so that they fill most of the canvas space, see image below. The canvas is the extent we will use to generate QTiles. 
+Zoom into your tiles so that they fill most of the canvas space, see image below. The canvas is the extent we will use to generate QTiles.
 
 ![good_zoom URL](img/good_zoom.JPG)
 
 ### 5.5 Tile Server to QTiles
 
-Now we need to take out tiles from Google Cloud and generate QTiles. 
+Now we need to take out tiles from Google Cloud and generate QTiles.
 
 The raster you are working with needs to occupies the extent of the canvas (area of visualization in Qgis). Zoom in or out as needed.
 
@@ -162,7 +162,7 @@ Click the Plugins drop down, hover over QTiles to open the menu and select QTile
 
 
 
-The file directory will contain your QTiles and an HTML document that can be integrated with leaflet. 
+The file directory will contain your QTiles and an HTML document that can be integrated with leaflet.
 
 Additional help with QTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**.
 
@@ -170,7 +170,7 @@ Additional help with QTiles can be found **[here](http://felix.rohrba.ch/en/2017
 
 Navigate to the output file after QTiles finishes running. In this folder will be your sub folders of tiles arranged by zoom level and an html document, in this example it is called eetest.html.
 
-Open the html and look at the source code. Copy the L.tilelayer variable that corresponds to your tile. 
+Open the html and look at the source code. Copy the L.tilelayer variable that corresponds to your tile.
 
 ![L.tilelayer](img/L.tilelayer.JPG)
 
@@ -180,7 +180,7 @@ This can be inserted into a new index.html with base map code to visualize.
 
 Starting with a basic leaflet html add in your tile layer that you copied in the above step. Make sure it is added to your map variable.
 
-For web mapping and geovisualization applications, the QTiles folder generated above in QGIS should become your assets folder on github. In the code you will need to adjust absolute pathnames to relative path names. 
+For web mapping and geovisualization applications, the QTiles folder generated above in QGIS should become your assets folder on github. In the code you will need to adjust absolute pathnames to relative path names.
 
 ```javascript
 var mymap = L.map('map', {
@@ -206,4 +206,3 @@ var mytile =L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
 
 
 Here is what the final output looks like **[here](http://jakobzhao.github.io/geog4572/lectures/lec11/index.html)**
-

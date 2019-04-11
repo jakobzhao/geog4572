@@ -1,4 +1,4 @@
-# Geoviz Programming Basics I: HTML and CSS
+# Basics and Geographic Features
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
@@ -6,497 +6,211 @@
 
 **Learning Objectives**
 
-- Understand how to organize files on a server.
-- Get to know the web development environment (IDE);
-- Understand the basic command or terminal operations to navigate and locate a directory;
-- Set up a testing/debugging web server; and
-- Walk through the basics of HTML and CSS;
+- Get to know the most popular web map client library/framework - Leaflet;
+- Use Leaflet to create a map, geographic feature;
+- Link external javascript libs to a web map application; and
+- Add geospatial data to a leaflet based map.
 
-Today, let us switch gear to some heavy lifting of Web Programming. This lecture focuses on some of the fundamentals and concepts behind a web page, starting from web hosting, IDE (Integrated Development Environment), and then moving through the basic building blocks of HTML and styling with CSS. JavaScript will be introduced later.
+In this lecture, we move forward to make a web map from scratch! To do that, this lecture starts with introducing Leaflet - a Javascript library used to create interactive, web-based, mobile-friendly maps. With Leaflet, you can create a simple map in as little as three lines of code, or you can build complex, dynamic, and complex maps that contain hundreds of lines. This lecture assumes you have worked through the previous lectures and lab exercises, and have a working knowledge of HTML, CSS and JavaScript. Here is the look of the web map we will build.
+
+![](img/polygon.jpg)
+
 
 ## 1. Introduction
 
-A web page is a document suitable for display and distribution over the internet. At the most basic level, a web page is a text document containing code (often HyperText Markup Language, shortened to `HTML`), that is located at a node on the internet. This node is called a 'server', as it serves the file to the world wide web, allowing your computer, the 'client', to access it.
+Leaflet is an open-source JavaScript library for interactive web maps. It's lightweight, simple, and flexible, and is probably the most popular open-source mapping library at the moment. Leaflet is developed by Vladimir Agafonkin (currently of MapBox) and other contributors.
 
-When you open a web browser, such as `Chrome`, `Firefox` or `Internet Explorer`, and input a URL, something like www.oregonstate.edu into the address bar, the web browser navigates to the node you have specified and requests this document, which it reads, interprets, and displays on your screen depending on the interpretation of the document. This means a couple of things:
+What Leaflet does web maps with tiled base layers, panning and zooming, and feature layers that you supply. It handles various basic tasks like converting data to map layers and mouse interactions, and it's easy to extend with plugins. It will also work well across most types of devices. 
 
-    - You need to have a location (url) on the internet you can place your documents.
-    - You have to create and place the right kinds of documents in this location.
+What Leaflet does not do: Provide any data for you! Leaflet is a framework for showing and interacting with map data, but it's up to you to provide that data, including a basemap. Leaflet is also not GIS, although it can be combined with tools like **ArcGIS**, **MapBox**, or **CartoDB** for GIS-like capabilities.
+- *If you need total freedom of form, interaction, transitions, and map projections, consider working with something like D3.*
+- *If you need a 3D virtual globe, cesium is alternative.*
 
-## 2. Organize your Directory
 
-The next important topic to discuss up front is the file structure. There are often a lot of files located on a server. When you navigate to a website, how does the browser know which file to initially read?
+The latest stable Leaflet release is hosted on a CDN — to start using it straight away, place this in the head of your HTML code:
 
-Standard protocol is that a file named **index** is what will be provided by default when a browser finds your site. This index file must be in the base level of your web folder, and is what users will see when they navigate to your web site. All code for today will be contained in a file we will create and save in our webspace as `index.html`
-
-> **Note:** the HTML file extension, indicating the file is written in HTML). The file structure found in my directory looks like the following.
-
-```
- Geog4572
-   lectures
-     lec04
-       part01
-          │  index.html
-          ├─css
-          ├─img
-          └─js
+```html
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
 ```
 
-You can also have supplemental files, such as images, style files, scripts, and other items in your root directory alongside the `index.html` standing alone or in subdirectories. You can see in the above-listed file structure, I have `img` for holding images, `css` for holding style files, `js` for scripts, and usually another folder named `assets` or `data` for holding miscellaneous items.
+## 2. Project Preparation
 
-***How is everything related?***
 
-<img src="img/environment.jpg" alt="Drawing" style="text-align: center; width: 100%;"/>
+### 2.1 Build a project repository
 
-To host a web application, you need to move the codes and the supplemental files to the server. For most of the lecture and lab demos, you can launch a web server on your computer by python SimpleHTTPServer or a server integrated in Webstorm, also you can host your web map through github page.
+The first step is to create a project working directory which holds all the files. To do that, we will create a project repository on github, and then sync the empty repository to your **working space** on local computer. If you have any question on how to conduct the above-mentioned operations, please refer to lab 1.
 
-> **Note:** If you have your own dedicated server, you may need to dragged and saved the files in a specific folder (e.g., a folder named "www") which will be the hosting place of the server. If the server is a remote computer or in the cloud (e.g., the google cloud platform), you can use an `FTP` ot `SSH` connected to your hosting space, or drag and drop into your www folder.
+### 2.2 Use an IDE (Webstorm) or command line to start up a server
 
-## 3. Use an IDE
-
-While you can get away with using a basic text editor to create HTML files, there are Integrated Development Environment (IDE) designed to make your life easier by color coding code snips and autocompleting lines. Download and install one of the following text editing software if you don’t already have one. In this lecture, you will mainly use `Webstorm` to edit HTML, CSS, and Javascript files. We also have `Webstorm` installed in the Digital Earth Lab, and you can install an educational version of `Webstorm` on your own machine, no matter you are a Mac or Windows users.
-
-- `Webstorm` - (Windows, Mac, or Linux) One of cross-platform IDEs primarily for web, JavaScript and TypeScript development. Many of JetBrain's other IDEs include the feature set of WebStorm via plugins.
-- `Sublime Text` – (Windows, Mac, or Linux) One of the most popular and well-loved text editors around. Free to download and use, but will occasionally show a pop-up window if you don’t purchase it. This is what I’ll be using during the workshop
-- `Brackets` – (Windows, Mac, or Linux) A newer, free open source code editor.
-- `Notepad++` – A solid and reliable text editor for Windows. Free.
-- `TextWrangler` – A free text editor for Mac only.
-- `DreamWeaver` – Adobe’s software for making basic websites. This is not free generally, but many students already have it installed. This software can sometimes make simple tasks far more complicated than necessary. Not recommended, but if you already have it and you don’t want two install anything else, I will grudgingly acknowledge that it will work just fine for the workshop.
-
-Enough front matter, let's get going on our web page!
-
-## 4. Start up a Web Server
-
-For testing and debugging purpose, we need our computer to act like a WebServer, allowing it to access files online. There are many tools for doing this, and one is built right into python. If you use a Mac or Linux, please open `Terminal`, if on Windows, open command prompt. In the main working interface, use the command `cd` to **change directory** to the folder in which your website files are located. Once there, type the following to start a simple Python server.
+To set up a local server, you can try Webstorm or python SimpleHTTPServer, such as:
 
 ```bash
-$ python -m SimpleHTTPServer 8000
+$ python -m SimpleHTTPServer
 ```
 
-> **Note:** If the above command line does not work, probably your computer has not installed python yet. Please follow a tutorial at [here](../../resources/SimpleHTTPServer.md) to install a SimpleHTTPServer.
+Now open a browser and access your site at: http://localhost:8000
 
-Now open a browser and access your site at: **http://localhost:8000**
+> **Note:** Compared with python SimpleHTTPServer, we recommend to use webstorm.
 
-8000 is the default port of SimpleHTTPServer. Other than 8000, you can also try 80 that is the default port of Http service. for example:
+## 3. Create a Webpage and Simple Map
 
-```bash
-$ python -m SimpleHTTPServer 80
-```
 
-Now you can access your site **http://localhost** without specifying a port.
+### 3.1 Setup a web page for our map
 
-Other than setting up a Server environment through python SimpleHTTPServer, you can also use Webstorm (what we suggested for this course). In Webstorm's main window, click one of the browser icons at the top right, a server environment will automatically launch, and a browser showing the web page will be opened up.
+Open up your Webstorm, and then we set up an empty **index.html** template for our web page that will contain our web map and web map elements. The components will be the same as always, note the head, title, and body.
 
-![](img/webstorm.jpg)
-
-> Click the chrome icon on the top right of Webstorm interface to open the "index.html" in Chrome, a server environment will automatically set up.
-
-## 5. HTML: The Core Concepts
-
-In the next steps, we will create a blank document, fill it with HTML code, save it as index.html, and view our results in a browser.
-
-In your IDE, open and create a new blank document. Signify that the document will be written in HTML by adding the following line at the top of your file.
+Enter the following code into your blank HTML page.
 
 ```html
 <!DOCTYPE html>
-```
-
-This is called a **tag**. HTML tags are keywords surrounded by angle brackets. This tag states for the browser that the rest of your file will be written in HTML. The rest of our document will follow a very simple rule, no matter how complex the code. 
-
-When you write a tag (aka `start tag`), you will need a second tag that declares the end of that part of the document (aka `end tag`). Content goes between the start and end tags. A start tag looks like and an end tag has a slash in front of it . Conceptually, you will write the following.
-
-```xml
-<tagname>Content...</tagname>
-```
-
-Tags without content are called **void elements**.
-
-```xml
-<tagname />
-```
-
-Comments look like the following. They are used to write human-readable notes in your code, but are ignored by the browser.
-
-```xml
-<!-- ... -->
-```
-
-For our page, since it is in HTML, we have to put everything in an tag. Do this with an `html start tag`. Copy and paste the following into your document, and we will walk through this.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Hello World</title>
-    </head>
-    <body>
-    <!-- This is a comment -->
-        <h1>Hello World</h1>
-        <div id="main">
-        ...
-        </div>
-    </body>
-</html>
-```
-
-### The DOM: Document Object Model
-
-The [Document Object Model](https://www.w3.org/DOM/) represents the hierarchy of elements in our page. This is modeled using something commonly called the **DOM Tree**, and it consists of our HTML elements.
-
-*The DOM Tree*
-
-![](img/dom.jpg)
-
-### Common Tags
-
-**Head** and **Body** elements are large containers.
-
-```xml
-<!-- HEAD element containing meta information, style, and links -->
+<html>
 <head>
-	...
+    <title>Leaflet Map</title>
 </head>
-<!-- BODY element containing all document content elements -->
 <body>
-	...
+    <!-- Our web map and content will go here -->
 </body>
-```
-
-**Links, Images** and **Paragraphs**
-
-```xml
-<!-- LINKS. A is used to define a hyperlink -->
-<a href="http://www.somewebsite.aaa">...</a>
-
-<!-- IMAGE tag to define a link to an image in your document -->
-<img />
-
-<!-- PARAGRAPH tag for large blocks of body text -->
-<p>...</p>
-<!-- SPAN is for groups of inline elements -->
-<span>...</span>
-```
-
-**Lists**
-```xml
-<!-- UL defines an unordered list -->
-<ul>
-    <li>...</li> <!-- line in list -->
-</ul>
-<!-- OL defines an ordered list -->
-<ol>
-    <li>...</li> <!-- line in list -->
-</ol>
-```
-
-### DIV Tags
-
-Perhaps the most common tag, the `div` tag defines a division or section of an HTML page. One page can contain many `div` elements, and one `div` element can contain many nested elements. The div tag is an element of HTML that allows you to group content into containers (or divisions) you can organize and style on your web page, and divs play nicely with CSS (Cascading Style Sheets). CSS is a style sheet language used for describing the look and formatting of an HTML page. We will introduce it in the next step.
-
-```xml
-<div id="main">
-	<!-- Content goes here -->
-	...
-</div>
-```
-
-### Tag Attributes, Classes, and IDs
-
-Tags are specified and defined using attributes, classes, and IDs. These attributes, classes, and IDs allow you to identify specific elements, modify individual elements and groups of elements, and set the characteristics of the elements.
-
-- `Attributes` define properties of the elements. Elements can have multiple attributes. For example, if the element is a link, where does the link take you.
-
-- `Classes` identify a group of elements that operate similarly or work in the same fashion. For example, a button.
-
-- `IDs` identify unique features and allow for and operations to be performed on that unique feature. In each document, each ID should be unique.
-
-`For Example:`
-
-```xml
-<a href="http://www.github.com" class="button" id="unique">...</a>
-```
-
-*or*
-
-```xml
-<div style="background-color:#0000FF" class="header" id="main">...</div>
-```
-
-### Modify your Document
-
-Let's get into the document a bit.
-
-**Add Text**
-
-Our HTML document is looking bare, we need to add content. We can start by modifying the heading that welcomes visitors to our site and add a couple paragraph elements.
-
-Modify the HTML code on the page to include the following. Add some paragraph `p` elements within the `div` element of your page.
-
-```xml
-<h1 id="headtext">Body Heading</h1>
-<p id="foo">This is my first paragraph.</p>
-<p id="bar">This is my second paragraph.</p>
-```
-
-The h1 tag signifies a heading, this is a bolded style of text that vary in size ranging from h1 to h6. The p tag signifies a paragraph that can contain large blocks of text.
-
-**Add a Link**
-
-Adding a link to your site is simple. To add a link, we use the a tag. The a tag defines a hyperlink that can be used to link from one page to another. HTML tags can have attributes. Attributes define and provide additional information about an element. To create a hyperlink, we use the href attribute of the a tag. The following line contains a link to oregon state university's home page, and illustrates how you would set up a link. You can place links separate from your paragraphs, or place them within. Write the following line of code at the end your second paragraph, just before the p end tag.
-
-```html
-<a href="http://www.oregonstate.edu">Take me to OSU.</a>
-```
-
-You have many options for links. For example, if you want a link to open in a new page, you can use **target="_blank"** as a property of the A tag.
-
-> *Can you add a link that takes you to Google Maps?*
-
-### Add an Image
-
-Adding an image is just as easy as adding a hyperlink, although a bit different. An image is not stored on your webpage, but it sits on your server, just like your other files. When you display an image in an html file, you are linking to the image. The HTML tells the browser to locate and display it. Therefore, we will follow a multiple step process.
-
-- Locate the folder named `img` that you copied to your web directory. You will find one image here named **osu.jpg**. In this folder, you'll store all subsequent images you want to use in your page.
-- Use the `img` tag to link to that image in your `index.html`
-
-Now we can add the image to our index.html. The following line of code uses the img tag, and then links to our image. We will use the `src` attribute to name the source of the image. The image is coming from our own server, we don't need to go externally to get it, so we can put the name of the folder and image as our image address.
-
-Copy and paste this following line in between the `body` tags in your `index.html`, after your last paragraph.
-
-> *Can you add another image, perhaps one showing Wilkinson Hall?*
-
-If you want to add an image from another page, you can simply include the URL at which the image is located. The following links to an image on Wikimedia.
-
-```xml
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Oregon_State_Athletics_logo.svg/400px-Oregon_State_Athletics_logo.svg.jpg"/>
-```
-
-### Our Code
-
-At present, your document will look something like the following.
-
-```xml
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<title>Hello World</title>
-	</head>
-	<body>
-		<!-- This is a comment -->
-		<h1>Hello World</h1>
-		<div id="main">
-			<p id="foo">This is my first paragraph.</p>
-			<p id="bar">This is my second paragraph. <a href="http://www.oregonstate.edu">Take me to OSU</a>.</p>
-			<img src="img/osu.jpg"/>
-		</div>
-	</body>
 </html>
 ```
+From here, we will do the following four things to add a map to our page:
 
-Our page, with this code, contains a bit more content now.
+- Reference the Leaflet CSS and JavaScript files.
+- Add a `div` element to our page that will hold the map.
+- Create a map object in Javascript that will interact with the map `div` element
+- Add the tiled OpenStreetMap basemap to our map object using tileLayer
 
-<img src="img/simple_page.jpg" alt="page" />
+### 3.2 Reference the leaflet CSS and JavaScript files
 
-> *What does our DOM Tree look like at this point?*
+We need to load Leaflet into our web page before we can start using the library. There are two options for doing this, we can download the library files from the Leaflet download site, or we can use the hosted version. We are not planning on changing the JavaScript or the CSS, so it is easiest to use the hosted libraries. Reference these in your HTML by adding the following lines of code.
 
-## 6. CSS: The Core Concepts
-
-### Cascading Style Sheets
-
-Cascading Style Sheets (CSS) is a styling language used for describing the look and formatting of an HTML page. It uses the DOM and styles "cascade" from higher elements in the DOM tree to elements further down.
-
-CSS is a very useful styling system, and allows you to style items on your page according to a number of methods based on the element it falls within (i.e., div, body, p, etc.), the id of the element, or the class of the element.
-
-### Why Cascading?
-
-The language 'cascades' in the effect that if you style an element, any nested elements will get the same styling unless you specify otherwise. For example, if you set the font for your body element, a p (paragraph) will also be set to the same font, unless you specify specifically in the CSS that you want that `p` to have another font. This is a useful method in that it minimizes the code you need to write and forces you to be careful with your page structure.
-
-### Link a CSS File to your Site
-
-CSS can be added to style your website in one of a few ways. You can apply CSS to individual elements, embed it within your HTML document, or create a separate CSS file and link it to your HTML document. In your file, add the following link in `head` section of your document.
+Within the head section, after title, copy and paste the following. This adds the Leaflet CSS file to our web page and includes Leaflet styles.
 
 ```html
-<link href="css/main.css" rel="stylesheet" />
+<!-- External Stylesheets -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
 ```
 
->  **Note:** `rel` is short for relation.
+Link to the JavaScript library at the bottom of the body section of our site, putting it at the bottom allows our page to load faster. Copy and paste the following. This adds the Leaflet JS file to our web page and is the Leaflet Javascript library.
 
-Save your document, and refresh your page. Everything should center. This is because we applied CSS code to our document by linking to our style file.
-
-In the materials for this lecture, locate the file 'main.css'. This is our stylesheet. We can name it anything really, as long as it has the CSS file type. Open this in your text editor to view the contents. It is a very simple bit of CSS that tells everything in the `body` element to center in the page.
-
-```css
-body {
-	text-align: center;
-}
+```html
+<!-- Add the Leaflet JavaScript library -->
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
 ```
 
-All content in the `body` tag are now in the center of the page.
+We can now begin working with the Leaflet library.
 
-### Basic Syntax
+### 3.3  Add a map `div`
 
-Basic CSS syntax looks like the following.
+Add a div to the body that will hold the map. This is just like any other div element we might use. We will set the style right in the div using the style attribute, and not the CSS file, otherwise all map divs we create will have the same styling.
 
-```css
-[selector] {
-	[property]: [value];
-}
+```html
+<div id="map" style="width: 900px; height: 600px"></div>
 ```
 
-`Selectors` are page elements, and can be tags, ids, titles, classes, etc. For example, if we want to style everything that falls in the `body` tag, we use the `body` selector as above.
+### 3.4 Use Javascript to create the map object
 
-Selectors can be specified
+Now we can start coding the map using JavaScript. The Leaflet library is referenced by using `L`. followed by the class. The first step is to create the map object using the map id. Set the variable map to be our Leaflet map object. More reading on L.map can be found in the extensive Leaflet documentation. Set the center of the map to be at the Memorial Union Quad  `(44.56576, -123.27888)` and zoom level to `14`. Enter the following in our document at the end of the body section.
 
-**By element:**
-
-```css
-p {
-	font-size: 12;
-}
+```html
+<script>
+    // Create variable to hold map element, give initial settings to map
+    var map = L.map('map',{ center: [44.56576, -123.27888], zoom: 16});
+</script>
 ```
 
-**By class:**
+> **Note:**
+> - the `script` tags, this is where we will will put all of our JavaScript for the map.
+> - Where did I get my Lat/Lng values? **A quick tip is that you can find it on [Google Maps](http://maps.google.com)**, right clicking on a location on the map, and selecting 'What's here?'. This will provide latitude and longitude values for that location you can then copy.
 
-```css
-.main {
-	font-size: 12;
-}
+### 3.5 Add a tiled basemap with tileLayer class
+
+The last step in getting a basic map running is add a layer. We are going to use what is called a tile layer, which is a fundamental technology behind many web maps. There are many tile layers you can add to your maps. The one we are going to use today is from OpenStreetMap. To add a tile layer to the map, we use the L.tileLayer class. Place the following code within your script tags.
+
+```html
+// Add OpenStreetMap tile layer to map element
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
 ```
 
-**By ID:**
+> Note the attribution. Here we can provide reference for the source of the base map, and any other attribution for map elements we want to provide. It will appear in the lower right corner of our map by default, but you can change this. Read more about attribution here.
 
-```css
-#main {
-	font-size: 12;
-}
+**Base Map**
+
+Save your HTML document and open your web browser to your localhost server (http://localhost:8000). You will see the map we just created! Or you can open this map through the internal web server of Webstorm. After you synchronize your data to Github, you can even see your web map on the github page website.
+
+![](img/basemap.jpg)
+
+**Other base map sources**
+
+There are a number of resources that have tile layers you can use with Leaflet JS. An excellent resource for examining and previewing tile layers is called Leaflet Provider. Scan [through available tile layers and preview them](http://leaflet-extras.github.io/leaflet-providers/preview/), and try replacing the L.tileLayer with one of the other tile layers in your code.
+
+![](img/layer_preview.jpg)
+
+> **Loading a WMS** You can also add Web Map Services to your Leaflet maps using [L.tileLayer.wms](http://leafletjs.com/reference.html#tilelayer-wms). Web Map Service is a major topic of this course. We will learn how to create web map services in the following classes of this term.
+
+## 4. Add Individual data to web map
+
+To introduce adding data, we will learn how to add markers, polylines, and polygons to our map. There are multiple methods for adding data, including methods in which you can large datasets. Before getting ahead of ourselves though, this section will show how you can simple points, polylines, and polygons to your map.
+
+### 4.1 Adding Points (aka Markers)
+
+To add a point to your map, we use the `L.marker` class. To add a point, we specify a latitude and longitude, then add the marker to our map. Enter the following line of code in the script block in the body section of the document, following the tile layer.
+
+```js
+// Create point feature for Wilkinson Hall
+var myDataPoint = L.marker([44.56822, -123.28034]).addTo(map);
 ```
 
-- A selector with no pre-characters signifies a tagged element in our HTML.
-- A # before a selector indicates that the selector is an id.
-- A . before a selector indicates that the selector is a class.
+![](img/marker.jpg)
 
-A W3School CSS Selector test can be found at [here](https://www.w3schools.com/cssref/trysel.asp).
+### 4.2 Adding Polylines
 
-### Inheritance and Order of Operations
+To add a polyline (a line that can have multiple segments) to your map, we use the `L.polyline` class. Just like with the marker, we use latitude and longitude to add the line vertices. An important difference however, is that we need to add a color and weight, if we don't add a weight you won't be able to see the line. You can set style options in brackets after the array of line vertices. 
 
-CSS follows the DOM model, with styles applied to elements higher in the DOM applied to those that are descendents. If selectors are defined in multiple locations in your CSS, which one gets precedence?
+>  **NOTE:** the polyline is formed by an array, and draws in that order. Enter the following into our script.
 
-![](img/dom.jpg)
-
-There are two general rules.
-
-- CSS defined last in your document will supersede CSS set on a selector earlier in your document.
-- The more specific selector will override the less specific selector. For example, a style set on the body selector will be overridden by a style set on an element within the body, such as one by ID.
-
-
-### Properties and Values
-
-There are hundreds of properties you can set using CSS. Some of these include font, color, location on page, opacity, size, etc. An extensive list can be found in CSS reference documents. Two prominent references are by W3Schools and Mozilla, check them out for further reading.
-
-[Mozilla CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-[W3Schools CSS Reference](http://www.w3schools.com/cssref/default.asp)
-
-
-**Style Font and Type Size**
-
-To change the font for all of our document, we change it on the highest level we can by signifying we want to style everything within the html tag. This can be accomplished by adding the following selector and properties to the stylesheet.
-
-```css
-html {
-  font-family: Georgia, Times, serif;
-  font-size: 24px;
-  line-height: 32px;
-}
+```js
+// Create line feature for the Route from Wilkinson Hall to Strand Ag Hall, style and add to map
+var myDataLine = L.polyline([[44.5656915, -123.2775289], [44.5656992, -123.2778923], [44.5662266, -123.2778722], [44.5682559, -123.2778293], [44.5682445, -123.2800823]],
+    {color: 'red', weight: 5}).addTo(map);
 ```
+![](img/polyline.jpg)
 
-Font family prioritizes a list of font names for the selected element. Line height specifies the minimal height of line boxes within the element.
 
-**Change Background Color**
+### 4.3 Adding Polygons
 
-Adjust the color of an element using background color.
+Adding polygons is very similar, we use the L.polygon class. Specify a latitude and longitude for each node, then add to our map. Set the style just the same. Enter the following in our script.
 
-```css
-p {
-  background-color: #dddddd;
-}
+```js
+// Create area feature for Strand Ag Hall, style and add to map
+var myArea = L.polygon([[44.5651985, -123.2769978],[44.566131, -123.2769978], [44.5661339, -123.2775027], [44.5651985, -123.2775182], [44.5651985, -123.2769978],], 
+    {color: 'orange', weight: 5}).addTo(map);
 ```
+Save your document and refresh your browser.
 
-Colors can specified using hex, RGB, or a set of [preset supported color names](http://www.w3schools.com/colors/colors_names.asp).
+![](img/polygon.jpg)
 
-**Pseudo-Classes and Changing Link Color**
+### 4.4 Other Simple Vector Data Types
 
-Change link colors using the following.
+There are a number of other simple data types and groups you can add, read more about them in the Leaflet documentation. These include:
 
-```css
-a {
-  color: orange;
-}
-```
+- [Path](http://leafletjs.com/reference.html#path)
+- [MultiPolyline](http://leafletjs.com/reference.html#multipolyline)
+- [MultiPolygon](http://leafletjs.com/reference.html#multipolygon)
+- [Rectangle](http://leafletjs.com/reference.html#rectangle)
+- [Circle](http://leafletjs.com/reference.html#circle)
+- [CircleMarker](http://leafletjs.com/reference.html#circlemarker)
 
-In CSS, elements have what are called [Pseudo-Classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes). Pseudo-classes are keywords added to selectors that specifies a special state of the element to be selected. For example, one pseudo-class is hover, and it signifies what happens you hover over an element. This can be used to change the color a link turns when you hover over it.
+### 4.5 Feature Groups and GeoJSON
 
-```css
-a:hover {
-  color: orange;
-}
-```
+Leaflet also supports adding groups of features using class called [L.featureGroup](http://leafletjs.com/reference.html#featuregroup). If we wanted, we could have restructured our code to the point, line, and polygon above by placing them all in a feature group.
 
-**Chaining**
+Additionally, Leaflet is designed work natively with GeoJson. We will look at how to get GeoJson to a Leaflet Map later.
 
-To find selectors that are nested within other selectors, you can use the concept of `chaining`. Chaining is how we identify multiple ids, classes, and selectors.
+> **Note:** once you write up your codes
 
-```css
-a circle {
-  color: orange;
-}
-```
+## References:
 
-[Read more about it here.](https://css-tricks.com/multiple-class-id-selectors/)
-
-**The Box Model: Size and Positioning**
-
-Every element in your document is represented by a box. These boxes allow you to set properties such as margins around items.
-
-![](img/padding-width.jpg)
-
-- `Padding` - The content is surrounded by the padding area, exists between the content and the border.
-
-- `Border` - Every box has a border that exists on the outer edge of the padding area.
-
-- `Margin` - Margin defines the distance between the element and neighboring elements. Margin never has color.
-
-- `Dimensions` - Controls the height and width of the elements.
-
-You can also adjust the margins, padding, and border individually on each side of the element. An example element, along with its styling, is below. Add this to your CSS stylesheet and save to see how it changes our basic webpage.
-
-```css
-p {
-    background-color: #dddddd;
-    padding: 20px;
-    width: 320px;
-    height: 40px;
-    margin-right: 10px;
-}
-```
-
-**Positioning**
-
-Positioning your element
-
-- `Relative` - Position according to normal document flow, then shift using positioning properties such as *top* or *left*.
-- `Absolute` - Take out of normal flow, and manually position against the containing element.
-- `Fixed` - Take out of normal flow and manually position against the browser window.
-
-Another available property is called is `float`. Float can be used to wrap text around images.
-
-CSS is the way you style your page, learn more by referring to the references, or playing around in a sandbox such as [CSS Desk](http://www.cssdesk.com/).
-
-## Reference:
-
-[1] Foster M (2015) Intro to Websites, retrieved from January 1, 2017 from http://duspviz.mit.edu/web-map-workshop/code-your-first-website/
-
-[2] W3Schools (201X) HTML5 Tutorial, retreived December 28, 2016 from http://www.w3schools.com/html/
-
-[3] W3Schools (201X) CSS Tutorial, retreived December 28, 2016 from http://www.w3schools.com/css/
+[1] http://duspviz.mit.edu/web-map-workshop/leaflet-js/

@@ -1,17 +1,15 @@
 # Geovisual Analytics Basics
 
-> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
+> Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
+> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** TR 1600 - 1650
 
 **Learning Objectives**
 
 - Understand the basic concepts related to Geovisual Analytics
 - Understand the system architecture for web based geoviz; and
-- Get familiar with the web basics, especially the structure of urls.
 
-
-Geovisual analytics refers to the science of analytical reasoning with spatial information as facilitated by interactive visual interfaces. It is distinguished by its focus on novel approaches to analysis rather than novel approaches to visualization or computational methods alone. As a result, geovisual analytics is usually grounded in real-world problem solving contexts. Research in geovisual analytics may focus on the development of new computational approaches to identify or predict patterns, new visual interfaces to geographic data, or new insights into the cognitive and perceptual processes that users apply to solve complex analytical problems. Systems for geovisual analytics typically feature a high-degree of user-driven interactivity and multiple visual representation types for spatial data. Geovisual analytics tools have been developed for a variety of problem scenarios, such as crisis management and disease epidemiology. Looking ahead, the emergence of new spatial data sources and display formats is expected to spur an expanding set of research and application needs for the foreseeable future.
+Geovisual analytics refers to **the science of analytical reasoning with spatial information as facilitated by interactive visual interfaces.** It is distinguished by its focus on novel approaches to analysis rather than novel approaches to visualization or computational methods alone. As a result, geovisual analytics is usually grounded in real-world problem solving contexts. Research in geovisual analytics may focus on the development of new computational approaches to identify or predict patterns, new visual interfaces to geographic data, or new insights into the cognitive and perceptual processes that users apply to solve complex analytical problems. Systems for geovisual analytics typically feature a high-degree of user-driven interactivity and multiple visual representation types for spatial data. Geovisual analytics tools have been developed for a variety of problem scenarios, such as crisis management and disease epidemiology. Looking ahead, the emergence of new spatial data sources and display formats is expected to spur an expanding set of research and application needs for the foreseeable future.
 
 
 ## 1\. What is Geovisual Analytics (Robinson, 2017)
@@ -19,7 +17,7 @@ Geovisual analytics refers to the science of analytical reasoning with spatial i
 
 ### 1.1 Definition of Geovisual Analytics
 
-Geovisual analytics is the science of analytical reasoning with spatial information as facilitated by interactive visual interfaces (G. Andrienko et al., 2007). This domain emerged in the late-2000s following the development of a broader field called visual analytics (Thomas & Cook, 2005). Visual analytics itself emerged as a separable discipline from the field of Information Visualization, becoming distinct via its focus on the science of analytical reasoning with visual interfaces, rather than primarily emphasizing the visual representation of data as is common in Information Visualization. Put simply, visual analytics places emphasis on supporting analytical processes, not just the development of new visual methods for representing data. Therefore, in the context of geographic information science, geovisual analytics is an emerging research domain that advances the state of the art in analytical reasoning with visual interfaces for spatial data sources, and it builds upon a great deal of earlier work in Geovisualization (see Geovisualization, forthcoming) which focused on new visual methods for representing and interacting with spatial data.
+**Geovisual analytics is the science of analytical reasoning with spatial information as facilitated by interactive visual interfaces (G. Andrienko et al., 2007).** This domain emerged in the late-2000s following the development of a broader field called visual analytics (Thomas & Cook, 2005). Visual analytics itself emerged as a separable discipline from the field of Information Visualization, becoming distinct via its focus on the science of analytical reasoning with visual interfaces, rather than primarily emphasizing the visual representation of data as is common in Information Visualization. Put simply, visual analytics places emphasis on supporting analytical processes, not just the development of new visual methods for representing data. Therefore, in the context of geographic information science, geovisual analytics is an emerging research domain that advances the state of the art in analytical reasoning with visual interfaces for spatial data sources, and it builds upon a great deal of earlier work in Geovisualization (see Geovisualization, forthcoming) which focused on new visual methods for representing and interacting with spatial data.
 
 Geovisual analytics is a focus today for a significant amount of geographic research on cartography, computational methods, interface design, and cognitive science. The field blends each of these areas together in the pursuit of new interactive mapping systems that allow users to detect patterns and predict future outcomes using spatial data. A key motivating force on this field is its focus on supporting analytical work that connects to complex human and environmental problems. As a result, geovisual analytics approaches tend to embrace the fact that datasets are messy and uncertain, that problems may not have singular outcomes, and that different user groups may have radically different requirements for meeting their analytical goals. Geovisual analytics today is also heavily influenced by the challenges posed by volume, velocity, variety, veracity, and other aspects associated with Big Data. A considerable amount of attention in geovisual analytics centers on the challenges associated with analyzing spatio-temporal problems.
 
@@ -88,13 +86,6 @@ Connect the idea of infographics with the data-driven visualization.
 
 ### 2.2 Coordinated (Multiple) View Geoviz
 
-**[Benton County 2040](https://scottwhitson.github.io/benton/dreams.html)**
-
-The Benton County 2040 Thriving Community Initiative (TCI) is a project in which the goal is to identify the core values and vision of the Benton County community. In order to identify community thoughts, the Thriving Communities Council conducted several surveys by hosting public events throughout the County. At these events, community members were asked to to share comments on what they like about where they lived and what they hoped to see in the future.
-
-This project, conducted by students and faculty at Oregon State University, was done to present the results of this survey. The presentation of the results was done in a geo-visual manner which displays demographic results by city or town. The map also contains a word cloud which shows key words which identifies what the community values.
-
-![](img/tci2040.jpg)
 
 **[Climate Proxies Finder](http://climateproxiesfinder.ipsl.fr/)**
 
@@ -172,86 +163,8 @@ In this course, you can use any modern web browser to test your apps and service
 
 Again, when developing and testing a web based geoviz, you can certainly use a single physical machine to play all these roles. This is a common practice that keeps things simple and more economic. When you work for a “real world” company with its own network and you are ready to deploy your geoviz, you will move your tested services and applications into a formal “production” environment where you have individual enterprise-grade machines for each role, as described above.
 
-## 4\. Web Basics
 
-### 4.1 Internet
-
-The Internet is a worldwide telecommunications system that provides connectivity for millions of other, smaller networks; therefore, the Internet is often referred to as a network of networks. It allows computer users to communicate with each other across distance and computer platforms.
-
-The Internet began in 1969 as the U.S. Department of Defense's Advanced Research Project Agency (ARPA) to provide immediate communication within the Department in case of war. Computers were then installed at U.S. universities with defense related projects. As scholars began to go online, this network changed from military use to scientific use. As ARPAnet grew, administration of the system became distributed to a number of organizations, including the National Science Foundation (NSF). This shift of responsibility began the transformation of the science oriented ARPAnet into the commercially minded and funded Internet used by millions today.
-
-The Internet acts as a pipeline to transport electronic messages from one network to another network. At the heart of most networks is a server, a fast computer with large amounts of memory and storage space. The server controls the communication of information between the devices attached to a network, such as computers, printers, or other servers.
-
-### 4.2 World Wide Web (WWW)
-
-The Internet is often confused with the World Wide Web. The misperception is that these two terms are synonymous. The Internet is the collection of the many different systems and protocols. The World Wide Web, developed in 1989, is actually one of those different protocols. As the name implies, it allows resources to be linked with great ease in an almost seamless fashion.
-
-The World Wide Web contains a vast collection of linked multimedia pages that is ever-changing. However, there are several basic components of the Web that allow users to communicate with each other. Below you will find selected components and their descriptions.
-
-#### TCP/IP protocols
-
-In order for a computer to communicate on the Internet, a set of rules or protocols computers must follow to exchange messages was developed. The two most important protocols allowing computers to transmit data on the Internet are Transmission Control Protocol (TCP) and Internet Protocol (IP). With these protocols, virtually all computers can communicate with each other. For instance, if a user is running Windows on a PC, he or she can communicate with iPhones.
-
-#### Domain name system
-
-An Internet address has four fields with numbers that are separated by periods or dots. This type of address is known as an IP address. Rather than have the user remember long strings of numbers, the Domain Name System (DNS) was developed to translate the numerical addresses into words. For example, the address `geoviz.ceoas.oregonstate.edu` is really `151.101.53.147`. You can find the IP by ping a domain name. For example, open `cmd prompt` if you are a windows user or open `terminal` if you are a mac user.
-
-``powershell
-$ ping geoviz.ceoas.oregonstate.edu
-``
-
-> `$` is the prompt symbol to notify you to enter your command.
-
-Then, you will see the following result on cmd prompt or mac terminal.
-
-```powershell
-PING sni.github.map.fastly.net (151.101.53.147): 56 data bytes
-64 bytes from 151.101.53.147: icmp_seq=0 ttl=59 time=6.426 ms
-64 bytes from 151.101.53.147: icmp_seq=93 ttl=59 time=6.381 ms
-64 bytes from 151.101.53.147: icmp_seq=94 ttl=59 time=6.496 ms
-64 bytes from 151.101.53.147: icmp_seq=95 ttl=59 time=6.453 ms
-64 bytes from 151.101.53.147: icmp_seq=96 ttl=59 time=6.549 ms
-64 bytes from 151.101.53.147: icmp_seq=97 ttl=59 time=6.384 ms
-... ...
-```
-
-### 4.3 URLs
-
-Addresses for web sites are called URLs (Uniform Resource Locators). Most of them begin with http (HyperText Transfer Protocol), followed by a colon and two slashes. For example, the URL for the Geoviz Lab is http://geoviz.ceoas.oregonstate.edu. Here is another url example, which has more parts.
-
-**A whole Url**
-
-[https://en.wikipedia.org/w/index.php?title=Web_mapping#Web_mapping_courses](https://en.wikipedia.org/w/index.php?title=Web_mapping#Web_mapping_courses)
-
-![](img/url.jpg)
-
-#### Scheme
-
-Every URL begins with the scheme. This tells your browser what type of address it is so the browser connects to it correctly. There are many types of schemes, but for typical web browsing you will mostly see http and https. Your browser usually won’t show the scheme in the address bar, and usually you don’t need to type the scheme when typing a web address; instead, you can just begin with the domain name. The scheme is still always part of the URL; it just isn’t being displayed.
-
-#### Domain name
-
-The domain name is the most prominent part of a web address. Typically, different pages on the same site will continue to use the same domain name. For example, all pages on this site share the GCFLearnFree.org domain name.
-
-Each segment of the domain name separated by a period is called a domain. The domain on the right is called a top-level domain, with the domain to the left of it called the second-level domain, then third-level domain, and so on.
-
-> In most URLs, the www domain can be omitted. Google.com and www.google.com lead to the same page. However, other subdomains cannot be omitted. For example, all pages under news.google.com require the news subdomain in the URL.
-
-#### File Path
-
-The file path—often just called the path—tells your browser to load a specific page. If you don’t specify a path and only enter a domain name, your browser is still loading a specific page; it’s just loading a default page, which usually will help you navigate to other pages.
-
-URLs that end with the domain name without a file path usually will load a homepage or an index page that's designed to help you navigate to specific pages on the site. Often, if you can’t remember the file path for a specific page, you can go to the homepage and search for it.
-
-#### Parameters
-
-Some URLs include a string of characters after the path—beginning with a question mark—called the parameter string. You have probably noticed this part of a URL appear in your address bar after performing a search on Google or YouTube. The parameter string can be clear or confusing to a human user, but it is critical information for the server.
-
-#### Anchor
-
-Also appearing after the path, the anchor tells your browser to scroll to or load a specific part of the page. Usually the anchor begins with a hashtag and is used to direct your browser to a specific part of a very long page, much like a bookmark. Different anchors don’t load different pages; they simply tell the browser to display different parts of the page.
-
-## 5. References
+## 4. References
 
 [1] Robinson, A. (2017). [Geovisual Analytics](https://gistbok.ucgis.org/bok-topics/geovisual-analytics). The Geographic Information Science & Technology Body of Knowledge (3rd Quarter 2017 Edition), John P. Wilson (ed.). doi: 10.22224/gistbok/2017.3.6.
 
