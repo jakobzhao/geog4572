@@ -14,7 +14,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 
 ## :calendar: SCHEDULE
 
-| **WEEK**    | :book: **LECTURE  (T)**       | :computer: **LAB (T)**           | :book: **LECTURE (R)**                 | :globe_with_meridians: **[PROJECT](project/guideline.md)**                                                     |
+| **WEEK**    | :book: **LECTURE  (T)**       | :computer: **LAB (T)**           | :book: **LECTURE (R)**                 | :heart_decoration: **[PROJECT](project/guideline.md)**                                                     |
 | --------- | ------------------------------------------------- | ------------------------------------------------------ | ------------------------------ | --------------------------------------------------------- |
 | **Wk 01**  | Intro to this course                            | [Lab1: Project Management for GeoViz](labs/lab01/)                   | <span style="color:red"><b><i> no class</i></b></span>  [Geovisual Analytics Basics](lectures/lec02/) ([*`reading`*](lectures/lec02/read.md))  | [Introduction](project/intro.md), [*Brainstorm*](project/brainstorm.md)  |
 | **Wk 02**  | [GeoViz Programming Basics](lectures/lec03/) ([*`reading`*](lectures/lec03/read.md)) | [Lab2: Interactive Map Design](labs/lab02/)  | [Leaflet Interactive Maps](lectures/lec04/) ([*`reading`*](lectures/lec04/read.md)) | [Team-up](project/team-up.md)                                                   |
@@ -25,7 +25,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | **Wk 07**  | [ Heatmap - *Michael*](lectures/lec13/readme.md)                        |  *Lab3 cont'd*                          | [Dealing with Time - *Benjamin*](lectures/lec14/readme.md)                | Coding                                                    |
 | **Wk 08**  | [GeoViz Evaluation](lectures/lec15/readme.md)  ([*`reading`*](lectures/lec15/read.md)) | *Studio*   |  [Hexagonal Maps](lectures/lec16/readme.md)               | Coding                                            |
 | **Wk 09**  |  [:cloud: Point Cloud Viz - *Katherine and Bryan*](lectures/lec17/readme.md) |  :airplane: Potential Fieldwork - *Katherine and Bryan*                                           | *Studio*         | Fine-tuning                                               |
-| **Wk 10** | *Studio*                                    | *Studio*                                        | :heart_decoration: **Project Presentations**            | Presentation                                              |
+| **Wk 10** | *Studio*                                    | *Studio*                                        | **Project Presentations**            | Presentation                                              |
 
 ## :bar_chart: GRADING CRITERIA
 
@@ -44,14 +44,11 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 Final grades are based on **the percentage of maximum points** accumulated and assigned
 according to this table:
 
-A 93 – 100%     B- 80 – 82%     D+ 68 – 69%
-
-A- 90 – 92%     C+ 78 – 79%     D 62 – 67%
-
-B+ 87 – 89%     C 72 – 77%      D- 60 – 61%
-
-B 83 – 86%      C- 70 – 71%     F < 60%
-
+| A 93 – 100% | B- 80 – 82% | D+ 68 – 69% |
+| ----------- | ----------- | ----------- |
+| A- 90 – 92% | C+ 78 – 79% | D 62 – 67%  |
+| B+ 87 – 89% | C 72 – 77%  | D- 60 – 61% |
+| B 83 – 86%  | C- 70 – 71% | F < 60%     |
 
 ## :book: LECTURES
 
@@ -82,6 +79,4 @@ The final project is a major component of this course. For each group, there sho
 3\. [NeoCarto - a geovisual analytical framework](http://geoviz.ceoas.oregonstate.edu/neocarto/)
 
 
-**Credits**
-
-This course material is maintained by the [Cartography and Geovisualization Group at Oregon State University](http://geoviz.ceoas.oregonstate.edu). Some of the material in this course is based on the classes taught at MIT and Penn State University. We have heavily drawn on materials and examples found online and tried our best to give credit by linking to the original source. Please contact us if you find materials where the credit is missing or that you would rather have removed.
+**Credits:** This course material is maintained by the [Cartography and Geovisualization Group at Oregon State University](http://geoviz.ceoas.oregonstate.edu). Some of the material in this course is based on the classes taught at MIT and Penn State University. We have heavily drawn on materials and examples found online and tried our best to give credit by linking to the original source. Please contact us if you find materials where the credit is missing or that you would rather have removed.
