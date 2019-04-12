@@ -1,4 +1,4 @@
-# Color Use and Web Typogrpahy
+# Web Design
 
 > Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
@@ -9,6 +9,7 @@
 - Understand the different format of defining colors on the web;
 - Make choropleth color ramps using chroma.js, and
 - Understand how to use Google fonts.
+- Apply icons for interactive web geovisualization.
 
 
 ## Color
@@ -334,6 +335,88 @@ Apply a google font for a specific div. For example, the code below applies the 
 </body>
 </html>
 ```
+
+
+## 3\. Icons for Web Uses
+
+Icon is an important feature for geovisualization. It is simple, concrete and informative. Sometimes, a  icon is more than thousands of words or a well-designed map. In this section, we will talk about how to include icons in web pages.
+
+There are several major icon libraries for web use. To name a few, such as [font awesome icons](https://fontawesome.com/icons?d=gallery), [Google material icons](https://material.io/icons/), [open icons](https://useiconic.com/open) and etc. To insert an icon to a web page, you will first include the icon library to the `<head>` tag, and then insert the `icon class` of the specific icon, sometimes associated with text, to the html elment you would like to visualize. The `<i>` and `<span>` elements are widely used to add icons. Here, Font Awesome Icons and Google Material Icons are introduced as follow.
+
+### 1\.1 Font Awesome Icons
+
+Font Awesome is a font and icon toolkit based on CSS and LESS. It was made by Dave Gandy for use with Twitter Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 20% market share among those websites which use third-party Font Scripts on their platform, ranking it second place after Google Fonts.
+
+Font Awesome 5 was released on December 7, 2017 with 1,278 icons. Version 5 comes in two packages: Font Awesome Free and the proprietary Font Awesome Pro (available for a fee). The free versions (all releases up to 4 and the free version for 5) are available under SIL Open Font License 1.1, Creative Commons Attribution 4.0, and MIT License.
+
+![](img/fa.png)
+
+To use the Font Awesome icons, add the following line inside the <head> section of your HTML page:
+
+```html
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+```
+
+Below shows some examples on using font awesome icons in web page.
+
+```html
+<p><i class="fas fa-user"></i>
+    <i class="far fa-user"></i>
+    <!--brand icon-->
+    <i class="fab fa-github-square"></i>
+</p>
+<p>
+    <i class="fab fa-github fa-xs"></i>
+    <i class="fab fa-github fa-sm"></i>
+    <i class="fab fa-github fa-lg"></i>
+    <i class="fab fa-github fa-2x"></i>
+    <i class="fab fa-github fa-3x"></i>
+    <i class="fab fa-github fa-5x"></i>
+    <i class="fab fa-github fa-7x"></i>
+    <i class="fab fa-github fa-10x"></i>
+</p>
+```
+
+### 1\.2 Google Material Icons
+
+In a bid to create a new "visual language" for users, Google is taking the design of its Android, Chrome OS and web properties back to basics with its new "Material Design." According to Google, Material Design is intended to make better use of available space, and bring a consistent user experience whether viewed on a smartphone, tablet or desktop. Google's apps will be updated to reflect this change, as you may have seen in early Gmail and Calendar app leaks and in the latest version of the Google+ app on Android.
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+```
+
+Below shows some examples on using material icons in web page. above all, you will need to define the styles in a `<style>` tag.
+
+```css
+<style>
+    .red {
+        color: red;
+    }
+
+    .large {
+        font-size: 5vw;
+
+    }
+
+    .extra-large {
+        font-size: 8vw;
+    }
+</style>
+```
+
+And then you can apply the styles to the icons. As you might notice, you need to insert a short text to indicate the specific icon to use. It is a little different from font awesome icons.
+
+```html
+<p>
+    <span> <i class="material-icons">info</i></span>
+    <span> <i class="material-icons red">face</i></span>
+    <span> <i class="material-icons large">room</i></span>
+    <span> <i class="material-icons extra-large">favorite</i></span>
+
+</p>
+```
+
+![](img/material.png)
 
 
 ## References
