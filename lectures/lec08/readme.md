@@ -1,1 +1,0 @@
-redirect to the [lecture notes of lecture 06](../lec06/readme.md)
