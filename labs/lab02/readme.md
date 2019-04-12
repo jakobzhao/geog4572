@@ -12,11 +12,11 @@ In this lab, we will design an interact web map of cell towers in Oregon. When c
 
 ![](img/final_map.jpg)
 
-To get started, please synchronize the course material to the working space of your local computer. If you are working in the Digital Earth Lab, please synchronize your course material on the desktop directory.  The material for this lab is located at `[your_working_space]/geog4572/labs/lab03`. Next, open the course material in Webstorm.
+To get started, please synchronize the course material to the working space of your local computer. If you are working in the Digital Earth Lab, please synchronize your course material on the desktop directory.  The material for this lab is located at `[your_working_space]/geog4572/labs/lab03`. Next, open the course material in Atom.
 
 ## 1. Set up our Map and Add Data
 
-In your IDE (Webstorm), open `map1.html` to prepare for editing.
+In your IDE (Atom), open `map1.html` to prepare for editing.
 
 In this file, you will see a basic HTML page.
 
@@ -30,11 +30,11 @@ Inside the `body` tag, we put a `map` div tag for holding the map object. After 
 <head>
     <meta charset="UTF-8">
     <title>Cell Towers in Oregon (2009)</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"/>
     <style>
 
     </style>
-    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
 </head>
 <body>
 <!-- Our web map and content will go here -->
@@ -494,7 +494,7 @@ To use this library, in your `head` tag, add two libraries `rbush.min.js` and `l
     ...
     <script src="https://unpkg.com/rbush@2.0.1/rbush.min.js"></script>
     <script src="https://unpkg.com/labelgun@6.0.0/lib/labelgun.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
     ...
 </head>
 ```
@@ -605,7 +605,7 @@ Above all, includes two necessary libraries `proj4js` and `proj4leaflet`  after 
 ```html
 <head>
 	...
-    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
 	...
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.4/proj4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js"></script>
