@@ -1,4 +1,4 @@
-# Layout Design using Bootstrap
+# Bootstrap Interface Design
 
 > Spring 2019 | Geography 4/572 | Geovisual Analytics
 >

@@ -1,4 +1,4 @@
-# Reading List for Lecture 10
+# Reading List for Lecture 9
 
 ### Required:
 
