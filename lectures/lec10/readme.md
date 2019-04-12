@@ -1,4 +1,4 @@
-# Web Design
+# Web Design Elements
 
 > Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
