@@ -25,7 +25,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | **Wk 07**  | [ Heatmap - *Michael*](lectures/lec13/readme.md)                        |  *Lab3 cont'd*                          | [Dealing with Time - *Benjamin*](lectures/lec14/readme.md)                | Coding                                                    |
 | **Wk 08**  | [GeoViz Evaluation](lectures/lec15/readme.md)  ([*`reading`*](lectures/lec15/read.md)) | *Studio*   |  [Hexagonal Maps](lectures/lec16/readme.md)               | Coding                                            |
 | **Wk 09**  |  [:cloud: Point Cloud Viz - *Katherine and Bryan*](lectures/lec17/readme.md) |  :airplane: Potential Fieldwork - *Katherine and Bryan*                                           | *Studio*         | Fine-tuning                                               |
-| **Wk 10** | *Studio*                                    | *Studio*                                        | **Project Presentations**            | Presentation                                              |
+| **Wk 10** | *Studio*                                    | *Studio*                                        | :heart_decoration: **Project Presentations**            | Presentation                                              |
 
 ## :bar_chart: GRADING CRITERIA
 
@@ -66,7 +66,7 @@ Lab assignments are required to be submitted electronically to Canvas unless sta
 
 If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
 
-## :globe_with_meridians: FINAL PROJECT
+## :heart_decoration: FINAL PROJECT
 
 The final project is a major component of this course. For each group, there should be no more than four students. I recommend a group should be formed by graduate and undergraduate students. Each group will collaboratively work on a final project using geovisual analytics. The instructor will provide several topics for students to choose from. Students can also bring their own topics. Students in a group can work on a project of their common interests. Although the project topic is important, this project is more about how to apply the geovisual skills. So, students who want to team up as a group need to have a consensus that they are interested in using the similar geovisual tools and methods. Regarding the project topics, the instructor will provide a pool of topics to choose from during the first two weeks. In the rest of the term, students will concentrate on developing the project. The instructor and TA will provide necessary guidance in applying the geovisual skills for the projects. Since some of the topics are proposed by other faculty members in the university, a co-advisor/group member will join you to provide extra help.
 
