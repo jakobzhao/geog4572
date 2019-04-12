@@ -1,4 +1,4 @@
-# Reading List for Lecture 7
+# Reading List for Lecture 6
 
 **Optional**
 
