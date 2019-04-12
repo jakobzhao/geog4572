@@ -1,422 +1,687 @@
-# Spatial data Processing
+# D3 Graphics
 
-> Spring 2019 | Geography 4/572 | Geovisual Analytics
+> Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
-> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** TR 1600 - 1650
->
-> **Contributors:** [Hoda Tahami](https://github.com/HodaTahami)
-
+> **Instructor:** Bo Zhao  **Location:** WITH 205 | **Time:** TR 1100 - 1150
 
 **Learning Objectives**
 
-- Review the data tier in a web mapping architecture;
-- Understand the differences between file server and database server;
-- Get to know the major geospatial data formats for web mapping, shapefile, kml, geojson and topojson;
-- Able to read, edit, display, convert GeoJson files.
+- Get to know the basics of SVG, 
+- Understand how to draw graphics and chart using D3; and
+- Get familiar with D3 Scale and Axes.
 
-## 1. The data tier of your web mapping architecture
+## 1\. Create SVG Elements using D3
 
-In the previous lecture, you learned that system architecture for web mapping include a data tier. This could be as simple as several shapefiles in a folder on the server, or it could be as complex as several enterprise-grade servers housing an ecosystem of standalone files and relational databases. Indeed, in our system architecture diagram, I have represented the data tier as containing a file server and/or a database server.
+SVG provides different shapes like lines, rectangles, circles, ellipses etc. Hence, designing visualizations with SVG gives you more flexibility and power in what you can achieve.
 
-### 1.1 Data tier in system architecture of web mapping
+**What is SVG?**
 
-The **data tier** contains your datasets that will be included in the web map. Almost certainly, it will house the data for your thematic web map layers. It may also hold the data for your base maps, if you decide to create your own basemap and tile sets. Other times, you will pull in base maps, and quite possibly some thematic layers, from other peoples' servers, relieving yourself of the burden of maintaining the data. For example, some of the popular thematic base layers are from `Mapbox`, `Google maps`, `Bing maps` and `OpenStreetMaps`.
+- SVG is an image that is text-based.
+- SVG is similar in structure to HTML
+- SVG sits in the DOM
+- SVG properties can be specified as attributes
+- SVG should have absolute positions relative to the origin (0, 0)
 
-Some organizations are uneasy with the idea of taking the same database that they use for day-to-day editing and putting it on the web. There is justification for this uneasiness, for both security and performance reasons. If you are allowing web map users to modify items in the database, you want to avoid the possibility of your data being deleted, corrupted, or sabotaged. Also, you don't want web users' activities to tax the database so intensely that performance becomes slow for your own internal GIS users, and vice versa.
-
-For these reasons, organizations will often create a copy or replica of their database and designate it solely for web use. If features in the web map are not designed to be edited by end users, this copy of the database is read-only. If, on the other hand, web users will be making edits to the database, it is periodically synchronized with the internal "production" database using automated scripts or web services. A quality assurance (QA) step can be inserted before synchronization if you would prefer for a GIS analyst to examine the web edits before committing them to the production database.
-
-### 1.2 Files vs. Databases
-
-When designing your data tier, you will need to decide whether to store your data in a series of simple files (such as shapefiles, KML, geojson) or in a database that incorporates spatial data support (such as PostGIS or SpatiaLite). A file-based data approach is simpler and easier to set up than a database if your datasets are not changing on a frequent basis and are of manageable size. File-based datasets can also be easier to transfer and share between users and machines.
-
-Databases are more appropriate when you have a lot of data to store, the data is being edited frequently by different parties, you need to allow different tiers of security privileges, or you are maintaining relational tables to link datasets. Databases can also offer powerful native options for running SQL queries and calculating spatial relationships (such as intersections).
-
-If you have a long-running GIS project housed in a database and you just now decided to expose it on the web, you will need to decide whether to keep the data in the database or extract copies of the data into file-based datasets.
-
-## 2. Common open formats for spatial data
-
-This section describes in greater detail some of the spatial data formats that have open specifications or are created by open source software. Note that these refer to files or databases that can stand alone on your hardware. We will cover open formats of web services streamed in from other computers in future lectures.
-
-### 2.1 Open data formats and proprietary formats
-
-In this course, we will use **open data formats, in other words, formats that are openly documented and have no legal restrictions or royalty requirements on their creation and use by any software package**. You are likely familiar with many of these, such as shapefiles, KML files, JPEGs, and so forth. In contrast, **proprietary data formats are created by a particular software vendor and are either undocumented or cannot legally be created from scratch or extended by any other developer**. The Esri file geodatabase is an example of a well-known proprietary format. Although Esri has released an API for creating file geodatabases, the underlying format cannot be extended or reverse engineered.
-
-Some of the most widely-used open data formats were actually designed by proprietary software vendors who made the deliberate decision to release them as open formats. Two examples are the Esri shapefile and the Adobe PDF. Although opening a data format introduces the risk that open source alternatives will compete with the vendor's functionality, it increases the interoperability of the vendor's software, and, if uptake is widespread, augments the vendor's clout and credibility within the software community.
-
-### 2.2 Spatially-enabled databases
-
-When your datasets get large or complex, it makes sense to move them into a database. This often makes it easier to run advanced queries, set up relationships between datasets, and manage edits to the data. It can also improve performance, boost security, and introduce tools for performing spatial operations.
-
-Below are described two popular approaches for putting spatial data into open source databases. Examples of proprietary equivalents include Microsoft SQL Server, Oracle Spatial, and the Esri ArcSDE middleware (packaged as an option with ArcGIS for Server) that can connect to various flavors of databases, including open source ones.
-
-**PostGIS**
-
-PostGIS is an extension that allows spatial data management and processing within PostgreSQL (often pronounced "Postgress" or "Postgress SQL"). PostgreSQL is perhaps the most fully featured open source relational database management system (RDBMS). If a traditional RDBMS with relational tables is your bread and butter, then PostgreSQL and PostGIS are a natural fit if you are moving to open source. The installation is relatively straightforward: in the latest PostgreSQL setup programs for Windows, you just check a box after installation indicating that you want to add PostGIS. An importer wizard allows you to load your shapefiles into PostGIS to get started. The rest of the administration can be done from the pgAdmin GUI program that is used to administer PostgreSQL.
-
-Most open source GIS programs give you an interface for connecting to your PostGIS data. For example, **in QGIS you might have noticed the button `Add PostGIS Layers`. The elephant in the icon is a symbol related to PostgreSQL. GeoServer also supports layers from PostGIS**.
-
-**SpatiaLite**
-
-SpatiaLite is an extension supporting spatial data in the SQLite database. As its name indicates, SQLite is a lightweight database engine that gives you a way to store and use data in a database paradigm without installing any RDBMS software on the client machine. This makes SQLite databases easy to copy around and allows them to run on many kinds of devices. If you are familiar with Esri products, a SpatiaLite database might be thought of as similar to a file geodatabase.
-
-SpatiaLite is not as mature as PostGIS, but it is growing in popularity, and you will see a button in QGIS called `Add SpatiaLite Layer`. SpatiaLite is a more self-contained and flexible choice than shapefiles, KML, etc., for this type of task.
-
-**MongoDB**
-
-MongoDB is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas. MongoDB’s geospatial indexing allows you to efficiently execute spatial queries on a collection that contains geospatial shapes and points. This tutorial will briefly introduce the concepts of geospatial indexes, and then demonstrate their use with $geoWithin, $geoIntersects, and $geoNear.
-
-### 2.3 File-based data
-
-File-based data includes shapefiles, KML files, GeoJSON, and many other types of text-based files. Each of the vector formats has some mechanism of storing the geometry (i.e., vertex coordinates) and attributes of each feature. Some of the formats such as KML may also store styling information.
-
-Below are some of the file-based data formats you're most likely to encounter.
-
-**Shapefiles**
-
-The ESRI shapefile is one of the most common formats for exchanging vector data. It actually consists of several files with the same root name, but with different suffixes. At a minimum, you must include the .shp, .shx, and .dbf files. Other files may be included in addition to these three when extra spatial index or projection information is included with the file.
-
-Mandatory files
-
-| LAYER.shp | Feature geometries     |
-| --------- | ---------------------- |
-| LAYER.shx | Feature geometry index |
-| LAYER.dbf | Feature attributes     |
-
-
-Other common files
-
-
-| LAYER.prj | Projection format     |
-| --------- | ---------------------- |
-| LAYER.sbn and LAYER.sbx | Spatial index |
-| LAYER.dbf | Feature attributes     |
-
-Because a shapefile requires multiple files, it is often expected that you will zip them all together in a single file when downloading, uploading, and emailing them. See the [Wikipedia](https://en.wikipedia.org/wiki/Shapefile) for more details about this format.
-
-**KML**
-
-KML gained widespread use as the simple spatial data format used to place geographic data on top of Google Earth. It is also supported in Google Maps and various non-Google products.
-
-KML stands for Keyhole Markup Language, and was developed by Keyhole, Inc., before the company's acquisition by Google. KML became an Open Geospatial Consortium (OGC) standard data format in 2008, having been voluntarily submitted by Google.
-
-KML is a form of XML, wherein data is maintained in a series of structured tags. KML is unique and versatile in that it can contain styling information and it can hold either vector or raster formats ("overlays", in KML-speak). The rasters themselves are not written in the KML, but are included with it in a zipped file called a KMZ. Large vector datasets are also commonly compressed into KMZs.
-
-The key XML tag behind KML is the **placemark**. This defines a geographic feature, sometimes with symbol feature, and extra information.
-
+The following example demonstrates a rectangle in SVG.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
-   <Document>
-      <Placemark>
-         <name>Wilkinson Hall</name>
-         <ExtendedData>
-            <Data name="name">
-               <value>Wilkinson Hall</value>
-            </Data>
-         </ExtendedData>
-         <Polygon>
-            <outerBoundaryIs>
-               <LinearRing>
-                  <coordinates>-123.2807596,44.5684594 -123.2807609,44.5683725 -123.281178,44.5683677 -123.281166,44.5681575 -123.2806858,44.5681652 -123.2806805,44.5682569 -123.280604,44.5682569 -123.2805987,44.5680314 -123.2801065,44.5680266 -123.2801172,44.568468 -123.2807596,44.5684594</coordinates>
-               </LinearRing>
-            </outerBoundaryIs>
-         </Polygon>
-      </Placemark>
-      <Placemark>
-         <name>Route 1</name>
-         <ExtendedData>
-            <Data name="name">
-               <value>Route 1</value>
-            </Data>
-         </ExtendedData>
-         <LineString>
-            <coordinates>-123.2775182,44.5656571 -123.2779312,44.5656457 -123.2789344,44.5657527 -123.2799214,44.566238 -123.2799482,44.5679617 -123.2803291,44.5679502 -123.2803345,44.5680305</coordinates>
-         </LineString>
-      </Placemark>
-      <Placemark>
-         <name>347 Strand Hall</name>
-         <ExtendedData>
-            <Data name="name">
-               <value>347 Strand Hall</value>
-            </Data>
-         </ExtendedData>
-         <Point>
-            <coordinates>-123.27734112739563,44.56562272511972</coordinates>
-         </Point>
-      </Placemark>
-   </Document>
-</kml>
+<svg width="500" height="500">
+    <rect x="0" y="0" width="200" height="200"></rect>
+</svg>
 ```
 
-Open this kml in [http://geojson.io](http://geojson.io), you will see how these placemarks look like:
+We have an `<svg>` tag here. Think of SVG as a canvas to paint on (and don't confuse it with HTML `<canvas>` - that's a different element!). You need to specify a width and height for your canvas. And all your SVG elements like `<rect>`, `<line>`, `<circle>`, `<text>` would go inside this `<svg>` tag.
 
-![](img/kml_map.jpg)
+Each SVG element has it's own properties - which includes both geometry and style properties. All properties can be set as attributes but generally, we provide geometry properties as attributes and styling properties as styles. And since SVG sits in the DOM, we can use attr() and append() just like we did for HTML elements.
 
-**GeoJSON**
+Let's learn about some of the most used SVG elements in visualizations and how to create and apply styling to them using D3 library.
 
-JavaScript Object Notation (JSON) is a structured means of arranging data in a hierarchical series of key-value pairs that a program can read. JSON is less verbose than XML and ultimately results in less of a "payload," or data size, being transferred across the wire in web applications.
+### Line
 
-Following this pattern, GeoJSON is a form of JSON developed for representing vector features. The [GeoJSON Specification](http://geojson.org/geojson-spec.html) gives some basic examples of how different entities such as point, lines, and polygons are structured.
+An SVG line element is represented by <line> tag.
 
-you can use `.json` or `.geojson` as the extension of a GeoJson file, but you might as well choose to save GeoJSON features into a `.js` (JavaScript) file that can be referenced by your web map. Other times, you may encounter web services that return GeoJSON.
+A simple line can be defined as below:
 
-GeoJSON is a widely-used data format for displaying vectors in web maps. It is based on JavaScript object notation, a simple and minimalist format for expressing data structures using syntax from JavaScript. In GeoJSON, a vector feature and its attributes are represented as a JavaScript object, allowing for easy parsing of the geometry and fields.
+```xml
+<line x1="100" y1="100" x2="500" y2="100" />
+```
 
-GeoJSON is less bulky than XML-based structures such as KML; however, GeoJSON does not always contain styling information like KML does. GeoJSON's simplicity and loading speed have made it popular, perhaps even trendy, among developers in the open source world.
+A line's attributes are:
 
-Here's what a piece of GeoJSON looks like. GeoJSON vectors are commonly bundled into a unit called a `FeatureCollection`. The `FeatureCollection` below holds the same data as the above kml does. The bulk of the GeoJSON below contains the vertices that define the state outline, but you should also notice a attribute/property - `name`:
+- x1: This is the x-coordinate of the first point
+- y1: This is the y-coordinate of the first point
+- x2: This is the x-coordinate of the second point
+- y2: This is the y-coordinate of the second point
 
-```json
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [ -123.2807596,44.5684594],
-            [ -123.2807609,44.5683725],
-            [ -123.281178, 44.5683677],
-            [ -123.281166,44.5681575],
-            [ -123.2806858,44.5681652],
-            [ -123.2806805,44.5682569],
-            [ -123.280604,44.5682569],
-            [ -123.2805987, 44.5680314],
-            [ -123.2801065,44.5680266],
-            [ -123.2801172,44.568468],
-            [ -123.2807596,44.5684594]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "Wilkinson Hall"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-123.2775182,44.5656571],
-          [-123.2779312,44.5656457],
-          [-123.2789344,44.5657527],
-          [-123.2799214, 44.566238],
-          [-123.2799482,44.5679617],
-          [-123.2803291,44.5679502],
-          [-123.2803345,44.5680305]
-        ]
-      },
-      "properties": {
-        "name": "Route 1"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-123.27734112739563,44.56562272511972]
-      },
-      "properties": {
-        "name": "347 Strand Hall"
-      }
+Consider the following example of line.
+
+```xml
+<svg width="500" height="500">
+    <line x1="100" y1="50" x2="500" y2="50" stroke="black"/>
+</svg>
+```
+
+As you can see, we have applied x1, x2, y1 & y2 attributes to line element. Additionally, there's an attribute 'stroke' to specify the line color. This will look like below:
+
+![](img/svg-line.png)
+
+We learned about [manipulating DOM elements](http://www.tutorialsteacher.com/d3js/dom-manipulation-using-d3js) using D3 in the previous section. Using the same manipulation methods, we can draw the svg line with D3 as shown below.
+
+```html
+<body>
+<script>
+    //We create variables for the SVG's width and height. It is good to have them in variables so that you can change them at one place without having to go through the entire code in case you decide to change your SVG's dimensions.
+    var width = 500;
+    var height = 500;
+	
+    //Create SVG element: Next, we select the body element and append our SVG element to it and set SVG's width and height. We store the reference of this SVG in a variable called svg, so that we can use it later.
+    var svg = d3.select("body")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+    //Create line element inside SVG: Then we append a line element to our SVG and provide it with the x1, y1 x2, y2 and stroke attributes using attr() function.
+    svg.append("line")
+       .attr("x1", 100)
+       .attr("x2", 500)
+       .attr("y1", 50)
+       .attr("y2", 50)
+       .attr("stroke", "black")
+</script>
+</body>
+```
+
+### Text on Ellipse
+
+```html
+<body>
+<script>
+var width = 500;
+var height = 500;
+    
+var svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+var g = svg.append("g")
+            .attr("transform", function(d, i) {
+                return "translate(0,0)";
+            });
+
+var ellipse = g.append("ellipse")
+                .attr("cx", 250)
+                .attr("cy", 50)
+                .attr("rx", 150)
+                .attr("ry", 50)
+                .attr("fill", "green")
+                .attr("opacity", 0.5)
+
+g.append("text")
+ .attr("x", 140)
+ .attr("y", 50)
+ .attr("stroke", "steelblue")
+ .attr("font-family", "sans-serif")
+ .attr("font-size", "24px")
+ .text("I am a pretty ellipse!");
+</script>
+</body>
+```
+
+![](img/svg-ellipse2.png)
+
+Thus, we can create SVG elements using D3.js. Let's create SVG chart using D3 in the next section.
+
+## 2\. Create SVG Chart using D3
+
+Let's create a bar chart in SVG with D3.js. For the bar chart, we will use `<rect>` elements for the bars and `<text>` elements to display our data values corresponding to the bars. The following is a simple SVG bar chart HTML which we will create using D3.
+
+```xml
+<!doctype html>
+<html>
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<style>
+    svg rect {
+        fill: orange;
     }
-  ]
-}
+
+    svg text {
+        fill:white;
+        font: 10px sans-serif;
+        text-anchor: end;
+    }
+</style>
+<body>
+    <svg class="chart" width="420" height="120">
+        <g transform="translate(0,0)">
+            <rect width="50" height="19"></rect>
+            <text x="47" y="9.5" dy=".35em">5</text>
+        </g>
+        <g transform="translate(0,20)">
+            <rect width="100" height="19"></rect>
+            <text x="97" y="9.5" dy=".35em">10</text>
+        </g>
+        <g transform="translate(0,40)">
+            <rect width="120" height="19"></rect>
+            <text x="117" y="9.5" dy=".35em">12</text>
+        </g>
+    </svg>
+</body>
+</html>
 ```
 
-In the GeoJSON above, notice the use of several JavaScript objects embedded within one another. At the lowest level, you have a Polygon object. The Polygon object is contained within a Feature object. The feature is part of a `FeatureCollection` object. The GeoJSON specification gives precise details about how these objects are to be structured. It's important to be familiar with these structures, although you will rarely have to read or write them directly. You will typically use convenience classes or converter programs that have been developed to simplify the experience of working with GeoJSON.
+The output of the above example in the browser:
 
-**TopoJSON**
+![](img/svg-chart1.png)
 
-TopoJSON is an extension of GeoJSON that encodes topology. Rather than representing geometries discretely, **geometries in TopoJSON files are stitched together from shared line segments called arcs**. Arcs are sequences of points, while line strings and polygons are defined as sequences of arcs. Each arc is defined only once, but can be referenced several times by different shapes, **thus reducing redundancy and decreasing the file size**. In addition, TopoJSON facilitates applications that use topology, such as topology-preserving shape simplification, automatic map coloring, and cartograms.
+Let's break down the explanation into two: 1) Geometry and 2) Styles
 
-A reference implementation of the [TopoJSON specification]( https://github.com/topojson/topojson-specification) is available as a command-line tool to encode TopoJSON from GeoJSON (or ESRI Shapefiles) and a client side JavaScript library to decode TopoJSON back to GeoJSON again. TopoJSON is also supported by the popular OGR tool as of version 1.11 and PostGIS as of version 2.1.0.
+### Geometry
 
-```json
-{
-   "type":"Topology",
-   "objects":{
-      "collection":{
-         "type":"GeometryCollection",
-         "geometries":[
-            {
-               "type":"Polygon",
-               "properties":{
-                  "name":"Wilkinson Hall"
-               },
-               "arcs":[
-                  [
-                     1
-                  ]
-               ]
-            },
-            {
-               "type":"LineString",
-               "properties":{
-                  "name":"Route 1"
-               },
-               "arcs":[
-                  0
-               ]
-            },
-            {
-               "type":"Point",
-               "properties":{
-                  "name":"347 Strand Hall"
-               },
-               "coordinates":[
-                  9999, 0
-               ]
-            }
-         ]
-      }
-   },
-   "arcs":[
-      [
-         [ 9538,121],
-         [ -1077,-40],
-         [ -2614,376],
-         [ -2572, 1705],
-         [ -70, 6058],
-         [ -993,-41],
-         [ -14,283]
-      ],
-      [
-         [ 1090,9969],
-         [ -3,-306],
-         [ -1087,-16],
-         [ 31,-739],
-         [ 1252, 27],
-         [ 13,322],
-         [ 200,0],
-         [ 14, -792],
-         [ 1282,-17],
-         [ -28,1551],
-         [ -1674,-30]
-      ]
-   ],
-   "transform":{
-      "scale":[ 3.837256330000159e-7, 2.84555943622992e-7],
-      "translate":[ -123.281178, 44.56562272511972]
-   },
-   "bbox":[ -123.281178, 44.56562272511972, -123.27734112739563, 44.568468]
-}
+You may have noticed the group element `<g>` that we have introduced to hold our bars. Each group element here holds the corresponding bar and its text together.
+
+If you look at these `<g>` elements, you will notice that we had to hardcode our element positions. This is because SVG needs absolute positions with respect to the origin. Origin is always (0, 0) starting from the top-left of your screen.
+
+Notice the transform attribute: `transform="translate(0,20)"`
+
+In our `<rect>` and `<text>` elements, we provided the width and height attributes. But we also need to provide where these elements would be located on our screen. For this we use a transformation called translate. It essentially provides position coordinates for the elements relative to the origin. Other transform definitions are scale, rotate, skewX, and skewY. Read more about the transform specifications from [w3.org](https://www.w3.org/TR/SVG/coords.html#TransformAttribute).
+
+### Styles
+
+When it comes to styles, we use classes to give styles to our elements. We use the below class to paint our bar `<rect>` elements orange.
+
+```css
+svg rect {
+        fill: orange;
+    }
 ```
 
+Also, use the below CSS class to apply styles to our data values. SVG has a `<text>` element that can be used to display text output.
 
-**Other text files**
+```css
+svg text {
+        fill: white;
+        font: 10px sans-serif;
+        text-anchor: end;
+    }
+```
 
-Many GIS programs can read vector data out of other types of text files such as .gpx (popular format for GPS tracks) and various types of .csv (comma-separated value files often used with Microsoft Excel) that include longitude (X) and latitude (Y) columns. You can engineer your web map to parse and read these files, or you may want to use your scripting skills to get the data into another standard format before deploying it in your web map. This is where Python skills and helper libraries can be handy.
+As you can see, some of the properties used in SVG are different from the properties used in HTML. For example, fill is used to apply colors. text-anchor is used to position our text towards the right end of the bars. We will learn more about styling SVG in the future chapters.
 
-**Raster formats: GeoTIFF raster image**
+Now, let's create this SVG bar chart with D3.
 
-Most raster formats are openly documented and do not require royalties or attribution. These include JPEG, PNG, TIFF, BMP, and others. The GIF format previously used a patented compression format, but those patents have expired. Raster data is currently made available in GeoTIFF format with Deflate compression. See the [GeoTIFF Specification](https://trac.osgeo.org/geotiff/) for more details about this format.
+```html
+<html>
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        svg rect {
+            fill: orange;
+        }
 
-**Map tiles**
+        svg text {
+            fill:white;
+            font: 10px sans-serif;
+            text-anchor: end;
+        }
+    </style>
+</head>
+<body>
+<script>
+    var data = [5, 10, 12];
 
-Usually the base maps are stored as tile layers, designed for fast and simple access by web maps. Tile layers are also useful when you need to expose a map or layer on the web for the visualization of relatively static data. Tile layers come in different formats based on the original source data. Tile layers can be stored as prerendered raster tiles or as vector tiles. Both raster and vector tiles are designed to provide high-performance and high-scalability delivery of map data for visualization purposes.
+    var width = 200,
+        scaleFactor = 10,
+        barHeight = 20;
+
+    var graph = d3.select("body")
+                  .append("svg")
+                  .attr("width", width)
+                  .attr("height", barHeight * data.length);
+
+    var bar = graph.selectAll("g")
+                  .data(data)
+                  .enter()
+                  .append("g")
+                  .attr("transform", function(d, i) {
+                      return "translate(0," + i * barHeight + ")";
+                  });
+
+    bar.append("rect")
+       .attr("width", function(d) {
+           return d * scaleFactor;
+       })
+       .attr("height", barHeight - 1);
+
+    bar.append("text")
+       .attr("x", function(d) { return (d*scaleFactor); })
+       .attr("y", barHeight / 2)
+       .attr("dy", ".35em")
+       .text(function(d) { return d; });
+
+</script>
+</body>
+</html>
+```
+
+![](img/svg-chart1.png)
+
+Let's walk through the code step by step:
+
+`var data = [5, 10, 12];` defines our data array.
+
+```javascript
+var width = 200,
+    scaleFactor = 10,
+    barHeight = 20;
+    
+```
+
+The above code defines three variables to use later in our program:
+
+- width : Width of the svg
+- scalefactor: Since our data values are too small, they need to be scaled to a pixel value that is visible on the screen.
+- barHeight: This is the static height of our horizontal bars.
+
+```javascript
+var graph = d3.select("body")
+              .append("svg")
+              .attr("width", width)
+              .attr("height", barHeight * data.length);
+    
+```
+
+We first select the document body and create a new SVG element and append it. We will build our bar graph inside this SVG element. We then set the width and height of our SVG. Height is calculated as bar height * number of data values. We have taken 20 as bar height and data array length is 3. So SVG height would be 60 px.
+
+```javascript
+var bar = graph.selectAll("g") 
+               .data(data)
+               .enter().append("g")
+               .attr("transform", function(d, i) {
+                   return "translate(0," + i * barHeight + ")";
+               });
+        
+```
+
+Next, we want to place each of our bars inside corresponding `<g>` elements. So here, we create our group elements. We also apply the translate transformation here. Each of our group elements needs to be positioned one below the other because we want to build a horizontal bar chart. So our translation formula will be (current element index * bar height).
+
+```javascript
+bar.append("rect")
+   .attr("width", function(d) {
+       return d * scaleFactor;
+   })
+   .attr("height", barHeight - 1);
+```
+
+Now that we have our group elements ready, we will add the `<rect>` element for each bar. We have given it a width of (data value * scale factor) and height is (bar height - margin).
+
+```javascript
+bar.append("text")
+   .attr("x", function(d) { return (d*scaleFactor); })
+   .attr("y", barHeight / 2)
+   .attr("dy", ".35em")
+   .text(function(d) { return d; });
+```
+
+Finally, we want to display our data values as text on each bar. Width is defined as (`data value * scalefactor`) Text elements do not support padding or margin. For this reason, we need to give it a `"dy"` offset. This is used to align the text vertically.
+
+## 3\. Scales
+
+In our examples so far, when we wanted to draw shapes driven by our data values, we added a scaling factor to our data values. This was to ensure that our shapes are visible on the screen. Data values may not always correspond to pixel values on the screen. Some data values may be too large while others too small, to be used directly with pixel values.
+
+D3 Scales provide a convenient solution to this. They map our data values to values that would be better represented in visualizations. D3 provides the following scaling methods for different types of charts.
+
+| Scale Type         | Method                                                       | Description                                                  |
+| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Continuous         | d3.scaleLinear()                                             | Construct continuous linear scale where input data (domain) maps to specified output range. |
+| d3.scaleIdentity() | Construct linear scale where input data is the same as output. |                                                              |
+| d3.scaleTime()     | Construct linear scale where input data is in dates and output in numbers. |                                                              |
+| d3.scaleLog()      | Construct logarithmic scale.                                 |                                                              |
+| d3.scaleSqrt()     | Construct square root scale.                                 |                                                              |
+| d3.scalePow()      | Construct exponential scale.                                 |                                                              |
+| Sequential         | d3.scaleSequential()                                         | Construct sequential scale where output range is fixed by interpolator function. |
+| Quantize           | d3.scaleQuantize()                                           | Construct quantize scale with discrete output range.         |
+| Quantile           | d3.scaleQuantile()                                           | Construct quantile scale where input sample data maps to discrete output range. |
+| Threshold          | d3.scaleThreshold()                                          | Construct scale where arbitrary input data maps to discrete output range. |
+| Band               | d3.scaleBand()                                               | Band scales are like ordinal scales except the output range is continuous and numeric. |
+| Point              | d3.scalePoint()                                              | Construct point scale.                                       |
+| Ordinal            | d3.scaleOrdinal()                                            | Construct ordinal scale where input data includes alphabets and are mapped to discrete numeric output range. |
+
+Let's say we have the following data that gives you the share value of a company over the past 6 years: `[100, 400, 300, 900, 850, 1000]`. In this case, our data values are too big to be displayed as pixels on the screen! To fix this, we may think of reducing the values by multiplying them with a factor such as 0.5 or 0.2. Instead, we can use d3.scaleLinear function to do this for us. This will create a quantitative linear scale. (d3.scaleLinear was introduced in version 4 of D3. In the earlier versions, it was denoted as d3.scale.linear.)
+
+Before we use d3.scaleLinear function, we first need to understand two terms: **Domain** and **Range**.
+
+**Domain**
+
+Domain denotes minimum and maximum values of your input data. In our data `[100, 400, 300, 900, 850, 1000]`, 100 is minimum value and 1000 is maximum value.
+
+So, our domain is [100, 1000]
+
+**Range**
+
+Range is the output range that you would like your input values to map to.
+
+We may not have enough space to display a bar chart for the above values, if we map our data values to pixels. Let's say we want to display a chart in SVG within 500 px width. So, we would like our output range between 50 to 500, where minimum value will be mapped to 50 and maximum value will be mapped to 500 that is [50, 500]. That would mean, an input value of 100 would map to an output value of 50. And an input value of 1000 would map to an output value of 500. It means scaling factor is 0.5 and the data will be represented in pixels as: data value * 0.5.
+
+100 -> 50
+
+1000 -> 500
+
+So, now if our input value is 300, the output value would be 150.
+
+**Linear Scale**
+
+Let's use d3.scaleLinear function now. We will work with the horizontal bar chart example from the previous chapter. We had used a scaling factor of 10 to increase the width of bars in pixels because data values were too small `var data = [5, 10, 12];`.
+
+But now that we have learnt how to work with scales, instead of multiplying a scaling factor to the data values, we will use the d3.scaleLinear function.
+
+Let's use the above dataset to create our bar chart: `var data = [100, 400, 300, 900, 850, 1000];` and use the d3.scaleLinear to do the scaling for us as shown below.
+
+```javascript
+var data = [100, 400, 300, 900, 850, 1000];
+
+var scale = d3.scaleLinear()
+            .domain([100, 1000])
+            .range([50, 500]);
+```
+
+Above, we created a linear scale variable with the domain values [100, 1000] where 100 is the minimum value and 1000 is the maximum value in our data array and the output range is [50, 500]. So, we mapped our minimum data value to the output value 50, and maximum value 1000 to 500. The values between 100 to 1000 will be calculated automatically using the above scale function. Please note that a variable *scale* is a conversion function which will return output value according to the specified domain and range. We can pass any value between 100 to 1000 to scale function, and it will return the output value. For example, scale(200) will return 100 or scale(350) will return 175.
+
+In the above example, instead of providing minimum and maximum value for our domain manually we can use built-in d3.min() and d3.max() functions which will return minimum and maximum values respectively from our data array.
+
+```javascript
+var data = [100, 400, 300, 900, 850, 1000];
+
+var scale = d3.scaleLinear()
+            .domain([d3.min(data), d3.max(data)])
+            .range([50, 500]);
+```
+
+Now, let's create a bar chart for our large data values using d3.scaleLinear() function as below.
 
 
-## 3. Geospatial data conversion: Shapefile to GeoJson
+```javascript
+<body>
+<script>
+    var data = [100, 400, 300, 900, 850, 1000]
 
-This section will show you how to convert a shapefile to a geojson data step by step. Though there are multiple online or desktop based tools we could implement the conversion. Here, we would recommend using QGIS, mainly because it is intuitive to understand the conversion process and easy to use. Once you are familiar with QGIS, I believe you will be more confident in switching to other geospatial data conversion tools (e.g., ogr2ogr).
+    var width = 500,
+        barHeight = 20,
+        margin = 1;
 
-1\. Above all, we need to get some geospatial data. So, we download the shapefile of Oregon Counties (2015) from the data repository at [oregon explorer](http://oregonexplorer.info/data). This specific data set is located at [http://spatialdata.oregonexplorer.info/geoportal/details;id=361c06fee9de4e24a72e280fb386a771](http://spatialdata.oregonexplorer.info/geoportal/details;id=361c06fee9de4e24a72e280fb386a771). There is another copy of this data set in this repository at [assets/orcnty2015.zip](assets/orcnty2015.zip).
+    var scale = d3.scaleLinear()
+                 .domain([d3.min(data), d3.max(data)])
+                 .range([50, 500]);
 
-![](img/oregon_county_download.jpg)
+    var svg = d3.select("body")
+                  .append("svg")
+                  .attr("width", width)
+                  .attr("height", barHeight * data.length);
 
-2\. Press the download button to download the data, and unzip the file. you will see two sets of data, in terms of orcntyline and orcntypoly. In this tutorial, we will use the orcntpoly dataset.
+    var g = svg.selectAll("g")
+                  .data(data)
+                  .enter()
+                  .append("g")
+                  .attr("transform", function (d, i) {
+                      return "translate(0," + i * barHeight + ")";
+                  });
 
-![](img/oregon_county_download_folder.jpg)
+    g.append("rect")
+       .attr("width", function (d) {
+           return scale(d);
+       })
+       .attr("height", barHeight - margin)
 
-We are going to transform this current 7 file folder into a single, compact format called GeoJSON (http://geojson.org/). Geojson differs from a shapefile in a few ways. The first is that GeoJSON is an open standard format.
+    g.append("text")
+       .attr("x", function (d) { return (scale(d)); })
+       .attr("y", barHeight / 2)
+       .attr("dy", ".35em")
+       .text(function (d) { return d; });
+```
 
-3\. Open QGIS.
+The above example will display the following result in the browser.
 
-![](img/qgis-interface.jpg)
-
-4\. A shapefile is a vector file format. We will add our shapefile to our project through the 'Add Vector Layer'. Everything in the Source type dialogue can be left as is. Use the browser to navigate to the location of your shapefile. Click open to load the shapefile into QGIS.
-
-![](img/qgis-open-data.jpg)
-
-5\. In a new QGIS project, a great first question is what map projection is our shapefile in? Double click on the shapefile in the Table of Contents to pull up the Properties Dialogue Box. In the General tab, under 'Coordinate reference system' you will see a value `EPSG:4269, NAD83` representing our map projection.
-
-![](img/qgis-general-tab.jpg)
-
-For our purposes we will convert our shapefile into a GeoJson and into a geographic projection for web mapping. EPSG is a coded value that is used to identify certain projections, which in this case is 4269. We want to convert this to 4326, WGS84, a more suitable web mapping projection.
-
-6\. Close the Layer Properties page, and then Right click on the shapefile `orcntypoly` in the Table of Contents, and click Save as.
-
-![](img/qgis-save-as.jpg)
-
-7\. In the Save As dialogue, switch the format to GeoJson. Then click the small globe-ish icon to the right of the CRS drop down option. Enter '4326' in the Filter box and select EPSG: 4326. Click OK.
-
-![](img/qgis-4326.jpg)
-
->**Note:** in order to reduce the size of geospatial data, you can change the coordinate precision. To do that, in the `Layer Options` Section, Please change the precision value to a smaller number. In our case, we use 10 instead of 15.
-
- ![](img/qgis-precision.jpg)
-
-
-8\. Browse to your location and save the file. There is a copy of the geojson data in this repository at [assets/oregon_county.geojson](assets/oregon_county.geojson).
-
-![](img/qgis-geojson-saveas.jpg)
-
-9\. The file will be automatically added to the current project view.
-
-![](img/gis-geojson-mapview.jpg)
-
-10\. Now you can open the geojson file in a text editor (e.g., webstorm) to view the json structure.
-
-![](img/gis-webstorm-view-geojson.jpg)
-
-11\. And also you can validate the data on [http://www.geojson.io](http://www.geojson.io).
-
-![](img/qgis-geojson-io.jpg)
-
-Now we have a single geojson file opposed to a complicated shapefile structure, and a geojson file in a more appropriate for web based geovisualization.
-
-## 4. Simplify geographic details
-
-Simplifying shapes can be benificial because it lessens the number of vertices in a shape, which ultimately reduces the
-file size. This might be desirable if you’re working with a very large dataset, such as zip codes for the entire United
-States. Simplifying vector will make your file size smaller, which is great if your working with the GeoJSON format to
-create web maps. for example the following figures present applying a simplification method on a shapefile. Mapshaper tool has been used to create a simplified shapefile.
+![](img/bar-chart-with-scaleLinear.png)
 
 
- ![](img/BeforeSimplification.jpg)
 
-Simplification process results in a smoother shape (see the figure below):
+In the above example, the following code snippet defines the scale for our chart.
 
-![](img/aftersimplification.jpg)
+```javascript
+var data = [100, 400, 300, 900, 850, 1000];
 
-Please see the reference section for other tools which can be used for simplifying the geographic details of your dataset.
+var scale = d3.scaleLinear()
+            .domain([d3.min(data), d3.max(data)])
+            .range([50, 500]);
+```
 
-**Deciding which simplification method to use**
+We then use this scale function to set the width of rectangle bars as below. The `scale(d)`function call will return an output value for each value in the array.
 
-These screengrabs illustrate the difference between different simplification methods in [Mapshaper tool](https://github.com/mbloch/mapshaper/wiki/Simplification-Tips).
+```javascript
+g.append("rect")
+    .attr("width", function (d) {
+        return scale(d);
+    })
+    .attr("height", barHeight - margin)
+```
 
-Ex. 1: Natural Earth 10m coastlines, simplified with weighted Visvalingam at 5% point retention.
-![](img/mapshaper1.jpg)
+## 4\. Axes
+
+The axes renders human-readable reference marks for scales. Graphs have two axes: the horizontal axis or the x-axis and the vertical axis or the y-axis.
+
+D3 provides functions to draw axes. An axis is made of lines, ticks and labels. An axis uses scale, so each axis will need to be given a scale to work with.
+
+D3 provides the following functions to draw axes.
+
+| Axis Method     | Description                           |
+| --------------- | ------------------------------------- |
+| d3.axisTop()    | Creates top horizontal axis.          |
+| d3.axisRight()  | Creates vertical right-oriented axis. |
+| d3.axisBottom() | Creates bottom horizontal axis.       |
+| d3.axisLeft()   | Creates left vertical axis.           |
+
+So far in our visualizations we haven't added any axes. Let's learn how to add x axis to a graph.
+
+```html
+<body>
+<script>
+    var width = 400,
+        height = 100;
+
+    var data = [10, 15, 20, 25, 30];
+    
+    // Append SVG 
+    var svg = d3.select("body")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+    // Create scale
+    var scale = d3.scaleLinear()
+                  .domain([d3.min(data), d3.max(data)])
+                  .range([0, width - 100]);
+
+    // Add scales to axis
+    var x_axis = d3.axisBottom()
+                   .scale(scale);
+
+    //Append group and insert axis
+    svg.append("g")
+       .call(x_axis);
+
+</script>
+</body>
+```
+
+The above example will display the following result.
+
+![](img/x-axes.png)
 
 
-Ex 2: Same file using Douglas-Peucker, also 5% simplification.
-![](img/mapshaper2.jpg)
-## References:
 
-[1] GeoJson/TopoJson Converter:
+Let's walk through the above code:
 
-- http://geojson.io/
-- http://shancarter.github.io/distillery/
-- http://mapstarter.com/
-- http://www.mapshaper.org/
-- http://shpescape.com/mix/
+`var width = 400, height = 100;` Like always, we have defined our SVG width and height as variables.
 
-[2] Spatial data on a diet: tips for file size reducation using TopoJSON:
-http://zevross.com/blog/2014/04/22/spatial-data-on-a-diet-tips-for-file-size-reduction-using-topojson/
+`var data = [10, 15, 20, 25, 30];` defines our dataset as an array.
 
-[3] https://gist.github.com/YKCzoli/b7f5ff0e0f641faba0f47fa5d16c4d8d
+```javascript
+var svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+```
+
+Next, we create our SVG element and set its width and height.
+
+```
+ var scale = d3.scaleLinear()
+               .domain([d3.min(data), d3.max(data)])
+               .range([0, width - 100]);
+```
+
+We create a linear scale and specify our domain and range. Observe how we have used d3.min and d3.max functions to get the minimum and maximum values from our dataset. Min would be 10 and max would be 30.
+
+`.range([0,width-100])` specifies the range [0,300]. So value 10 will be map to 0 and value 300 woill be map to 30.
+
+```javascript
+ var x_axis = d3.axisBottom()
+                .scale(scale);
+```
+
+We use d3.axisBottom to create our x-axis and provide it with the scale we defined earlier.
+
+```javascript
+ svg.append("g")
+    .call(x_axis);
+```
+
+And finally, we append a group element and insert x-axis.
+
+Similarly, we can create a vertical axis using `d3.axisLeft()` function as shown below.
+
+Example: y-axis
+
+```javascript
+<body>
+<script>
+    var width = 400, height = 100;
+
+    var data = [10, 15, 20, 25, 30];
+    var svg = d3.select("body")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+    var scale = d3.scaleLinear()
+                  .domain([d3.min(data), d3.max(data)])
+                  .range([height/2, 0]);
+
+    var y_axis = d3.axisLeft()
+                  .scale(scale);
+
+    svg.append("g")
+       .attr("transform", "translate(50, 10)")
+       .call(y_axis);
+
+</script>
+</body>
+```
+
+This will draw y-axis in the browser as shown below.
+
+[![img](http://www.tutorialsteacher.com/Content/images/d3js/y-axis.png)](http://www.tutorialsteacher.com/Content/images/d3js/y-axis.png)Y-Axis in D3
+
+Let's understand the above example code.
+
+```javascript
+var scale = d3.scaleLinear()
+             .domain([d3.min(data), d3.max(data)])
+             .range([height/2, 0]);
+```
+
+We created a linear scale and specified our domain and range using the data. We used d3.min and d3.max functions to get the minimum and maximum values from our dataset.
+
+```javascript
+var y_axis = d3.axisLeft()
+            .scale(scale);
+```
+
+We use d3.axisLeft to create our y-axis and provide it with the scale we defined above.
+
+```javascript
+svg.append("g")
+   .attr("transform", "translate(50, 10)")
+   .call(y_axis);
+```
+
+Finally, we append a group element and call the y-axis function. So, all the components of the y-axis will be grouped under the group element. We then apply a translate transformation to align the y-axis to 50px right of the origin and 10px to the bottom of the origin. This ensures a better visual representation on the screen.
+
+**Note**: The d3.axisBottom() and d3.axisLeft() functions have been introduced in the latest version of D3 i.e. version 4. Earlier versions used d3.svg.axis() with orient("left") and orient("bottom") for y-axis and x-axis respectively.
+
+Let's get both the axes together now!
+
+Example: Axes
+
+```html
+<body>
+<script>
+    var width = 400, height = 100;
+
+    var data = [10, 15, 20, 25, 30];
+    var svg = d3.select("body")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+    var xscale = d3.scaleLinear()
+                   .domain([0, d3.max(data)])
+                   .range([0, width - 100]);
+
+    var yscale = d3.scaleLinear()
+                   .domain([0, d3.max(data)])
+                   .range([height/2, 0]);
+
+    var x_axis = d3.axisBottom()
+                   .scale(xscale);
+
+    var y_axis = d3.axisLeft()
+                   .scale(yscale);
+
+    svg.append("g")
+       .attr("transform", "translate(50, 10)")
+       .call(y_axis);
+
+    var xAxisTranslate = height/2 + 10;
+
+    svg.append("g")
+            .attr("transform", "translate(50, " + xAxisTranslate  +")")
+            .call(x_axis)
+
+</script>
+</body>
+```
+
+And the grand output:
+
+[![img](http://www.tutorialsteacher.com/Content/images/d3js/axes-in-d3.png)](http://www.tutorialsteacher.com/Content/images/d3js/axes-in-d3.png)X & Y Axes
+
+## 5\. More examples
+
+#### Bar Chart
+
+https://bl.ocks.org/mbostock/3885304
+
+#### Line Chart
+
+https://bl.ocks.org/mbostock/3883245
+
+#### Pie Chart
+
+https://bl.ocks.org/mbostock/3887235
+
+#### DashBoard
+
+http://bl.ocks.org/NPashaP/96447623ef4d342ee09b
