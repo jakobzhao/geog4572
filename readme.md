@@ -30,7 +30,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 ## :bar_chart: GRADING CRITERIA
 
 | Item  | Description | % of Final Grade (GEOG 472) | % of Final Grade (GEOG 572) |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | ---------------------------------- |
 | **Participation**                        | Discussion, in-class work and other activities   | 5                           | 5                           |
 | **Quizzes**                              | no more than **6** in-class or take-home quizzes covering topics from lecture and reading assignments.      | 25                         | 10                        |
 | **Labs**                                 | **3** lab assignments. We understand that many of the programming techniques discussed early in the course will be relatively new. Recognizing this, the first 2 lab assignments will contain more detailed instructions.         | 30                          | 20                          |
