@@ -35,10 +35,3 @@
 - Bootstrap 4 Grids
 
 - Bootstrap 4 Themes
-
-
-[2] Google (2018) Add gtag.js to your site April 25, 2018 from https://developers.google.com/analytics/devguides/collection/gtagjs/
-
-### Optional:
-
-ALl other concepts in the Bootstrap 3 Tutorial from W3Schools.

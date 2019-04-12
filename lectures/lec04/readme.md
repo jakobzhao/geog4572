@@ -16,6 +16,6 @@
 
 [Map Events and Mashup](part02/)
 
-### Part III
+### ~~Part III~~
 
-[Map Interaction](part03/)
+[~~Map Interaction~~](part03/)

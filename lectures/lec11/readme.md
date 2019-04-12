@@ -1,4 +1,4 @@
-# Vector Field
+# Flow Map
 
 > Spring 2018 | Geography 4/572 | Geovisualization: Geovisual Analytics
 >
@@ -7,7 +7,7 @@
 > **Contributors：** Brandi Black, Lila Leatherman, Brian Katz
 
 Flow map
- 
+
 [leaflet-swoopy](https://wbkd.github.io/leaflet-swoopy/)
 
 [Demo](http://jakobzhao.github.io/geog4572/lectures/lec20/index.html)
