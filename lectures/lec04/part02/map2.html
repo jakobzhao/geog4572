@@ -26,8 +26,8 @@
 
     // load GeoJSON from an external file
     L.geoJson.ajax("assets/geog371.geojson", {
-        onEachFeature: function(feature, layer) {
-            layer.bindPopup(feature.properties.name);
+        onEachFeature: function(feature1, layer1) {
+            layer1.bindPopup(feature1.properties.name);
         }
     }).addTo(map);
 </script>

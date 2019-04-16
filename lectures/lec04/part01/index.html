@@ -21,9 +21,10 @@
     });
 
     // Add OpenStreetMap tile layer to map element
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  var basemap =  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+    });
+    basemap.addTo(map);
 
     // Create point feature for Wilkinson Hall
 

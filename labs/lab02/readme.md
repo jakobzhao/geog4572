@@ -12,7 +12,7 @@ In this lab, we will design an interact web map of cell towers in Oregon. When c
 
 ![](img/final_map.jpg)
 
-To get started, please synchronize the course material to the working space of your local computer. If you are working in the Digital Earth Lab, please synchronize your course material on the desktop directory.  The material for this lab is located at `[your_working_space]/geog4572/labs/lab03`. Next, open the course material in Webstorm.
+To get started, please synchronize the course material to the working space of your local computer. If you are working in the Digital Earth Lab, please synchronize your course material on the desktop directory.  The material for this lab is located at `[your_working_space]/geog4572/labs/lab02`. Next, open the course material in Webstorm.
 
 ## 1. Set up our Map and Add Data
 
@@ -693,7 +693,7 @@ Regarding the grading criteria, this web map of airports needs include:
 
 ## Submission
 
-- you will need to synchronize this project to a GitHub repository. Please make sure the name of your repository is **NOT** `lab03` or similiar , use a name which can describe the theme of the map you will make. Think about that, which one you prefer - showing your future employer or Ph.D. admission committee a lot of course work on github or a list of professional projects.
+- you will need to synchronize this project to a GitHub repository. Please make sure the name of your repository is **NOT** `lab02` or similiar , use a name which can describe the theme of the map you will make. Think about that, which one you prefer - showing your future employer or Ph.D. admission committee a lot of course work on github or a list of professional projects.
 
 - your interactive web map should be accessible from a url link, which should be `http://[your_github_username].github.io/[your_repository_name]/index.html`. (You may want to check out previous lecture or lab handouts on project management, and how to host via GitHub); **(6 points)**
 
