@@ -1,93 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<meta charset="UTF-8">
 <head>
-	<meta charset="UTF-8">
-	<title>Icons and SVG</title>
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
-	<!--include the stylesheet for using font awesome-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
-	<!--include the stylesheet for using Google Material Icons-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<style>
-		.red {
-			color: red;
-		}
+    <title>Real-time Twitter Map</title>
+    <!--stylesheets-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff; }
+    </style>
+    <!--javascript libraries-->
+    <script src="socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
 
-		.large {
-			font-size: 5vw;
-		}
+    <!--activate leaflet-heat to make heatmap-->
+    <script src="js/leaflet-heat.js"></script>
 
-
-		.large:hover {
-			font-size: 8vw;
-			color: orange;
-
-		}
-
-		.extra-large {
-			font-size: 8vw;
-		}
-	</style>
+    <!--activate jquery and bootstrap to use the glyphicons-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
+
 <body>
-<h1>Font Awesome</h1>
+<div id="map"></div>
+<script type="text/javascript">
 
-<small>a few examples of using font awesome icons. For more information, plesae check <a
-		href="https://fontawesome.com/how-to-use/web-fonts-with-css"> here</a> for more information.
-</small>
+    // construct a leaflet map object
+    var map = L.map("map").setView([0, 0], 3);
 
-<div>
-	<!--user icon in two different styles-->
-	<p><i class="fas fa-user"></i>
-		<i class="far fa-user"></i>
-		<!--brand icon-->
-		<i class="fab fa-github-square"></i>
-	</p>
-	<p>
-		<i class="fab fa-github fa-xs"></i>
-		<i class="fab fa-github fa-sm"></i>
-		<i class="fab fa-github fa-lg"></i>
-		<i class="fab fa-github fa-2x"></i>
-		<i class="fab fa-github fa-3x"></i>
-		<i class="fab fa-github fa-5x"></i>
-		<i class="fab fa-github fa-7x"></i>
-		<i class="fab fa-github fa-10x"></i>
-	</p>
+    // construct the base map.
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png').addTo(map);
 
-	<p>
-        <span class="fa-stack fa-2x">
-  <i class="fas fa-square fa-stack-2x"></i>
-  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-</span>
-		<span class="fa-stack fa-2x">
-  <i class="fas fa-circle fa-stack-2x"></i>
-  <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
-</span>
-		<span class="fa-stack fa-2x">
-  <i class="fas fa-square fa-stack-2x"></i>
-  <i class="fas fa-terminal fa-stack-1x fa-inverse"></i>
-</span>
-		<span class="fa-stack fa-2x">
-  <i class="fas fa-camera fa-stack-1x"></i>
-  <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
-</span>
+    // make an empty heatmap layer
+     var heatmap = L.heatLayer([], {radius: 10}).addTo(map);
 
-	</p>
+    // an data string object defined by socket.io.js
+    if(io !== undefined) {
 
-</div>
-<hr>
-<h1>Material Icons</h1>
-<small>a few examples of using material icons. This icon library is maintained by Google. For more information, plesae
-	check <a href="http://google.github.io/material-design-icons/"> here</a> for more information.
-</small>
-<div>
-	<p>
-		<span> <i class="material-icons">info</i></span>
-		<span> <i class="material-icons red">face</i></span>
-		<span> <i class="material-icons large">room</i></span>
-		<span> <i class="material-icons extra-large">favorite</i></span>
+        // data streaming source connector
+        var socket = io.connect('/');
 
-	</p>
-</div>
+        // listen to the "twstreaming" channel to receive tweets
+
+        socket.on('twstreaming', function (data) {
+
+            //add a dot in the glow effect
+            var marker = L.marker([data.lng, data.lat],  {icon: L.divIcon({className: 'glyphicon glyphicon-one-fine-smaller-dot glow-effect'})} ).addTo(map);
+
+            //add a dot in the heatmap layer
+             heatmap.addLatLng([data.lng,data.lat])
+        });
+
+        // listen to the connected event to make sure the data streaming source is connected
+        socket.on("connected", function(r) {
+
+            // if connected, inform the server that the client is ready to receive tweets.
+            socket.emit("start tweets");
+        });
+    }
+
+</script>
 </body>
 </html>

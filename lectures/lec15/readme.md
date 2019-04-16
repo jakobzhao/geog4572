@@ -1,4 +1,4 @@
-# Heatmap
+# GeoViz Evaluation
 
 > Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
@@ -6,107 +6,45 @@
 
 **Learning Objectives**
 
-- make a heat map of points.
+- Learn how to set up a google analytics to assess your web site.
+
+Google Analytics is a freemium web analytics service offered by Google that tracks and reports website traffic. Google launched the service in November 2005 after acquiring Urchin. Google Analytics is now the most widely used web analytics service on the Internet.
+
+Google Analytics is implemented with "page tags", in this case, called the Google Analytics Tracking Code, which is a snippet of JavaScript code that the website owner adds to every page of the website. The tracking code runs in the client browser when the client browses the page (if JavaScript is enabled in the browser) and collects visitor data and sends it to a Google data collection server as part of a request for a web beacon.
+
+![](img/interface.jpg)
 
 
-![](img/leaflet.heat.png)
+The tracking code loads a larger JavaScript file from the Google web server and then sets variables with the user's account number. The larger file (currently known as ga.js) is typically 18 KB. The file does not usually have to be loaded, however, due to browser caching. Assuming caching is enabled in the browser, it downloads `ga.js` only once at the start of the visit. Furthermore, as all websites that implement Google Analytics with the ga.js code use the same master file from Google, a browser that has previously visited any other website running Google Analytics will already have the file cached on their machine.
 
-Leaflet.heat is a tiny, simple and fast [Leaflet](http://leafletjs.com) heatmap plugin.
+## 1 Register Google Analytics
 
-**Demos**
+https://analytics.google.com/
 
-- [10,000 points ](http://leaflet.github.io/Leaflet.heat/demo)
-- [Adding points dynamically ](http://leaflet.github.io/Leaflet.heat/demo/draw.html)
+## 2 Create A new Property
 
-### 1 Usage
+Click on the `admin` page at the end of the left side bar, and then click the `create property` button on the opened-up page to create a new property.
 
-```js
-var heat = L.heatLayer([
-	[50.5, 30.5, 0.2], // lat, lng, intensity
-	[50.6, 30.4, 0.5],
-	...
-], {radius: 25}).addTo(map);
-```
+![](img/createproperty.png)
 
-To include the plugin, just use `leaflet-heat.js` from the `dist` folder:
+## 3 On the newly opened page, please input the website name, website url and reporting time zone. Once filled, press the button `Get Tracking ID`.
 
-```html
-<script src="leaflet-heat.js"></script>
-```
+![](img/property.png)
 
-### 2 L.heatLayer(latlngs, options)
+## 4 Then you will see your Tracking ID and `gtag.js`. Below is the `gtag.js` code snippet:
 
-Constructs a heatmap layer given an array of points and an object with the following options:
-- **minOpacity** - the minimum opacity the heat will start at
-- **maxZoom** - zoom level where the points reach maximum intensity (as intensity scales with zoom),
-  equals `maxZoom` of the map by default
-- **max** - maximum point intensity, `1.0` by default
-- **radius** - radius of each "point" of the heatmap, `25` by default
-- **blur** - amount of blur, `15` by default
-- **gradient** - color gradient config, e.g. `{0.4: 'blue', 0.65: 'lime', 1: 'red'}`
-
-Each point in the input array can be either an array like `[50.5, 30.5, 0.5]`,
-or a [Leaflet LatLng object](http://leafletjs.com/reference.html#latlng).
-
-Optional third argument in each `LatLng` point (`altitude`) represents point intensity.
-Unless `max` option is specified, intensity should range between `0.0` and `1.0`.
-
-### 3 Methods
-
-- **setOptions(options)**: Sets new heatmap options and redraws it.
-- **addLatLng(latlng)**: Adds a new point to the heatmap and redraws it.
-- **setLatLngs(latlngs)**: Resets heatmap data and redraws it.
-- **redraw()**: Redraws the heatmap.
-
-
-Using this Heatmap plugin for leaflet, I created a heatmap of cell towers in Oregon. Please pay attention to how to link in the **leaflet heat plugin**, and how to use the **heatlayer**.
-
-### 4 Heatmap generation
-
-```HTML
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Cell Tower Heat Map </title>
-  <link rel="stylesheet"  href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-</head>
-<body>
-	<div id="map" style="width: 900px; height: 600px"></div>
-<script src="assets/2013-earthquake.js"></script>
+```javascript
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100818948-3"></script>
 <script>
-	var map = L.map('map').setView([44.1, -120.5], 7);
-	L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; \<a href="http://openstreetmap.org"\>OpenStreetMap\</a\> Contributors',
-		maxZoom: 18
-    }).addTo(map);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-	var heat = null;
-	// Get GeoJSON and put on it on the map when it loads
-	$.getJSON("assets/cell_towers.geojson",function(data){
-      // set cellTowers to the dataset, and add the cell towers GeoJSON layer to the map
-      cell_tower_data = [];
-      for (var i = 0; i < data.features.length; i++ ) {
-          cell_tower_data[i] = [
-                      data.features[i].geometry.coordinates[0][1],
-                      data.features[i].geometry.coordinates[0][0]]
-      }
-
-      heat = L.heatLayer(cell_tower_data,{
-            radius: 35,
-            blur: 10,
-            maxZoom: 17,
-            gradient: {0.05: 'blue', 0.25: 'lime',  0.27: 'yellow', 0.3: 'red'}
-          }).addTo(map);
-	});
-
+  gtag('config', 'UA-100818948-3');
 </script>
-</body>
-</html>
 ```
 
-![](img/heatmap-client.png)
-> using leaflet.heat to create a heat map at the client side.
+Copy and paste this code as the last elemennt inside `<body>` of every webpage you want to track. If you already have a Global Site Tag on your page, simply add the config line from the snippet below to your existing Global Site Tag.
+
+[Here](view-source:jakobzhao.github.io) is an example of web page using the `gtag.js`. (Pleas scroll down to the very end of this page.)

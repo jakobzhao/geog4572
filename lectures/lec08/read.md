@@ -19,22 +19,3 @@ D3 - Bar Chart
 D3 - Animated Bar Chart
 
 D3 - Pie Chart
-
-[2] DC.JS GETTING STARTED AND HOW-TO GUIDE (2018) http://dc-js.github.io/dc.js/docs/stock.html
-
-
-[3] Stephen Levine (2018) Examples of using dc.js http://dc-js.github.io/dc.js/examples/
-
-[Area Chart](http://dc-js.github.io/dc.js/examples/area.html)
-
-[Bar Chart](http://dc-js.github.io/dc.js/examples/bar.html)
-
-[Line Chart](http://dc-js.github.io/dc.js/examples/line.html)
-
->Note: If you have more time, please also walk through other examples.
-
-## Optional
-
-[4] Square Inc. (20XX) Crossfilter http://crossfilter.github.io/crossfilter/
-
-

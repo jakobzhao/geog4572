@@ -1,4 +1,4 @@
-# Color Use and Web Typogrpahy
+# Word Cloud
 
 > Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
@@ -6,344 +6,234 @@
 
 **Learning Objectives**
 
-- Understand the different format of defining colors on the web;
-- Make choropleth color ramps using chroma.js, and
-- Understand how to use Google fonts.
+- In this lecture, we will demostrate how to generate a word cloud by a jquery plugin [`jQCloud`](http://mistic100.github.io/jQCloud/demo.html).
+- Able to apply word cloud analysis to a massive textual data.
 
+A word cloud is a novelty visual representation of text data, typically used to depict keyword metadata (tags) on websites, or to visualize free form text. Tags are usually single words, and the importance of each tag is shown with font size or color. This format is useful for quickly perceiving the most prominent terms and for locating a term alphabetically to determine its relative prominence. When used as website navigation aids, the terms are hyperlinked to items associated with the tag.
 
-## Color
+In principle, the font size of a word in a word cloud is determined by its incidence. The greater the incidence, the large the size of the word, or the darker the color of the word.
 
-Color is the visual perceptual property corresponding in humans to the categories called red, blue, yellow, green and others. Color derives from the spectrum of light (distribution of light power versus wavelength) interacting in the eye with the spectral sensitivities of the light receptors.
+![](img/geo.png)
 
-Color plays an important role in geospatial science and technology, especially in Cartography and Remote sensing, due to its ability to convey qualitative and quantitative information. Thus, the proper understanding and use of color is crucial to the creation of visual representations that clearly portray aspects of the real world with minimal confusion and misinterpretation.
+> ***A word cloud*** about the term "Geography" - from [ibreakstock](https://www.videoblocks.com/video/geography-animated-word-cloud-text-design-animation-kinetic-typography-hhc0bkue-j2qxktvx).
 
-**Color Values**
+## Data
 
-```css
-rgb(255, 255, 255)
-rgb(10%, 20%, 30%)
-rgba(255, 255, 255, 0.4)
-rgba(10%, 20%, 30%, 0.4)
-hsl(120, 50%, 20%)
-hsla(120, 50%, 20%, 0.4)
-#ffeeaa
-#fea
-steelblue
+![](img/yft-archives.png)
+
+A word cloud can be used to explore textual data.  For example, if you collected comments from hundreds of participants in a survey, a word cloud can visualize the top-frequency terms all the participants have been mentioned collectively. Also, word cloud can explore text, letter, book chapter, with the goal to quickly understand its main topics and opinions.
+
+In this lecture, we would like to explore all the lectures which Yi-fu Tuan, a well-known geographer, have wrote and publicly shared to its colleagues. There are only 7 letters in total, each of them has ~500 words.
+
+Here is the visualization of the word cloud we will generate.
+
+![](img/wc.png)
+
+As you can easily observe, for all the letters from 2011 to 2012, he mentioned `music, political, why, person, human, social, culture, walking, ...` quite often. From these term, we can tell what were his major concerns; and how he interacted with the word, like the high-frequency term he used `see, feel, walk, rationalize, ...`.
+
+First thing first, we collected these letters from http://www.yifutuan.org/archive/2011/index.htm, and then classified all the letters by their wroten year. Sebquently, we converted all the letters in an array and formatted in json. The data was named `yft.json`, and was stored in the [assets](assets/yft.json). folder
+
+> **Note:** We change the formate to json because `jquery` supports json data reading.
+
+Here is a code snippet of this json file
+
+```json
+ {
+    "id": 1,
+    "title": "How Not To Be a Minority Person",
+    "content": "It is said that Winston Churchill claimed to have Red Indian blood through one of his American ancestors. If true, it is strange that he should make the claim, for it is as if being a descendent of the Duke of Marlborough was not enough and that he needed the genes of an Indian chief for added luster. If perchance Churchill had Chinese blood, ...",
+    "time": "2011"
+  },
+ ...]
 ```
 
-**Hex triplet for color**
+To read this json file, we use the method `$.getJSON(url/path, data-processing-function)` of jquery, it will be used as below.
 
-A hex triplet is a six-digit, three-byte hexadecimal number used in HTML, CSS, SVG, and other computing applications to represent colors. The bytes represent the red, green and blue components of the color. One byte represents a number in the range 00 to FF (in hexadecimal notation), or 0 to 255 in decimal notation. This represents the least (0) to the most (255) intensity of each of the color components. Thus web colors specify colors in the True Color (24-bit RGB) color scheme. The hex triplet is formed by concatenating three bytes in hexadecimal notation, in the following order:
-
-- Byte 1: red value (color type red)
-- Byte 2: green value (color type green)
-- Byte 3: blue value (color type blue)
-
-```css
-.threedigit { color: #09C;    }
-.sixdigit   { color: #0099CC; } /* same color as above, Shorthand hexadecimal form */
+```javascript
+$.getJSON( "assets/yft.json", function( data ) {
+	... ...
+	... ...
+});
 ```
+the first parameter of `$.getJSON` is the path of the data, and the second one is the data processing function, the input of this function is the data read from the url.
 
-### Color spaces
 
-#### RGB
+## Initialize a HTML page
 
-RGB is designed for screens, where colours are generated by individual red, green and blue elements. The actual colour of RGB colours depends on the device being used, although the sRGB colour space exists as a standardised colour space that the web nominally uses, and all RGB colours here are treated as sRGB. RGB values are easy to work with mathematically (they're all values between 0 and 255), and all colours on this page end up being converted to RGB values to be displayed, but they suffer from the problem of not being perceptually uniform nor intuitive to work with (it's hard to imagine what sort of colour you have just from RGB values, and it's also hard to modify colours intuitively with RGB).
-
-
-An RGB color value is specified with: `rgb(red, green, blue)`. Each parameter (red, green, and blue) defines the intensity of the color as an integer between 0 and 255. For example, `rgb(0,0,255)` is rendered as blue, because the blue parameter is set to its highest value (255) and the others are set to 0.
-
-```css
-div {
-    background-color: rgb(0, 191, 255);
-    color: rgb(255, 255, 255);
-}
-```
-
-#### HSV and HSL
-
-
-![](assets/color_diagram.png)
-
-HSV and HSL are cylindrical versions of RGB, which are intended to be much more intuitive to use. HSV colours are represented by hue, saturation and value, while HSL colours are represented by, hue, saturation and lightness, except with different definitions of saturation. In HSL, a colour of maximum lightness will always be white, regardless of hue and saturation, while in HSV, a colour of maximum value will be the most intense colour given the hue and saturation (so pure red is a red hue with maximum saturation and value).
-
-HSV and HSL suffer from RGB's lack of perceptual uniformity, so changing one dimension can result in apparent changes in other dimensions. For example, pure green and pure blue have the same saturation and lightness/value, but green appears to be a much lighter colour. Gradients interpolated in the HSV or HSL colour space are particularly prone to problems with this when they shift between many different hues. The is the problem that Lab and Lch overcome.
-
-HSL color values are specified with: `hsl(hue, saturation, lightness)`.
-
-```css
-div {
-    background-color: hsl(180, 50%, 50%);
-    color: hsl(0, 0%, 100%);
-}
-```
-
-
->**Note:** CMYK Colors：is a combination of CYAN, MAGENTA, YELLOW , and BLACK.Computer screens display colors using RGB color values. Printers often presents colors using CMYK color values. CMYK is not supported in HTML, but it is suggested as a new standard in CSS4.
-
-#### Lab
-
-Lab (or CIE 1976 (L*, a*, b*), or CIELAB) is **a colour space that is designed for the human eye.** It is perceptually uniform, which means that the difference between two colour values correlates with the perceived degree of difference between the two colours (the difference between colours is measured by their Euclidean distance). Therefore, gradients between two colours using the Lab colour space will change very uniformly between the colours. L is the lightness of the colour, a is the position between green (negative values) and red/magenta (positive values), and b is the position between blue (negative values) and yellow (positive values). The idea is that colours cannot be both green and red, or blue and yellow, and that colours can be described by a combination of their green/redness and blue/yellowness, and the lightness.
-
-Lab can describe all colours that the human eye can perceive, but also many beyond what can exist in the physical world (not to mention that computer displays can display a limited subset of real colours). One of the difficulties of Lab is that the valid ranges of L, a and b vary depending on the values of the other two values. L can be between 0 and 100, and a and b are normally within the range of -100 to 100, although a pure sRGB blue has a b of -108.
-
-#### Lch
-
-Lch (or CIELCH) is a cylindrical version of Lab, which means that the two opponent colour dimensions (a and b) are represented by a hue, h, and chroma, c (if a and b are Cartesian coordinates, h and c are polar coordinates). Gradients interpolated in the Lch colour space will transition between hues, so a gradient between yellow and blue (opposing colours in Lab) will transition via green (or red/magenta) in Lch, but via grey in Lab.
-
-
-### Color Scheme
-
-**1\. Color Brewer schemes (supported by both chroma.js and d3.js)**
-
-![](assets/cb.jpg)
-
-**2\. [bivariate color palette](http://geoviz.ceoas.oregonstate.edu/storymap/color.html)**
-
-![](assets/bivariate.jpg)
-
-**3\.Web Site Color Scheme**
-
-Refer to https://www.w3schools.com/colors/colors_schemes.asp
-
-
-## 2\. Web Typography
-
-
-Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed. The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing (leading), and letter-spacing (tracking), and adjusting the space between pairs of letters (kerning). The term typography is also applied to the style, arrangement, and appearance of the letters, numbers, and symbols created by the process. Type design is a closely related craft, sometimes considered part of typography; most typographers do not design typefaces, and some type designers do not consider themselves typographers. Typography also may be used as a decorative device, unrelated to communication of information.
-
-
-
-The `font-family` property specifies the font for an element. The font-family property can hold several font names as a ***"fallback"*** system. If the browser does not support the first font, it tries the next font.
-
-There are two types of font family names:
-
-`family-name` - The name of a font-family, like "times", "courier", "arial", etc.
-
-`generic-family` - The name of a generic-family, like "serif", "sans-serif", "monospace".
-
-Start with the font you want, and always end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.
-
-
-```css
-p.a {
-    font-family: "Times New Roman", Times, serif;
-}
-
-p.b {
-    font-family: Arial, Helvetica, sans-serif;
-}
-```
-
-**Note:** Separate each value with a comma.
-
-**Note:** If a font name contains white-space, it must be quoted. Single quotes must be used when using the "style" attribute in HTML.
-
-
-### Difference Between Serif and Sans-serif Fonts
-
-![](assets/serif.gif)
-
-`Serif` -  Serif fonts have small lines at the ends on some characters, like "Times New Roman", "Georgia".
-
-`Sans-serif` - "Sans" means without - these fonts do not have the lines at the ends of characters, like "Arial", "Verdana". **On computer screens, sans-serif fonts are considered easier to read than serif fonts.**
-
-`Mobospace`  - All monospace characters have the same width, like "Courier New", "Lucida Console".
-
-### Font Style, Size and Weight
-
-The **font-style** property is mostly used to specify italic text.
-
-This property has three values:
-
-normal - The text is shown normally
-italic - The text is shown in italics
-oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
-
-```css
-p.normal {
-    font-style: normal;
-}
-
-p.italic {
-    font-style: italic;
-}
-
-p.oblique {
-    font-style: oblique;
-}
-```
-
-
-The **font-size** property sets the size of the text.
-
-Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
-
-Always use the proper HTML tags, like <h1> - <h6> for headings and <p> for paragraphs.
-
-The font-size value can be an absolute, or relative size.
-
-```css
-
-body {
-    font-size: 100%;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-p {
-    font-size: 14px;
-}
-```
-
-The **font-weight** property specifies the weight of a font:
-
-```css
-p.normal {
-    font-weight: normal;
-}
-
-p.thick {
-    font-weight: bold;
-}
-```
-
-```html
-<h1 style="font-size:10vw">Hello World</h1>
-```
-
-
-### Responsive Font Size
-
-The text size can be set with a vw unit, which means the "viewport width".
-
-That way the text size will follow the size of the browser window:
-
-### Popular Font Alternatives
-
-In this section, I listed the google web font alternative to the commonly used commerical fonts.
-
-![](img\GoogleFontAlt.png)
-
-
-| Commonly Used Commercial Fonts | Google Web Fonts |
-| ------------------------------ | ---------------- |
-| Helvetica                      | Sans Source Pro  |
-| Century Gothic                 | Questrial        |
-| Calibri                        | Droid Sans       |
-| Garamond                       | Merriweather     |
-| Avenir Next Rounded            | Nunito           |
-| Frutiger                       | Istok Web        |
-| Adobe Caslon Pro               | Lusitana         |
-| Futura Condensed               | Oswald           |
-| Rockwell                       | Arvo             |
-| Impact                         | Anton            |
-
-
-### commonly used font combinations
-
-**Serif Fonts**
-
-- Georgia, serif
-
-- "Palatino Linotype", "Book Antiqua", Palatino, serif
-
-- "Times New Roman", Times, serif
-
-
-**Sans-Serif Fonts**
-
-- Arial, Helvetica, sans-serif
-
-- "Arial Black", Gadget, sans-serif
-
-- "Comic Sans MS", cursive, sans-serif
-
-- Impact, Charcoal, sans-serif
-
-- "Lucida Sans Unicode", "Lucida Grande", sans-serif
-
-- Tahoma, Geneva, sans-serif
-
-- "Trebuchet MS", Helvetica, sans-serif
-
-- Verdana, Geneva, sans-serif
-
-**Monospace Fonts**
-
-- "Courier New", Courier, monospace
-
-- "Lucida Console", Monaco, monospace
-
-### Use a Google Web Font
-
-
-Google Fonts (previously called Google Web Fonts) is a library of over 800 libre licensed fonts, an interactive web directory for browsing the library, and APIs for conveniently using the fonts via CSS and Android.
-
-The Google Fonts directory is intended to enable font discovery and exploration, and the service is used extensively with over 17 trillion font served, which means that each of its 877 fonts has been downloaded over 19 billion times, which means that each person on Earth has, on average, downloaded each font at least 2 or 3 times. Popular fonts include `Open Sans`, `Roboto`, `Lato`, `Slabo 27px`, `Oswald` and `Lobster`.
-
-To use google font, Looking up the font families on [Google Web Fonts](https://fonts.google.com/), and generate the font css for the following html elements, including `html`, `body`, `h1` to `h6`, and other elements you think is necessary.
-
-The library is maintained through Google Fonts' GitHub repository at [github.com/google/fonts](github.com/google/fonts), where all font files can be obtained directly. Source files for many of the fonts are available from git repositories within the github.com/googlefonts Github organization, along with libre software tools used by the Google Fonts community.
-
-To use a google font in your web application, you should include the font link in the head element as shown below:
-
-```html
-    <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-```
-
-Apply a google font for a specific div. For example, the code below applies the sofia font to all the texts inside of the body div.
-
-```css
- <style>
-        body {
-            font-family: 'Sofia';font-size: 22px;
-        }
-    </style>
-```
-
-
-> **Note:** regarding the header elements, perhaps your project will not use al the six headers, please only list those are important.
+As usually, we will create an empty html page.
 
 ```html
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Font Template Page</title>
-    <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-    <style>
-        body {
-            font-family: 'Sofia';font-size: 22px;
-        }
-    </style>
-</head>
-<body>
-
-<h1>Sofia</h1>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-<p>123456790</p>
-<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-<p>abcdefghijklmnopqrstuvwxyz</p>
-
-</body>
+    <head>
+    </head>
+    <body>
+    </body>
 </html>
 ```
 
+Obviously, we will use `jQCloud` to make the word cloud, but in the meantime, we will also use one prerequiste library - jquery. To apply customized fonts, we will need to use `Google web fonts`, and to apply a color ramp, we will need to use `chroma.js`.
+
+So, the head of the html will include the following libraries:
+
+```html
+<head>
+    <meta charset="utf-8">
+    <title>Word cloud</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Titillium+Web" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jqcloud.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.4/chroma.min.js"></script>
+
+</head>
+```
+
+## Word Frequency Calculation
+
+Having a large chuck of texts,  we will need to calculate the world frequency.
+
+firstly, we combine all the texts as a long text string.
+
+```javacript
+ var texts = "";
+    for(var i=0;i< data.length; i++){
+
+        texts += data[i].content + " ";
+    }
+```
+
+And then,  we create the word frequency list. The first input variable is the text to process, and the second input variable is the lowest word frequency of a word which will be included in the
+frequency word list.
+
+```javascript
+frequencyList = wordFrequency(texts, 3);
+```
+
+The frequencyList is an array of objects, each of which is an dictionary of two variable, text and weight.
+
+```javascript
+[
+    {
+        text: "music"
+        weight: 10
+    },
+        {
+        text: "walking"
+        weight: 5
+    }
+    ... ...
+]
+```
+
+In the `wordFrequency(txt, freq)` function, it builds up an array of word and its frequency (weight). Also, we delete all those commonly used word.
+
+```javascript
+function wordFrequency(txt, freq) {
+
+	// a regular expression to define the symbols to seperate the words
+    var wordArray = txt.split(/[ .?!,*'"”“]/);
+    var newArray = [], filteredArray = [], wordObj;
+	// calculate the frequency of each unique terms from the text.
+	wordArray.forEach(function (word) {
+        wordObj = newArray.filter(function (w){
+            return w.text == word.toLowerCase();
+        });
+        if (wordObj.length) {
+            wordObj[0].weight += 1;
+        } else {
+            newArray.push({text: word, weight: 1});
+        }
+    });
+
+    var words = ["", "that", "this", "we", "needs",...];
+
+	//disinclude the word larger than the lowerst frequency as well as not in the commonly used terms.
+
+    newArray.filter(function(word){
+        if (!words.includes(word.text) && word.weight > freq) {
+            filteredArray.push(word);
+        }
+    });
+
+    return filteredArray;
+}
+```
+## Data processing and visualization
+
+As usually, to visualize the word cloud, we will need to create a html element (place holder) to hold the javacript object of  world cloud. So, in the `<body>` element, we create a `<div>` element to hold the javascript object of word cloud.
+
+```html
+<div id="cloud"></div>
+```
+And then create the jQcloud object as below
+
+```javascript
+ $("#cloud").jQCloud(frequencyList, {
+       colors: colorscheme,
+       autoResize: true,
+       // steps: 20,
+       delay:5,
+       shape: 'rectangular',
+       fontSize: {
+           from: 0.06,
+           to: 0.01
+       }
+    });
+```
+
+j'QCloud is derived from jQuery, so we can use the `$` operator to hook to the `<div>`, whose `id` is `cloud`.
+
+The first parameter is the url/path of the word frequency list. and second one is a dictionary of  the options for making the word cloud.
+
+```javascript
+{
+    colors: colorscheme, // set the color scheme, the color will be propotional to the `weight` of a word.
+    autoResize: true, // the word cloud can be resizable
+    delay:5,  //delete 5miliseconds when drawing each word.
+    shape: 'rectangular', // the shape of word cloud
+    fontSize: {
+    from: 0.06,
+    to: 0.01 // set the font size, the size will be propotional to the `weight` of a word.
+}
+```
+
+For more information about the options, please check [http://mistic100.github.io/jQCloud/](http://mistic100.github.io/jQCloud/).
+
+**Style**
+
+we define the layout in the `<style>` tag inside of the `<head>` tag. The following code will make sure the word cloud will be expaned to fullscreen, and in a light gray background color.
+
+```html
+ #cloud { width: 100%; height: 100%; margin: 0; background: #757575;}
+```
+
+Next, define the font family and style of the fonts.
+
+```html
+text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+```
+
+This line will apply the glow effects to the text, which will make the text clearer.
+
+In the javascript, we create an array of colors using `chroma.js`.
+
+```javascript
+colorscheme = chroma.scale('OrRd').colors(10).reverse();
+```
+
+As above, we create an array of two colors in an orange to red color ramp, and reverse the color ramp from red to orange.
+
+Now, we have defined the color, font. they will be used in symbolize the word cloud.
+
+As a result, we can visualize the whole piece of code as a word cloud. Check [here](http://jakobzhao.github.io/geog4572/lectures/lec14/index.html) to see how it looks like.
+
+![](img/wc.png)
+
+We also apply a coordinated view of word cloud and a bar chart showing the number of letters  wrotten in each year. Check [here](http://jakobzhao.github.io/geog4572/lectures/lec14/index2.html) to see how it looks like. Please try to read this cloud, and how it was made to be coordinated.
+
+![](img/cv.png)
+
+In this lecture, we introduced a word cloud using the text analysis of Yi-Fu's letters as an example, I encourage you to make a word cloud with your own data, and reflect on how this visual analysis can help you to explore your data set.
 
 ## References
 
-[1] https://www.canva.com/font-combinations/gesta/
-
-[2] https://developers.google.com/fonts/docs/getting_started
-
-[3] http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/
-
-[4] http://davidjohnstone.net/pages/lch-lab-colour-gradient-picker
-
-[5] https://www.w3schools.com/colors/default.asp
+[1] https://wiki.q-researchsoftware.com/wiki/Word_Cloud

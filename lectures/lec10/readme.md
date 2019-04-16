@@ -1,4 +1,4 @@
-# Layout Design using Bootstrap
+# Web Design Elements
 
 > Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
@@ -6,274 +6,427 @@
 
 **Learning Objectives**
 
-- Learn the basic syntax of Bootstrap;
-- Learn how to use Bootstrap to set up a web user interface.
-- Learn how to set up a google analytics to assess your web site.
+- Understand the different format of defining colors on the web;
+- Make choropleth color ramps using chroma.js, and
+- Understand how to use Google fonts.
+- Apply icons for interactive web geovisualization.
 
-This lecture introduces the layout design of web based geovisualization. In this lecture, we start to list the two design principles - one for designing web site, and the other for designing map. In the second section of this lecture, we will use the library storymap.js to talk about how to design.
 
-## 1. Overview
+## Color
 
-The framework we are going to focus on today is called **Bootstrap**. Bootstrap is a website framework built with HTML, CSS, and Javascript. A framework means that many page elements, common functions, and foundational components are already created for you to use and customize. You can use the pieces of the framework and customize the pieces and components for your own page, and even create your own. The components can be customized using HTML, CSS, and Javascript. Bootstrap was developed by Twitter, and is one of the most common frameworks for websites on the web today. More reading on Bootstrap, including lots of examples, can be found on the [**Bootstrap homepage**](http://getbootstrap.com/).
+Color is the visual perceptual property corresponding in humans to the categories called red, blue, yellow, green and others. Color derives from the spectrum of light (distribution of light power versus wavelength) interacting in the eye with the spectral sensitivities of the light receptors.
 
-Here are some principal features of Bootstrap:
+Color plays an important role in geospatial science and technology, especially in Cartography and Remote sensing, due to its ability to convey qualitative and quantitative information. Thus, the proper understanding and use of color is crucial to the creation of visual representations that clearly portray aspects of the real world with minimal confusion and misinterpretation.
 
-- Bootstrap is a free front-end framework for faster and easier web development
-- Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
-- Bootstrap also gives you the ability to easily create **responsive (web) designs**.
+**Color Values**
 
->  **What is Responsive (Web) Design?** It is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops.
-
-One of the most important is that Bootstrap is designed to be friendly on mobile, meaning your site will resize to be viewable on mobile devices. Another is that Bootstrap has an excellent grid system that allows us a nice ability to layout our site into columns and divisions. **The grid system** uses the div element (remember, these are containers for the elements on our page), and arranges them into rows. More on the grid system: [http://getbootstrap.com/examples/grid/](http://getbootstrap.com/examples/grid/). The components provided by the Bootstrap framework and templates are on the [Bootstrap components site](http://getbootstrap.com/components), note that there are tables, dropdown menus, panels, dividers, and more.
-
-## 2. Bootstrap: Basics
-
-**Download and include**
-
-If you want to download and host Bootstrap yourself, go to [getbootstrap.com](http://getbootstrap.com/getting-started/), and follow the instructions there. If you don't want to download and host Bootstrap yourself, you can include it from a CDN (Content Delivery Network).
-
-MaxCDN provides CDN support for Bootstrap's CSS and JavaScript. You must also include jQuery:
-
-```js
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<!-- Popper library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+```css
+rgb(255, 255, 255)
+rgb(10%, 20%, 30%)
+rgba(255, 255, 255, 0.4)
+rgba(10%, 20%, 30%, 0.4)
+hsl(120, 50%, 20%)
+hsla(120, 50%, 20%, 0.4)
+#ffeeaa
+#fea
+steelblue
 ```
 
-**Add the HTML doctype**
+**Hex triplet for color**
 
-Bootstrap uses HTML elements and CSS properties that require the HTML5 doctype. Always include the HTML5 doctype at the beginning of the page, along with the `lang` attribute and the correct character set.
+A hex triplet is a six-digit, three-byte hexadecimal number used in HTML, CSS, SVG, and other computing applications to represent colors. The bytes represent the red, green and blue components of the color. One byte represents a number in the range 00 to FF (in hexadecimal notation), or 0 to 255 in decimal notation. This represents the least (0) to the most (255) intensity of each of the color components. Thus web colors specify colors in the True Color (24-bit RGB) color scheme. The hex triplet is formed by concatenating three bytes in hexadecimal notation, in the following order:
+
+- Byte 1: red value (color type red)
+- Byte 2: green value (color type green)
+- Byte 3: blue value (color type blue)
+
+```css
+.threedigit { color: #09C;    }
+.sixdigit   { color: #0099CC; } /* same color as above, Shorthand hexadecimal form */
+```
+
+### Color spaces
+
+#### RGB
+
+RGB is designed for screens, where colours are generated by individual red, green and blue elements. The actual colour of RGB colours depends on the device being used, although the sRGB colour space exists as a standardised colour space that the web nominally uses, and all RGB colours here are treated as sRGB. RGB values are easy to work with mathematically (they're all values between 0 and 255), and all colours on this page end up being converted to RGB values to be displayed, but they suffer from the problem of not being perceptually uniform nor intuitive to work with (it's hard to imagine what sort of colour you have just from RGB values, and it's also hard to modify colours intuitively with RGB).
+
+
+An RGB color value is specified with: `rgb(red, green, blue)`. Each parameter (red, green, and blue) defines the intensity of the color as an integer between 0 and 255. For example, `rgb(0,0,255)` is rendered as blue, because the blue parameter is set to its highest value (255) and the others are set to 0.
+
+```css
+div {
+    background-color: rgb(0, 191, 255);
+    color: rgb(255, 255, 255);
+}
+```
+
+#### HSV and HSL
+
+
+![](assets/color_diagram.png)
+
+HSV and HSL are cylindrical versions of RGB, which are intended to be much more intuitive to use. HSV colours are represented by hue, saturation and value, while HSL colours are represented by, hue, saturation and lightness, except with different definitions of saturation. In HSL, a colour of maximum lightness will always be white, regardless of hue and saturation, while in HSV, a colour of maximum value will be the most intense colour given the hue and saturation (so pure red is a red hue with maximum saturation and value).
+
+HSV and HSL suffer from RGB's lack of perceptual uniformity, so changing one dimension can result in apparent changes in other dimensions. For example, pure green and pure blue have the same saturation and lightness/value, but green appears to be a much lighter colour. Gradients interpolated in the HSV or HSL colour space are particularly prone to problems with this when they shift between many different hues. The is the problem that Lab and Lch overcome.
+
+HSL color values are specified with: `hsl(hue, saturation, lightness)`.
+
+```css
+div {
+    background-color: hsl(180, 50%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+```
+
+
+>**Note:** CMYK Colors：is a combination of CYAN, MAGENTA, YELLOW , and BLACK.Computer screens display colors using RGB color values. Printers often presents colors using CMYK color values. CMYK is not supported in HTML, but it is suggested as a new standard in CSS4.
+
+#### Lab
+
+Lab (or CIE 1976 (L*, a*, b*), or CIELAB) is **a colour space that is designed for the human eye.** It is perceptually uniform, which means that the difference between two colour values correlates with the perceived degree of difference between the two colours (the difference between colours is measured by their Euclidean distance). Therefore, gradients between two colours using the Lab colour space will change very uniformly between the colours. L is the lightness of the colour, a is the position between green (negative values) and red/magenta (positive values), and b is the position between blue (negative values) and yellow (positive values). The idea is that colours cannot be both green and red, or blue and yellow, and that colours can be described by a combination of their green/redness and blue/yellowness, and the lightness.
+
+Lab can describe all colours that the human eye can perceive, but also many beyond what can exist in the physical world (not to mention that computer displays can display a limited subset of real colours). One of the difficulties of Lab is that the valid ranges of L, a and b vary depending on the values of the other two values. L can be between 0 and 100, and a and b are normally within the range of -100 to 100, although a pure sRGB blue has a b of -108.
+
+#### Lch
+
+Lch (or CIELCH) is a cylindrical version of Lab, which means that the two opponent colour dimensions (a and b) are represented by a hue, h, and chroma, c (if a and b are Cartesian coordinates, h and c are polar coordinates). Gradients interpolated in the Lch colour space will transition between hues, so a gradient between yellow and blue (opposing colours in Lab) will transition via green (or red/magenta) in Lch, but via grey in Lab.
+
+
+### Color Scheme
+
+**1\. Color Brewer schemes (supported by both chroma.js and d3.js)**
+
+![](assets/cb.jpg)
+
+**2\. [bivariate color palette](http://geoviz.ceoas.oregonstate.edu/storymap/color.html)**
+
+![](assets/bivariate.jpg)
+
+**3\.Web Site Color Scheme**
+
+Refer to https://www.w3schools.com/colors/colors_schemes.asp
+
+
+## 2\. Web Typography
+
+
+Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed. The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing (leading), and letter-spacing (tracking), and adjusting the space between pairs of letters (kerning). The term typography is also applied to the style, arrangement, and appearance of the letters, numbers, and symbols created by the process. Type design is a closely related craft, sometimes considered part of typography; most typographers do not design typefaces, and some type designers do not consider themselves typographers. Typography also may be used as a decorative device, unrelated to communication of information.
+
+
+
+The `font-family` property specifies the font for an element. The font-family property can hold several font names as a ***"fallback"*** system. If the browser does not support the first font, it tries the next font.
+
+There are two types of font family names:
+
+`family-name` - The name of a font-family, like "times", "courier", "arial", etc.
+
+`generic-family` - The name of a generic-family, like "serif", "sans-serif", "monospace".
+
+Start with the font you want, and always end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.
+
+
+```css
+p.a {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p.b {
+    font-family: Arial, Helvetica, sans-serif;
+}
+```
+
+**Note:** Separate each value with a comma.
+
+**Note:** If a font name contains white-space, it must be quoted. Single quotes must be used when using the "style" attribute in HTML.
+
+
+### Difference Between Serif and Sans-serif Fonts
+
+![](assets/serif.gif)
+
+`Serif` -  Serif fonts have small lines at the ends on some characters, like "Times New Roman", "Georgia".
+
+`Sans-serif` - "Sans" means without - these fonts do not have the lines at the ends of characters, like "Arial", "Verdana". **On computer screens, sans-serif fonts are considered easier to read than serif fonts.**
+
+`Mobospace`  - All monospace characters have the same width, like "Courier New", "Lucida Console".
+
+### Font Style, Size and Weight
+
+The **font-style** property is mostly used to specify italic text.
+
+This property has three values:
+
+normal - The text is shown normally
+italic - The text is shown in italics
+oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+
+```css
+p.normal {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.oblique {
+    font-style: oblique;
+}
+```
+
+
+The **font-size** property sets the size of the text.
+
+Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
+
+Always use the proper HTML tags, like <h1> - <h6> for headings and <p> for paragraphs.
+
+The font-size value can be an absolute, or relative size.
+
+```css
+
+body {
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 14px;
+}
+```
+
+The **font-weight** property specifies the weight of a font:
+
+```css
+p.normal {
+    font-weight: normal;
+}
+
+p.thick {
+    font-weight: bold;
+}
+```
+
+```html
+<h1 style="font-size:10vw">Hello World</h1>
+```
+
+
+### Responsive Font Size
+
+The text size can be set with a vw unit, which means the "viewport width".
+
+That way the text size will follow the size of the browser window:
+
+### Popular Font Alternatives
+
+In this section, I listed the google web font alternative to the commonly used commerical fonts.
+
+![](img\GoogleFontAlt.png)
+
+
+| Commonly Used Commercial Fonts | Google Web Fonts |
+| ------------------------------ | ---------------- |
+| Helvetica                      | Sans Source Pro  |
+| Century Gothic                 | Questrial        |
+| Calibri                        | Droid Sans       |
+| Garamond                       | Merriweather     |
+| Avenir Next Rounded            | Nunito           |
+| Frutiger                       | Istok Web        |
+| Adobe Caslon Pro               | Lusitana         |
+| Futura Condensed               | Oswald           |
+| Rockwell                       | Arvo             |
+| Impact                         | Anton            |
+
+
+### commonly used font combinations
+
+**Serif Fonts**
+
+- Georgia, serif
+
+- "Palatino Linotype", "Book Antiqua", Palatino, serif
+
+- "Times New Roman", Times, serif
+
+
+**Sans-Serif Fonts**
+
+- Arial, Helvetica, sans-serif
+
+- "Arial Black", Gadget, sans-serif
+
+- "Comic Sans MS", cursive, sans-serif
+
+- Impact, Charcoal, sans-serif
+
+- "Lucida Sans Unicode", "Lucida Grande", sans-serif
+
+- Tahoma, Geneva, sans-serif
+
+- "Trebuchet MS", Helvetica, sans-serif
+
+- Verdana, Geneva, sans-serif
+
+**Monospace Fonts**
+
+- "Courier New", Courier, monospace
+
+- "Lucida Console", Monaco, monospace
+
+### Use a Google Web Font
+
+
+Google Fonts (previously called Google Web Fonts) is a library of over 800 libre licensed fonts, an interactive web directory for browsing the library, and APIs for conveniently using the fonts via CSS and Android.
+
+The Google Fonts directory is intended to enable font discovery and exploration, and the service is used extensively with over 17 trillion font served, which means that each of its 877 fonts has been downloaded over 19 billion times, which means that each person on Earth has, on average, downloaded each font at least 2 or 3 times. Popular fonts include `Open Sans`, `Roboto`, `Lato`, `Slabo 27px`, `Oswald` and `Lobster`.
+
+To use google font, Looking up the font families on [Google Web Fonts](https://fonts.google.com/), and generate the font css for the following html elements, including `html`, `body`, `h1` to `h6`, and other elements you think is necessary.
+
+The library is maintained through Google Fonts' GitHub repository at [github.com/google/fonts](github.com/google/fonts), where all font files can be obtained directly. Source files for many of the fonts are available from git repositories within the github.com/googlefonts Github organization, along with libre software tools used by the Google Fonts community.
+
+To use a google font in your web application, you should include the font link in the head element as shown below:
+
+```html
+    <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+```
+
+Apply a google font for a specific div. For example, the code below applies the sofia font to all the texts inside of the body div.
+
+```css
+ <style>
+        body {
+            font-family: 'Sofia';font-size: 22px;
+        }
+    </style>
+```
+
+
+> **Note:** regarding the header elements, perhaps your project will not use al the six headers, please only list those are important.
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <!-- css stylesheets -->
-    <!-- javascript library -->
-  </head>
-</html>
-```
-
-**Bootstrap 4 is mobile-first**
-
-Bootstrap 4 is designed to be responsive to mobile devices. Mobile-first styles are part of the core framework.
-
-To ensure proper rendering and touch zooming, add the following tag inside the element:
-
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-```
-
-The `width=device-width` part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
-
-The `initial-scale=1` part sets the initial zoom level when the page is first loaded by the browser.
-
-**Containers**
-
-Bootstrap also requires a containing element to wrap site contents.
-
-There are two container classes to choose from:
-
-1. The `.container` class provides a responsive **fixed width container**
-2. The `.container-fluid` class provides a **full width container**, spanning the entire width of the viewport
-
-Please keep in mind that *Containers* are not nestable. Meaning you cannot put a container inside another container. Please execute the following two examples to see the differences.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>Font Template Page</title>
+    <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Sofia';font-size: 22px;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
-</div>
+<h1>Sofia</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+<p>123456790</p>
+<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+<p>abcdefghijklmnopqrstuvwxyz</p>
 
 </body>
 </html>
 ```
 
->  A basic Bootstrap page (with a responsive fixed width container)
+
+## 3\. Icons for Web Uses
+
+Icon is an important feature for geovisualization. It is simple, concrete and informative. Sometimes, a  icon is more than thousands of words or a well-designed map. In this section, we will talk about how to include icons in web pages.
+
+There are several major icon libraries for web use. To name a few, such as [font awesome icons](https://fontawesome.com/icons?d=gallery), [Google material icons](https://material.io/icons/), [open icons](https://useiconic.com/open) and etc. To insert an icon to a web page, you will first include the icon library to the `<head>` tag, and then insert the `icon class` of the specific icon, sometimes associated with text, to the html elment you would like to visualize. The `<i>` and `<span>` elements are widely used to add icons. Here, Font Awesome Icons and Google Material Icons are introduced as follow.
+
+### 1\.1 Font Awesome Icons
+
+Font Awesome is a font and icon toolkit based on CSS and LESS. It was made by Dave Gandy for use with Twitter Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 20% market share among those websites which use third-party Font Scripts on their platform, ranking it second place after Google Fonts.
+
+Font Awesome 5 was released on December 7, 2017 with 1,278 icons. Version 5 comes in two packages: Font Awesome Free and the proprietary Font Awesome Pro (available for a fee). The free versions (all releases up to 4 and the free version for 5) are available under SIL Open Font License 1.1, Creative Commons Attribution 4.0, and MIT License.
+
+![](img/fa.png)
+
+To use the Font Awesome icons, add the following line inside the <head> section of your HTML page:
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
-</div>
-
-</body>
-</html>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
 ```
 
-> A basic Bootstrap page (with a full width container)
-
-**Bootstrap grids**
-
-Bootstrap's grid system allows up to 12 columns across the page. If you do not want to use all 12 columns individually, you can group the columns together to create wider columns:
-
-![](img/12-grids.png)
-
-Bootstrap's grid system is responsive, and the columns will re-arrange automatically depending on the screen size.
-
-**Grid Classes**
-
-The Bootstrap grid system has four classes:
-
-| Class Name  | Size           | Usage                        |
-| ----------- | -------------- | ---------------------------- |
-| `.col-xs-*` | Extra Small    | Phones Less than 768px       |
-| `.col-sm-*` | Small Devices  | Tablets 768px and Up         |
-| `.col-md-*` | Medium Devices | Desktops 992px and Up        |
-| `.col-lg-*` | Large Devices  | Large Desktops 1200px and Up |
-
-The classes above can be combined to create more dynamic and flexible layouts.
-
-**Basic Structure of a Bootstrap Grid**
-
-The following is a basic structure of a Bootstrap grid:
-
-```js
-<div class="row">
-  <div class="col-*-*"></div>
-</div>
-<div class="row">
-  <div class="col-*-*"></div>
-  <div class="col-*-*"></div>
-  <div class="col-*-*"></div>
-</div>
-<div class="row">
-  ...
-</div>
-```
-
-First; create a row (`<div class="row">`). Then, add the desired number of columns (tags with appropriate `.col-*-*` classes). Note that numbers in `.col-*-*` should always add up to 12 for each row.
-
-Below we have collected some examples of basic Bootstrap grid layouts.
-
-**Three Equal Columns**
-
-![](img/three-equal-c.png)
-
-The following example shows how to get a three equal-width columns starting at tablets and scaling to large desktops. On mobile phones, the columns will automatically stack:
+Below shows some examples on using font awesome icons in web page.
 
 ```html
-<div class="row">
-  <div class="col-sm-4">.col-sm-4</div>
-  <div class="col-sm-4">.col-sm-4</div>
-  <div class="col-sm-4">.col-sm-4</div>
-</div>
+<p><i class="fas fa-user"></i>
+    <i class="far fa-user"></i>
+    <!--brand icon-->
+    <i class="fab fa-github-square"></i>
+</p>
+<p>
+    <i class="fab fa-github fa-xs"></i>
+    <i class="fab fa-github fa-sm"></i>
+    <i class="fab fa-github fa-lg"></i>
+    <i class="fab fa-github fa-2x"></i>
+    <i class="fab fa-github fa-3x"></i>
+    <i class="fab fa-github fa-5x"></i>
+    <i class="fab fa-github fa-7x"></i>
+    <i class="fab fa-github fa-10x"></i>
+</p>
 ```
 
-**Two Unequal Columns**
+### 1\.2 Google Material Icons
 
-![](img/two-unequal-c.png)
-
-The following example shows how to get two various-width columns starting at tablets and scaling to large desktops:
+In a bid to create a new "visual language" for users, Google is taking the design of its Android, Chrome OS and web properties back to basics with its new "Material Design." According to Google, Material Design is intended to make better use of available space, and bring a consistent user experience whether viewed on a smartphone, tablet or desktop. Google's apps will be updated to reflect this change, as you may have seen in early Gmail and Calendar app leaks and in the latest version of the Google+ app on Android.
 
 ```html
-<div class="row">
-  <div class="col-sm-4">.col-sm-4</div>
-  <div class="col-sm-8">.col-sm-8</div>
-</div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 ```
 
-## 3. Bootstrap Templates
+Below shows some examples on using material icons in web page. above all, you will need to define the styles in a `<style>` tag.
 
-To further enrich your web map templates, I encourage you browse some robust Boostrap templates. Two recommended sites for Bootstrap templates are:
+```css
+<style>
+    .red {
+        color: red;
+    }
 
-- [StartBootstrap](http://startbootstrap.com/)
-- [BootstrapZero](http://bootstrapzero.com/)
+    .large {
+        font-size: 5vw;
 
-![](img/startbootstrap.png)
+    }
 
-> Browse and download templates from **Start Bootstrap**
-
-
-## 4. Google Analytics Assessment
-
-
-Google Analytics is a freemium web analytics service offered by Google that tracks and reports website traffic. Google launched the service in November 2005 after acquiring Urchin. Google Analytics is now the most widely used web analytics service on the Internet.
-
-Google Analytics is implemented with "page tags", in this case, called the Google Analytics Tracking Code, which is a snippet of JavaScript code that the website owner adds to every page of the website. The tracking code runs in the client browser when the client browses the page (if JavaScript is enabled in the browser) and collects visitor data and sends it to a Google data collection server as part of a request for a web beacon.
-
-![](img/interface.jpg)
-
-
-The tracking code loads a larger JavaScript file from the Google web server and then sets variables with the user's account number. The larger file (currently known as ga.js) is typically 18 KB. The file does not usually have to be loaded, however, due to browser caching. Assuming caching is enabled in the browser, it downloads `ga.js` only once at the start of the visit. Furthermore, as all websites that implement Google Analytics with the ga.js code use the same master file from Google, a browser that has previously visited any other website running Google Analytics will already have the file cached on their machine.
-
-4.1 Register Google Analytics
-
-https://analytics.google.com/
-
-4.2 Create A new Property
-
-Click on the `admin` page at the end of the left side bar, and then click the `create property` button on the opened-up page to create a new property.
-
-![](img/createproperty.png)
-
-4.3 On the newly opened page, please input the website name, website url and reporting time zone. Once filled, press the button `Get Tracking ID`.
-
-![](img/property.png)
-
-4.4 Then you will see your Tracking ID and `gtag.js`. Below is the `gtag.js` code snippet:
-
-```javascript
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100818948-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-100818948-3');
-</script>
+    .extra-large {
+        font-size: 8vw;
+    }
+</style>
 ```
 
-Copy and paste this code as the last elemennt inside `<body>` of every webpage you want to track. If you already have a Global Site Tag on your page, simply add the config line from the snippet below to your existing Global Site Tag.
+And then you can apply the styles to the icons. As you might notice, you need to insert a short text to indicate the specific icon to use. It is a little different from font awesome icons.
 
-[Here](view-source:jakobzhao.github.io) is an example of web page using the `gtag.js`. (Pleas scroll down to the very end of this page.)
+```html
+<p>
+    <span> <i class="material-icons">info</i></span>
+    <span> <i class="material-icons red">face</i></span>
+    <span> <i class="material-icons large">room</i></span>
+    <span> <i class="material-icons extra-large">favorite</i></span>
+
+</p>
+```
+
+![](img/material.png)
 
 
-## References:
+## References
 
-[1] http://duspviz.mit.edu/web-map-workshop/bootstrap-templates/
+[1] https://www.canva.com/font-combinations/gesta/
 
-[2] http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/
+[2] https://developers.google.com/fonts/docs/getting_started
 
-[3] http://www.w3schools.com/bootstrap/
+[3] http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/
 
-[4] https://www.toptal.com/front-end/what-is-bootstrap-a-short-tutorial-on-the-what-why-and-how
+[4] http://davidjohnstone.net/pages/lch-lab-colour-gradient-picker
 
-[5]  https://www.smashingmagazine.com/2008/01/10-principles-of-effective-web-design/
+[5] https://www.w3schools.com/colors/default.asp

@@ -8,7 +8,6 @@
 
 - Understand how to organize files on a server.
 - Get to know the web development environment (IDE);
-- Understand the basic command or terminal operations to navigate and locate a directory;
 - Set up a testing/debugging web server; and
 - Walk through the basics of HTML and CSS;
 
@@ -32,29 +31,28 @@ Standard protocol is that a file named **index** is what will be provided by def
 > **Note:** the HTML file extension, indicating the file is written in HTML). The file structure found in my directory looks like the following.
 
 ```
- Geog4572
+ Geog371
    lectures
-     lec04
-       part01
-          │  index.html
-          ├─css
-          ├─img
-          └─js
+     lec03
+      │  index.html
+      ├─css
+      ├─img
+      └─js
 ```
 
 You can also have supplemental files, such as images, style files, scripts, and other items in your root directory alongside the `index.html` standing alone or in subdirectories. You can see in the above-listed file structure, I have `img` for holding images, `css` for holding style files, `js` for scripts, and usually another folder named `assets` or `data` for holding miscellaneous items.
 
 ***How is everything related?***
 
-<img src="img/environment.jpg" alt="Drawing" style="text-align: center; width: 100%;"/>
+<img src="img/environment.jpg" alt="Drawing" style="text-align: center; width: 300px;"/>
 
-To host a web application, you need to move the codes and the supplemental files to the server. For most of the lecture and lab demos, you can launch a web server on your computer by python SimpleHTTPServer or a server integrated in Webstorm, also you can host your web map through github page.
+To host a web application, you need to move the codes and the supplemental files to the server. For most of the lecture and lab demos, you can launch a web server on your computer by python SimpleHTTPServer or a server integrated in `Atom`, also you can host your web map through github page.
 
 > **Note:** If you have your own dedicated server, you may need to dragged and saved the files in a specific folder (e.g., a folder named "www") which will be the hosting place of the server. If the server is a remote computer or in the cloud (e.g., the google cloud platform), you can use an `FTP` ot `SSH` connected to your hosting space, or drag and drop into your www folder.
 
 ## 3. Use an IDE
 
-While you can get away with using a basic text editor to create HTML files, there are Integrated Development Environment (IDE) designed to make your life easier by color coding code snips and autocompleting lines. Download and install one of the following text editing software if you don’t already have one. In this lecture, you will mainly use `Webstorm` to edit HTML, CSS, and Javascript files. We also have `Webstorm` installed in the Digital Earth Lab, and you can install an educational version of `Webstorm` on your own machine, no matter you are a Mac or Windows users.
+While you can get away with using a basic text editor to create HTML files, there are Integrated Development Environment (IDE) designed to make your life easier by color coding code snips and autocompleting lines. Download and install one of the following text editing software if you don’t already have one. In this lecture, you will mainly use `Atom` to edit HTML, CSS, and Javascript files. We also have `Atom` installed in the Digital Earth Lab, and you can install an open source version of `Atom` on your own machine, no matter you are a Mac or Windows users. Here is a list of other IDEs:
 
 - `Webstorm` - (Windows, Mac, or Linux) One of cross-platform IDEs primarily for web, JavaScript and TypeScript development. Many of JetBrain's other IDEs include the feature set of WebStorm via plugins.
 - `Sublime Text` – (Windows, Mac, or Linux) One of the most popular and well-loved text editors around. Free to download and use, but will occasionally show a pop-up window if you don’t purchase it. This is what I’ll be using during the workshop
@@ -62,8 +60,6 @@ While you can get away with using a basic text editor to create HTML files, ther
 - `Notepad++` – A solid and reliable text editor for Windows. Free.
 - `TextWrangler` – A free text editor for Mac only.
 - `DreamWeaver` – Adobe’s software for making basic websites. This is not free generally, but many students already have it installed. This software can sometimes make simple tasks far more complicated than necessary. Not recommended, but if you already have it and you don’t want two install anything else, I will grudgingly acknowledge that it will work just fine for the workshop.
-
-Enough front matter, let's get going on our web page!
 
 ## 4. Start up a Web Server
 
@@ -73,7 +69,7 @@ For testing and debugging purpose, we need our computer to act like a WebServer,
 $ python -m SimpleHTTPServer 8000
 ```
 
-> **Note:** If the above command line does not work, probably your computer has not installed python yet. Please follow a tutorial at [here](../../resources/SimpleHTTPServer.md) to install a SimpleHTTPServer.
+> **Note:** If the above command line does not work, probably your computer has not installed python yet. Please follow a tutorial at [here](../../resources/SimpleHTTPServer.md) to install a SimpleHTTPServer. Also, if you work on a Windows envrionment, the python path might not be inserted to the system envrionment yet, so you have to inserted it.
 
 Now open a browser and access your site at: **http://localhost:8000**
 
@@ -85,11 +81,24 @@ $ python -m SimpleHTTPServer 80
 
 Now you can access your site **http://localhost** without specifying a port.
 
-Other than setting up a Server environment through python SimpleHTTPServer, you can also use Webstorm (what we suggested for this course). In Webstorm's main window, click one of the browser icons at the top right, a server environment will automatically launch, and a browser showing the web page will be opened up.
+Other than setting up a server environment through python SimpleHTTPServer, you can also If you work in `Atom` (what we suggested for this course), you do not need to start the Python server by inputting commands in the Terminal or Command promt. In Atom's main window, please press a key combination `Ctrl` + `Alt` + `l` to open up a live server. In this way, a server environment will automatically launch, and a browser showing the front page of the server will be opened up.
 
-![](img/webstorm.jpg)
+ Sometimes, you will need to relaunch the live server, so you can stop the server by pressing `Ctrl` + `Alt` + `q`, and then quickly start it by pressing `Ctrl` + `Alt` + `l`. Also, to set up the server on a dedicated port, or you want to set up multiple server for testing purpose, please refer to the commands below:
 
-> Click the chrome icon on the top right of Webstorm interface to open the "index.html" in Chrome, a server environment will automatically set up.
+ - `Ctrl` + `Alt` + `3` launch live server on port 3000;
+
+ - `Ctrl` + `Alt` + `4`launch live server on port 4000;
+
+ - `Ctrl` + `Alt` + `5` launch live server on port 5000; and
+
+ - `Ctrl` + `Alt` + `8` launch live server on port 8000.
+
+The best part of the Atom's live server is that it can simultaneously visualize the change of the code as a new web page in the browser. Most IDEs do not provide this live-update feature. Conventionally, once a change has been made, you will need to stop the server and relaunch it again to ensure the change is applied to the web page. In this sense, this feature has greatly increase the efficency of web programming. See the demo below:
+
+![](img/live-server.gif)
+
+
+ > For more detailed information about the integrated live server on atom, please refer to [https://atom.io/packages/atom-live-server](https://atom.io/packages/atom-live-server).
 
 ## 5. HTML: The Core Concepts
 
@@ -101,7 +110,7 @@ In your IDE, open and create a new blank document. Signify that the document wil
 <!DOCTYPE html>
 ```
 
-This is called a **tag**. HTML tags are keywords surrounded by angle brackets. This tag states for the browser that the rest of your file will be written in HTML. The rest of our document will follow a very simple rule, no matter how complex the code. 
+This is called a **tag**. HTML tags are keywords surrounded by angle brackets. This tag states for the browser that the rest of your file will be written in HTML. The rest of our document will follow a very simple rule, no matter how complex the code.
 
 When you write a tag (aka `start tag`), you will need a second tag that declares the end of that part of the document (aka `end tag`). Content goes between the start and end tags. A start tag looks like and an end tag has a slash in front of it . Conceptually, you will write the following.
 
@@ -313,7 +322,7 @@ CSS is a very useful styling system, and allows you to style items on your page 
 
 The language 'cascades' in the effect that if you style an element, any nested elements will get the same styling unless you specify otherwise. For example, if you set the font for your body element, a p (paragraph) will also be set to the same font, unless you specify specifically in the CSS that you want that `p` to have another font. This is a useful method in that it minimizes the code you need to write and forces you to be careful with your page structure.
 
-### Link a CSS File to your Site
+### Link a CSS File to your site
 
 CSS can be added to style your website in one of a few ways. You can apply CSS to individual elements, embed it within your HTML document, or create a separate CSS file and link it to your HTML document. In your file, add the following link in `head` section of your document.
 
@@ -387,8 +396,10 @@ CSS follows the DOM model, with styles applied to elements higher in the DOM app
 
 There are two general rules.
 
-- CSS defined last in your document will supersede CSS set on a selector earlier in your document.
-- The more specific selector will override the less specific selector. For example, a style set on the body selector will be overridden by a style set on an element within the body, such as one by ID.
+- **CSS defined last in your document will supersede CSS set on a selector earlier in your document.**
+- **The more specific selector will override the less specific selector. For example, a style set on the body selector will be overridden by a style set on an element within the body, such as one by ID.**
+
+> **Note:** The `!important` rule is a way to make your CSS cascade but also have the rules you feel are most crucial always be applied. A rule that has the !important property will always be applied no matter where that rule appears in the CSS document.
 
 
 ### Properties and Values

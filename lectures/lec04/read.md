@@ -1,4 +1,4 @@
-# Reading List for Lecture 5
+# Reading List for Lecture 4
 
 [1] leafletjs (201X) Leaflet Quick Start Guide, retrieved from December 28, 2016 from http://leafletjs.com/examples/quick-start/
 

@@ -1,40 +1,37 @@
 # Reading List for Lecture 9
 
-## Required
+### Required:
 
-[1] Tutorial Teacher (20XX) D3.js Tutorial http://www.tutorialsteacher.com/d3js
+[1] W3Schools (201X) Bootstrap 4 Tutorial, retrieved December 20, 2016 from http://www.w3schools.com/bootstrap4/default.asp
 
-D3 - Animation
+- BS4 Home
 
-D3 - Create SVG Elements
+- BS4 Get Started
 
-D3 - Create SVG Chart
+- BS4 Grid Basic
 
-D3 - Scales
+- BS4 Typogrpahy
 
-D3 - Axes
+- BS4 Images
 
-D3 - Bar Chart
+- BS4 Jumbotron
 
-D3 - Animated Bar Chart
+- BS4 Buttons
 
-D3 - Pie Chart
+- BS4 Glyphicons
 
-[2] DC.JS GETTING STARTED AND HOW-TO GUIDE (2018) http://dc-js.github.io/dc.js/docs/stock.html
+- BS4 Navbar
 
+- BS4 Media Objects
 
-[3] Stephen Levine (2018) Examples of using dc.js http://dc-js.github.io/dc.js/examples/
+- BS4 Carousel
 
-[Area Chart](http://dc-js.github.io/dc.js/examples/area.html)
+- BS4 Model
 
-[Bar Chart](http://dc-js.github.io/dc.js/examples/bar.html)
+- BS4 Tooltip
 
-[Line Chart](http://dc-js.github.io/dc.js/examples/line.html)
+- BS4 Affix
 
->Note: If you have more time, please also walk through other examples.
+- Bootstrap 4 Grids
 
-## Optional
-
-[4] Square Inc. (20XX) Crossfilter API https://github.com/crossfilter/crossfilter/wiki/API-Reference
-
-[5] Peter Cook (201X) Getting to know Crossfilter http://animateddata.co.uk/articles/crossfilter/
+- Bootstrap 4 Themes

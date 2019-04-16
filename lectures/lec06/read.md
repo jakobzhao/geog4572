@@ -1,9 +1,5 @@
 # Reading List for Lecture 6
 
-## Required
+**Optional**
 
-[1] webkid (2015) Replacing Jquery with D3 https://blog.webkid.io/replacing-jquery-with-d3/
-
-## Optional
-
-[2] Tutorial Teacher (20XX) D3.js Tutorial http://www.tutorialsteacher.com/d3js
+[1] MacWright, T (2015) [More than you ever wanted to know about GeoJSON](assets/geojson.pdf)
