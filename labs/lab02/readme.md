@@ -12,11 +12,7 @@ In this lab, we will design an interact web map of cell towers in Oregon. When c
 
 ![](img/final_map.jpg)
 
-<<<<<<< HEAD
-To get started, please synchronize the course material to the working space of your local computer. If you are working in the Digital Earth Lab, please synchronize your course material on the desktop directory.  The material for this lab is located at `[your_working_space]/geog4572/labs/lab02`. Next, open the course material in Webstorm.
-=======
 To get started, please synchronize the course material to the working space of your local computer. If you are working in the Digital Earth Lab, please synchronize your course material on the desktop directory.  The material for this lab is located at `[your_working_space]/geog4572/labs/lab03`. Next, open the course material in Atom.
->>>>>>> c4ad367026a788f71103a88e24d4089939f99c9b
 
 ## 1. Set up our Map and Add Data
 
