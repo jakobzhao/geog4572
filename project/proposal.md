@@ -14,4 +14,4 @@ This assignment asks each group to describe your proposal in two or three paraga
 
 - Interface Design - please list the url and a short description of two or even more (less than five) geoviz which you can refer to.
 
-Once you finish this homework, **one member of your group** need to submit the url of the created repository to Canvas Dropbox **by 11:59pm of April 23th (Thuesday)**.
+Once you finish this homework, **one member of your group** need to submit the url of the created repository to Canvas Dropbox **by 11:59pm of April 23th (Tuesday)**.
