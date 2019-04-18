@@ -14,4 +14,4 @@ This assignment asks you to describe your proposal in two or three paragaphs. Pl
 
 - Interface Design - please list the url and a short description of two or even more (less than five) geoviz which you can refer to.
 
-Once you finish this homework, you need to submit the url to Canvas Dropbox **by 5:00pm of April 27th (Friday)**.
+Once you finish this homework, you need to submit the url of the created repository to Canvas Dropbox **by 5:00pm of April 23th (Thuesday)**.

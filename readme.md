@@ -12,6 +12,12 @@ No required textbook :books:. Recommended Papers and online materials will be av
 
 Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.(2008). [Thematic cartography and geographic visualization](https://www.amazon.com/Thematic-Cartography-Geovisualization-Terry-Slocum/dp/0132298341/ref=sr_1_fkmr0_1?ie=UTF8&qid=1522646663&sr=8-1-fkmr0&keywords=thematic+cartography+and+geovisualization+3rd+edition+pdf). Pearson; 3rd edition (April 14, 2008). ISBN-13: 978-0132298346
 
+## :traffic_light: LATEST UPDATE
+
+1\. [Presentation Sequence](project\presentation.md) (4/18/2019)
+2\. [Submit your Project Proposal](project\proposal.md) (:pushpin: Deadline: 4/23/2019)
+
+
 ## :calendar: SCHEDULE
 
 | **WEEK**    | :book: **LECTURE  (T)**       | :computer: **LAB (T)**           | :book: **LECTURE (R)**                 | :heart_decoration: **[PROJECT](project/guideline.md)**                                                     |
@@ -26,6 +32,7 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 | **Wk 08**  | [GeoViz Evaluation](lectures/lec15/readme.md)  ([*`reading`*](lectures/lec15/read.md)) | *Studio*   |  [Hexagonal Maps](lectures/lec16/readme.md)               | Coding                                            |
 | **Wk 09**  |  [:cloud: Point Cloud Viz - *Katherine and Bryan*](lectures/lec17/readme.md) |  :airplane: Potential Fieldwork - *Katherine and Bryan*                                           | *Studio*         | Fine-tuning                                               |
 | **Wk 10** | *Studio*                                    | *Studio*                                        | **Project Presentations**            | Presentation                                              |
+
 
 ## :bar_chart: GRADING CRITERIA
 
