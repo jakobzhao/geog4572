@@ -17,8 +17,8 @@ The presenters **does not need to make a visualization application by themselves
 
 * Introduce the function of this visualization.
 * Describe what **geographic phenomona** a visulaization of the same kind can intepret.
-* Describe the javascript libraries are used for generating the visualization.
-* Inspect the code if possible. (Please connect to what you have learned from class.)
+* Describe the javascript libraries being used.
+* Inspect the code if possible. (Please connect to what you have learned from the class.)
 * Critique the visualization design.
 
 > Please submit the url of the chosen visualization application to the canvas dropbox at least one day before the presentation date.
