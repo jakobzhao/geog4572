@@ -7,3 +7,5 @@ In the github repository for your final project:
 - Please organize the geospatial data in ArcGIS or QGIS, and take a screenshot of Arc or Q's GUI(graphic user interface) when all the geospatial data are added on, and then put this screenshot to the `readme.md` file. (usually images will be saved in a folder named as `img` or `assets`).
 
 > Note: **Make a data source table will help you organize your project**
+
+Once you finish this homework, one member of your group need to submit the url of the created repository to Canvas Dropbox by 11:59pm of April 30th (Tuesday).
