@@ -24,9 +24,11 @@ In this lab, you are expected to make an integrated geovisualization, which shou
 
 - A favicon; (**4 POINTS**)
 
-> Note: Please refer to a tutorial on [making a favicon](https://github.com/jakobzhao/geog371/blob/master/lectures/lec16/readme.md)
+> Note: Please refer to a tutorial on [making a favicon](https://github.com/jakobzhao/geog371/blob/master/lectures/lec16/readme.md).
 
 - customized fonts from Google fonts; (**4 POINTS**)
+
+> Note: Please refer to a tutorial on [working with web fonts](https://github.com/jakobzhao/geog371/blob/master/resources/fonts.md).
 
 - credit information or acknowledgement; (**2 POINTS**)
 
