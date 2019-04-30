@@ -20,7 +20,6 @@
 <body>
 <main role="main">
     <article id="webslides">
-        <!--1.Landing Page-->
         <section class="bg-apple">
             <video class="background-video dark" autoplay muted loop>
                 <source src="assets/view.mp4" type="video/mp4">
@@ -31,13 +30,9 @@
                 </h1>
             </div>
         </section>
-
-        <!--2.Intro map flying from Singapore to Oregon-->
         <section class="bg-apple slide-top">
             <div id="mymap"></div>
         </section>
-
-        <!--3.Sending the message-->
         <section class="bg-apple slide-top">
             <div id="mymap2"></div>
         </section>
@@ -51,8 +46,8 @@
         </section>
 
         <section class="bg-apple  slide-top">
-            <div id="mychart" >
-                <div id="chart"></div>
+            <div id="mychart2" >
+                <div id="chart2"></div>
                 <span id="load">Load</span>
                 <span id="unload">Unload</span>
             </div>
@@ -60,8 +55,6 @@
     </article>
 </main>
 <script>
-
-
 
   var chart = c3.generate({
     bindto: '#chart',
@@ -141,7 +134,6 @@
             //starting location latitude and longitude
             map.setView([1.290270, 103.851959], 9);
             //Fly to animation  new latitude and longitude
-            //<!--get geojson to come up at earlier zoom level)-->
             map.flyTo([45.514685, -122.987080], 10, {animate: true, duration: 23});
             //outline of Washington county
         }
@@ -156,9 +148,56 @@
             map2.invalidateSize();
         }
 
-        if (crtDiv.attr("id") === "mychart") {
+        if (crtDiv.attr("id") === "mychart2") {
+
+              Promise.all([
+                d3.csv('assets/test1.csv'),
+                d3.csv('assets/test2.csv'),
+                d3.json('assets/counties.geojson')
+              ]).then(function(datasets) {
+
+                var dataseries1 = ["t"];
+                var dataseries2 = ["q"];
+
+                datasets[0].forEach(function(d) {
+                  dataseries1.push(+d["data1"]);
+                  dataseries2.push(+d["data2"]);
+                });
 
 
+              var chart = c3.generate({
+                  bindto: '#chart2',
+                  data: {
+                    columns: [
+                      dataseries1,
+                      dataseries2
+                    ],
+                    axes: {
+                      dataseries1: 'y2'
+                    },
+                    types: {
+                      t: 'bar',
+                      q: 'spline' // ADD
+                    }
+                  },
+                  axis: {
+                    y: {
+                      label: {
+                        text: 'Y Label',
+                        position: 'outer-middle'
+                      }
+                    },
+                    y2: {
+                      show: true,
+                      label: {
+                        text: 'Y2 Label',
+                        position: 'outer-middle'
+                      }
+                    }
+                  }
+              });
+
+              })
 
         }
 
