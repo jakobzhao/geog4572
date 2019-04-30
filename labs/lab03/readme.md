@@ -1,4 +1,4 @@
-# Lab 3:  Integrated Geovisualization - Storymap or Coordinated-view
+# Lab 3:  Integrated Geovisualization
 
 > Spring 2019 | Geography 4/572 | Geovisual Analytics
 >
@@ -9,32 +9,16 @@
 
 In this lab, you are expected to make a geovisualization, which can be either storymap or coordinated view. Before you make your own geoviz, please please go over the template below.
 
-- [Template](storymap/readme.md), [Example 1](https://jakobzhao.github.io/geog4572/labs/lab03/storymap/index.html), [Example 2](https://jakobzhao.github.io/geog4572/labs/lab03/storymap/helloworld.html)
+- [Template](https://jakobzhao.github.io/geog4572/labs/lab03//index.html)
 
-- [Coordianted View Tutorial](coordinated/readme.md), [Example](https://jakobzhao.github.io/geog4572/labs/lab03/coordinated/index.html)
-
-
-To help you choose a type of geovisualization to work on, we encouarge
-
-- students to work on a geovisualization which is as the same type as the final project.
-
-- Students who have already taken GEOG 371 (Web Mapping) to work on a coordinated view.
-
-However, students can freely pick up either type of geoviz they feel interested in.
 
 ### Below  is the grading criteria:
 
 #### *If you want to develop a coordinated-view*
 
-- In the readme file, please describe your geovisualization. Especially, what specific pattern(s) you have observed through the coordianted view, and how the multiple charts and map helped you to find that pattern. (**8 POINTS**)
+- In the readme file, please describe your geovisualization. Especially, what specific pattern(s) you have observed through the coordinated view, and how the multiple charts and map helped you to find that pattern. (**8 POINTS**)
 
 - At least three charts and a coordinated map; (**8 POINTS**)
-
-- Because you have used several charts to show multiple dimensions of a geographic phenomonon. Please appy ~~[a bivariate color ramp for your map as well as your charts](http://geoviz.ceoas.oregonstate.edu/storymap/color.html)~~ **Please use the same color scheme for your map and charts.** (**8 POINTS**)
-
-- At least two types of map layers (e.g., tileLayer, geojson layer). These layers can be made by yourself or from other web map providers; (**6 POINTS**)
-
-#### *If you want to develop a Storymap*
 
 - In the readme file, please describe the storyline of your story map. You may refer to the lecture notes on three-action (step, confrantation, and resolution) or five-action storytelling structures. (**8 POINTS**)
 
