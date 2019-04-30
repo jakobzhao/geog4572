@@ -7,9 +7,9 @@
 > **Assigned:** 04/30/2019 | **Due:** `05/21/2019 @11:59pm` | **Points Available** = 50
 
 
-In this lab, you are expected to make a geovisualization, which can be either storymap or coordinated view. Before you make your own geoviz, please please go over and start with emulate the  templates below.
+In this lab, you are expected to make a geovisualization, which can be either storymap or coordinated view. Before you make your own geoviz, please please go over the template below.
 
-- [Storymap Tutorial](storymap/readme.md), [Example 1](https://jakobzhao.github.io/geog4572/labs/lab03/storymap/index.html), [Example 2](https://jakobzhao.github.io/geog4572/labs/lab03/storymap/helloworld.html)
+- [Template](storymap/readme.md), [Example 1](https://jakobzhao.github.io/geog4572/labs/lab03/storymap/index.html), [Example 2](https://jakobzhao.github.io/geog4572/labs/lab03/storymap/helloworld.html)
 
 - [Coordianted View Tutorial](coordinated/readme.md), [Example](https://jakobzhao.github.io/geog4572/labs/lab03/coordinated/index.html)
 
