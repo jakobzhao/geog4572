@@ -6,18 +6,19 @@
 >
 > **Assigned:** 04/30/2019 | **Due:** `05/21/2019 @11:59pm` | **Points Available** = 50
 
-In this lab, you are expected to make an integrated geovisualization, which should describe a geographic event with maps and charts. Before you make your own geoviz, the instructor will go over the template with you. ([check here](https://jakobzhao.github.io/geog4572/labs/lab03//index.html)).
+In this lab, you are expected to make an integrated geovisualization, which should describe a geographic event with maps and charts. To make this geovisualization, we will use a storytelling library [webslides](https://webslides.tv/). Before you make your own geoviz, the instructor will go over the template with you. ([check here](https://jakobzhao.github.io/geog4572/labs/lab03//index.html)).
+
+> Here is a project we did based on webslides. http://jakobzhao.github.io/pwb
 
 ### The grading criteria:
 
-- In the readme file, please describe your geovisualization. Especially, what specific pattern(s) you have observed through the coordinated view, and how the multiple charts and map helped you to find that pattern. (**10 POINTS**)
+- In the readme file, please describe your geovisualization project. (**10 POINTS**)
 
 - At least 5 scenes. The content of the scenes can be obtained from Internet, historical archives, or even writing up by yourself. If you would like to use an external sources, please do mention their contribution in your credits information; (**10 POINTS**)
 
 - At least one chart; (**10 POINTS**)
 
 - A video or image on the front or end page; (**10 POINTS**)
-
 
 - A favicon; (**4 POINTS**)
 
