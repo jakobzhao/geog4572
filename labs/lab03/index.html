@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pure Water Brew</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="please add">
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="https://geoviz.ceoas.oregonstate.edu/pwb/css/webslides.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://geoviz.ceoas.oregonstate.edu/pwb/js/webslides.min.js"></script>
+    <style>
+        html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff; }
+    </style>
+</head>
+<body>
+
+<main role="main">
+    <article id="webslides">
+        <!--1.Landing Page-->
+        <section class="bg-apple">
+            <video class="background-video dark" autoplay muted loop>
+                <source src="assets/view.mp4" type="video/mp4">
+            </video>
+            <div class="wrap aligncenter">
+                <h1>
+                    <strong>Story Map Title</strong>
+                </h1>
+            </div>
+        </section>
+
+        <!--2.Intro map flying from Singapore to Oregon-->
+        <section class="bg-apple slide-top">
+            <div id="mymap"></div>
+        </section>
+
+        <!--12.Sending the message-->
+        <section class="bg-apple slide-top">
+            <div id="mymap2"></div>
+            <!--End of Window of Discourse graphic: Acceptable-->
+        </section>
+    </article>
+</main>
+
+<script>
+
+    var map = L.map("mymap", {zoomControl: false, scrollWheelZoom: false}).setView([1.290270, 103.851959], 8);
+
+    var map2 = L.map("mymap2", {zoomControl: false, scrollWheelZoom: false}).fitBounds([
+        [49.3, -138.5],
+        [22.8, -67.4]
+    ]);
+
+
+    L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}@2x.png', {
+        maxZoom: 19
+    }).addTo(map);
+
+    L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}@2x.png', {
+        maxZoom: 19
+    }).addTo(map2);
+
+
+    ws = new WebSlides();
+    ws.el.addEventListener('ws:slide-change', function () {
+
+        crtDiv = $(".current div");
+        //Map 1 'flyto' animation location and function
+        if (crtDiv.attr("id") === "mymap") {
+            map.invalidateSize();
+            //starting location latitude and longitude
+            map.setView([1.290270, 103.851959], 9);
+            //Fly to animation  new latitude and longitude
+            //<!--get geojson to come up at earlier zoom level)-->
+            map.flyTo([45.514685, -122.987080], 10, {animate: true, duration: 23});
+            //outline of Washington county
+        }
+
+
+        if (crtDiv.attr("id") === "mymap2") {
+
+            map2.fitBounds([
+                [49.3, -138.5],
+                [22.8, -67.4]
+            ]);
+            map2.invalidateSize();
+        }
+
+
+    });
+
+</script>
+</body>
+</html>
