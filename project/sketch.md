@@ -11,7 +11,7 @@ On the sketching paper, please draw each web interface of your web map applicati
 - In the **"Interface Sketch"** Section, You will also need to add 2 or 3 sentences to describe the sketch you drew.
 
 
-For submission, please only submit the url of the repository to canvas.
+For diliverable, please only submit the url of the repository to canvas by the end of May 9th.
 
 
 ### Sketch Examples:
