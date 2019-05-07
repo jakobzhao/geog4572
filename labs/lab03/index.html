@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>lab 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="please add">
+  <!-- CSS Base -->
+  <link rel="stylesheet" type='text/css' media='all' href="css/webslides.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.14/c3.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+  <!-- Javascript Library -->
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/webslides.min.js"></script>
+  <script src="https://unpkg.com/d3@5/dist/d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.14/c3.min.js"></script>
+</head>
+
+<body>
+  <main role="main">
+    <article id="webslides">
+      <!-- the landing scene -->
+      <section class="bg-apple">
+        <video class="background-video dark" autoplay muted loop>
+          <source src="assets/view.mp4" type="video/mp4">
+        </video>
+        <div class="wrap aligncenter">
+          <h1>
+            <strong>Story Map Title</strong>
+          </h1>
+        </div>
+      </section>
+      <!-- the first map -->
+      <section class="bg-apple slide-top">
+        <div id="mymap"></div>
+      </section>
+      <!-- the second map -->
+      <section class="bg-apple slide-top">
+        <div id="mymap2"></div>
+      </section>
+      <!-- the first chart -->
+      <section class="bg-apple  slide-top">
+        <div id="mychart">
+          <div id="chart"></div>
+          <span id="load">Load</span>
+          <span id="unload">Unload</span>
+        </div>
+      </section>
+      <!-- the second chart -->
+      <section class="bg-apple  slide-top">
+        <div id="mychart2">
+          <div id="chart2"></div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <script>
+    var chart = c3.generate({
+      bindto: '#chart',
+      data: {
+        columns: [
+          ['data1', 30, 200, 100, 400, 150, 250],
+          ['data2', 50, 20, 10, 40, 15, 25]
+        ],
+        axes: {
+          data2: 'y2'
+        },
+        types: {
+          data2: 'line' // ADD
+        }
+      },
+      axis: {
+        y: {
+          label: {
+            text: 'Y Label',
+            position: 'outer-middle'
+          }
+        },
+        y2: {
+          show: true,
+          label: {
+            text: 'Y2 Label',
+            position: 'outer-middle'
+          }
+        }
+      }
+    });
+
+    $("#load").on("mouseover", function() {
+
+      chart.load({
+        columns: [
+          ['data3', 300, 100, 250, 150, 300, 150, 500],
+          ['data4', 100, 200, 150, 50, 100, 250]
+        ]
+      });
+
+    })
+
+    $("#unload").on("click", function() {
+
+      chart.unload({
+        ids: ['data3', 'data4']
+      });
+
+    });
+
+
+    var map = L.map("mymap", {
+      zoomControl: false,
+      scrollWheelZoom: false
+    }).setView([1.290270, 103.851959], 8);
+
+    var map2 = L.map("mymap2", {
+      zoomControl: false,
+      scrollWheelZoom: false
+    }).fitBounds([
+      [49.3, -138.5],
+      [22.8, -67.4]
+    ]);
+
+
+    L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}@2x.png', {
+      maxZoom: 19
+    }).addTo(map);
+
+    L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}@2x.png', {
+      maxZoom: 19
+    }).addTo(map2);
+
+
+    ws = new WebSlides();
+    ws.el.addEventListener('ws:slide-change', function() {
+
+      crtDiv = $(".current div");
+      //Map 1 'flyto' animation location and function
+      if (crtDiv.attr("id") === "mymap") {
+        map.invalidateSize();
+        //starting location latitude and longitude
+        map.setView([1.290270, 103.851959], 9);
+        //Fly to animation  new latitude and longitude
+        map.flyTo([45.514685, -122.987080], 10, {
+          animate: true,
+          duration: 23
+        });
+        //outline of Washington county
+      }
+
+
+      if (crtDiv.attr("id") === "mymap2") {
+
+        map2.fitBounds([
+          [49.3, -138.5],
+          [22.8, -67.4]
+        ]);
+        map2.invalidateSize();
+      }
+
+      if (crtDiv.attr("id") === "mychart2") {
+
+        Promise.all([
+          d3.csv('assets/test1.csv'),
+          d3.csv('assets/test2.csv'),
+          d3.json('assets/counties.geojson')
+        ]).then(function(datasets) {
+
+          var dataseries1 = ["t"];
+          var dataseries2 = ["q"];
+
+          datasets[0].forEach(function(d) {
+            dataseries1.push(+d["data1"]);
+            dataseries2.push(+d["data2"]);
+          });
+
+
+          var chart = c3.generate({
+            bindto: '#chart2',
+            data: {
+              columns: [
+                dataseries1,
+                dataseries2
+              ],
+              axes: {
+                dataseries1: 'y2'
+              },
+              types: {
+                t: 'bar',
+                q: 'spline' // ADD
+              }
+            },
+            axis: {
+              y: {
+                label: {
+                  text: 'Y Label',
+                  position: 'outer-middle'
+                }
+              },
+              y2: {
+                show: true,
+                label: {
+                  text: 'Y2 Label',
+                  position: 'outer-middle'
+                }
+              }
+            }
+          });
+
+        })
+
+      }
+
+
+    });
+  </script>
+</body>
+
+</html>

@@ -1,62 +1,43 @@
-<!doctype html>
-<html lang="en">
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Real-time Twitter Map</title>
-    <!--stylesheets-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="css/main.css">
+    <title>Cell Tower Heat Map </title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
     <style>
         html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff; }
     </style>
-    <!--javascript libraries-->
-    <script src="socket.io/socket.io.js"></script>
-    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
-
-    <!--activate leaflet-heat to make heatmap-->
-    <script src="js/leaflet-heat.js"></script>
-
-    <!--activate jquery and bootstrap to use the glyphicons-->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
-
 <body>
 <div id="map"></div>
-<script type="text/javascript">
+<script>
+    var map = L.map('map').setView([44.1, -120.5], 7);
+    L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; \<a href="http://openstreetmap.org"\>OpenStreetMap\</a\> Contributors',
+        maxZoom: 18
+    }).addTo(map);
 
-    // construct a leaflet map object
-    var map = L.map("map").setView([0, 0], 3);
+    var heat = null;
+    // Get GeoJSON and put on it on the map when it loads
+    $.getJSON("assets/cell_towers.geojson",function(data){
+        // set cellTowers to the dataset, and add the cell towers GeoJSON layer to the map
+        cell_tower_data = [];
+        for (var i = 0; i < data.features.length; i++ ) {
+            cell_tower_data[i] = [
+                data.features[i].geometry.coordinates[0][1],
+                data.features[i].geometry.coordinates[0][0]]
+        }
 
-    // construct the base map.
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png').addTo(map);
-
-    // make an empty heatmap layer
-     var heatmap = L.heatLayer([], {radius: 10}).addTo(map);
-
-    // an data string object defined by socket.io.js
-    if(io !== undefined) {
-
-        // data streaming source connector
-        var socket = io.connect('/');
-
-        // listen to the "twstreaming" channel to receive tweets
-
-        socket.on('twstreaming', function (data) {
-
-            //add a dot in the glow effect
-            var marker = L.marker([data.lng, data.lat],  {icon: L.divIcon({className: 'glyphicon glyphicon-one-fine-smaller-dot glow-effect'})} ).addTo(map);
-
-            //add a dot in the heatmap layer
-             heatmap.addLatLng([data.lng,data.lat])
-        });
-
-        // listen to the connected event to make sure the data streaming source is connected
-        socket.on("connected", function(r) {
-
-            // if connected, inform the server that the client is ready to receive tweets.
-            socket.emit("start tweets");
-        });
-    }
+        heat = L.heatLayer(cell_tower_data,{
+            radius: 35,
+            blur: 10,
+            maxZoom: 17,
+            //gradient: {0.05: 'blue', 0.25: 'lime',  0.27: 'yellow', 0.3: 'red'}
+            gradient: {0.05: 'white', 0.25: 'oreg',  0.27: 'yellow', 0.3: 'red'}
+        }).addTo(map);
+    });
 
 </script>
 </body>

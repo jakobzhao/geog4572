@@ -15,6 +15,8 @@ This lecture introduces the layout design of web based geovisualization. In this
 
 The framework we are going to focus on today is called **Bootstrap**. Bootstrap is a website framework built with HTML, CSS, and Javascript. A framework means that many page elements, common functions, and foundational components are already created for you to use and customize. You can use the pieces of the framework and customize the pieces and components for your own page, and even create your own. The components can be customized using HTML, CSS, and Javascript. Bootstrap was developed by Twitter, and is one of the most common frameworks for websites on the web today. More reading on Bootstrap, including lots of examples, can be found on the [**Bootstrap homepage**](http://getbootstrap.com/).
 
+<p style="color:red">please visit an ongoing project we conducted using bootstrap at http://geoviz.ceoas.oregonstate.edu/cws/.</p>
+
 Here are some principal features of Bootstrap:
 
 - Bootstrap is a free front-end framework for faster and easier web development

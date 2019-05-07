@@ -1,4 +1,4 @@
-# Data Source Table (Optional)
+# Data Source Table
 
 In the github repository for your final project:
 
