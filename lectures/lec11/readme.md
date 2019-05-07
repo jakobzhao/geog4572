@@ -10,17 +10,17 @@ Flow map
 
 [leaflet-swoopy](https://wbkd.github.io/leaflet-swoopy/)
 
-[Demo](http://jakobzhao.github.io/geog4572/lectures/lec20/index.html)
+[Demo](http://jakobzhao.github.io/geog4572/lectures/lec11/index.html)
 
 ![](img/flow.png)
 
 ## Project Q&A:
 
-### 1 jQuery Show and Hide
+### 1 Animation and Jquery Json Loading
 
-[Demo](http://jakobzhao.github.io/geog4572/lectures/lec20/hide.html)
+[Demo](http://jakobzhao.github.io/geog4572/lectures/lec11/animation.html)
 
 
-### 2 Animation
+### 2 Triggering Animation
 
-[Demo](http://jakobzhao.github.io/geog4572/lectures/lec20/animation.html)
+[Demo](http://jakobzhao.github.io/geog4572/lectures/lec11/animation2.html)

@@ -1,4 +1,4 @@
-var kits = {
+{
     "type": "FeatureCollection",
     "features": [
     { "type": "Feature", "properties": { "lat": 40.769262, "lng": -73.989637 }, "geometry": { "type": "Point", "coordinates": [ -73.989637, 40.769262 ] } },
@@ -39,4 +39,4 @@ var kits = {
     { "type": "Feature", "properties": { "lat": 29.7267282, "lng": -95.5807021 }, "geometry": { "type": "Point", "coordinates": [ -95.5807021, 29.7267282 ] } },
     { "type": "Feature", "properties": { "lat": 34.181453, "lng": -118.3206627 }, "geometry": { "type": "Point", "coordinates": [ -118.3206627, 34.181453 ] } }
 ]
-};
+}
