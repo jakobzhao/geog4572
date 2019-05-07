@@ -74,7 +74,7 @@
 
         for (let i = 0; i < kits.features.length; i++) {
 
-          setTimeout(function() {
+          // setTimeout(function() {
             lng = kits.features[i].geometry.coordinates[0];
             lat = kits.features[i].geometry.coordinates[1];
 
@@ -88,7 +88,7 @@
             }));
             // layergroup2.addLayer( L.marker([lat, lng], {icon: pwbIcon}));
 
-          }, 400 * i);
+          // }, 400 * i);
         }
 
 
