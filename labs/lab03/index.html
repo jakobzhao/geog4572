@@ -21,43 +21,40 @@
 </head>
 
 <body>
-  <main role="main">
-    <article id="webslides">
-      <!-- the landing scene -->
-      <section class="bg-apple">
-        <video class="background-video dark" autoplay muted loop>
-          <source src="assets/view.mp4" type="video/mp4">
-        </video>
-        <div class="wrap aligncenter">
-          <h1>
-            <strong>Story Map Title</strong>
-          </h1>
-        </div>
-      </section>
-      <!-- the first map -->
-      <section class="bg-apple slide-top">
-        <div id="mymap"></div>
-      </section>
-      <!-- the second map -->
-      <section class="bg-apple slide-top">
-        <div id="mymap2"></div>
-      </section>
-      <!-- the first chart -->
-      <section class="bg-apple  slide-top">
-        <div id="mychart">
-          <div id="chart"></div>
-          <span id="load">Load</span>
-          <span id="unload">Unload</span>
-        </div>
-      </section>
-      <!-- the second chart -->
-      <section class="bg-apple  slide-top">
-        <div id="mychart2">
-          <div id="chart2"></div>
-        </div>
-      </section>
-    </article>
-  </main>
+  <article id="webslides">
+    <!-- the landing scene -->
+    <section class="bg-black">
+
+      <div class="wrap aligncenter">
+        <h1>
+          <strong>Story Map Title</strong>
+        </h1>
+      </div>
+    </section>
+    <!-- the first map -->
+    <section class="bg-apple">
+      <div id="mymap"></div>
+    </section>
+    <!-- the second map -->
+    <section class="bg-apple slide-top">
+      <div id="mymap2"></div>
+    </section>
+    <!-- the first chart -->
+    <section class="bg-apple  slide-top">
+      <div id="mychart">
+        <div id="chart"></div>
+        <span id="load">Load</span>
+        <span id="unload">Unload</span>
+      </div>
+    </section>
+    <!-- the second chart -->
+    <section class="bg-apple  slide-top">
+      <div id="mychart2">
+        <div id="chart2"></div>
+      </div>
+    </section>
+  </article>
+
   <script>
     var chart = c3.generate({
       bindto: '#chart',
@@ -141,7 +138,7 @@
       if (crtDiv.attr("id") === "mymap") {
         map.invalidateSize();
         //starting location latitude and longitude
-        map.setView([1.290270, 103.851959], 9);
+        //map.setView([1.290270, 103.851959], 9);
         //Fly to animation  new latitude and longitude
         map.flyTo([45.514685, -122.987080], 10, {
           animate: true,
