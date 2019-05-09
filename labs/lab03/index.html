@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>lab 3</title>
   <meta charset="utf-8">
@@ -37,19 +38,19 @@
       <div id="mymap"></div>
     </section>
     <!-- the second map -->
-    <section class="bg-apple slide-top">
+    <section class="bg-apple">
       <div id="mymap2"></div>
     </section>
     <!-- the first chart -->
-    <section class="bg-apple  slide-top">
-      <div id="mychart">
-        <div id="chart"></div>
+    <section class="bg-apple">
+      <div id="mychart1">
+        <div id="chart1"></div>
         <span id="load">Load</span>
         <span id="unload">Unload</span>
       </div>
     </section>
     <!-- the second chart -->
-    <section class="bg-apple  slide-top">
+    <section class="bg-apple">
       <div id="mychart2">
         <div id="chart2"></div>
       </div>
@@ -100,17 +101,17 @@
           duration: 23
         });
       } else if (crtDiv.attr("id") === "mymap2") {
+        map2.invalidateSize();
         // fitBounds will fit the map to the boundary of the viewport (monitor)
         map2.fitBounds([
           [49.3, -138.5],
           [22.8, -67.4]
         ]);
-        map2.invalidateSize();
+
       } else if (crtDiv.attr("id") === "mychart1") {
 
-
-        var chart = c3.generate({
-          bindto: '#chart',
+        var chart1 = c3.generate({
+          bindto: '#chart1',
           data: {
             columns: [
               ['data1', 30, 200, 100, 400, 150, 250],
@@ -142,7 +143,7 @@
 
         $("#load").on("mouseover", function() {
 
-          chart.load({
+          chart1.load({
             columns: [
               ['data3', 300, 100, 250, 150, 300, 150, 500],
               ['data4', 100, 200, 150, 50, 100, 250]
@@ -153,64 +154,63 @@
 
         $("#unload").on("click", function() {
 
-          chart.unload({
+          chart1.unload({
             ids: ['data3', 'data4']
           });
 
         });
+
+      } else if (crtDiv.attr("id") === "mychart2") {
+
+
+        Promise.all([
+          d3.csv('assets/test1.csv'),
+          d3.csv('assets/test2.csv'),
+          d3.json('assets/counties.geojson')
+        ]).then(function(datasets) {
+
+          var dataseries1 = ["t"];
+          var dataseries2 = ["q"];
+
+          datasets[0].forEach(function(d) {
+            dataseries1.push(+d["data1"]);
+            dataseries2.push(+d["data2"]);
+          });
+
+          var chart2 = c3.generate({
+            bindto: '#chart2',
+            data: {
+              columns: [
+                dataseries1,
+                dataseries2
+              ],
+              axes: {
+                dataseries1: 'y2'
+              },
+              types: {
+                t: 'bar',
+                q: 'spline' // ADD
+              }
+            },
+            axis: {
+              y: {
+                label: {
+                  text: 'Y Label',
+                  position: 'outer-middle'
+                }
+              },
+              y2: {
+                show: true,
+                label: {
+                  text: 'Y2 Label',
+                  position: 'outer-middle'
+                }
+              }
+            }
+          });
+
+        })
       }
-
-    } else if (crtDiv.attr("id") === "mychart2") {
-
-
-      Promise.all([
-        d3.csv('assets/test1.csv'),
-        d3.csv('assets/test2.csv'),
-        d3.json('assets/counties.geojson')
-      ]).then(function(datasets) {
-
-        var dataseries1 = ["t"];
-        var dataseries2 = ["q"];
-
-        datasets[0].forEach(function(d) {
-          dataseries1.push(+d["data1"]);
-          dataseries2.push(+d["data2"]);
-        });
-
-
-        var chart = c3.generate({
-          bindto: '#chart2',
-          data: {
-            columns: [
-              dataseries1,
-              dataseries2
-            ],
-            axes: {
-              dataseries1: 'y2'
-            },
-            types: {
-              t: 'bar',
-              q: 'spline' // ADD
-            }
-          },
-          axis: {
-            y: {
-              label: {
-                text: 'Y Label',
-                position: 'outer-middle'
-              }
-            },
-            y2: {
-              show: true,
-              label: {
-                text: 'Y2 Label',
-                position: 'outer-middle'
-              }
-            }
-          }
-        });
-
-      })
 
     });
   </script>
