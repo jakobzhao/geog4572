@@ -25,3 +25,13 @@ html, body { width: 100%; height: 100%; margin: 0; background: #fff; }
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+
+/*
+.mind-process{
+    z-index: 1000;
+    margin-bottom: 20px;
+    table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+} */
