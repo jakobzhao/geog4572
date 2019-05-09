@@ -41,6 +41,7 @@
       <div id="mymap"></div>
       <div class="wrap">
         <div class="content-left">
+          <p><span id="show">Show</span> | <span id="hide">Hide</span></p>
           <div id="chart"></div>
         </div>
       </div>
@@ -63,6 +64,21 @@
     L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}@2x.png', {
       maxZoom: 19
     }).addTo(map);
+
+    // L.marker([45.514685, -122.987080]).addTo(map)
+    // .bindPopup('')
+    // .openPopup();
+
+
+    $("#show").on("click", function() {
+
+      $("#chart").show();
+
+    })
+
+    $("#hide").on("click", function() {
+      $("#chart").hide();
+    });
 
     var mapChart = c3.generate({
       bindto: "#chart",
