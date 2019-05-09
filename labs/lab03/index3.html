@@ -22,130 +22,53 @@
 
 <body>
   <article id="webslides">
-    <!-- the landing scene -->
-    <section class="bg-black">
-      <video class="background-video dark" autoplay muted loop>
-        <source src="assets/view.mp4" type="video/mp4">
-      </video>
-      <div class="wrap aligncenter">
-        <h1>
-          <strong>Story Map Title</strong>
-        </h1>
+    <section>
+      <span class="background" style="background-image:url('https://source.unsplash.com/UJbHNoVPZW0/')"></span>
+      <div class="wrap">
+        <h1>Landscape</h1>
       </div>
     </section>
-    <!-- the first map -->
-    <section class="bg-apple">
+    <section>
+      <span class="background" style="background-image:url('img/kitsanoo-65241-unsplash.jpg')"></span>
+      <div class="wrap">
+        <h1>Kitty</h1>
+      </div>
+    </section>
+    <!-- the map -->
+    <!-- refer to https://webslides.tv/demos/components#slide=15 -->
+    <!-- refer to https://webslides.tv/demos/components#slide=1 -->
+    <section class="bg-apple slide-top">
       <div id="mymap"></div>
-    </section>
-    <!-- the second map -->
-    <section class="bg-apple">
-      <div id="mymap2"></div>
-      <div class="wrap mind-process">
-        <div id="chart3"></div>
+      <div class="wrap">
+        <div class="content-left">
+          <div id="chart"></div>
+        </div>
       </div>
     </section>
-    <!-- the first chart -->
-    <section class="bg-apple">
-      <div id="mychart1">
-        <div id="chart1"></div>
-        <span id="load">Load</span>
-        <span id="unload">Unload</span>
-      </div>
-    </section>
-    <!-- the second chart -->
-    <section class="bg-apple">
-      <div id="mychart2">
-        <div id="chart2"></div>
-      </div>
-    </section>
-  </article>
 
+  </article>
   <script>
     // make the web slide object.
     var ws = new WebSlides();
-
-    // declare the first map object
-    var map = L.map("mymap", {
-      zoomControl: false,
-      scrollWheelZoom: false
-    }).setView([1.290270, 103.851959], 8);
-
-    // add a basemap to the first map
-    L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}@2x.png', {
-      maxZoom: 19
-    }).addTo(map);
-
     // decalre the second map object
-    var map2 = L.map("mymap2", {
+    var map = L.map("mymap", {
       zoomControl: false,
       scrollWheelZoom: false
     }).fitBounds([
       [49.3, -138.5],
       [22.8, -67.4]
-    ]);
+    ]); // fitBounds will fit the map to the boundary of the viewport (monitor)
 
     // add a basemap for the second map
     L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}@2x.png', {
       maxZoom: 19
-    }).addTo(map2);
-
-
-    var chart1 = c3.generate({
-      bindto: "#chart1",
-      data: {
-        columns: [
-          ['data1', 30, 200, 100, 400, 150, 250],
-          ['data2', 50, 20, 10, 40, 15, 25]
-        ],
-        axes: {
-          data2: 'y2'
-        },
-        types: {
-          data2: 'line' // ADD
-        }
-      },
-      axis: {
-        y: {
-          label: {
-            text: 'Y Label',
-            position: 'outer-middle'
-          }
-        },
-        y2: {
-          show: true,
-          label: {
-            text: 'Y2 Label',
-            position: 'outer-middle'
-          }
-        }
-      }
-    });
-
-    $("#load").on("mouseover", function() {
-
-      chart1.load({
-        columns: [
-          ['data3', 300, 100, 250, 150, 300, 150, 500],
-          ['data4', 100, 200, 150, 50, 100, 250]
-        ]
-      });
-
-    })
-
-    $("#unload").on("click", function() {
-
-      chart1.unload({
-        ids: ['data3', 'data4']
-      });
-
-    });
-
+    }).addTo(map);
 
     var mapChart = c3.generate({
-      bindto: "#chart3",
+      bindto: "#chart",
       size: {
-        height: 100,
-        width: 300
+        height: 250,
+        width: 500
       },
       data: {
         columns: [
@@ -157,86 +80,22 @@
       }
     });
 
-
     // bind a function to the slide change event of web slides
     ws.el.addEventListener('ws:slide-change', function() {
-
       // capture all the div under the currently displaying section
       crtDiv = $(".current div");
-
-      //Map 1 'flyto' animation location and function
       if (crtDiv.attr("id") === "mymap") {
         // Checks if the map container size changed and updates the map if so
         map.invalidateSize();
-        //Fly to a new location.
-        map.flyTo([45.514685, -122.987080], 10, {
-          animate: true,
-          duration: 23
-        });
-      } else if (crtDiv.attr("id") === "mymap2") {
-        map2.invalidateSize();
-        // fitBounds will fit the map to the boundary of the viewport (monitor)
-        map2.fitBounds([
+
+        map.fitBounds([
           [49.3, -138.5],
           [22.8, -67.4]
         ]);
         mapChart.resize({
-          height: 100,
-          width: 300
+          height: 250,
+          width: 500
         });
-      } else if (crtDiv.attr("id") === "mychart1") {
-
-        chart1.resize();
-
-      } else if (crtDiv.attr("id") === "mychart2") {
-
-        Promise.all([
-          d3.csv('assets/test1.csv'),
-          d3.csv('assets/test2.csv'),
-          d3.json('assets/counties.geojson')
-        ]).then(function(datasets) {
-
-          var dataseries1 = ["t"];
-          var dataseries2 = ["q"];
-
-          datasets[0].forEach(function(d) {
-            dataseries1.push(+d["data1"]);
-            dataseries2.push(+d["data2"]);
-          });
-
-          var chart2 = c3.generate({
-            bindto: '#chart2',
-            data: {
-              columns: [
-                dataseries1,
-                dataseries2
-              ],
-              axes: {
-                dataseries1: 'y2'
-              },
-              types: {
-                t: 'bar',
-                q: 'spline' // ADD
-              }
-            },
-            axis: {
-              y: {
-                label: {
-                  text: 'Y Label',
-                  position: 'outer-middle'
-                }
-              },
-              y2: {
-                show: true,
-                label: {
-                  text: 'Y2 Label',
-                  position: 'outer-middle'
-                }
-              }
-            }
-          });
-
-        })
       }
 
     });
