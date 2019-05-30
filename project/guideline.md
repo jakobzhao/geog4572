@@ -38,11 +38,11 @@ Additionally, you will need to submit **peer review form** for each project righ
 
 ## 3\. Team member peer review
 
-In order to assess the contribution of each group member to the final project, you will need to review the contributions from both your team members and you. All the reviews should be combined as a sinple review report in pdf or word document. Please submit all the reviews to a dedicated canvas dropbox **(by 5:00pm on June 7th, Friday)**.
+In order to assess the contribution of each group member to the final project, you will need to review the contributions from both your team members and you. All the reviews should be combined as a sinple review report in pdf or word document. Please submit all the reviews to a dedicated canvas dropbox **(on June 7th, Friday by 5:00pm )**.
 
 ## 4\. Submission
 
-To submit your final project, please just use the url link of your final project's github repository to a dedicaed final project submission tab on Canvas. **(by 5:00pm on June 10th, Monday)**.
+To submit your final project, please just use the url link of your final project's github repository to a dedicaed final project submission tab on Canvas. **(on June 10th, Monday by 5:00pm)**.
 
 
 >  **Note:** The requirements to the final project may be slightly changed according the progress of this course. The final requirements are subject to the instructor's notification.
