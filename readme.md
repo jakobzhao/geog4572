@@ -18,6 +18,8 @@ Slocum,T. A., McMaster, R. M., Kessler, F. C., Howard, H. H., & Mc Master, R. B.
 
 2\. [Submit your Project Proposal](project/proposal.md) (:pushpin: Deadline: 4/23/2019)
 
+3\. [Final Project Guideline](project/guideline.md)  
+
 
 ## :calendar: SCHEDULE
 
